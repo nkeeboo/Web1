@@ -1,0 +1,17 @@
+/* style của khung thanh tìm kiếm của header  */
+.search-box{
+    width: 400px;
+    height: 30px;
+    /* left: 670px;
+    top: 16px; */
+    background: #E5E5E5;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 100px;
+}
+.search-box input{
+    width: 90%;
+    background-color: transparent;
+    height: 80%;
+    border: none;
+}
