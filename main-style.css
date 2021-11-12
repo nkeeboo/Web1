@@ -54,7 +54,7 @@ body{
     background-color: transparent;
     height: 80%;
     border: none;
-    cursor: none;
+
 }
 .search-box input, .search-box svg {
     margin-top: auto;
