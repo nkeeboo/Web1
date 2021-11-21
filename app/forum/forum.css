@@ -1,0 +1,99 @@
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.forum__intro {
+    text-align: center;
+}
+
+.search-box {
+    position: relative;
+    padding: 0 0 0 20px;
+    margin: 0 20px;
+    background: #ddd;
+    direction: rtl;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.search-input {
+    height: 20px;
+    margin: 0;
+    padding-right: 30px;
+    width: 100%;
+    border: 2px solid;
+    text-align: left;
+}
+
+.search-icon {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+}
+
+.forum__navigation {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+}
+
+.button__container {
+    margin-right: 50px;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.tags__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

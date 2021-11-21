@@ -1,0 +1,18 @@
+body{
+    background-image: url(/assets/images/landing/bgr-image.png);
+    background-size: fit;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    
+}
+.header__logo{
+    width: 138px;
+}
+svg{
+    color: white;
+}
+.frame__upper{
+    color: white;
+}
