@@ -1,0 +1,82 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: aliceblue;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.header_sidebar {
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.center_sidebar {
+    width: 250px;
+    background-color: darkgreen;
+}
+
+.center {
+    display: flex;
+}
+
+.center_catalog {
+    width: 1800px;
+    margin: auto;
+}
+
+h3 {
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.center_catalog--banner1 {
+    width: 1200px;
+    height: 100px;
+    background-color: palevioletred;
+    text-align: center;
+    margin-left: 300px;
+}
+
+.center_catalog--banner2 {
+    width: 1200px;
+    height: 100px;
+    background-color: palevioletred;
+    margin-left: 300px;
+    display: flex;
+}
+
+.catalog--list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 200px;
+}
+
+.blog_up {
+    display: flex;
+}
+
+.tag {
+    background-color: black;
+    width: 30px;
+    height: 5;
+    color: white;
+}
+
+.coude {
+    text-align: right;
+}
+
+.box--course {
+    width: 180px;
+    height: 180px;
+    border: 2px solid black;
+    margin: 100px;
+    text-align: center;
+    box-shadow: 3px 3px rgb(22, 21, 21);
+}
