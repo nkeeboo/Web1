@@ -1,0 +1,48 @@
+body{
+    width: auto;
+    margin: 0%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    color: #199B80;
+    font-family: 'Montserrat', sans-serif;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+}
+i{
+    margin-right: 3px;
+    font-size: 35px;
+}
+#vision{
+    font-weight: bold;
+}
+#item-footer{
+    text-align: right;
+    margin: 5px;
+}
+#item-footer{
+    font-size: 10px;
+}
+#line-top{
+    background-color: black;
+    width: 15%;
+    height: 10px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+}
+.flex-row__item{
+    margin: 5px;
+    width: 25%;
+}
+.item--border{
+    border: 1px solid black;
+}
+img{
+    width: 100%;
+}

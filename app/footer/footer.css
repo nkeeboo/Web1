@@ -1,0 +1,60 @@
+body{
+    margin:0
+}
+.footer__container{
+    background: linear-gradient(0deg, rgba(213, 209, 209, 0.3), rgba(213, 209, 209, 0.3)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.8);
+    opacity: 0.9;
+    color: white;
+    font-family: 'Gothic A1', sans-serif;
+    padding: 10px 40px;
+}
+.footer__subcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__container div{
+    /* flex: 1; */
+    flex:1;
+}
+.footer__item-contact div:first-child{
+    margin-left: 50px;
+}
+.footer__item-contact{
+    min-width: max-content;
+}
+.footer__item-other, .footer__item-company{
+    min-width: 200px;
+}
+h2{
+    letter-spacing: 1.5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+p{
+    font-size: 14px;
+}
+hr{
+    border: 0.5px solid;
+    background-color: white;
+    width: 95%;
+}
+.footer__item--bottom{
+    text-align: center;
+}
+.footer__item-title{
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.footer__icon-container {
+    display: flex;
+}
+.footer__icon-container img{
+    margin-right: 20px;
+}
