@@ -1,11 +1,26 @@
+/* @import url(/main-style.css); */
+
+@font-face{
+    font-family: Montserrat;
+    src: url(/assets/fonts/montserrat/Montserrat-Medium.ttf);
+}
 body{
     background-image: url(/assets/images/landing/bgr-image.png);
-    background-size: fit;
+    background-size: 100vw;
     background-repeat: no-repeat;
+    position: relative;
+    top: 60px;
+
 }
 header{
     display: flex;
-    
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.row__align{ /*modify thành hàng*/
+    display: flex;
+    flex-direction: row;
 }
 .header__logo{
     width: 138px;
@@ -13,6 +28,149 @@ header{
 svg{
     color: white;
 }
-.frame__upper{
+.header__container{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 55px;
+    width: 100%;
+    /* z-index: 1; */
+    font-family: 'Gothic A1', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.frame{
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    padding-top: calc(50vh - 240px);
+
+}
+.frame__upper{ 
+    /* font-family: Montserrat; */
+    height: calc(100vh - 80px);
+    padding-top: calc(50vh - 240px);
+
+}
+.sub-container{
+    justify-content: space-evenly;
+    /* display: flex; */
+    align-self: center;
+    /* justify-content: center; */
+}
+.sub-container>div{
+    /* width: max-content; */
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+.rec-frame__shape, .cta-container{
+    width: calc(20% + 120px);
+}
+.rec-frame__shape{
+    border: 8px solid rgba(255, 255, 255, 0.86);
+    height: fit-content;
+    width: calc(20% + 100px);
+    min-width: 300px;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+}
+.cta-container{
+    position: relative;
+}
+.slogan{
+    position: absolute;
+    width: max-content;
+}
+.slogan p, h2{
+    margin: 0;
+}
+.slogan p {
+    position: relative;
+    top: 10px;
+    left: calc(40% + 5em);
+}
+.slogan span{
+    letter-spacing: 2px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.button__create-account{
+    background-color: #2EA44F;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    vertical-align: middle;
+    position:relative;
+    top: 150px;
+    margin: 0 auto;
+}
+.logo-container{
+    justify-content: center;
+    margin-top: 80px;
+}
+.logo-container>img{
+    width: 60px;
+    height: 60px;
+    margin-right: 35px;
+}
+.course-container{
+    /* flex: 1; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* justify-content: center; */
+    width: 100%;
+    width: max-content;
+}
+.course__right-col{
+    display: flex;
+    flex-direction: column;
+}
+.course__right-col .course-container__item{
+    height: max-content;
+}
+.course-container__item{
+    background-color: white;
+    color: black;
+    border: 2.5px solid black;
+    margin: 10px 5px;
+    padding: 5px 10px 10px 5px;
+    flex: 1;
+}
+/* .course-container>div{
+    width: 100%;
+} */
+.course-container__item>div:nth-child(2){/*Nội dung course*/
+    margin: auto 20px;
+    text-align: center;
+}
+.course-container__item ul{
+    list-style-type: symbols('**');
+    align-content: flex-start;
+}
+.button__create-account:hover,
+.course-container__item:hover, 
+.logo-container>img:hover, 
+#login:hover, a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.course__tag{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 0 10px 0 5px
+}
+.course__coude-tag{
+    text-align: right;
+    font-size: 11px;
+}
+.field-container{
+    justify-content: space-evenly;
+}
+ul li {
+    margin-bottom: 8px;
+}
+.link-catalog{
     color: white;
 }

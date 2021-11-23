@@ -8,6 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coudé</title>
+
     <style>
         @import url(/app/header/header.css);
         @import url(./landing.css);
@@ -22,11 +23,14 @@
     <a href="">Forum</a>
     <a href="">About us</a>
     <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-            viewBox="0 0 16 16">
-            <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-        </svg>
+        <input type="text">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+        </button>
     </div>
     <div class="header__button-container">
         <button id="login">
@@ -36,20 +40,130 @@
 </header>
 
 <body>
-    <div class="frame__upper">
-        <div>
-            <p>
-                We envision a world where anyone, anywhere has the power to transform their life through learning.
-            </p>
+    <div class="frame frame__upper">
+        <div class="sub-container row__align">
+            <div class="rec-frame__shape">
+                <p style="font-size: 18px; text-align: center; margin: 50px 30px;">
+                    We envision a world where anyone,
+                    anywhere has the power to transform their life through learning. Make things possible with us!
+                </p>
+            </div>
+            <div class="cta-container">
+                <div class="slogan">
+                    <h2>No Pain No Gain</h2>
+                    <p>with <span>Coudé</span></p>
+                </div>
+                <button class="button__create-account">
+                    Create An Account
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div>
-            <h2>No Pain No Gain</h2>
-            <p><span>with </span><h1>Coudé</h1></p>
-            <button>Creat an account 
-                <svg></svg>
-            </button>
+        <div class="logo-container row__align">
+            <img src="/assets/images/landing/icon_html.png" alt="">
+            <img src="/assets/images/landing/icon_css.png" alt="">
+            <img src="/assets/images/landing/icon_python.png" alt="">
+            <img src="/assets/images/landing/icon_js.png" alt="">
+            <img src="/assets/images/landing/icons_c.png" alt="">
+        </div>
+    </div>
 
+    <div class="frame frame__mid">
+        <div class="sub-container row__align">
+            <div class="course-container row__align">
+                <div class="course__left-col">
+                    <div class="course-container__item">
+                        <div class="course__tag">Pro</div>
+                        <div>
+                            <h3>Back-End Engineer</h3>
+                            <ul>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
+                            </ul>
+                        </div>
+                        <div class="course__coude-tag">Coudé</div>
+                    </div>
+                    <div class="course-container__item">
+                        <div class="course__tag">Pro</div>
+                        <div>
+                            <h3>Back-End Engineer</h3>
+                            <ul>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
+                            </ul>
+                        </div>
+                        <div class="course__coude-tag">Coudé</div>
+                    </div>
+                </div>
+                <div class="course__right-col">
+                    <div class="course-container__item">
+                        <div class="course__tag">Pro</div>
+                        <div>
+                            <h3>Back-End Engineer</h3>
+                            <ul>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
+                            </ul>
+                        </div>
+                        <div class="course__coude-tag">Coudé</div>
+                        <img src="/assets/images/landing/course_img.png" alt="">
+                    </div>
+                    <a class="link-catalog" href="/app/Catalog/Catalog.html">Go to our catalog →</a>
+                </div>
+            </div>
+            <div>
+                <h2
+                    style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                    What are you looking for?</h2>
+                <ul style="font-size: 18px;">
+                    <li>Learn a languague</li>
+                    <li>Develop your carreer</li>
+                    <li>Explore something new</li>
+                </ul>
+
+            </div>
         </div>
+        <div class="row__align">
+            <ul class="row__align field-container">• FIELDS TO DIG IN
+                <li>Data Sciene</li>
+                <li>Machine Learning</li>
+                <li>Other</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="frame frame__mid">
+        <div>
+        <div class="title-people">
+            <h1>People & Coude</h1>
+            <p>Let's see what users think about Coude!</p>
+        </div>
+        <div class="people-container">
+            <div class="people-container--item">
+                <img src="/assets/images/landing/people.png" alt="avatar">
+                <div>
+                    <h3>Sara Hahaha</h3>
+                    <p>IT Director</p>
+                    <p>Khóa học thât bổ ích. Tôi học được rất nhiều điều. Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
+                </div>
+            </div>
+            <div class="people-container--item">
+                <img src="/assets/images/landing/people.png" alt="avatar">
+                <div>
+                    <h3>Sara Hahaha</h3>
+                    <p>IT Director</p>
+                    <p>Khóa học thât bổ ích. Tôi học được rất nhiều điều. Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
+                </div>
+            </div>
+            <div class="people-container--item"></div>
+        </div>
+        <div class="milestone-container"></div>
+    </div>
+
     </div>
     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
         quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
@@ -91,94 +205,7 @@
         quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
         quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id ducimus numquam unde eos harum labore
-        quam ut obcaecati praesentium laudantium sint ab et, officia dicta in quae voluptas a.</div>
+
 </body>
 
 </html>
