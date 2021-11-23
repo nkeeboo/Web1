@@ -1,6 +1,6 @@
 body{
     width: auto;
-    margin: 0px 5px;
+    margin: 0%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
@@ -13,6 +13,7 @@ h4{
 }
 i{
     margin-right: 3px;
+    font-size: 35px;
 }
 #vision{
     font-weight: bold;
@@ -20,6 +21,14 @@ i{
 #item-footer{
     text-align: right;
     margin: 5px;
+}
+#item-footer{
+    font-size: 10px;
+}
+#line-top{
+    background-color: black;
+    width: 15%;
+    height: 10px;
 }
 .flex-row{
     display: flex;
