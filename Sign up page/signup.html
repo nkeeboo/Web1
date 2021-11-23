@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUDÉ</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <form action="generalinfo.html" method="get">
+        <div class="page__container">
+            <div class="page__header"></div>
+            <div class="user__avatar">
+                <img id="avatar" src="./img/avatar.png" alt="">
+            </div>
+            <main id="main-container">
+                <div class="main-left">
+                    <div class="left-row">
+                        <label>  First name: <span class="star">(&#42;)</span></label> <br>
+                        <input type="text" name="txtfname">
+                    </div>
+                    <div class="left-row">
+                        <label>  Account  name: <span class="star">(&#42;)</span></label> <br>
+                        <input type="text" name="txtaccountname">
+                    </div>
+                    <div class="left-row">
+                        <label>  DOB: <span class="star">(&#42;)</span></label> <br>
+                        <input type="text" name="txtdob">
+                    </div>
+                    <div class="left-row">
+                        <label>  Password: <span class="star">(&#42;)</span></label> <br>
+                        <input type="text" name="txtpass">
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="right-row">
+                        <label>  Last name: <span class="star">(&#42;)</span></label> <br>
+                        <input type="text" name="txtlname">
+                    </div>
+                    <div class="right-row">
+                        <label>  Email: <span class="star">(&#42;)</span></label> <br>
+                        <input type="text" name="txtemail">
+                    </div>
+                    <div class="right-row">
+
+                        <label>  Phone number: <span class="star">(&#42;)</span></label> <br>
+                        <input type="text" name="txtphone">
+                    </div>
+                    <div class="right-row">
+                        <label>  Payment: <span class="star">(&#42;)</span></label> <br>
+
+                        <button id="btpayment"> 
+                    <img class="paymentimg" src="./img/card.jpg" alt="">
+                    <img class="paymentimg" src="./img/paypal.jpg" alt="Error">
+                </button>
+                    </div>
+                </div>
+
+            </main>
+            <div class="main-footer">
+                <button id="btsignup" type="submit" name="submit">Sign up</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

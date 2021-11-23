@@ -1,0 +1,60 @@
+.star {
+    color: red;
+}
+
+label {
+    font-size: x-large;
+    margin-top: 30px;
+}
+
+input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+img {
+    width: 190px;
+    height: 50px;
+}
+
+#btpayment {
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.user__avatar {
+    text-align: center;
+}
+
+#avatar {
+    width: 150px;
+    height: 150px;
+}
+
+.main-left {
+    margin-right: 200px;
+}
+
+.main-right {
+    margin-left: 200px;
+}
+
+.main-footer {
+    text-align: center;
+}
+
+#btsignup {
+    width: 300px;
+    height: 50px;
+    font-size: x-large;
+    background-color: chartreuse;
+}

@@ -1,0 +1,10 @@
+//side-bar
+  <div class="">
+        <h3 >Menu</h3>
+        <a href="#" class="">General Information</a>
+        <a href="#" class="">Change Information</a>
+        <a href="#" class="">Payment</a>
+        <a href="#" class="">My Course</a>
+        <a href="#" class="">Favorite Course</a>
+        <a href="#" class="">Setting</a>
+    </div>
