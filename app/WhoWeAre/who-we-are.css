@@ -1,25 +1,63 @@
+@font-face {
+    font-family: RobotoLight;
+    src: url(/assets/fonts/roboto/Roboto-Light.ttf);       
+} 
+@font-face {
+    font-family: RobotoBold;
+    src: url(/assets/fonts/roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: MontseratBold;
+    src: url(/assets/fonts/montserrat/Montserrat-Bold.ttf);
+}
 body{
     width: auto;
-    margin: 0px 5px;
+    margin: 0%;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: RobotoLight;
 }
 h2{
     color: #199B80;
-    font-family: 'Montserrat', sans-serif;
+    font-family: MontseratBold;
 }
-h4{
-    font-family: 'Montserrat', sans-serif;
+h3, h4{
+    font-family: MontseratBold;
+}
+img{
+    width: 100%;
 }
 i{
-    margin-right: 3px;
+    margin-right: 5px;
+    font-size: 35px;
+}
+p{
+    margin: 10px;
 }
 #vision{
-    font-weight: bold;
+    font-family: RobotoBold;
 }
 #item-footer{
     text-align: right;
     margin: 5px;
+    font-size: 10px;
+    align-self: flex-end;
+}
+#line-top{
+    background-color: black;
+    width: 15%;
+    height: 10px;
+}
+#sub-title{
+    font-size: 13px;
+}
+#vision-item{
+    text-align: left;
+}
+#vision-item h3{
+    margin-left: 20px;
+}
+.container{
+    margin: 15px;
 }
 .flex-row{
     display: flex;
@@ -29,11 +67,14 @@ i{
 }
 .flex-row__item{
     margin: 5px;
-    width: 25%;
+    width: 20%;
 }
 .item--border{
     border: 1px solid black;
 }
-img{
-    width: 100%;
+
+@media screen and (max-width: 500px){
+    .flex-row{
+        flex-wrap: wrap;
+    }
 }
