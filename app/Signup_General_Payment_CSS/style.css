@@ -10,7 +10,11 @@ body {
 }
 
 .header {
-    height: 200px;
+    height: 100px;
+}
+
+.bottom {
+    height: 100px;
 }
 
 img {
