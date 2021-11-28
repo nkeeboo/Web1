@@ -1,4 +1,4 @@
-/* @import url(/main-style.css); */
+@import url(/main-style.css);
 
 @font-face{
     font-family: Montserrat;
@@ -13,12 +13,13 @@ body{
     background-repeat: no-repeat;
     position: relative;
     top: 60px;
-    background-attachment: local
+    
 }
 header{
     display: flex;
     position: fixed;
     top: 0px;
+    z-index: 1;
 }
 .search-box{
     display: none;
@@ -36,6 +37,7 @@ header{
 .row--align{ /*modify thành hàng*/
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
     flex: 1;
 }
 .row--align-bottom{
@@ -66,16 +68,20 @@ svg{
 .frame{
     color: white;
     height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: Montserrat;
-    padding-top: calc(50vh - 240px);
+    /* padding-top: calc(50vh - 240px); */
 }
 .frame__top{ 
-    /* font-family: Montserrat; */
-    /* height: calc(100vh - 80px); */
+    
     padding-top: calc(50vh - 240px);
 }
+/* .frame_mid{
+    justify-content: center;
+} */
 .frame__font--black{
     color: black;
 }
@@ -85,11 +91,10 @@ svg{
     align-self: center;
     /* justify-content: center; */
 }
-.sub-container>div{
-    /* width: max-content; */
+/* .sub-container>div{
     margin-right: 40px;
     margin-bottom: 20px;
-}
+} */
 .rec-frame__shape, .cta-container{
     width: calc(20% + 120px);
 }
@@ -122,7 +127,7 @@ svg{
     font-weight: 600;
 }
 .button__create-account{
-    background-color: #2EA44F;
+    background-color: --button-color;
     color: white;
     border-radius: 5px;
     padding: 10px 20px;
@@ -192,11 +197,20 @@ svg{
 }
 .field-container{
     justify-content: space-evenly;
+    font-size: 20px;
 }
-ul li {
+.field-container ul li {
+    font-size: 12px;
     margin-bottom: 8px;
+    margin-left: 0px;
+    margin-right: 0;
+   
 }
-.link-catalog{
+.field-container a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+.link-catalog, .field-container a{
     color: white;
 }
 .people img{
@@ -214,16 +228,18 @@ ul li {
 .people p{
     font-size: 10px;
     text-align: justify;
+    
 }
 .title p{
     font-size: 16px;
 }
-/* .people-container{
-    width: min-content
-} */
+.people-container{
+    width: 400px;
+    
+}
 .people-container__item{
     /* justify-content: space-between; */
-    width: 40%;
+    width: fit-content;
     margin: 20px 10px;
     /* vertical-align: middle; */
 }
@@ -231,7 +247,9 @@ ul li {
     font-size: 14px;
 }
 .milestone-container{
-    width: 40%;
+    width: min-content;
+    min-width: 350px;
+    flex: 1;
 }
 .milestone__content{
     border-left: 1.8px solid lightslategray;
