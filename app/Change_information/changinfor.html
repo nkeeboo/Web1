@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Information</title>
+    <link rel="stylesheet" href="changeinfor.css">
+</head>
+
+<body>
+    <div class=" wrapper ">
+        <div class="header "></div>
+        <div class="content ">
+            <div class="sidebar ">
+                <a href="https://www.google.com.vn/ ">General Information</a>
+                <a href="https://www.google.com.vn/ ">Change Information</a>
+                <a href="https://www.google.com.vn/ ">Payment</a>
+                <a href="https://www.google.com.vn/ ">My Course</a>
+                <a href="https://www.google.com.vn/ ">Favorite Course</a>
+                <a href="https://www.google.com.vn/ ">Setting</a>
+            </div>
+            <div class="center ">
+                <form action=" ">
+                    <div class="avatar_img "></div>
+                    <div class="main ">
+                        <div class="main-left ">
+                            <div class="form-group ">
+                                <label for="first_name " class="form-group__label ">First Name<span class="form-group__required ">(*)</span></label>
+                                <input type="text " name="first_name " />
+                            </div>
+                            <div class="form-group ">
+                                <label for="account_name " class="form-group__label ">Account Name<span class="form-group__required ">(*)</span></label>
+                                <p id="cannot_change "></p>
+                            </div>
+                            <div class="form-group ">
+                                <labeL for="date_birth " class="form-group__label ">DOB
+                                <span class="form-group__required ">(*)</span></labeL>
+                                <input type="text " name="date_birth " />
+                            </div>
+                            <div class="form-group ">
+                                <label for="password " class="form-group__label ">Password
+                                <span class="form-group__required ">(*)</span></label>
+                                <input type="password " name="password " />
+                            </div>
+                        </div>
+
+                        <div class="main-right ">
+                            <div class="form-group ">
+                                <label for="last_name " class="form-group__label ">Last Name
+                              <span class="form-group__required ">(*)</span></label>
+                                <input type="text " name="last_name " />
+                            </div>
+                            <div class="form-group ">
+                                <label for="email " class="form-group__label ">Email
+                              <span class="form-group__required ">(*)</span></label>
+                                <p id="cannot_change "></p>
+                            </div>
+                            <div class="form-group ">
+                                <label for="pnone_number " class="form-group__label ">Phone Number
+                              <span class="form-group__required ">(*)</span></label>
+                                <input type="text " name="pnone_number " />
+                            </div>
+                            <div class="form-group ">
+                                <label for="password " class="form-group__label ">Repat password
+                                <span class="form-group__required ">(*)</span></label>
+                                <input type="password " name="password " />
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="btsignup " name="submit " type="submit" onclick="dieu_huong()">Next</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+    </div>
+    <script>
+        function dieu_huong() {
+            location.assign("changeinfor1.html");
+        }
+    </script>
+</body>
+
+</html>

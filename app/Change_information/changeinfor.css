@@ -1,0 +1,114 @@
+html,
+body {
+    margin: 10;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 70px;
+}
+
+.content {
+    display: flex;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+label.form-group__label {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 70px;
+    font-size: large;
+}
+
+.form-group__required {
+    color: red;
+}
+
+.form-group input {
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: 450px;
+    margin-bottom: 10px;
+    margin-right: 70px;
+    background-color: rgb(207, 207, 207);
+    outline: none;
+    border: none;
+}
+
+.avatar_img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(17, 117, 47);
+    margin-left: 550px;
+    /* transform: translateY(-100%); */
+}
+
+.payment__img {
+    display: flex;
+    width: 100px;
+    height: 50px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+
+.center {
+    width: 100vw;
+    margin: 0;
+}
+
+.sidebar {
+    height: 500px;
+    background-color: cadetblue;
+    width: 250px;
+}
+
+.sidebar a {
+    Display: block;
+    font-size: 14px;
+    margin: 20px 30px;
+}
+
+.center button {
+    margin-left: 570px;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(17, 117, 47);
+    margin-bottom: -80px;
+    color: white;
+    font-size: 20px;
+    /* transform: translateY(50%); */
+}
+
+p {
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: 450px;
+    height: 47px;
+    margin-bottom: 10px;
+    margin-right: 70px;
+    background-color: rgb(207, 207, 207);
+    outline: none;
+    border: none;
+    background-color: grey;
+}
+
+a:hover {
+    color: white;
+}
