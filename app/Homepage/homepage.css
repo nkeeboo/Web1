@@ -3,12 +3,14 @@
     font-family: Roboto;
     src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
+/* style bao xung quanh các element trong homepage */
 .container{
     display: flex;
     justify-content: space-between;
     margin: auto 80px;
     font-family: 'Gothic A1', sans-serif;
 }
+/* Mỗi mục sẽ là một item */
 .container__item{
     margin-bottom: 40px;
 }
@@ -20,8 +22,8 @@
 }
 .container__item>h2>a:hover{
     text-decoration: underline;
-    /* transition: 1s; */
 }
+/* responsive test  */
 @media screen and (max-width: 760px) {
     .container__right-col{
         display: none;
@@ -41,6 +43,7 @@
         width: max-content;
     }
 }
+/* điều chỉnh các item bất kì thành flex-direction: row */
 .row-align{
     display: flex;
     /* flex-wrap: wrap; */
@@ -51,6 +54,7 @@
 .container__right-col{
     width: 28%;
 }
+/* element bao xung quanh các khóa học nằm trong một mục chung */
 .course-container{
     justify-content: space-between;
 }
@@ -112,3 +116,7 @@ ul li{
 img.advertise{
     width: 100%;
 } 
+.advertise:hover,
+.course__item:hover{
+    cursor: pointer;
+}

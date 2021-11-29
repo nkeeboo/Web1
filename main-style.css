@@ -14,3 +14,6 @@ button{
     padding: 5px 20px;
     border-radius: 5px;
 }
+button:hover{
+    cursor: pointer;
+}
