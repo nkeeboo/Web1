@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Information</title>
+    <link rel="stylesheet" href="changeinfor1.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header"></div>
+        <div class="content">
+            <div class="sidebar">
+                <a href="https://www.google.com.vn/ ">General Information</a>
+                <a href="https://www.google.com.vn/ ">Change Information</a>
+                <a href="https://www.google.com.vn/ ">Payment</a>
+                <a href="https://www.google.com.vn/ ">My Course</a>
+                <a href="https://www.google.com.vn/ ">Favorite Course</a>
+                <a href="https://www.google.com.vn/ ">Setting</a>
+            </div>
+            <div class="choose__code">
+
+                <div class="choose-main">
+                    <div class="content-heading">
+                        <div class="content__heading--main">Choose OTP code</div>
+                        <div class="content__heading--sub">Choose to receive OTP code via:</div>
+                    </div>
+
+                    <div class="content-main">
+                        <div class="choose_phonenumber">
+                            <input type="radio" name="phone_number" id="phone"> Phone number
+
+                        </div>
+                        <div class="choose_email">
+                            <input type="radio" name="email" id="email"> Email
+                        </div>
+
+                    </div>
+                </div>
+                <div class="btchange_next"><button id="btchange_next " name="change_next" onclick="dieu_huong()">Next</button></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script>
+        function dieu_huong() {
+            location.assign("changeinfo2.html");
+        }
+    </script>
+</body>
+
+</html>

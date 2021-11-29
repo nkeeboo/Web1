@@ -1,0 +1,93 @@
+@font-face {
+    font-family: RobotoThin;
+    src: url(/assets/fonts/roboto/Roboto-Thin.ttf);       
+} 
+@font-face {
+    font-family: RobotoBold;
+    src: url(/assets/fonts/roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: MontseratBold;
+    src: url(/assets/fonts/montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: MontseratExtraBold;
+    src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
+}
+h4{
+    font-family: RobotoBold;
+}
+h2{
+    font-family: MontseratExtraBold;
+}
+i{
+    font-size: 64px;
+}
+hr{
+    width: 35%;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+br{
+    margin: 0%;
+}
+.container{
+    padding: 0px 100px;
+}
+.text-green{
+    color: #199B80;
+}
+.flex-item{
+    margin: 20px;
+    padding: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    width: 20%;
+    text-align: center;
+}
+#community{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#community div p{
+    font-family: RobotoRegular;
+}
+#help-text p{
+    font-family: RobotoThin;
+    color: black;
+}
+#title-text{
+    text-align: center;
+}
+#line-left{
+    float: left;
+}
+#line-right{
+    float: right;
+}
+#text-left{
+    position: relative;
+    left: 40%;
+}
+#text-right{
+    position: relative;
+    left: 50%;
+}
+@media screen and (max-width:768px){
+    .container{
+        padding: 0px 10px;
+    }
+    #community{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex-item{
+        width: 20%;
+    }
+}
