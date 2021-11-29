@@ -1,17 +1,114 @@
-/* style của khung thanh tìm kiếm của header  */
-.search-box{
-    width: 400px;
-    height: 30px;
-    /* left: 670px;
-    top: 16px; */
-    background: #E5E5E5;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    margin-left: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400&display=swap');
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
-.search-box input{
-    width: 90%;
-    background-color: transparent;
-    height: 80%;
-    border: none;
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 80px;
+    font-family: 'Gothic A1', sans-serif;
 }
+.container__item{
+    margin-bottom: 40px;
+}
+.container__item>h2>a{
+    font-size: 13px;
+    color: blue;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.container__item>h2>a:hover{
+    text-decoration: underline;
+    /* transition: 1s; */
+}
+@media screen and (max-width: 760px) {
+    .container__right-col{
+        display: none;
+    }
+    .container{
+        margin:auto 5px;
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 900px){
+    .row-align{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .course__item{
+        margin: 5px;
+        width: max-content;
+    }
+}
+.row-align{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.container__left-col{
+    width: 70%;
+}
+.container__right-col{
+    width: 28%;
+}
+.course-container{
+    justify-content: space-between;
+}
+.course__item{
+    border: 2px solid black;
+    padding: 5px;
+    font-family: Roboto;
+    font-size: 14px;
+    margin: 5px;
+    width: max-content;
+}
+.course__item:hover{
+    background-color: rgb(197, 197, 197);
+}
+.course__tag{
+    width: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.course__content{
+    text-align: start;
+    margin: auto 20px;
+}
+.course__coude{
+    float: right;
+    font-size: 10px;
+}
+ul{
+    list-style-position: inside;
+    padding: 0;
+    font-weight: bold;
+}
+ul li{
+    font-weight: normal;
+}
+.goal-container{
+    height: 300px;
+    min-height: max-content;
+    padding: 10px 20px;
+    background-color: #f8f9fc;
+    /* opacity: 0.5; */
+    border: 2px solid black;
+}
+.daily-login__container{
+    font-size: 12px;
+    justify-content: space-between;
+}
+.daily-login__item{
+    text-align: center;
+    vertical-align: bottom;
+}
+.daily-login__item--cirle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #C4C4C4;
+}
+img.advertise{
+    width: 100%;
+} 
