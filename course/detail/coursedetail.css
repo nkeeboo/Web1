@@ -1,0 +1,290 @@
+html,
+body {}
+
+.body {
+    display: flex;
+}
+
+a {
+    color: aliceblue;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header_sidebar {
+    font-size: 20px;
+    margin-left: 5px;
+    color: aliceblue;
+}
+
+.center_sidebar {
+    width: 250px;
+    background-color: rgb(48, 50, 66);
+    margin-right: 10px;
+}
+
+.inforbox {
+    width: 1000px;
+    height: 250px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.detailbox {
+    width: 1000px;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 950px;
+    height: 230px;
+    display: flex;
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
+
+.infor--left {
+    /* margin-top: 20px; */
+    width: 400px;
+    height: 230px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.infor--right {
+    /* margin-top: 20px; */
+    width: 400px;
+    height: 230px;
+    margin-left: 50px;
+}
+
+.tag {
+    background-color: black;
+    width: 40px;
+    height: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.coude {
+    text-align: right;
+}
+
+.box--course {
+    width: 280px;
+    height: 180px;
+    border: 2px solid black;
+    margin: 30px;
+}
+
+.box--course_header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.docbox {
+    width: 1000px;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.container--doc {
+    width: 950px;
+    height: 220px;
+    margin-top: 10px;
+    margin-left: 50px;
+    overflow-x: scroll;
+}
+
+.box--resource {
+    margin-bottom: 10px;
+    display: flex;
+    width: 500px;
+    height: 30px;
+    background-color: darkgray;
+    text-align: center;
+}
+
+.txttype {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.txtdoc {
+    margin: 5px;
+}
+
+.footer__container {
+    background: linear-gradient(0deg, rgba(213, 209, 209, 0.3), rgba(213, 209, 209, 0.3)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.8);
+    opacity: 0.9;
+    color: white;
+    font-family: 'Gothic A1', sans-serif;
+    padding: 10px 40px;
+}
+
+.footer__subcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__container div {
+    /* flex: 1; */
+    flex: 1;
+}
+
+.footer__item-contact div:first-child {
+    margin-left: 50px;
+}
+
+.footer__item-contact {
+    min-width: max-content;
+}
+
+.footer__item-other,
+.footer__item-company {
+    min-width: 200px;
+}
+
+h2 {
+    letter-spacing: 1.5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 14px;
+}
+
+hr {
+    border: 0.5px solid;
+    background-color: white;
+    width: 95%;
+}
+
+.footer__item--bottom {
+    text-align: center;
+}
+
+.footer__item-title {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footer__icon-container {
+    display: flex;
+}
+
+.footer__icon-container img {
+    margin-right: 20px;
+}
+
+.header__container {
+    /* background-color: var(--header); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    /* z-index: 1; */
+    font-family: 'Gothic A1', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Logo */
+
+.header__container img {
+    width: 138px;
+    margin: 0;
+    margin-left: 35px;
+}
+
+.header__container a {
+    color: white;
+    text-decoration: none;
+    margin: auto 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.header__container a:hover {
+    text-decoration: underline;
+}
+
+
+/* .header__navigation{
+    z-index: 2;
+} */
+
+.search-box {
+    width: 400px;
+    height: 30px;
+    /* left: 670px;
+    top: 16px; */
+    background: #E5E5E5;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+.search-box input {
+    width: 90%;
+    background-color: transparent;
+    height: 80%;
+    border: none;
+}
+
+.search-box input,
+.search-box svg {
+    vertical-align: -webkit-baseline-middle;
+}
+
+
+/* Thuộc tính của button */
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border: none;
+    /* margin-right: 15px; */
+}
+
+.header__button-container #signup,
+.header__button-container #login {
+    height: 25px;
+    border-radius: 5px;
+}
+
+#signup {
+    background-color: #2EA44F;
+    color: white;
+    width: 80px;
+    margin-right: 15px;
+}
+
+#login {
+    background-color: transparent;
+    border: 0.5px solid white;
+    color: white;
+    width: 70px;
+}
+
+.header__button-container {
+    margin-left: 50px;
+}
