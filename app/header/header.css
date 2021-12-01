@@ -11,9 +11,10 @@ body{
     linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: fixed;
+    top: 0px;
     height: 55px;
     width: 100%;
-    /* z-index: 1; */
+    z-index: 1;
     font-family: 'Gothic A1', sans-serif;
     display: flex;
     align-items: center;
@@ -39,7 +40,8 @@ body{
     z-index: 2;
 } */
 .search-box{
-    width: 400px;
+    width: 30%;
+    min-width: 200px;
     height: 30px;
     /* left: 670px;
     top: 16px; */
@@ -47,6 +49,8 @@ body{
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     margin-left: 100px;
+    display: flex;
+    align-items: baseline;
 }
 .search-box input{
     width: 90%;
@@ -63,7 +67,6 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     background-color: transparent;
     border: none;
-    /* margin-right: 15px; */
 }
 .header__button-container #signup, .header__button-container #login{
     height: 25px;
@@ -83,4 +86,36 @@ button {
 }
 .header__button-container{
     margin-left: 50px;
+}
+#menu, .menu__dropdown{
+    display: none;
+}
+#menu>svg{
+    width: 25px;
+    height: 25px;
+}
+.menu__dropdown{
+    float: left;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    background-color: black;
+    text-align: left;
+    border-radius: 3px;
+    /* width: 10px; */
+}
+.menu__dropdown a{
+    line-height: 30px;
+}
+@media (max-width: 992px) { 
+    .navBar__link-container{
+        display: none;   
+    }
+    #menu{
+        display: block; 
+        position: relative;
+    }
+    #menu:hover .menu__dropdown{
+        display: block;
+    }
 }
