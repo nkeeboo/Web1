@@ -3,11 +3,7 @@
     src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
 *{
-    margin: 0
-}
-header{
-    position: fixed;
-    top: 0px;
+    margin: 0;
 }
 body{
     display: flex;
@@ -17,23 +13,31 @@ body{
     font-family: Roboto;
     /* justify-content:space-between */
 }
+body>div{
+    padding-top: 40px;
+    padding-left: 30px;
+    /* height: 94vh; */
+}
+/* import từ header.css và điều chỉnh header của online editor vì khác với các page khác */
+header{
+    position: fixed;
+    top: 0px;
+}
+/* button trên header */
 button{
     background-color: transparent;
     border: 2px solid #2EA44F;
     margin: auto 5px auto 35px;
     color: white;
 }
-body>div{
-    padding-top: 40px;
-    padding-left: 30px;
-    /* height: 94vh; */
-}
 button:hover{
     background-color: #2EA44F;
 }
+/* container của thanh menu khung giao diện code editor */
 .menu{
     width: 15%;
     min-width: 120px;
+    height: calc(100vh - 55px);
 }
 .menu__item{
     margin-bottom: 45px;

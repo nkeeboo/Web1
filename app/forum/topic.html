@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Topic</title>
     <link rel="stylesheet" href="./topic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -24,14 +25,16 @@
         </div>
     </div>
     <div class="content">
-        <div class="title">
+        <div class="div-background">
             <div class="name">[FIXED] Error in Python 3 loop quiz?</div>
             <div class="tags">Python</div>
         </div>
-        <div class="detail">
+        <div class="div-background">
             <div class="topic__infor">
                 <div class="topic__infor-user">
-                    <div class="user-avt"></div>
+                    <div class="user-avt">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
                     <div class="user-name">User 123</div>
                 </div>
                 <div class="topic__infor-history"></div>
@@ -39,10 +42,56 @@
             <div class="topic__content">
                 None of the answers is the correct one, the quotes (") are not printed together with the elements.
                 <br> The expected output would be coffee tea water juice soda (in reality one line per element).
-                <br> Some other quizes space them like above instead of showing them on newlines. Regardless this quiz answer is wrong.
+                <br> Some other quizes space them like above instead of showing them on newlines. Regardless this quiz answer is wrong. The expected output would be coffee tea water juice soda (in reality one line per element).
+                <img class="topic__image" src="./bug1.png" alt="">
+                <br> Some other quizes space them like above instead of showing them on newlines.
+                <br> Regardless this quiz answer is wrong.
+                <img class="topic__image" src="./bug2.png" alt="">
             </div>
         </div>
-        <div class="interact"></div>
+        <div class="topic__interacts">
+            <div class="topic__interacts-data">
+                <div class="data-number">14</div>
+                <div>replies</div>
+            </div>
+            <div class="topic__interacts-data">
+                <div class="data-number">429</div>
+                <div>views</div>
+            </div>
+            <div class="topic__interacts-data">
+                <div class="data-number">45</div>
+                <div>likes</div>
+            </div>
+            <div class="interacts">
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-bookmark"></i>
+                <i class="bi bi-reply"></i>
+                <a href="">Reply</a>
+            </div>
+        </div>
+        <div class="div-background">
+            <div class="topic__infor">
+                <div class="topic__infor-user">
+                    <div class="user-avt">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div class="user-name">User 123</div>
+                </div>
+                <div class="topic__infor-history"></div>
+            </div>
+            <div class="topic__content">
+                You can force quotes to be displayed in the output by formatting drink variable with f-string:
+                <img class="topic__image" src="./bug1.png" alt="">
+            </div>
+            <div class="reply__operation">
+                <div class="reply__function">Reply</div>
+                <div class="reply__interacts">
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-bookmark"></i>
+                    <i class="bi bi-reply"></i>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer"></div>
 </body>
