@@ -1,193 +1,302 @@
-body {
-    padding: 0px;
-    border: 0px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.forum__intro {
-    text-align: center;
-}
-
-.search-box {
-    position: relative;
-    background: #ddd;
-    width: 230px;
-    display: block;
-    margin: auto;
-}
-
-.search-input {
-    height: 20px;
-    margin: 0;
-    width: 100%;
-    border: 2px solid;
-    text-align: left;
-    padding-left: 10px;
-}
-
-.search-icon {
-    position: absolute;
-    top: 5px;
-    bottom: 0px;
-    right: 0px;
-    /* width: 24px;
+            body {
+                padding: 0px;
+                border: 0px;
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .forum__intro {
+                text-align: center;
+            }
+            
+            .search-box {
+                position: relative;
+                background: #ddd;
+                width: 230px;
+                display: block;
+                margin: auto;
+            }
+            
+            .search-input {
+                height: 20px;
+                margin: 0;
+                width: 100%;
+                border: 2px solid;
+                text-align: left;
+                padding-left: 10px;
+            }
+            
+            .search-icon {
+                position: absolute;
+                top: 5px;
+                bottom: 0px;
+                right: 0px;
+                /* width: 24px;
     height: 24px; */
-}
-
-.navigation {
-    display: flex;
-    margin: 20px;
-    justify-content: center;
-}
-
-.navbar {
-    margin-right: 50px;
-}
-
-button {
-    display: inline-block;
-    background-color: #fff;
-    border: 2px solid #303342;
-    color: #303342;
-    width: 100px;
-    padding: 10px 0px;
-    margin: 5px;
-    font-weight: bolder;
-}
-
-.nav__btn:focus {
-    background-color: #303342;
-    color: #fff;
-}
-
-.bi-plus {
-    vertical-align: middle;
-}
-
-.createTopic__btn {
-    border: 2px solid #2EA44F;
-    border-radius: 5px;
-    color: #2EA44F;
-}
-
-
-/* The container <div> - needed to position the dropdown content */
-
-.drop-btn {
-    position: relative;
-    display: inline-block;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #E9EAF2;
-    width: 100px;
-    z-index: 1;
-    margin-left: 5px;
-    text-align: center;
-    font-size: small;
-    margin-top: 0px;
-}
-
-
-/* Links inside the dropdown */
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-/* Change color of dropdown links on hover */
-
-.dropdown-content a:hover {
-    background-color: #303342;
-    color: #fff;
-    font-weight: bold;
-}
-
-
-/* Show the dropdown menu on hover */
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.list-topic {
-    display: flex;
-    flex-direction: column;
-}
-
-.topic-title {
-    color: #303342;
-    display: flex;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 10px;
-    margin-bottom: 0;
-    font-weight: bold;
-}
-
-a {
-    text-decoration: none;
-}
-
-.topic__name-smallsize {
-    font-size: 13px;
-    flex: 6;
-    vertical-align: middle;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.topic-child {
-    display: flex;
-    width: 60%;
-    border: 2px solid #303342;
-    color: #303342;
-    padding: 5px;
-    margin: auto;
-    margin-bottom: 10px;
-}
-
-.topic__name {
-    font-size: 16px;
-}
-
-.topic__col {
-    display: flex;
-    flex-direction: column;
-    flex: 6;
-    margin-left: 20px;
-}
-
-.topic__tags {
-    border: 1px solid #2C14BC;
-    font-size: 13px;
-    width: fit-content;
-    padding: 0px 5px;
-    color: #2C14BC;
-    background-color: #E9EAF2;
-}
-
-.topic__replies,
-.topic__views,
-.topic__times {
-    flex: 1;
-    font-size: 13px;
-    text-align: center;
-    width: fit-content;
-    padding: 10px;
-}
+            }
+            
+            .navigation {
+                display: flex;
+                margin: 20px;
+                justify-content: center;
+            }
+            
+            .navbar {
+                margin-right: 50px;
+            }
+            
+            button {
+                display: inline-block;
+                background-color: #fff;
+                border: 2px solid #303342;
+                color: #303342;
+                width: 100px;
+                padding: 10px 0px;
+                margin: 5px;
+                font-weight: bolder;
+            }
+            
+            .nav__btn:focus {
+                background-color: #303342;
+                color: #fff;
+            }
+            
+            .bi-plus {
+                vertical-align: middle;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            
+            .createTopic__btn {
+                border: 2px solid #2EA44F;
+                border-radius: 5px;
+                color: #2EA44F;
+            }
+            /* The Modal (background) */
+            
+            .popup-div {
+                display: none;
+                /* Hidden by default */
+                position: fixed;
+                /* Stay in place */
+                z-index: 1;
+                /* Sit on top */
+                padding-top: 100px;
+                /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%;
+                /* Full width */
+                height: 100%;
+                /* Full height */
+                overflow: auto;
+                /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0);
+                /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.4);
+                /* Black w/ opacity */
+            }
+            /* Modal Content */
+            
+            .popup-content {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                /* border: 1px solid black; */
+                width: 50%;
+                min-height: 50%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                -webkit-animation-name: animatetop;
+                -webkit-animation-duration: 0.4s;
+                animation-name: animatetop;
+                animation-duration: 0.4s;
+            }
+            /* Add Animation */
+            
+            @-webkit-keyframes animatetop {
+                from {
+                    top: -300px;
+                    opacity: 0
+                }
+                to {
+                    top: 0;
+                    opacity: 1
+                }
+            }
+            
+            @keyframes animatetop {
+                from {
+                    top: -300px;
+                    opacity: 0
+                }
+                to {
+                    top: 0;
+                    opacity: 1
+                }
+            }
+            /* The Close Button */
+            
+            .close {
+                color: black;
+                float: right;
+                font-size: x-large;
+                font-weight: bold;
+                margin: 5px;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            .popup-header {
+                background-color: #E9EAF2;
+                border: 2px solid #303342;
+                color: black;
+                height: 40px;
+            }
+            
+            .popup-header--title {
+                height: 100%;
+                vertical-align: middle;
+                padding-left: 30px;
+                margin-top: 10px;
+            }
+            
+            .popup-body {
+                padding: 5px 20px;
+            }
+            
+            .input-title,
+            .input-content {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                border: 2px solid #303342;
+                margin-bottom: 5px;
+                min-height: 30px;
+            }
+            
+            .popup-footer {
+                display: flex;
+                margin-right: 0;
+                margin-left: auto;
+                justify-content: right;
+                padding: 5px 40px;
+            }
+            /* Dropdown */
+            /* The container <div> - needed to position the dropdown content */
+            
+            .drop-btn {
+                position: relative;
+                display: inline-block;
+            }
+            /* Dropdown Content (Hidden by Default) */
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #E9EAF2;
+                width: 100px;
+                z-index: 1;
+                margin-left: 5px;
+                text-align: center;
+                font-size: small;
+                margin-top: 0px;
+            }
+            /* Links inside the dropdown */
+            
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            /* Change color of dropdown links on hover */
+            
+            .dropdown-content a:hover {
+                background-color: #303342;
+                color: #fff;
+                font-weight: bold;
+            }
+            /* Show the dropdown menu on hover */
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .list-topic {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .topic-title {
+                color: #303342;
+                display: flex;
+                width: 60%;
+                margin: auto;
+                margin-bottom: 10px;
+                margin-bottom: 0;
+                font-weight: bold;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            .topic__name-smallsize {
+                font-size: 13px;
+                flex: 6;
+                vertical-align: middle;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            
+            .topic-child {
+                display: flex;
+                width: 60%;
+                border: 2px solid #303342;
+                color: #303342;
+                padding: 5px;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            
+            .topic__name {
+                font-size: 16px;
+            }
+            
+            .topic__col {
+                display: flex;
+                flex-direction: column;
+                flex: 6;
+                margin-left: 20px;
+            }
+            
+            .topic__tags {
+                border: 1px solid #2C14BC;
+                font-size: 13px;
+                width: fit-content;
+                padding: 0px 5px;
+                color: #2C14BC;
+                background-color: #E9EAF2;
+            }
+            
+            .topic__replies,
+            .topic__views,
+            .topic__times {
+                flex: 1;
+                font-size: 13px;
+                text-align: center;
+                width: fit-content;
+                padding: 10px;
+            }
