@@ -1,6 +1,6 @@
 @font-face {
-    font-family: RobotoLight;
-    src: url(/assets/fonts/roboto/Roboto-Light.ttf);       
+    font-family: RobotoThin;
+    src: url(/assets/fonts/roboto/Roboto-Thin.ttf);       
 } 
 @font-face {
     font-family: RobotoBold;
@@ -14,7 +14,7 @@ body{
     width: auto;
     margin: 0%;
     text-align: center;
-    font-family: RobotoLight;
+    font-family: RobotoThin;
 }
 h2{
     color: #199B80;
@@ -73,7 +73,7 @@ p{
     border: 1px solid black;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
     .flex-row{
         flex-wrap: wrap;
     }

@@ -14,15 +14,15 @@
         <div class="header "></div>
         <div class="content ">
             <div class="sidebar ">
-                <a href="https://www.google.com.vn/ ">General Information</a>
-                <a href="https://www.google.com.vn/ ">Change Information</a>
-                <a href="https://www.google.com.vn/ ">Payment</a>
-                <a href="https://www.google.com.vn/ ">My Course</a>
-                <a href="https://www.google.com.vn/ ">Favorite Course</a>
-                <a href="https://www.google.com.vn/ ">Setting</a>
+                <a href=" ">General Information</a>
+                <a href=" ">Change Information</a>
+                <a href=" ">Payment</a>
+                <a href=" ">My Course</a>
+                <a href=" ">Favorite Course</a>
+                <a href=" ">Setting</a>
             </div>
-            <div class="center ">
-                <form action=" ">
+            <div class="center">
+                <form>
                     <div class="avatar_img "></div>
                     <div class="main ">
                         <div class="main-left ">
@@ -58,20 +58,20 @@
                                 <p id="cannot_change "></p>
                             </div>
                             <div class="form-group ">
-                                <label for="pnone_number " class="form-group__label ">Phone Number
+                                <label for="pnone_number" class="form-group__label ">Phone Number
                               <span class="form-group__required ">(*)</span></label>
                                 <input type="text " name="pnone_number " />
                             </div>
-                            <div class="form-group ">
-                                <label for="password " class="form-group__label ">Repat password
-                                <span class="form-group__required ">(*)</span></label>
-                                <input type="password " name="password " />
+                            <div class="form-group">
+                                <label for="password" class="form-group__label">Repat password
+                                <span class="form-group__required">(*)</span></label>
+                                <input type="password" name="password" />
                             </div>
                         </div>
                     </div>
-
-                    <button id="btsignup " name="submit " type="submit" onclick="dieu_huong()">Next</button>
-
+                    <div class="btn-next">
+                        <button id="btsignup " name="submit " type="submit" onclick="change_location()">Next</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -80,7 +80,7 @@
 
     </div>
     <script>
-        function dieu_huong() {
+        function change_location() {
             location.assign("changeinfor1.html");
         }
     </script>
