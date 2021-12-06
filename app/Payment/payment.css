@@ -82,3 +82,7 @@ h1 {
 #payment-img {
     float: right;
 }
+
+.content-main-btn button {
+    background-color: lightgray;
+}
