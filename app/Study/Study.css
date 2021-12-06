@@ -1,0 +1,51 @@
+@font-face {
+    font-family: RobotoMedium;
+    src: url(/assets/fonts/roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
+}
+li{
+    list-style-type:none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: RobotoRegular;
+} 
+iframe{
+    width: 560px; 
+    height: 315px;
+    border: none;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.flex__item--col{
+    display: flex;
+    flex-direction: column;
+}
+.flex__item--row{
+    display: flex;
+    flex-direction: row;
+}
+#menu{
+    width: 20%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+}
+#content{
+    margin: 0px 50px;
+    padding-left: 30px;
+    font-family: RobotoMedium;
+}
+#button{
+    margin: 0px 50px;
+    justify-content: space-between;
+}
+#lesson{
+    padding: 50px;
+    border: 2px solid black;
+}
