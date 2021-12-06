@@ -1,8 +1,21 @@
-html,
-body {
-    margin: 10;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+@font-face {
+    font-family: RobotoRegular;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(/assets/fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(/assets/fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
 }
 
 * {
@@ -18,15 +31,17 @@ body {
 }
 
 .sidebar {
-    height: 500px;
-    background-color: cadetblue;
-    width: 250px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+    padding: 20px;
+    width: 20%;
 }
 
 .sidebar a {
-    Display: block;
-    font-size: 14px;
-    margin: 20px 30px;
+    display: block;
+    font-family: RobotoRegular;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
 }
 
 a:hover {
@@ -34,40 +49,56 @@ a:hover {
 }
 
 .choose__code {
-    width: 500px;
-    margin: 150px 400px;
+    width: 80%;
 }
 
 .choose-main {
-    margin: 20px;
-    border: 2px solid black;
-    padding: 50px 20px;
-    position: relative;
-    display: block;
-    font-size: 20px;
+    width: 500px;
+    margin: auto;
 }
 
-.content-heading {
-    position: absolute;
-    top: 0;
-    transform: translateY(-30px);
-    background-color: white;
-    padding: 0 20px;
-}
-
-.content__heading--main {
-    font-size: 25px;
-    font-weight: bold;
+p {
+    margin-top: 5px;
+    font-family: RobotoRegular;
 }
 
 .btchange_next button {
-    margin-left: 200px;
     padding: 15px 30px;
     outline: none;
     border-radius: 5px;
     border: none;
-    background-color: rgb(17, 117, 47);
+    background-color: #2EA44F;
+    margin-top: 20px;
     margin-bottom: 80px;
     color: white;
     font-size: 20px;
+    font-family: RobotoRegular;
+}
+
+.btchange_next {
+    width: 100px;
+    margin: auto;
+}
+
+button:hover {
+    color: black;
+}
+
+legend {
+    font-family: RobotoRegular;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+label {
+    font-family: RobotoRegular;
+    font-size: 20px;
+}
+
+fieldset {
+    height: 200px;
+}
+
+.choose-element {
+    margin: 20px 100px;
 }

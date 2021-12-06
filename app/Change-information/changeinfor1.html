@@ -11,7 +11,9 @@
 
 <body>
     <div class="wrapper">
-        <div class="header"></div>
+        <div class="header">
+
+        </div>
         <div class="content">
             <div class="sidebar">
                 <a href="https://www.google.com.vn/ ">General Information</a>
@@ -22,34 +24,35 @@
                 <a href="https://www.google.com.vn/ ">Setting</a>
             </div>
             <div class="choose__code">
-
                 <div class="choose-main">
-                    <div class="content-heading">
-                        <div class="content__heading--main">Choose OTP code</div>
-                        <div class="content__heading--sub">Choose to receive OTP code via:</div>
-                    </div>
+                    <fieldset class="choose-otp">
+                        <legend class="txtcourse">Choose OTP code</legend>
+                        <p>Choose to receive OTP code via:</p>
+                        <div class="content-main">
+                            <div class="choose-element">
+                                <input type="radio" name="phone_number" id="phone">
+                                <label for="phone">Phone number</label>
 
-                    <div class="content-main">
-                        <div class="choose_phonenumber">
-                            <input type="radio" name="phone_number" id="phone"> Phone number
-
+                            </div>
+                            <div class="choose-element">
+                                <input type="radio" name="email" id="email">
+                                <label for="email">Email</label>
+                            </div>
                         </div>
-                        <div class="choose_email">
-                            <input type="radio" name="email" id="email"> Email
-                        </div>
-
-                    </div>
+                    </fieldset>
                 </div>
-                <div class="btchange_next"><button id="btchange_next " name="change_next" onclick="dieu_huong()">Next</button></div>
+                <div class="btchange_next">
+                    <button id="btchange_next " name="change_next">Next</button>
+                </div>
             </div>
         </div>
         <div class="footer"></div>
     </div>
-    <script>
+    <!-- <script>
         function dieu_huong() {
             location.assign("changeinfo2.html");
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
