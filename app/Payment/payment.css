@@ -1,0 +1,88 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(/assets/fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(/assets/fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 70px;
+}
+
+.content-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+    padding: 20px;
+    width: 20%;
+}
+
+.sidebar a {
+    display: block;
+    font-family: RobotoRegular;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.content-body-main button {
+    width: 500px;
+    border: none;
+}
+
+.line {
+    width: 500px;
+    border: 1px solid black;
+}
+
+h1 {
+    font-family: MontserratExtraBold;
+}
+
+#txtpayment {
+    width: 500px;
+    font-size: 20px;
+    font-family: RobotoMedium;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content-body-main {
+    /* border: 2px solid black; */
+    margin: auto;
+    text-align: center;
+}
+
+#payment-method {
+    float: left;
+    font-size: 22px;
+    font-family: RobotoRegular;
+}
+
+#payment-img {
+    float: right;
+}
+
+.content-main-btn button {
+    background-color: lightgray;
+}
