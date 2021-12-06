@@ -1,4 +1,3 @@
-@import url(/main-style.css);
 
 @font-face{
     font-family: Montserrat;
@@ -13,7 +12,6 @@ body{
     background-repeat: no-repeat;
     position: relative;
     top: 60px;
-    
 }
 header{
     display: flex;
@@ -34,7 +32,8 @@ header{
     /* vertical-align: -webkit-baseline-middle; */
     position: absolute
 }
-.row--align{ /*modify thành hàng*/
+/*modify thành hàng*/
+.row--align{ 
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
@@ -126,8 +125,8 @@ svg{
     font-size: 35px;
     font-weight: 600;
 }
-.button__create-account{
-    background-color: --button-color;
+.btn-create-account{
+    background-color: #2EA44F;
     color: white;
     border-radius: 5px;
     padding: 10px 20px;
@@ -172,10 +171,10 @@ svg{
 } */
 .course-container__item>div:nth-child(2){/*Nội dung course*/
     margin: auto 20px;
-    text-align: center;
+    text-align: left;
 }
 .course-container__item ul{
-    list-style-type: symbols('**');
+    list-style-position: inside;
     align-content: flex-start;
 }
 .button__create-account:hover,
@@ -204,7 +203,6 @@ svg{
     margin-bottom: 8px;
     margin-left: 0px;
     margin-right: 0;
-   
 }
 .field-container a{
     font-family: 'Courier New', Courier, monospace;

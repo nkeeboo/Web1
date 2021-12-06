@@ -10,8 +10,8 @@
 body{
     margin: 0;
 }
-button{
-    padding: 5px 20px;
+.btn_small {
+    padding: 5px 15px;
     border-radius: 5px;
 }
 button:hover{
