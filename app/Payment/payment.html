@@ -6,63 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
-    <link rel="stylesheet" href="../Signup_General_Payment_CSS/grid.css">
-    <link rel="stylesheet" href="style.css"> =======
-    <link rel="stylesheet" href="../Signup_General_Payment_CSS/grid.css">
-    <link rel="stylesheet" href="../Signup_General_Payment_CSS/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="header"></div>
-        <div class="main" id="payment">
-            <div class="container-fluid">
-                <div class="row no-gutters">
-                    <div class="col-xl-3">
-                        <div class="sidebar">
+        <div class="content-body">
 
-                            <a href="https://www.google.com.vn/">General Information</a>
-                            <a href="https://www.google.com.vn/">Change Information</a>
-                            <a href="https://www.google.com.vn/">Payment</a>
-                            <a href="https://www.google.com.vn/">My Course</a>
-                            <a href="https://www.google.com.vn/">Favorite Course</a>
-                            <a href="https://www.google.com.vn/">Setting</a>
-
-                        </div>
-                    </div>
-                    <div class="col-xl-9">
-                        <div class="content">
-                            <div class="main-left">
-                                <h2> Select a payment method</h2>
-                            </div>
-                            <div class="main-right">
-                                <div class="main-right-group">
-                                    <input type="radio" name="card" id="payment__card">
-                                    <img id="img__card" src="/assets/images/signin__generalinfo_payment/card.jpg" alt="Error">
-                                </div>
-
-                                <div class="main-right-group">
-                                    <input type="radio" name="card" id="payment__card">
-                                    <img id="img__paypal" class="payment__img" src="/assets/images/signin__generalinfo_payment/paypal.jpg" alt="Error">
-                                </div>
-                                <div class="main-right-bottom">
-                                    By confirming the form of payment, you have authorized us to access and process the payment of the amount coressponding to each of our courses <br>
-                                    <button id="btpayment_next" name="next">Next</button>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
+            <div class="sidebar">
+                <a href="">General Information</a>
+                <a href="">Change Information</a>
+                <a href="">Payment</a>
+                <a href="">My Course</a>
+                <a href="">Favorite Course</a>
+                <a href="">Setting</a>
             </div>
-        </div>
+            <div class="content-body-main">
+                <h2>Select a payment method</h2>
+                <div class="content-main-btn">
+                    <button><span id="payment-method">Paypal</span><img id="payment-img" src="/assets/images/billing/paypal.png" width="50" alt="Error"></button>
+                    <hr class="line">
+                    <button><span id="payment-method">Card</span><img id="payment-img" src="/assets/images/billing/mastercard.png" width="50" alt="Error"> <img id="payment-img" src="/assets/images/billing/visa.png" width="50" alt="Error"></button>
+                </div>
+                <div id="txtpayment">
+                    By confirming the form of payment, you have authorized us to access and process the payment of the amount coressponding to each of our courses.
+                </div>
 
-    </div>
+            </div>
+
+        </div>
+        <div class="footer"></div>
     </div>
 </body>
 
