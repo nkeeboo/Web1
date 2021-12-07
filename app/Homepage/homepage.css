@@ -49,10 +49,11 @@
     /* flex-wrap: wrap; */
 }
 .container__left-col{
-    width: 70%;
+    width: 80%;
+    margin-right: 10px;
 }
 .container__right-col{
-    width: 28%;
+    width: 25%;
 }
 /* element bao xung quanh các khóa học nằm trong một mục chung */
 .course-container{
@@ -64,7 +65,8 @@
     font-family: Roboto;
     font-size: 14px;
     margin: 5px;
-    width: max-content;
+    width: 25%;
+    min-width: max-content;
 }
 .course__item:hover{
     background-color: rgb(197, 197, 197);

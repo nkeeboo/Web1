@@ -1,3 +1,4 @@
+@import url(/node_modules/bootstrap/scss/_grid.scss);
 :root{
     --button-color: #2EA44F;
     --header: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -10,10 +11,18 @@
 body{
     margin: 0;
 }
-.btn_small {
+.btn--s {
     padding: 5px 15px;
     border-radius: 5px;
 }
-button:hover{
+button:hover, a:hover{
     cursor: pointer;
+    opacity: 0.8;
+}
+.flex--row{
+    display: flex;
+}
+.flex--col{
+    display: flex;
+    flex-direction: column;
 }

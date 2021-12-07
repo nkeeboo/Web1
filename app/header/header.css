@@ -87,9 +87,9 @@ button {
 .header__button-container{
     margin-left: 50px;
 }
-#menu, .menu__dropdown{
+/* #menu, .menu__dropdown{
     display: none;
-}
+} */
 #menu>svg{
     width: 25px;
     height: 25px;
@@ -104,7 +104,7 @@ button {
     border-radius: 3px;
     /* width: 10px; */
 }
-.menu__dropdown a{
+/* .menu__dropdown a{
     line-height: 30px;
 }
 @media (max-width: 992px) { 
@@ -118,4 +118,4 @@ button {
     #menu:hover .menu__dropdown{
         display: block;
     }
-}
+} */
