@@ -6,8 +6,9 @@
     font-family: RobotoRegular;
     src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
-li{
+li, ul{
     list-style-type:none;
+    margin: 10px 0px;
 }
 a{
     color: white;
