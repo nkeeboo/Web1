@@ -1,6 +1,6 @@
 @font-face {
-    font-family: RobotoThin;
-    src: url(/assets/fonts/roboto/Roboto-Thin.ttf);       
+    font-family: RobotoReugular;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);       
 } 
 @font-face {
     font-family: RobotoBold;
@@ -14,7 +14,7 @@ body{
     width: auto;
     margin: 0%;
     text-align: center;
-    font-family: RobotoThin;
+    font-family: RobotoReugular;
 }
 h2{
     color: #199B80;

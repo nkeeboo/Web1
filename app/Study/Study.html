@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <link rel="stylesheet" href="./Study.css">
     <link rel="stylesheet" href="/main-style.css">
 </head>
@@ -52,12 +53,18 @@
                 </div>
                 <iframe src="https://www.youtube.com/embed/xwNjNYd3L3Y" title="Lesson 1" allowfullscreen></iframe>
             </div>
+            <br>
             <div id="button" class="flex__item--row">
                 <button>Save like favourite</button>
-                <button>Try it</button>
+                <button onclick="tryCode()">Try it</button>
                 <button>Take Notes</button>
             </div>
         </div>
     </div>
+    <script>
+        function tryCode(){
+            window.location.href = '../online-code-editor/online-code-editor.html';
+        }
+    </script>
 </body>
 </html>
