@@ -63,10 +63,11 @@ body {
     padding-right: 10px;
 }
 
-.sidebar a:hover:not(.active) {
+
+/* .sidebar a:hover:not(.active) {
     background-color: #555;
     color: white;
-}
+} */
 
 .inforbox {
     width: 800px;
