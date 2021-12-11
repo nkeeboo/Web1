@@ -69,18 +69,18 @@ body {
 }
 
 .inforbox {
-    width: 1000px;
+    width: 800px;
     height: 250px;
     display: flex;
     margin-bottom: 50px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .detailbox {
-    width: 1000px;
+    width: 900px;
     height: 250px;
     margin-bottom: 50px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .container {
@@ -91,10 +91,10 @@ body {
 }
 
 .box--course {
-    min-width: 280px;
-    height: 180px;
+    min-width: 250px;
+    max-height: 180px;
     border: 2px solid black;
-    margin: 30px;
+    margin: 10px;
 }
 
 .infor--left {
@@ -131,14 +131,14 @@ body {
 }
 
 .docbox {
-    width: 1000px;
+    width: 900px;
     height: 250px;
     margin-bottom: 50px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .container--doc {
-    width: 950px;
+    width: 800px;
     height: 220px;
     margin-top: 10px;
     margin-left: 50px;
@@ -148,7 +148,7 @@ body {
 .box--resource {
     margin-bottom: 10px;
     display: flex;
-    min-width: 500px;
+    min-width: 400px;
     height: 30px;
     background-color: darkgray;
     text-align: center;
