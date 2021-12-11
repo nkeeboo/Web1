@@ -84,7 +84,7 @@ body {
 }
 
 .container {
-    width: 950px;
+    max-width: 950px;
     max-height: 230px;
     display: flex;
     overflow-x: auto;
