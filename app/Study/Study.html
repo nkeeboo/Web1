@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study</title>
-    <link rel="stylesheet" href="Study.css">
-    <link rel="stylesheet" href="main-style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <link rel="stylesheet" href="./Study.css">
+    <link rel="stylesheet" href="/main-style.css">
 </head>
 <body>
     <div class="container">
@@ -36,7 +37,7 @@
             </ul>
         </div>
         <div id="content">
-            <div>
+            <div id="script">
                 <p>Script Lesson 1:</p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum, laborum hic est harum molestias maiores, rerum quaerat autem eum dolore perferendis voluptatum quis eius delectus earum libero eaque dolorem!<br>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora illo illum quae commodi exercitationem repellat? Voluptatibus, nihil consequuntur harum quam eligendi sint facere, rerum enim rem exercitationem dolore? Ad, iure.
@@ -46,18 +47,24 @@
                 <button>Next</button>
             </div>
             <div id="lesson">
-                <div id="lesson-title">
+                <div id="lesson-title" class="flex__item--row">
                     <p>Week 1 Leson 1</p>
                     <p>Lesson1 : Introduction about IT</p>
                 </div>
-                <iframe src="https://www.youtube.com/embed/xwNjNYd3L3Y" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/xwNjNYd3L3Y" title="Lesson 1" allowfullscreen></iframe>
             </div>
+            <br>
             <div id="button" class="flex__item--row">
                 <button>Save like favourite</button>
-                <button>Try it</button>
+                <button onclick="tryCode()">Try it</button>
                 <button>Take Notes</button>
             </div>
         </div>
     </div>
+    <script>
+        function tryCode(){
+            window.location.href = '../online-code-editor/online-code-editor.html';
+        }
+    </script>
 </body>
 </html>

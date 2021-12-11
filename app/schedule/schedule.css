@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
+}
+body{
+    font-family: Roboto;
+}
+.container{
+    display: flex;
+}
+.menu{
+    width: 15%;
+    min-width: 120px;
+    
+    background: var(--header);
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.menu__item{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.menu div p:nth-child(n){
+    margin: 10px auto;
+}
+ul{
+    list-style-type: none;
+    padding-left: 16px;
+}
+ul>li{
+    margin-bottom: 5px;
+}
+ul>li>a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.main-content{
+    width: 85%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.overview *{
+    margin: 0;
+}
+.timeline{
+    margin: 10px ;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+i {
+    border: solid black;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.timeline-container{
+    vertical-align: center;
+    position: relative;
+    left: 0px;
+}
+.timeline__item{
+    margin-right: 50px;
+}
+.week-circle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: grey;
+    margin: 0 auto;
+}
+#title{
+    background: rgba(196, 196, 196, 0.63);
+    padding: 10px
+}
+.week{
+    margin-top: 20px;
+    border: 2px solid black;
+    padding: 1%
+}
+.week-detail{
+    margin-top: 20px;
+    justify-content: space-evenly;
+    /* padding: 0 50px; */
+    border-top: 1px solid rgba(196, 196, 196, 0.63);
+    border-bottom: 1px solid rgba(196, 196, 196, 0.63);
+}
+
+.week-detail>div:first-child{
+    border-right: 1px solid rgba(196, 196, 196, 0.63);
+
+}
+.lesson{
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lesson-check--circle{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgba(196, 196, 196, 0.63)
+}
+#grade, #quiz{
+    background: rgba(196, 196, 196, 0.63)
+}
+.video-container{
+    margin: 15px 30px;
+    overflow: scroll;
+    /* height: 100px; */
+}
+.video__item{
+    margin-bottom: 5px;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.63);
+}
+.video__item h5{
+    margin: 5px;
+}
+.video__item p {
+    font-size: 12px;
+    margin: 0 20px;
+    
+}

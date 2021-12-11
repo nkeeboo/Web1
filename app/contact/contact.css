@@ -1,8 +1,4 @@
 @font-face {
-    font-family: RobotoThin;
-    src: url(/assets/fonts/roboto/Roboto-Thin.ttf);       
-} 
-@font-face {
     font-family: RobotoBold;
     src: url(/assets/fonts/roboto/Roboto-Bold.ttf);
 }
@@ -21,7 +17,7 @@
 h4{
     font-family: RobotoBold;
 }
-h2{
+h1{
     font-family: MontseratExtraBold;
 }
 i{
@@ -58,7 +54,7 @@ br{
     font-family: RobotoRegular;
 }
 #help-text p{
-    font-family: RobotoThin;
+    font-family:  RobotoRegular;
     color: black;
 }
 #title-text{
@@ -72,7 +68,7 @@ br{
 }
 #text-left{
     position: relative;
-    left: 40%;
+    left: 35%;
 }
 #text-right{
     position: relative;
