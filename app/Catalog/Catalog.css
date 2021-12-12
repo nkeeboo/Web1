@@ -102,7 +102,7 @@
     }
     
     .catalog {
-        width: 1200px;
+        width: 800px;
         height: 100%;
     }
     
@@ -115,12 +115,9 @@
     .txtcourse {
         height: 180px;
         width: 220px;
-        border: 1px solid black;
+        border: 2px solid black;
         border-radius: 3px;
-    }
-    
-    .txtcourse:hover {
-        background-color: 3px 3px rgb(91, 90, 90);
+        box-shadow: 3px 3px;
     }
     
     .tag {
@@ -157,7 +154,7 @@
     .col-12,
     .col-sm-6,
     .col-md-4 {
-        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
     
     .container-course {
@@ -168,14 +165,13 @@
     }
     
     .banner1 {
-        width: 800px;
+        width: 700px;
         height: 100px;
         background-image: url(./img/banner1.PNG);
         background-repeat: no-repeat;
         display: block;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 180px;
     }
     
     .txtbanner1 {
@@ -192,21 +188,20 @@
     }
     
     .banner2 {
-        background-image: url(./img/banner2.PNG);
-        width: 1200px;
-        height: 200px;
+        width: 800px;
+        height: 100px;
         background-repeat: no-repeat;
-        display: block;
-        margin-left: 30px;
+        margin-left: 150px;
     }
     
-    .blog_up {
-        display: flex;
+    .blog {
+        margin-left: 100px;
     }
     
     .blog_up {
         width: 800px;
         margin: auto;
+        display: flex;
     }
     
     .blog_box--left {
@@ -230,9 +225,9 @@
     }
     
     .box_down {
-        width: 1000px;
+        width: 800px;
         display: flex;
-        margin-left: 100px;
+        margin-left: 10px;
     }
     
     .txtblog {
@@ -243,6 +238,11 @@
         margin-left: 10px;
     }
     
+    .blog_img--up {
+        width: 200px;
+        height: 150px;
+    }
+    
     .blog_img {
-        width: 500px;
+        width: 300px;
     }
