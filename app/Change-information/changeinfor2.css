@@ -22,29 +22,12 @@
     box-sizing: border-box;
 }
 
-.header {
-    height: 70px;
-}
-
-.content {
+.enter_otp--btn {
     display: flex;
+    margin-top: 20px;
 }
 
-.sidebar {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
-    padding: 20px;
-    width: 20%;
-}
-
-.sidebar a {
-    display: block;
-    font-family: RobotoRegular;
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
-
-button {
+#btchange_confirm {
     width: 200px;
     padding: 15px 30px;
     outline: none;
@@ -57,13 +40,16 @@ button {
     font-family: RobotoRegular;
 }
 
-.enter_otp--btn {
-    display: flex;
-    justify-content: space-between;
-}
-
-.btchange_confirm {
-    margin-top: 70px;
+#btchange_resend {
+    width: 200px;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: grey;
+    margin-bottom: 80px;
+    color: white;
+    font-size: 20px;
     font-family: RobotoRegular;
 }
 
@@ -79,8 +65,9 @@ input {
 
 p {
     /* margin-left: 10px; */
-    font-family: RobotoRegular;
-    font-size: 20px;
+    font-family: RobotoLight;
+    color: grey;
+    font-size: 18px;
 }
 
 button:hover {
@@ -93,10 +80,16 @@ legend {
     font-weight: bold;
 }
 
-#resend {
-    text-decoration: underline;
+.body-main {
+    margin: auto;
+    width: 500px;
 }
 
-.enter_OTP {
+.btchange_resend {
+    width: 50%;
+    margin: auto;
+}
+
+.btchange_confirm {
     margin: auto;
 }

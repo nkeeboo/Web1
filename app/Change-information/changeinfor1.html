@@ -16,12 +16,12 @@
         </div>
         <div class="content">
             <div class="sidebar">
-                <a href="https://www.google.com.vn/ ">General Information</a>
-                <a href="https://www.google.com.vn/ ">Change Information</a>
-                <a href="https://www.google.com.vn/ ">Payment</a>
-                <a href="https://www.google.com.vn/ ">My Course</a>
-                <a href="https://www.google.com.vn/ ">Favorite Course</a>
-                <a href="https://www.google.com.vn/ ">Setting</a>
+                <a href=" ">General Information</a>
+                <a href=" ">Change Information</a>
+                <a href=" ">Payment</a>
+                <a href=" ">My Course</a>
+                <a href=" ">Favorite Course</a>
+                <a href=" ">Setting</a>
             </div>
             <div class="choose__code">
                 <div class="choose-main">
@@ -42,17 +42,62 @@
                     </fieldset>
                 </div>
                 <div class="btchange_next">
-                    <button id="btchange_next " name="change_next">Next</button>
+                    <button id="btchange_next" name="change_next">Next</button>
                 </div>
             </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="body-main">
+                        <div class="enter-otp">
+                            <fieldset>
+                                <legend>Confirm OTP code</legend>
+                                <p>Enter an OTP code</p>
+                                <input type="text" name="enterotp" id="enterotp">
+                            </fieldset>
+                        </div>
+
+                        <div class="enter_otp--btn">
+                            <div class="btchange_resend">
+                                <button id="btchange_resend" name="change_resend">Resend code</button>
+                            </div>
+                            <div class="btchange_confirm">
+                                <button id="btchange_confirm" name="change_confirm">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer"></div>
         </div>
-        <div class="footer"></div>
-    </div>
-    <!-- <script>
-        function dieu_huong() {
-            location.assign("changeinfo2.html");
-        }
-    </script> -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("btchange_next");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 </body>
 
 </html>
