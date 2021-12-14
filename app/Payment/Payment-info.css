@@ -2,6 +2,14 @@
     font-family: RobotoRegular;
     src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: RobotoBold;
+    src: url(/assets/fonts/roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoThin;
+    src: url(/assets/fonts/roboto/Roboto-Thin.ttf);
+}
 .container{
     display: flex;
     flex-direction: row;
@@ -16,6 +24,47 @@ a {
     color: white;
     text-decoration: none;
     margin: 10px;
+}
+label{
+    font-family: RobotoRegular;
+    margin: 5px;
+}
+fieldset{
+    font-family: RobotoThin;
+    border: 2px solid black;
+    width: 50%;
+    margin: auto;
+}
+legend{
+    font-family: RobotoBold;
+}
+p{
+    font-family: RobotoRegular;
+    text-align: center;
+    font-size: 13px;
+}
+input[type=text]{
+    background-color: #C4C4C4;
+    border: none;
+    font-size: 18px;
+    height: 22px;
+}
+button{
+    background-color: #2EA44F;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    top: 310px;
+    height: 30px;
+}
+.button{
+    width: 20%;
+}
+.fieldset__item{
+    padding: 0px 20px;
 }
 #menu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);

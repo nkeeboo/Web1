@@ -21,8 +21,8 @@
 </head>
 <header class="header__container">
     <img class="header__logo" src="/assets/logo.png" alt="">
-    <a href="/Catalog.html">Catalog</a>
-    <a href="">Forum</a>
+    <a href="/app/Catalog/Catalog.html">Catalog</a>
+    <a href="/app/forum/mainforum.html">Forum</a>
     <a href="/app/WhoWeAre/who-we-are.html">About us</a>
     <div class="search-box">
         <input type="text" id="search">
@@ -35,7 +35,7 @@
         </button>
     </div>
     <div class="header__button-container">
-        <button id="login">
+        <button id="login" onclick="window.location.href='/app/Signup/sign-up.html'" >
             Login
         </button>
     </div>
@@ -43,6 +43,7 @@
 
 <body>
     <div class="frame frame__top">
+        <!-- Main content of part 1 -->
         <div class="sub-container row--align">
             <div class="rec-frame__shape">
                 <p style="font-size: 18px; text-align: center; margin: 50px 30px;">
@@ -137,7 +138,7 @@
         </div>
     </div>
 
-    <div class="frame frame__mid frame__font--black" style="height: 100vh; padding-top: 0; margin-top: 0;">
+    <div class="frame frame__mid frame__font--black" style=" padding-bottom: 10%;">
         <div class="row--align row--align-bottom sub-container">
             <div class="people">
                 <div class="title">
@@ -191,20 +192,21 @@
                         <p>100+ COURSE</p>
                         <p>AVAILABLE</p>
                     </div>
-                    <div style="text-align:end">
-                        <a href="" style="color: blue;">Explore more ↳</a>
-                    </div>
+                </div>
+                <div style="text-align:end">
+                    <a href="" style="color: blue;">Explore more ↳</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="frame frame__font--black code-frame" style="height: 100vh; padding-top: 100px;">
+    <div class="frame frame__font--black code-frame" style=" margin-top: 10%">
         <h1>Let's create your own project!</h1>
-        <img src="/assets/images/landing/code_frame.png" alt="Ảnh">
+        <iframe src="/app/online-code-editor/online-code-editor.html"
+            scrolling=>
     </div>
 
 
 </body>
 
-</html>
+</html> 
