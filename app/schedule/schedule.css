@@ -48,7 +48,6 @@ ul>li>a{
 }
 .timeline{
     margin: 10px ;
-    display: flex;
     padding: 30px;
     align-items: center;
 }
@@ -64,8 +63,6 @@ i {
 }
 .timeline-container{
     vertical-align: center;
-    position: relative;
-    left: 0px;
 }
 .timeline__item{
     margin-right: 50px;
@@ -79,7 +76,8 @@ i {
 }
 #title{
     background: rgba(196, 196, 196, 0.63);
-    padding: 10px
+    padding: 10px;
+    font-weight: bold;
 }
 .week{
     margin-top: 20px;
@@ -100,21 +98,24 @@ i {
 }
 .lesson{
     align-items: center;
-    justify-content: space-evenly;
 }
 .lesson-check--circle{
+    margin-left: 30px;
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    background: rgba(196, 196, 196, 0.63)
+    background: rgba(196, 196, 196, 0.63);
 }
 #grade, #quiz{
     background: rgba(196, 196, 196, 0.63)
 }
 .video-container{
     margin: 15px 30px;
-    overflow: scroll;
-    /* height: 100px; */
+    overflow: auto;
+    height: 150px;
+}
+.video-container::-webkit-scrollbar{
+    display: none;
 }
 .video__item{
     margin-bottom: 5px;
@@ -123,9 +124,10 @@ i {
 }
 .video__item h5{
     margin: 5px;
+    font-size: medium;
 }
 .video__item p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 20px;
     
 }
