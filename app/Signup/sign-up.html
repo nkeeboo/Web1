@@ -5,9 +5,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <title>Sign up</title>
     <link rel="stylesheet" href="../Signup_General_Payment_CSS/grid.css" />
     <link rel="stylesheet" href="../Signup_General_Payment_CSS/style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -51,7 +61,7 @@
                   <div class="img">
                     <!-- <img src="./img/avatar.png" alt=""> -->
                   </div>
-                  <button id="btsignup" name="submit" type="submit">Sign up</button>
+                  <button id="btsignup" type="button" class="btn btn-default btn-next">Next</button>
                 </div>
               </div>
               <div class="col-xl-5">
@@ -90,9 +100,38 @@
             </div>
           </div>
         </form>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3>Reset a new password</h3>
+                  </div>
+                  <div class="modal-body">
+                      <div class="enter-otp">
+
+                          <!-- <legend>Confirm OTP code</legend> -->
+                          <p id="popup-content">Enter a new password</p>
+                          <input class="popup-input" type="text" name="enterotp" id="enterotp">
+                          <!-- <legend>Confirm OTP code</legend> -->
+                          <p id="popup-content">Enter a new password again</p>
+                          <input class="popup-input" type="text" name="enterotp" id="enterotp">
+
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default btn-next">Confirm</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
       </div>
       <div class="footer"></div>
     </div>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="./signup.js"></script>
   </body>
 </html>
