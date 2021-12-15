@@ -13,6 +13,9 @@ body{
     position: relative;
     top: 60px;
 }
+::-webkit-scrollbar {
+    display: none;
+  }
 header{
     display: flex;
     position: fixed;
@@ -95,12 +98,11 @@ svg{
     margin-bottom: 20px;
 } */
 .rec-frame__shape, .cta-container{
-    width: calc(20% + 120px);
+    width: 35%;
 }
 .rec-frame__shape{
     border: 8px solid rgba(255, 255, 255, 0.86);
     height: fit-content;
-    width: calc(20% + 100px);
     min-width: 300px;
     box-sizing: border-box;
     filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
@@ -110,15 +112,17 @@ svg{
 }
 .slogan{
     position: absolute;
-    width: max-content;
 }
 .slogan p, h2{
     margin: 0;
+    padding: 0;
+    width: fit-content;
 }
 .slogan p {
     position: relative;
     top: 10px;
     left: calc(40% + 5em);
+    display: inline-block
 }
 .slogan span{
     letter-spacing: 2px;
@@ -131,9 +135,11 @@ svg{
     border-radius: 5px;
     padding: 10px 20px;
     vertical-align: middle;
-    position:relative;
+    position: relative;
     top: 150px;
-    margin: 0 auto;
+    /* right: auto;
+    left: auto; */
+    /* margin: 0 auto; */
 }
 .logo-container{
     justify-content: center;
@@ -211,6 +217,7 @@ svg{
 .link-catalog, .field-container a{
     color: white;
 }
+
 .people img{
     border-radius: 50%;
     width: 80px;
@@ -226,14 +233,15 @@ svg{
 .people p{
     font-size: 10px;
     text-align: justify;
-    
+}
+.title{
+    width: max-content;
 }
 .title p{
     font-size: 16px;
 }
 .people-container{
     width: 400px;
-    
 }
 .people-container__item{
     /* justify-content: space-between; */
@@ -251,6 +259,7 @@ svg{
 }
 .milestone__content{
     border-left: 1.8px solid lightslategray;
+    height: fit-content;
 }
 .milestone__item{
     margin: 15px 10px;
@@ -265,8 +274,9 @@ svg{
 .code-frame{
     text-align: center;
 }
-.code-frame img{
+iframe{
     width: 75%;
-    display: block;
+    height: 60%;
     margin: 15px auto;
 }
+

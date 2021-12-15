@@ -5,23 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Information</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <title>Confirm</title>
     <link rel="stylesheet" href="changeinfor1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="header">
 
-        </div>
-        <div class="content">
+</body>
+
+
+
+<body>
+
+    <div class="wrapper">
+        <div class="header"> </div>
+        <div class="body">
+
             <div class="sidebar">
-                <a href="https://www.google.com.vn/ ">General Information</a>
-                <a href="https://www.google.com.vn/ ">Change Information</a>
-                <a href="https://www.google.com.vn/ ">Payment</a>
-                <a href="https://www.google.com.vn/ ">My Course</a>
-                <a href="https://www.google.com.vn/ ">Favorite Course</a>
-                <a href="https://www.google.com.vn/ ">Setting</a>
+                <a href=" ">General Information</a>
+                <a href=" ">Change Information</a>
+                <a href=" ">Payment</a>
+                <a href=" ">My Course</a>
+                <a href=" ">Favorite Course</a>
+                <a href=" ">Setting</a>
             </div>
             <div class="choose__code">
                 <div class="choose-main">
@@ -40,19 +48,73 @@
                             </div>
                         </div>
                     </fieldset>
-                </div>
-                <div class="btchange_next">
-                    <button id="btchange_next " name="change_next">Next</button>
+                    <!-- Trigger/Open The Modal -->
+                    <div class="btn-next">
+                        <button id="myBtn">Next</button>
+
+                    </div>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="popup-header">
+                                <i class="bi bi-x-circle close"></i>
+                            </div>
+                            <div class="popup-main">
+                                <div class="enter-otp">
+                                    <fieldset>
+                                        <legend>Confirm OTP code</legend>
+                                        <p id="popup-content">Enter an OTP code</p>
+                                        <input class="popup-input" type="text" name="enterotp" id="enterotp">
+                                    </fieldset>
+                                </div>
+
+                                <div class="enter_otp--btn">
+                                    <div class="btn-resend">
+                                        <button id="btn-resend" name="change-resend">Resend code</button>
+                                    </div>
+                                    <div class="btn-confirm">
+                                        <button id="btn-confirm" name="change-confirm">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer"></div>
-    </div>
-    <!-- <script>
-        function dieu_huong() {
-            location.assign("changeinfo2.html");
-        }
-    </script> -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
 </body>
 
 </html>

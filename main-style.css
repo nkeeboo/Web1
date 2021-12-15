@@ -12,7 +12,7 @@ body{
     margin: 0;
 }
 .btn--s {
-    padding: 5px 15px;
+    padding: auto 15px;
     border-radius: 5px;
 }
 button:hover, a:hover{
