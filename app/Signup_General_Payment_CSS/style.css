@@ -55,8 +55,20 @@ div.img {
     height: 100%;
 }
 
-.info button {
-    padding: 15px 30px;
+
+/* .info button {
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(17, 117, 47);
+    margin-bottom: -80px;
+    color: white;
+    font-size: 20px;
+} */
+
+#btsignup {
+    padding: 15px 20px;
     outline: none;
     border-radius: 5px;
     border: none;
