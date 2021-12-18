@@ -34,7 +34,7 @@
 
 .main-body {
     width: 450px;
-    background-color: gainsboro;
+    background-color: #9999992b;
     margin: auto;
     border-radius: 15px;
     height: 600px;
@@ -46,21 +46,6 @@
 
 .login-info {
     margin: 10px;
-}
-
-.login-info p {
-    margin: 10px;
-    font-size: 18px;
-}
-
-.login-info input {
-    padding: 15px 10px;
-    border-radius: 5px;
-    width: 400px;
-    margin: 10px;
-    background-color: rgb(207, 207, 207);
-    outline: none;
-    border: none;
 }
 
 .login-content {
@@ -99,7 +84,7 @@
 
 #btn-forgot {
     width: 180px;
-    padding: 10px 10px;
+    padding: 10px 5px;
     outline: none;
     border-radius: 5px;
     border: none;
@@ -111,7 +96,7 @@
 
 #btn-login {
     width: 180px;
-    padding: 10px 10px;
+    padding: 10px 5px;
     outline: none;
     border-radius: 5px;
     border: none;
@@ -134,4 +119,9 @@
 
 h3 {
     font-family: MontserratExtraBold;
+}
+
+label {
+    font-family: RobotoRegular;
+    margin-top: 10px;
 }

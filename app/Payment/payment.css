@@ -64,6 +64,7 @@
     width: 40%;
     margin: 10px 20px;
     font-family: RobotoMedium;
+    font-size: 18px;
 }
 
 .img-payment {
@@ -86,8 +87,8 @@ h2 {
     font-family: RobotoRegular;
 }
 
-button {
-    padding: 15px 30px;
+.btn-payment-next button {
+    padding: 10px 10px;
     outline: none;
     border-radius: 5px;
     border: none;
@@ -100,4 +101,8 @@ button {
 .btn-payment-next {
     width: 50px;
     margin: auto;
+}
+
+label {
+    width: 150px;
 }
