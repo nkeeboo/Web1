@@ -1,6 +1,3 @@
-body{
-    margin:0
-}
 .footer__container{
     background: linear-gradient(0deg, rgba(213, 209, 209, 0.3), rgba(213, 209, 209, 0.3)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.8);
     opacity: 0.9;
@@ -26,20 +23,21 @@ body{
 .footer__item-other, .footer__item-company{
     min-width: 200px;
 }
-h2{
+.footer__container h2{
     letter-spacing: 1.5px;
 }
-a{
+.footer__container a{
     color: white;
     text-decoration: none;
 }
-a:hover{
+.footer__container a:hover{
     text-decoration: underline;
+    color: white;
 }
-p{
+.footer__container p{
     font-size: 14px;
 }
-hr{
+.footer__container hr{
     border: 0.5px solid;
     background-color: white;
     width: 95%;

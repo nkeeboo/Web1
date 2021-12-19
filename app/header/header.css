@@ -1,12 +1,9 @@
-
 body{
-    margin: 0;
     position: relative;
-    top: 50px
+    top: 50px;
 }
 /* Thuộc tính của thanh header */
 .header__container{
-    /* background-color: var(--header); */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
     linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -34,10 +31,8 @@ body{
 }
 .header__container a:hover{
     text-decoration: underline;
+    color: white;
 }
-/* .header__navigation{
-    z-index: 2;
-} */
 .search-box{
     width: 30%;
     min-width: 200px;
@@ -62,17 +57,17 @@ body{
 }
 
 /* Thuộc tính của button */
-button {
+.header__container button {
     font-family: Arial, Helvetica, sans-serif;
     background-color: transparent;
     border: none;
 }
-.header__button-container #signup, .header__button-container #login{
+/* .header__button-container #signup, .header__button-container #login{
     height: 25px;
     border-radius: 5px;
-}
+} */
 #signup{
-    background-color: #2EA44F;
+    background-color: var(--button-color);
     color: white;
     width: 85px;
     margin-right: 15px;

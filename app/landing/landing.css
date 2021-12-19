@@ -36,9 +36,7 @@ header{
     position: absolute
 }
 /*modify thành hàng*/
-.row--align{ 
-    display: flex;
-    flex-direction: row;
+.flex--row{ 
     /* flex-wrap: wrap; */
     flex: 1;
 }
