@@ -1,7 +1,10 @@
 @font-face {
     font-family: 'Roboto-Light';
-    font-family: 'Roboto-Black';
     src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
     src: url(../fonts/montserrat/Montserrat-Black.ttf);
 }
 
@@ -63,18 +66,17 @@ body {
     padding-right: 10px;
 }
 
-
-/* .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-} */
-
 .inforbox {
     width: 800px;
     height: 250px;
     display: flex;
     margin-bottom: 50px;
     margin-left: 40px;
+}
+
+.txtcourse {
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .detailbox {

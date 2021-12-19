@@ -26,7 +26,61 @@
     height: 70px;
 }
 
-.content {
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.body {
     display: flex;
 }
 
@@ -44,43 +98,88 @@
     margin: 10px;
 }
 
-button {
-    width: 200px;
+a:hover {
+    color: white;
+}
+
+.choose__code {
+    width: 80%;
+}
+
+.choose-main {
+    width: 500px;
+    margin: auto;
+}
+
+p {
+    margin-top: 5px;
+    font-family: RobotoRegular;
+    font-size: 18px;
+}
+
+#myBtn {
     padding: 15px 30px;
     outline: none;
     border-radius: 5px;
     border: none;
     background-color: #2EA44F;
+    margin-top: 20px;
     margin-bottom: 80px;
     color: white;
     font-size: 20px;
     font-family: RobotoRegular;
 }
 
-.enter_otp--btn {
-    display: flex;
-    justify-content: space-between;
+.btn-next {
+    width: 100px;
+    margin: auto;
 }
 
-.btchange_confirm {
-    margin-top: 70px;
+legend {
+    font-family: RobotoRegular;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.enter_otp--btn {
+    display: flex;
+    margin-top: 20px;
+}
+
+#btn-confirm {
+    width: 200px;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #2EA44F;
+    /* margin-bottom: 80px; */
+    color: white;
+    font-size: 20px;
     font-family: RobotoRegular;
 }
 
-input {
+#btn-resend {
+    width: 200px;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: grey;
+    /* margin-bottom: 80px; */
+    color: white;
+    font-size: 20px;
+    font-family: RobotoRegular;
+}
+
+.popup-input {
     padding: 15px 10px;
     border-radius: 5px;
-    width: 520px;
+    width: 540px;
     margin-bottom: 10px;
     background-color: rgb(207, 207, 207);
     outline: none;
     border: none;
-}
-
-p {
-    /* margin-left: 10px; */
-    font-family: RobotoRegular;
-    font-size: 20px;
 }
 
 button:hover {
@@ -93,10 +192,22 @@ legend {
     font-weight: bold;
 }
 
-#resend {
-    text-decoration: underline;
+.body-main {
+    margin: auto;
+    width: 500px;
 }
 
-.enter_OTP {
+.btn-resend {
+    width: 50%;
     margin: auto;
+}
+
+.btn-confirm {
+    margin: auto;
+}
+
+.choose-element {
+    margin: 20px;
+    font-size: 20px;
+    font-family: RobotoRegular;
 }

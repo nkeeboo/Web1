@@ -45,44 +45,64 @@
     margin: 10px;
 }
 
-.content-body-main button {
-    width: 500px;
-    border: none;
+.content-body-main {
+    width: 50%;
+    margin: auto;
 }
 
-.line {
-    width: 500px;
-    border: 1px solid black;
+.billing-payment {
+    width: 600px;
+    border: 1px solid grey;
+    margin: auto;
 }
 
-h1 {
+.payment {
+    display: flex;
+}
+
+.radio-payment {
+    width: 40%;
+    margin: 10px 20px;
+    font-family: RobotoMedium;
+    font-size: 18px;
+}
+
+.img-payment {
+    margin: auto;
+    margin-right: 10px;
+}
+
+.content-header {
+    text-align: center;
+}
+
+h2 {
     font-family: MontserratExtraBold;
 }
 
 #txtpayment {
-    width: 500px;
-    font-size: 20px;
-    font-family: RobotoMedium;
+    margin: 20px auto;
+    padding: 10px 100px;
     text-align: center;
-    margin-top: 30px;
-}
-
-.content-body-main {
-    /* border: 2px solid black; */
-    margin: auto;
-    text-align: center;
-}
-
-#payment-method {
-    float: left;
-    font-size: 22px;
     font-family: RobotoRegular;
 }
 
-#payment-img {
-    float: right;
+.btn-payment-next button {
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(17, 117, 47);
+    margin-bottom: -80px;
+    color: white;
+    font-size: 20px;
 }
 
-.content-main-btn button {
-    background-color: lightgray;
+.btn-payment-next {
+    width: 50px;
+    margin: auto;
+}
+
+label {
+    width: 150px;
 }
