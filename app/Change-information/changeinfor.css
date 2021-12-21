@@ -26,68 +26,10 @@
     height: 70px;
 }
 
-.content {
-    display: flex;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-}
-
-label.form-group__label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: large;
-    font-family: RobotoLight;
-}
-
-.form-group__required {
-    color: red;
-}
-
-.form-group input {
-    padding: 15px 10px;
-    border-radius: 5px;
-    width: 450px;
-    margin-bottom: 10px;
-    background-color: rgb(207, 207, 207);
-    outline: none;
-    border: none;
-}
-
-.avatar_img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #2EA44F;
-    margin: auto;
-    /* transform: translateY(-100%); */
-}
-
-.payment__img {
-    display: flex;
-    width: 100px;
-    height: 50px;
-}
-
-.main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    margin: auto;
-}
-
-.center {
-    width: 100vw;
-    margin: 0;
-}
-
 .sidebar {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
-    width: 20%;
+    height: 100%;
 }
 
 .sidebar a {
@@ -98,49 +40,34 @@ label.form-group__label {
     margin: 10px;
 }
 
-.center button {
-    padding: 15px 30px;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background-color: #2EA44F;
-    margin-bottom: -80px;
-    color: white;
-    font-size: 20px;
+.form-group__required {
+    color: red;
+}
+
+.ava-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(17, 117, 47);
+    margin: 0 auto;
+}
+
+.form-group label {
     font-family: RobotoRegular;
 }
 
-p {
-    padding: 15px 10px;
-    border-radius: 5px;
-    width: 450px;
-    height: 47px;
-    margin-bottom: 10px;
-    /* margin-right: 70px; */
-    background-color: rgb(207, 207, 207);
-    outline: none;
-    border: none;
-    background-color: grey;
-}
-
-a:hover {
-    color: white;
-}
-
-button:hover {
-    color: black;
+.button-next {
+    margin: auto;
 }
 
 .btn-next {
-    width: 120px;
-    margin: auto;
+    padding: 15px 30px;
 }
 
-.main-left {
-    width: 50%;
-    margin: auto;
+h3 {
+    font-family: RobotoMedium;
 }
 
-.main-right {
-    margin: auto;
+h6 {
+    font-family: RobotoRegular;
 }
