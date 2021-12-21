@@ -26,15 +26,10 @@
     height: 70px;
 }
 
-.content-body {
-    display: flex;
-    flex-direction: row;
-}
-
 .sidebar {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
-    width: 20%;
+    height: 100%;
 }
 
 .sidebar a {
@@ -45,64 +40,24 @@
     margin: 10px;
 }
 
-.content-body-main {
-    width: 50%;
-    margin: auto;
-}
-
-.billing-payment {
-    width: 600px;
+.payment-method {
     border: 1px solid grey;
-    margin: auto;
-}
-
-.payment {
-    display: flex;
-}
-
-.radio-payment {
-    width: 40%;
-    margin: 10px 20px;
-    font-family: RobotoMedium;
-    font-size: 18px;
-}
-
-.img-payment {
-    margin: auto;
-    margin-right: 10px;
-}
-
-.content-header {
-    text-align: center;
-}
-
-h2 {
-    font-family: MontserratExtraBold;
+    padding: 10px;
 }
 
 #txtpayment {
-    margin: 20px auto;
-    padding: 10px 100px;
-    text-align: center;
+    padding: 10px;
     font-family: RobotoRegular;
+    font-size: 18px;
+    text-align: center;
 }
 
-.btn-payment-next button {
-    padding: 10px 10px;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(17, 117, 47);
-    margin-bottom: -80px;
-    color: white;
-    font-size: 20px;
+#btnnext {
+    font-family: MontserratExtraBold;
+    padding: 5px 10px;
 }
 
-.btn-payment-next {
-    width: 50px;
-    margin: auto;
-}
-
-label {
-    width: 150px;
+input {
+    font-family: RobotoRegular;
+    font-size: 18px;
 }

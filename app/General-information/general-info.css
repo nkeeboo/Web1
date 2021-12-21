@@ -29,6 +29,7 @@
 .sidebar {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
+    height: 100%;
 }
 
 .sidebar a {
@@ -39,30 +40,18 @@
     margin: 10px;
 }
 
-.payment-method {
-    border: 1px solid gray;
-    margin: 10px -10px;
+.form-group__required {
+    color: red;
 }
 
-#label-info {
-    width: 200px;
-    margin: 10px;
+.ava-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(17, 117, 47);
+    margin: 0 auto;
+}
+
+.form-group label {
     font-family: RobotoRegular;
-}
-
-.total {
-    margin: auto;
-    padding: 20px 5px;
-    border: 1px solid grey;
-    font-family: RobotoRegular;
-}
-
-.button-confirm {
-    width: auto;
-    padding: 15px 30px;
-    margin: auto;
-}
-
-.button-confirm {
-    font-family: MontserratExtraBold;
 }
