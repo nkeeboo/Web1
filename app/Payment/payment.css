@@ -61,3 +61,7 @@ input {
     font-family: RobotoRegular;
     font-size: 18px;
 }
+
+.card-info label {
+    width: 150px;
+}
