@@ -26,14 +26,9 @@
     height: 70px;
 }
 
-.body {
-    display: flex;
-}
-
 .sidebar {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
-    width: 20%;
 }
 
 .sidebar a {
@@ -44,86 +39,30 @@
     margin: 10px;
 }
 
-.body-main {
-    width: 80%;
-    display: flex;
+.payment-method {
+    border: 1px solid gray;
+    margin: 10px -10px;
 }
 
-.body-main-left {
-    width: 50%;
+#label-info {
+    width: 200px;
     margin: 10px;
     font-family: RobotoRegular;
 }
 
-.body-main-right {
-    width: 50%;
-    margin: auto;
-}
-
-.billing-payment {
-    width: 600px;
-    border: 1px solid grey;
-    margin: auto;
-}
-
-.infor {
-    margin-top: 10px;
-    display: flex;
-}
-
-p {
-    /* margin: 10px; */
-    padding: 15px 10px;
-    border-radius: 5px;
-    width: 250px;
-    height: 47px;
-    margin-bottom: 10px;
-    background-color: rgb(207, 207, 207);
-    outline: none;
-    border: none;
-    background-color: grey;
-}
-
-.content-mid-left {
-    width: 50%;
-    margin: auto;
-}
-
-.content-mid-right {
-    margin: auto;
-}
-
-.payment {
-    display: flex;
-}
-
-.radio-payment {
-    width: 40%;
-    margin: auto 10px;
-}
-
-.img-payment {
-    margin: auto;
-    margin-right: 10px;
-}
-
 .total {
-    display: flex;
-    height: 70px;
     margin: auto;
+    padding: 20px 5px;
     border: 1px solid grey;
+    font-family: RobotoRegular;
 }
 
-.label1 {
-    width: 50%;
-    font-size: 20px;
-    margin: auto 10px;
-    font-family: RobotoMedium;
-}
-
-.label2 {
-    font-size: 20px;
+.button-confirm {
+    width: auto;
+    padding: 15px 30px;
     margin: auto;
-    margin-right: 10px;
-    font-family: RobotoMedium;
+}
+
+.button-confirm {
+    font-family: MontserratExtraBold;
 }

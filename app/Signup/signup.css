@@ -27,85 +27,51 @@
 }
 
 .logo {
-    width: 300px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     margin: auto;
 }
 
 .main-body {
-    width: 450px;
+    width: 500px;
     background-color: #9999992b;
     margin: auto;
     border-radius: 15px;
-    height: 600px;
+    height: auto;
+    padding: 15px;
 }
 
 .main-body img {
     width: 100%;
 }
 
-.login-info {
-    margin: 20px;
-}
-
-.login-content {
+.content-top {
     font-size: 18px;
-    color: grey;
-    text-align: center;
-}
-
-.login-method {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.bi {
-    font-size: 3rem;
     color: black;
-    margin: 20px 40px;
+    margin: 20px 10px;
+    font-family: RobotoRegular;
 }
 
-.login-button {
-    display: flex;
-    margin-top: 20px;
+.content-bottom {
+    font-size: 15px;
+    color: black;
+    margin: 20px 10px;
+    font-family: RobotoRegular;
 }
 
-.btn-login {
+.signup-button {
+    width: 50px;
     margin: auto;
 }
 
-h3 {
-    font-family: MontserratExtraBold;
+.line {
+    width: 420px;
+    background-color: grey;
+    border: 0.5px solid grey;
+    margin: auto;
 }
 
 label {
-    font-family: RobotoRegular;
     margin-top: 10px;
-}
-
-.btn-forgot {
-    /* background-color: #615d5d; */
-    margin: auto;
-    padding: 10px 5px;
-}
-
-#btnforgot {
-    background-color: #b4afaf;
-    padding: 10px 5px;
-}
-
-#btnlogin {
-    padding: 10px 15px;
-}
-
-
-/* .line {
-    background-color: grey;
-    border: 0.5px solid grey;
-} */
-
-.form-group label {
-    width: 200px;
+    font-family: RobotoRegular;
 }

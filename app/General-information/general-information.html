@@ -2,98 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <title>General Information</title>
-    <link rel="stylesheet" href="../Signup_General_Payment_CSS/grid.css" />
-    <link rel="stylesheet" href="../Signup_General_Payment_CSS/style.css" />
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="general-Info.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="header"></div>
-        <div class="main">
-            <form>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5">
-                            <div class="form-group">
-                                <label for="first_name" class="form-group__label">First Name
-                    <span class="form-group__required">(*)</span></label
-                  >
-                  <p id="idfname"></p>
+        <div class="main-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="sidebar">
+                            <a href="">General Information</a>
+                            <a href="">Change Information</a>
+                            <a href="">Payment</a>
+                            <a href="">My Course</a>
+                            <a href="">Favorite Course</a>
+                            <a href="">Setting</a>
+                        </div>
+                    </div>
+                    <div class="col-9 main-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="ava-img"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">
+                                    <form>
+                                        <fieldset disabled>
+                                            <div class="form-group">
+                                                <label for="disabledTextInput">First name</label> <span class="form-group__required">(*)</span>
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="First name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="disabledTextInput">Account name</label> <span class="form-group__required">(*)</span>
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Account name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="disabledTextInput">Date of birth</label>
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Date of birth">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="disabledTextInput">Password</label> <span class="form-group__required">(*)</span>
+                                                <input type="password" id="disabledTextInput" class="form-control" placeholder="Password">
+                                            </div>
+
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="col-2"></div>
+                                <div class="col-5">
+                                    <form>
+                                        <fieldset disabled>
+                                            <div class="form-group">
+                                                <label for="disabledTextInput">Last name</label> <span class="form-group__required">(*)</span>
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Last name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="disabledTextInput">Email</label> <span class="form-group__required">(*)</span>
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Email">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="disabledTextInput">Phone number</label> <span class="form-group__required">(*)</span>
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Phone number">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="disabledTextInput">Payment</label> <span class="form-group__required">(*)</span>
+                                                <div class="payment-img">
+                                                    <img src="/assets/images/billing/paypal.png" alt="Error" width="50">
+                                                    <img src="/assets/images/billing/mastercard.png" width="50" alt="Error"> <img src="/assets/images/billing/visa.png" width="50" alt="Error">
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <label for="account_name" class="form-group__label"
-                    >Account Name
-                    <span class="form-group__required">(*)</span></label
-                  >
-                  <p id="idaname"></p>
-                </div>
-                <div class="form-group">
-                  <label for="dob" class="form-group__label"
-                    >DOB
-                    <span class="form-group__required">(*)</span></label
-                  >
-                  <p id="iddob"></p>
-                </div>
-                <div class="form-group">
-                  <label for="password" class="form-group__label"
-                    >Password
-                    <span class="form-group__required">(*)</span></label
-                  >
-                  <p id="idpd"></p>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="info">
-                  <div class="img">
-                    <!-- <img src="./img/avatar.png" alt=""> -->
-                  </div>
-                  <!-- <button id="choose_paymnent"  type="button" onclick="">Choose payment</button> -->
-                </div>
-              </div>
-              <div class="col-xl-5">
-                <div class="form-group">
-                  <label for="last_name" class="form-group__label"
-                    >Last Name
-                    <span class="form-group__required">(*)</span></label
-                  >
-                  <p id="idlname"></p>
-                </div>
-                <div class="form-group">
-                  <label for="email" class="form-group__label"
-                    >Email
-                    <span class="form-group__required">(*)</span></label
-                  >
-                  <p id="idemail"></p>
-                </div>
-                <div class="form-group">
-                  <label for="pnone_number" class="form-group__label"
-                    >Phone Number
-                    <span class="form-group__required">(*)</span></label
-                  >
-                  <p id="idphonenb"></p>
-                </div>
-                <div class="form-group">
-                  <label for="payment" class="form-group__label"
-                    >Payment
-                    <span class="form-group__required">(*)</span></label
-                  >
-                   <div class="payment__img">
-                    <img src="/assets/images/signin__generalinfo_payment/card.jpg" alt="Error">
-                    <!-- <img src="../img/paypal.jpg" alt="Error"> -->
-                  </div> 
-                </div>
-              </div>
             </div>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="footer"></div>
     </div>
-    <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
