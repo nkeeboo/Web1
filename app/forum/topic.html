@@ -25,23 +25,33 @@
         </div>
     </div>
     <div class="content">
-        <div class="div-background">
-            <div class="name">[FIXED] Error in Python 3 loop quiz?</div>
-            <div class="tags">Python</div>
-        </div>
-        <div class="div-background">
-            <div class="topic__infor">
-                <div class="topic__infor-user">
-                    <div class="user-avt">
-                        <i class="bi bi-person-circle"></i>
-                    </div>
-                    <div class="user-name">User 123</div>
+        <!-- topic's title -->
+        <div class="div-background topic__title d-flex">
+            <div>
+                <span><i class="bi bi-three-dots-vertical"></i></span>
+                <div>
+                    <div class="name " id="title ">[FIXED] Error in Python 3 loop quiz?</div>
+                    <div class="tags " id="tag ">Python</div>
                 </div>
-                <div class="topic__infor-history"></div>
             </div>
-            <div class="topic__content">
-                None of the answers is the correct one, the quotes (") are not printed together with the elements.
-                <br> The expected output would be coffee tea water juice soda (in reality one line per element).
+        </div>
+        <!-- topic's content -->
+        <div class="div-background">
+            <!-- display infor: user name & avatar; last day editting -->
+            <div class="topic__infor ">
+                <div class="topic__infor-user ">
+                    <div class="user-avt ">
+                        <i class="bi bi-person-circle "></i>
+                    </div>
+                    <div class="user-name ">User 123</div>
+                </div>
+                <div class="topic__infor-history  ">
+                    <span><i class="bi bi-pencil-fill"></i></span>
+                    <span id="history" class="history-txt">May 26</span>
+                </div>
+            </div>
+            <div class="topic__content ">
+                None of the answers is the correct one, the quotes (") are not printed together with the elements. <br> The expected output would be coffee tea water juice soda (in reality one line per element).
                 <br> Some other quizes space them like above instead of showing them on newlines. Regardless this quiz answer is wrong. The expected output would be coffee tea water juice soda (in reality one line per element).
                 <img class="topic__image" src="./bug1.png" alt="">
                 <br> Some other quizes space them like above instead of showing them on newlines.
@@ -50,16 +60,16 @@
             </div>
         </div>
         <div class="topic__interacts">
-            <div class="topic__interacts-data">
-                <div class="data-number">14</div>
+            <div class="topic__interacts--data">
+                <div class="data-number" id="replies">14</div>
                 <div>replies</div>
             </div>
-            <div class="topic__interacts-data">
-                <div class="data-number">429</div>
+            <div class="topic__interacts--data">
+                <div class="data-number" id="views">429</div>
                 <div>views</div>
             </div>
-            <div class="topic__interacts-data">
-                <div class="data-number">45</div>
+            <div class="topic__interacts--data">
+                <div class="data-number" id="likes">45</div>
                 <div>likes</div>
             </div>
             <div class="interacts">
