@@ -8,7 +8,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="coursedetail.css">
     <link rel="stylesheet" href="coursedetail.js">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -16,7 +15,7 @@
     <div class="header"></div>
     <div class="body">
         <div class="sidebar">
-            <div class="txtsidebar">
+            <div class="txtsidebar" id="myTopnav">
                 <button class="dropdown-btn">Language
                     <i class="fa fa-caret-down"></i>
                 </button>
@@ -30,6 +29,7 @@
                     <a href="">C#</a>
                     <a href="">R</a>
                     <a href="">Kotlin</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
                 </div>
                 <button class="dropdown-btn">Subjects
                     <i class="fa fa-caret-down"></i>
