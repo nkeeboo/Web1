@@ -28,7 +28,7 @@
 <body>
     <div class="wrapper">
         <div class="row">
-            <div class="col-3">
+            <div class="col-3" id="div-sidebar">
                 <div class="sidebar">
                     <a href="">General Information</a>
                     <a href="">Change Information</a>
@@ -38,14 +38,14 @@
                     <a href="">Setting</a>
                 </div>
             </div>
-            <div class="col-9">
-                <div class="container-fluid">
+            <div class="col">
+                <div class="container-fluid" >
                     <div class="row">
                         <h3>Billing Detail</h3>
                         <h6>We do not sell your detail or share them without your permission.</h6>
                     </div>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6" id="div-mid">
                             <div class="content-left-top">
                                 <div class="row">
                                     <div class="col-10">
@@ -106,8 +106,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6" style="background-color: red; height: 100px;">
-
+                        <div class="col-6" id="div-right" >
+                            <div class="row total">
+                                <div class="col-11">
+                                    <div class="label1">Order</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="label2">$30</div>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-11">
+                                    <div class="label1">Back-End Engineer</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="label2">$24</div>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-11">
+                                    <div class="label1" id="discount">Discount</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="label2">20%</div>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-11">
+                                    <div class="label1">Total</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="label2">$24</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,6 +153,6 @@
         w3.includeHTML();
     </script>
 </body>
-<footer w3-include-html='../footer/footer.html'></footer>
+<!-- <footer w3-include-html='../footer/footer.html'></footer> -->
 
 </html>

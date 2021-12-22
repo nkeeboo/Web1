@@ -4,6 +4,8 @@
     color: white;
     font-family: 'Gothic A1', sans-serif;
     padding: 10px 40px;
+    position: relative; 
+    bottom: 0;
 }
 
 .footer__subcontainer {

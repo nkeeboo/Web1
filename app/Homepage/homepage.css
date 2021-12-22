@@ -23,31 +23,6 @@
 .container__item>h2>a:hover{
     text-decoration: underline;
 }
-/* responsive test  */
-@media screen and (max-width: 760px) {
-    .container__right-col{
-        display: none;
-    }
-    .container{
-        margin:auto 5px;
-        width: 100vw;
-    }
-}
-@media screen and (max-width: 900px){
-    .row-align{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .course__item{
-        margin: 5px;
-        width: max-content;
-    }
-}
-/* điều chỉnh các item bất kì thành flex-direction: row */
-.row-align{
-    display: flex;
-    /* flex-wrap: wrap; */
-}
 .container__left-col{
     width: 80%;
     margin-right: 10px;
@@ -57,7 +32,7 @@
 }
 /* element bao xung quanh các khóa học nằm trong một mục chung */
 .course-container{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .course__item{
     border: 2px solid black;
@@ -65,7 +40,7 @@
     font-family: Roboto;
     font-size: 14px;
     margin: 5px;
-    width: 25%;
+    /* width: 25%; */
     min-width: max-content;
 }
 .course__item:hover{
@@ -94,11 +69,10 @@ ul li{
     font-weight: normal;
 }
 .goal-container{
-    height: 300px;
+    /* height: fit-content; */
     min-height: max-content;
     padding: 10px 20px;
     background-color: #f8f9fc;
-    /* opacity: 0.5; */
     border: 2px solid black;
 }
 .daily-login__container{
@@ -121,4 +95,32 @@ img.advertise{
 .advertise:hover,
 .course__item:hover{
     cursor: pointer;
+}
+@media only screen and (max-width: 1200px){
+    .container__right-col{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        flex: 1;
+        justify-content: space-around;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .advertise{
+        height: 40%;
+        width: auto;
+    }
+    .course__item{
+        margin: 5px;
+        width: max-content;
+    }
+}
+/* responsive test  */
+@media only screen and (max-width: 768px) {
+    .container{
+        margin:auto 5px;
+        width: 100vw;
+    }
 }

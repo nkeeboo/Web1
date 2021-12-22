@@ -17,7 +17,9 @@
     font-family: MontseratExtraBold;
     src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
 }
-
+#title-text{
+    text-align: center;
+}
 h4 {
     font-family: RobotoBold;
 }
@@ -32,9 +34,7 @@ i {
 
 hr {
     width: 35%;
-    height: 2px;
-    background-color: black;
-    border: none;
+    border: 5px solid black;
 }
 
 br {
