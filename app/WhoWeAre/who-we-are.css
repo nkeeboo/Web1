@@ -41,40 +41,39 @@ p{
     margin: 5px;
     font-size: 10px;
     align-self: flex-end;
+    
 }
 #line-top{
     background-color: black;
     width: 15%;
     height: 10px;
+    top: 0;
 }
 #sub-title{
     font-size: 13px;
 }
 #vision-item{
     text-align: left;
+    width: 25%;
+    margin: 10px;
 }
 #vision-item h3{
     margin-left: 20px;
 }
 .container{
+    text-align: center;
+    padding: 20px;
+}
+.p-2{
     margin: 15px;
+    width: 16%;
 }
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    margin: 5px;
-    justify-content: center;
-}
-.flex-row__item{
-    margin: 5px;
+.item{
+    border: 1px solid black;
+    margin-right: 10px;
     width: 20%;
 }
-.item--border{
-    border: 1px solid black;
-}
 
-@media screen and (max-width: 480px){
-    .flex-row{
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 600px){
+    
 }
