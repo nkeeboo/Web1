@@ -1,7 +1,13 @@
 body {
     padding: 0px;
     border: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto-Regular;
+}
+
+@import url(/main-style.css);
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
 
 .content {
@@ -47,14 +53,23 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #F7F7F7;
-    padding: 30px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 .name {
     font-weight: bold;
     margin-left: 70px;
     font-size: 18px;
+}
+
+.topic__infor {
+    display: flex;
+    flex-direction: row;
+}
+
+.bi-three-dots-vertical {
+    float: right;
 }
 
 .tags {
@@ -68,8 +83,20 @@ body {
     margin-left: 70px;
 }
 
+.topic__infor .topic__content {
+    padding: 20px;
+}
+
+.topic__infor-history {
+    vertical-align: middle;
+    margin-left: auto;
+    font-size: 12px;
+    color: #303342;
+}
+
 .topic__infor-user {
     display: flex;
+    padding-left: 20px;
 }
 
 .bi-person-circle {
@@ -110,12 +137,12 @@ body {
     margin-bottom: 20px;
 }
 
-.topic__interacts-data {
+.topic__interacts--data {
     display: flex;
     flex-direction: column;
     color: #303342;
     font-size: 12px;
-    margin: 5px;
+    margin: 10 5 20 0;
 }
 
 .data-number {

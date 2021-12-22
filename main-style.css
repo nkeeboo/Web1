@@ -1,29 +1,35 @@
-:root{
+
+:root {
     --button-color: #2EA44F;
-    --header: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-              linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
-    --header-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);         
+    --header: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+    --header-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-*{
+
+* {
     box-sizing: border-box;
 }
+
 body{
     position: relative;
     top: 55px;
     margin: 0;
 }
-.btn--s{
+
+.btn--s {
     border-radius: 5px;
     padding: 5px 15px;
 }
-button:hover, a:hover{
+button:hover,
+a:hover {
     cursor: pointer;
     opacity: 0.8;
 }
-.flex--row{
+
+.flex--row {
     display: flex;
 }
-.flex--col{
+
+.flex--col {
     display: flex;
     flex-direction: column;
 }
