@@ -4,9 +4,10 @@ body {
     font-family: Roboto-Regular;
 }
 
+@import url(/main-style.css);
 @font-face {
     font-family: Roboto-Regular;
-    src: url(/Web1/assets/fonts/roboto/Roboto-Regular.ttf);
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
 
 .content {
@@ -38,7 +39,7 @@ body {
 
 .search-icon {
     position: absolute;
-    top: 5px;
+    top: 3px;
     bottom: 0px;
     right: 0px;
     /* width: 24px;
@@ -72,16 +73,22 @@ button {
     color: #fff;
 }
 
-.bi-plus {
+.bi-chevron-down {
+    margin-left: 10px;
+}
+
+.bi {
     vertical-align: middle;
     font-size: 16px;
-    font-weight: bold;
+    /* margin-left: 3px; */
+    font-weight: 2px;
 }
 
 .createTopic__btn {
     border: 2px solid #2EA44F;
     border-radius: 5px;
     color: #2EA44F;
+    padding-left: 5px;
 }
 
 
@@ -89,25 +96,15 @@ button {
 
 .popup-div {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
 }
 
 
@@ -270,8 +267,6 @@ button {
     display: flex;
     width: 60%;
     margin: auto;
-    margin-bottom: 10px;
-    margin-bottom: 0;
     font-weight: bold;
 }
 
@@ -285,7 +280,7 @@ a {
     font-size: 13px;
     flex: 6;
     vertical-align: middle;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: 10px;
 }
 
