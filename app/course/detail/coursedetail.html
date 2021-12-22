@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="coursedetail.css">
     <link rel="stylesheet" href="coursedetail.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        @import url(../header/header.css);
+        @import url(../footer/footer.css);
+    </style>
+
 </head>
+<header w3-include-html='../header/header.html'></header>
 
 <body>
-    <div class="header"></div>
     <div class="body">
         <div class="sidebar">
             <div class="txtsidebar" id="myTopnav">
@@ -330,51 +336,8 @@
             </fieldset>
         </div>
     </div>
-    <div class="footer__container">
-        <h2>COUDÉ</h2>
-        <div class="footer__subcontainer">
-            <div class="footer__item-company">
-                <p class="footer__item-title">COMPANY</p>
-                <p>
-                    February 2021 <br> Starting from a team project <br> Efforts to build a website
-                </p>
-                <p>
-                    We envision a world where anyone, anywhere has the power to transform their life through learning.
-                </p>
 
-            </div>
-            <div class="footer__item-contact">
-                <div>
-                    <p class="footer__item-title">CONTACT</p>
-                    <p>
-                        Phone: +84 789 1011 122 <br> Mail: coude@gmail.com
-                    </p>
-                    <p class="footer__item-title">SOCIAL MEDIA</p>
-                    <div class="footer__icon-container">
-                        <img src="/assets/images/footer/fb.png" alt="">
-                        <img src="/assets/images/footer/instagram.png" alt="">
-                        <img src="/assets/images/footer/linkedin.png" alt="">
-                        <img src="/assets/images/footer/youtube.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="footer__item-other">
-                <p class="footer__item-title">OTHER</p>
-                <P><a href="">Terms</a> |
-                    <a href="">Privacy Policies</a> |
-                    <a href="">Cookies Policies</a> |
-                    <a href="">Help & Support</a>
-                </P>
-                <p class="footer__item-title">PAYMENT</p>
-                <p>Online payment only</p>
-                <img src="/assets/images/footer/payment.png" alt="Không tải ảnh được">
-            </div>
-        </div>
-        <hr>
-        <div class="footer__item--bottom">
-            <p>Copyright &copy; 2021. Coudé. All rights reserved </p>
-        </div>
-    </div>
+
 
 
 
@@ -400,5 +363,6 @@
     </script>
 
 </body>
+<footer w3-include-html='../footer/footer.html'></footer>
 
 </html>

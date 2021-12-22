@@ -6,7 +6,7 @@
     
     @font-face {
         font-family: 'Roboto-Black';
-        src: url(./fonts/roboto/Roboto-Black.ttf);
+        src: url(/assets/fonts/roboto/Roboto-Black.ttf);
     }
     
     .content {
@@ -24,7 +24,7 @@
     
     @font-face {
         font-family: 'Roboto-Light';
-        src: url(./fonts/roboto/Roboto-Light.ttf);
+        src: url(/assets/fonts/roboto/Roboto-Light.ttf);
     }
     
     .sidebar a,
@@ -167,7 +167,7 @@
     .banner1 {
         width: 700px;
         height: 100px;
-        background-image: url(./img/banner1.PNG);
+        background-image: url(/assets/images/catalog/banner1.PNG);
         background-repeat: no-repeat;
         display: block;
         text-align: center;

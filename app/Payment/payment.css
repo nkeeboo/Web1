@@ -4,16 +4,6 @@
 }
 
 @font-face {
-    font-family: RobotoMedium;
-    src: url(/assets/fonts/roboto/Roboto-Medium.ttf);
-}
-
-@font-face {
-    font-family: RobotoLight;
-    src: url(/assets/fonts/roboto/Roboto-Light.ttf);
-}
-
-@font-face {
     font-family: MontserratExtraBold;
     src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
 }

@@ -23,7 +23,7 @@ body {
     margin-bottom: 20px;
 }
 
-.search-box {
+.topic__search-box {
     position: relative;
     background: #ddd;
     width: 230px;
@@ -31,7 +31,7 @@ body {
     margin: auto;
 }
 
-.search-input {
+.topic__search-input {
     height: 20px;
     margin: 0;
     width: 100%;
@@ -40,7 +40,7 @@ body {
     padding-left: 10px;
 }
 
-.search-icon {
+.topic__search-icon {
     position: absolute;
     top: 5px;
     bottom: 0px;

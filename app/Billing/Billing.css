@@ -1,11 +1,6 @@
 @font-face {
-    font-family: RobotoRegular;
-    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: RobotoMedium;
-    src: url(/assets/fonts/roboto/Roboto-Medium.ttf);
+    font-family: MontserratExtraBold;
+    src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
 }
 
 @font-face {
@@ -14,21 +9,18 @@
 }
 
 @font-face {
-    font-family: MontserratExtraBold;
-    src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
+    font-family: RobotoRegular;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
 
 * {
     box-sizing: border-box;
 }
 
-.header {
-    height: 70px;
-}
-
 .sidebar {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
+    height: 100%;
 }
 
 .sidebar a {
@@ -52,7 +44,7 @@
 
 .total {
     margin: auto;
-    padding: 20px 5px;
+    padding: 20px 10px;
     border: 1px solid grey;
     font-family: RobotoRegular;
 }
@@ -64,5 +56,13 @@
 }
 
 .button-confirm {
+    font-family: MontserratExtraBold;
+}
+
+h6 {
+    font-family: RobotoLight;
+}
+
+h3 {
     font-family: MontserratExtraBold;
 }

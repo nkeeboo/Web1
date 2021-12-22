@@ -16,11 +16,16 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&family=Work+Sans:wght@500&display=swap');
     </style>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        @import url(../header/header.css);
+        @import url(../footer/footer.css);
+    </style>
 
 </head>
+<header w3-include-html='../header/header.html'></header>
 
 <body>
-    <div class="header"></div>
     <div class="content">
         <div class="sidebar">
             <div class="txtsidebar">
@@ -240,7 +245,7 @@
                     </div>
                 </div>
             </div>
-            <img src="./img/banner02.PNG" class="banner2">
+            <img src="/assets/images/catalog/banner2.PNG" class="banner2">
             <h3 class="header">New</h3>
             <div class="course-bot">
                 <div class="container-course">
@@ -432,27 +437,26 @@
             <div class="blog">
                 <div class="blog_up">
                     <div class="blog_box--left">
-                        <img src="./img/blog1.PNG" class="blog_img--up">
+                        <img src="/assets/images/catalog/blog1.PNG" class="blog_img--up">
                         <p>How to stay motivated when learning code</p>
                     </div>
                     <div class="blog_box--center">
-                        <img src="./img/blog2.PNG" class="blog_img--up">
+                        <img src="/assets/images/catalog/blog2.PNG" class="blog_img--up">
                         <p>How to stay motivated when learning code</p>
                     </div>
                     <div class="blog_box--right">
-                        <img src="./img/blog3.PNG" class="blog_img--up">
+                        <img src="/assets/images/catalog/blog3.PNG" class="blog_img--up">
                         <p>How to stay motivated when learning code</p>
                     </div>
                 </div>
                 <div class="box_down">
-                    <img class="blog_img" src="./img/blog4.PNG">
+                    <img class="blog_img" src="/assets/images/catalog/blog4.PNG">
                     <p class="txtblog">The story of the coder was born in 1996 and the truth is that IT is the king of all professional</p>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <div class="footer"></div>
 
 
 
@@ -475,7 +479,12 @@
             });
         }
     </script>
+    <script>
+        w3.includeHTML();
+    </script>
 
 </body>
+<footer w3-include-html='../footer/footer.html'></footer>
+
 
 </html>

@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favourite Courses</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="favourite_course.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
+<header w3-include-html='../header/header.html'></header>
+
 <body>
     <div class="container">
         <div id="menu" class="flex__item--col">
@@ -40,7 +46,7 @@
                             <i class="fas fa-heart"></i>
                             <input type="button" value="Go to guide project">
                         </div>
-                    </div>                   
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Back-End Engineer</legend>
@@ -60,10 +66,15 @@
                             <i class="fas fa-heart"></i>
                             <input type="button" value="Go to guide project">
                         </div>
-                    </div>                   
+                    </div>
                 </fieldset>
             </form>
-        </div>  
-    </div>   
+        </div>
+    </div>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
+<footer w3-include-html='../footer/footer.html'></footer>
+
 </html>

@@ -94,10 +94,12 @@ label {
 #btnforgot {
     background-color: #b4afaf;
     padding: 10px 5px;
+    font-family: MontserratExtraBold;
 }
 
 #btnlogin {
     padding: 10px 15px;
+    font-family: MontserratExtraBold;
 }
 
 

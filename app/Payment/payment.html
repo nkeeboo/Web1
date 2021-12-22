@@ -18,11 +18,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        @import url(../header/header.css);
+        @import url(../footer/footer.css);
+    </style>
+
 </head>
+<header w3-include-html='../header/header.html'></header>
 
 <body>
     <div class="wrapper">
-        <div class="header"></div>
+
         <div class="main-body">
             <div class="container-fluid">
                 <div class="row">
@@ -98,11 +105,11 @@
                             <p>Choose to receive OTP code via:</p>
                             <div class="content-main">
                                 <div class="choose-element">
-                                    <input type="radio" name="phone_number" id="phone">
+                                    <input type="radio" name="payment-input" id="phone">
                                     <label for="phone">Phone number</label>
                                 </div>
                                 <div class="choose-element">
-                                    <input type="radio" name="email" id="email">
+                                    <input type="radio" name="payment-input" id="email">
                                     <label for="email">Email</label>
                                 </div>
                             </div>
@@ -180,9 +187,13 @@
             </div>
         </div>
     </div>
-    <div class="footer "></div>
+
     </div>
     <script src="./payment.js"></script>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
+<footer w3-include-html='../footer/footer.html'></footer>
 
 </html>

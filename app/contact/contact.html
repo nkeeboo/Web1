@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
-<body class="container">
+<header w3-include-html='../header/header.html'></header>
+
+<body>
     <div id="title-text">
         <h1 class="text-green">Contact Us</h1>
         <h4>Our community</h4>
-    </div>   
+    </div>
     <div id="community">
         <div class="flex-item">
             <i class="fab fa-facebook-square"></i>
-            <h4>FACEBOOK</h4>  
+            <h4>FACEBOOK</h4>
             <p>To share all the knowledge you know</p>
         </div>
         <div class="flex-item">
             <i class="fab fa-linkedin"></i>
-            <h4>LINKED IN</h4>  
+            <h4>LINKED IN</h4>
             <p>To share great career opportunities for you</p>
         </div>
         <div class="flex-item">
             <i class="fab fa-youtube-square"></i>
-            <h4>YOUTUBE</h4>  
+            <h4>YOUTUBE</h4>
             <p>To share all you can find on our website</p>
         </div>
     </div>
@@ -38,12 +44,17 @@
         <hr id="line-right"><br>
     </div>
     <div id="help-text">
-        <h4 class="text-green">Do you need help?</h4> 
-        <p>If you’re a learner on the Coudé platform and have questions or need technical assistance, please visit our <b>Help Center</b> for platform tutorials, FAQs or to chat with a member of our Customer Support team.</p>       
-        <h4>University Partnership Inquiries</h4> 
+        <h4 class="text-green">Do you need help?</h4>
+        <p>If you’re a learner on the Coudé platform and have questions or need technical assistance, please visit our <b>Help Center</b> for platform tutorials, FAQs or to chat with a member of our Customer Support team.</p>
+        <h4>University Partnership Inquiries</h4>
         <p>If you’re a University or educational organization interested in creating content on the Coursera platform, please contact us at partnersupport@coude.edu.com.</p>
-        <h4>Privacy Enquiries</h4> 
-        <p>If you have questions about our Privacy Notice or an enquiry about how we protect your personal information, you can contact us at privacy@coude.edu.vn.</p>                
+        <h4>Privacy Enquiries</h4>
+        <p>If you have questions about our Privacy Notice or an enquiry about how we protect your personal information, you can contact us at privacy@coude.edu.vn.</p>
     </div>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
+<footer w3-include-html='../footer/footer.html'></footer>
+
 </html>
