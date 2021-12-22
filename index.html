@@ -10,27 +10,48 @@
     <title>Coudé</title>
     <style>
         @import url(./main-style.css);
+        @import url(./app/header/header.css);
+        @import url(./app/footer/footer.css);
+        @import url(./app/Catalog/Catalog.css);
     </style>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- <script>
+        fetch("/app/header/header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("/app/footer/footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+            
+        fetch("/app/homepage/homepage.html", "/app/homepage/homepage.css")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("body").innerHTML = data;
+            });
+    </script> -->
 </head>
 
+<header w3-include-html='./app/header/header.html'></header>
 <body>
-    <div class="header__container">
-        <!-- <div class="header__navigation"> -->
-        <img src="/assets/logo.png">
-        <div class="navBar__link">
-            <a href="/app/Homepage/homepage.html">Home</a>
-            <a href="">Catalog</a>
-            <a href="">Forum</a>
-            <a href="">Resources</a>
-        </div>
-        <div class="search-box">
-            <input type="text" name="search" placeholder="Search here">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg>
-        </div>
-    </div>
-    </div>
-</body>
 
+    <div w3-include-html='./app/Catalog/Catalog.html'>
+
+    </div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+<footer w3-include-html='./app/footer/footer.html'></footer>
 </html>

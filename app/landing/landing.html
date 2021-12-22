@@ -8,19 +8,21 @@
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <title>Coudé</title>
 
     <style>
-        @import url(/app/header/header.css);
+        @import url(../header/header.css);
         @import url(./landing.css);
         @import url(/main-style.css);
         @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&family=Work+Sans:wght@500&display=swap');
     </style>
-
-    </style>
+    <script>
+        w3.includeHTML();
+    </script>
 </head>
 <header class="header__container">
-    <img class="header__logo" src="/assets/logo.png" alt="">
+    <img class="header__logo" src="/assets/logo.png" alt="Loading...">
     <a href="/app/Catalog/Catalog.html">Catalog</a>
     <a href="/app/forum/mainforum.html">Forum</a>
     <a href="/app/WhoWeAre/who-we-are.html">About us</a>
@@ -35,7 +37,7 @@
         </button>
     </div>
     <div class="header__button-container">
-        <button id="login" onclick="window.location.href='/app/Signup/sign-up.html'">
+        <button id="login" onclick="window.location.href='../Signup/sign-up.html'">
             Login
         </button>
     </div>
@@ -44,7 +46,7 @@
 <body>
     <div class="frame frame__top">
         <!-- Main content of part 1 -->
-        <div class="sub-container row--align">
+        <div class="sub-container flex--row">
             <div class="rec-frame__shape">
                 <p style="font-size: 18px; text-align: center; margin: 50px 30px;">
                     We envision a world where anyone, anywhere has the power to transform their life through learning. Make things possible with us!
@@ -65,7 +67,7 @@
                 </button>
             </div>
         </div>
-        <div class="logo-container row--align">
+        <div class="logo-container flex--row">
             <img src="/assets/images/landing/icon_html.png" alt="">
             <img src="/assets/images/landing/icon_css.png" alt="">
             <img src="/assets/images/landing/icon_python.png" alt="">
@@ -74,9 +76,10 @@
         </div>
     </div>
 
+    <!-- part 2 -->
     <div class="frame frame__mid">
-        <div class="sub-container row--align">
-            <div class="course-container row--align">
+        <div class="sub-container flex--row">
+            <div class="course-container flex--row">
                 <div class="course__left-col">
                     <div class="course-container__item">
                         <div class="course__tag">Pro</div>
@@ -129,8 +132,8 @@
                 <a class="link-catalog" href="/app/Catalog/Catalog.html">Go to our catalog →</a>
             </div>
         </div>
-        <div class="row--align">
-            <ul class="row--align field-container">FIELDS TO DIG IN
+        <div class="flex--row">
+            <ul class="flex--row field-container">FIELDS TO DIG IN
                 <li><a href="">Data Sciene</a></li>
                 <li><a href="">Machine Learning</a></li>
                 <li><a href="">Other</a></li>
@@ -138,15 +141,16 @@
         </div>
     </div>
 
+    <!-- part 3 -->
     <div class="frame frame__mid frame__font--black" style=" padding-bottom: 10%;">
-        <div class="row--align row--align-bottom sub-container">
+        <div class="flex--row row--align-bottom sub-container">
             <div class="people">
                 <div class="title">
                     <h1>People & Coudé</h1>
                     <p>Let's see what users think about Coude!</p>
                 </div>
                 <div class="people-container">
-                    <div class="people-container__item row--align">
+                    <div class="people-container__item flex--row">
                         <img src="/assets/images/landing/people.png" alt="avatar">
                         <div>
                             <h5>Sara Hahaha</h5>
@@ -154,7 +158,7 @@
                             <p> Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
                         </div>
                     </div>
-                    <div class="people-container__item row--align">
+                    <div class="people-container__item flex--row">
                         <img src="/assets/images/landing/people.png" alt="avatar">
                         <div>
                             <h5>Sara Hahaha</h5>
@@ -162,7 +166,7 @@
                             <p> Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
                         </div>
                     </div>
-                    <div class="people-container__item row--align">
+                    <div class="people-container__item flex--row">
                         <img src="/assets/images/landing/people.png" alt="avatar">
                         <div>
                             <h5>Sara Hahaha</h5>
@@ -200,12 +204,15 @@
         </div>
     </div>
 
-    <div class="frame frame__font--black code-frame" style=" margin-top: 10%">
+    <!-- part 4 code editor -->
+    <div class="frame frame__font--black code-frame" style=" margin-top: 15%">
         <h1>Let's create your own project!</h1>
-        <iframe src="/app/online-code-editor/online-code-editor.html" scrolling=>
+        <iframe src="/app/online-code-editor/online-code-editor.html" scrolling="no" frameborder="0">
+
     </div>
-
-
+    
 </body>
 
-</html>
+<footer w3-include="../footer/footer.html"></footer>
+</html> 
+

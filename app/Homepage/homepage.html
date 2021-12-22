@@ -10,14 +10,45 @@
     <style>
         @import url(/main-style.css);
         @import url(./homepage.css);
+        @import url(../header/header.css);
+        @import url(../footer/footer.css);
     </style>
-</head>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script>
+        // Get the popup
+        var popup = document.getElementById("myPopup");
 
+        // Get the button that opens the popup
+        var btn = document.getElementById("myCreateTopicBtn");
+
+        // Get the <span> element that closes the popup
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the popup
+        btn.onclick = function() {
+            popup.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the popup
+        span.onclick = function() {
+            popup.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the popup, close it
+        window.onclick = function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
+        
+    </script>
+</head>
+<header w3-include-html='../header/header.html'></header>
 <body>
     <div class="container">
         <div class="container__left-col">
             <div class="container__item">
-                <h2>My Learning <a href="">See all</a></h2>
+                <h2>My Learning <a href="../My-course/my-couse.html">See all</a></h2>
                 <p>You haven't enrolled any course.</p>
             </div>
             <div class="container__item">
@@ -110,7 +141,6 @@
                         </div>
                         <div class="course__coude">Coudé</div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -161,6 +191,7 @@
             </div>
         </div>
     </div>
+    <script>w3.includeHTML();</script>
 </body>
-
+<footer w3-include-html='../footer/footer.html'></footer>
 </html>

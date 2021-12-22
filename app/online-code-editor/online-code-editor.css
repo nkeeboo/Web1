@@ -11,7 +11,6 @@ body{
                     linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     color: white;
     font-family: Roboto;
-    /* justify-content:space-between */
 }
 body>div{
     padding-top: 40px;
@@ -19,19 +18,16 @@ body>div{
     /* height: 94vh; */
 }
 /* import từ header.css và điều chỉnh header của online editor vì khác với các page khác */
-header{
-    position: fixed;
-    top: 0px;
-}
 /* button trên header */
 button{
     background-color: transparent;
-    border: 2px solid #2EA44F;
+    border: 2px solid var(--button-color) !important;
     margin: auto 5px auto 35px;
     color: white;
 }
 button:hover{
-    background-color: #2EA44F;
+    background-color: var(--button-color); 
+    opacity: 1;
 }
 /* container của thanh menu khung giao diện code editor */
 .menu{
@@ -60,14 +56,12 @@ select{
     color: white;
     user-select: none;
     width: 100px;
-  
 }
 option{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     /* border: 0.1 solid white; */
     font-size: 14px;
-    
 }
 option:hover{
     opacity: 0.8;
@@ -75,3 +69,8 @@ option:hover{
 select:hover{
     cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+    .menu{
+        width: 100%;
+    }
+  }
