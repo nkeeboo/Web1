@@ -40,28 +40,18 @@
     margin: 10px;
 }
 
-.payment-method {
-    border: 1px solid grey;
-    padding: 10px;
+.form-group__required {
+    color: red;
 }
 
-#txtpayment {
-    padding: 10px;
-    font-family: RobotoRegular;
-    font-size: 18px;
-    text-align: center;
-}
-
-#btnnext {
-    font-family: MontserratExtraBold;
-    padding: 5px 10px;
-}
-
-input {
-    font-family: RobotoRegular;
-    font-size: 18px;
-}
-
-.card-info label {
+.ava-img {
     width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(17, 117, 47);
+    margin: 0 auto;
+}
+
+.form-group label {
+    font-family: RobotoRegular;
 }
