@@ -2,13 +2,19 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <style>
+        /* @import url(/main-style.css); */
         @import url(./footer.css);
-        /* @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&display=swap');
     </style>
 </head>
 <div class="footer__container">
     <h2>COUDÉ</h2>
+
+    <!-- Info -->
     <div class="footer__subcontainer">
         <div class="footer__item-company">
             <p class="footer__item-title">COMPANY</p>
@@ -23,35 +29,42 @@
 
         </div>
         <div class="footer__item-contact">
-            <div>
-                <p class="footer__item-title">CONTACT</p>
-                <p>
-                    Phone: +84 789 1011 122 <br>
-                    Mail: coude@gmail.com
-                </p>
-                <p class="footer__item-title">SOCIAL MEDIA</p>
-                <div class="footer__icon-container">
-                    <img src="/assets/images/footer/fb.png" alt="">
-                    <img src="/assets/images/footer/instagram.png" alt="">
-                    <img src="/assets/images/footer/linkedin.png" alt="">
-                    <img src="/assets/images/footer/youtube.png" alt="">
-                </div>
+            <p class="footer__item-title">CONTACT</p>
+            <p>
+                Phone: +84 789 1011 122 <br>
+                Mail: coude@gmail.com
+            </p>
+            <p class="footer__item-title">SOCIAL MEDIA</p>
+            <div class="footer__icon-container">
+                <button onclick="window.open('https://www.facebook.com/')">
+                    <img src="/assets/images/footer/fb.png" alt="FB">
+                </button>
+                <button onclick="window.open('https://www.instagram.com/')">
+                    <img src="/assets/images/footer/instagram.png" alt="IG">
+                </button>
+                <button onclick="window.open('https://www.linkedin.com/')">
+                    <img src="/assets/images/footer/linkedin.png" alt="LinkedIn">
+                </button>
+                <button onclick="window.open('https://www.youtube.com/')">
+                    <img src="/assets/images/footer/youtube.png" alt="Youtube">
+                </button>
             </div>
         </div>
         <div class="footer__item-other">
             <p class="footer__item-title">OTHER</p>
-            <P><a href="">Terms</a> |
-                <a href="">Privacy Policies</a> |
-                <a href="">Cookies Policies</a> |
-                <a href="">Help & Support</a>
-            </P>
+            <p><a href="../WhoWeAre/who-we-are.html">Terms</a> |
+                <a href="../WhoWeAre/who-we-are.html">Privacy Policies</a> |
+                <a href="../WhoWeAre/who-we-are.html">Cookies Policies</a> |
+                <a href="../contact/contact.html">Help & Support</a>
+            </p>
             <p class="footer__item-title">PAYMENT</p>
             <p>Online payment only</p>
-            <img src="/assets/images/footer/payment.png" alt="Không tải ảnh được">
+            <img id="payment" src="/assets/images/footer/payment.png" alt="Loading image...">
         </div>
     </div>
-    <hr>
+
     <div class="footer__item--bottom">
+        <hr>
         <p>Copyright &copy; 2021. Coudé. All rights reserved </p>
     </div>
 </div>

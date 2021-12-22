@@ -7,24 +7,24 @@
 }
 .footer__subcontainer{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
-.footer__container div{
-    /* flex: 1; */
-    flex:1;
-}
-.footer__item-contact div:first-child{
-    margin-left: 50px;
-}
+/* các cột dưới chữ Coude */
+/* .footer__subcontainer>div{
+    flex: 1;
+} */
 .footer__item-contact{
-    min-width: max-content;
+    flex: 0.7;
+    min-width: 250px;
 }
 .footer__item-other, .footer__item-company{
-    min-width: 200px;
+    flex: 1;
+    max-width: 40%;
+    min-width: 300px;
 }
 .footer__container h2{
     letter-spacing: 1.5px;
+    margin-top: 10px;
 }
 .footer__container a{
     color: white;
@@ -40,7 +40,7 @@
 .footer__container hr{
     border: 0.5px solid;
     background-color: white;
-    width: 95%;
+    width: 100%;
 }
 .footer__item--bottom{
     text-align: center;
@@ -53,6 +53,43 @@
 .footer__icon-container {
     display: flex;
 }
-.footer__icon-container img{
-    margin-right: 20px;
+.footer__icon-container button{
+    margin-right: 5%;
+    background: transparent;
+    border: none;
 }
+.footer__icon-container button:hover img{
+    opacity: 0.8;
+}
+/* hình payment */
+#payment{
+    width: 70%;
+    height: auto;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 992px) {
+    .footer__subcontainer{
+        flex-wrap: wrap;
+        /* flex: 1 !important; */
+        justify-content: space-between;
+    }
+    .footer__subcontainer>div{
+        margin-top: 25px;
+    }
+    .footer__icon-container{
+        flex-wrap: wrap;
+    }
+  } 
+  @media only screen and (max-width: 600px) {
+    .footer__subcontainer{
+        flex-direction: column;
+    }
+    .footer__subcontainer>div{
+        margin-top: 25px;
+        max-width: 100%;
+    }
+    .footer__icon-container{
+        flex-wrap: nowrap;
+    }
+  }
+  

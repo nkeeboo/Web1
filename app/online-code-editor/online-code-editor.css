@@ -21,7 +21,7 @@ body>div{
 /* button trên header */
 button{
     background-color: transparent;
-    border: 2px solid #2ea44f;
+    border: 2px solid var(--button-color) !important;
     margin: auto 5px auto 35px;
     color: white;
 }
@@ -69,3 +69,8 @@ option:hover{
 select:hover{
     cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+    .menu{
+        width: 100%;
+    }
+  }
