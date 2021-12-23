@@ -129,6 +129,10 @@ input[type=button] {
       float: right;
       display: block;
     }
+    .topnav a{
+        display: block;
+        float: left;
+    }
     #container--class{
     display: flex;
     flex-direction: column;
