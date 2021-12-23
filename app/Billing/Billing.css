@@ -16,11 +16,14 @@
 * {
     box-sizing: border-box;
 }
+
+
 /* .wrapper{
     margin: 0px;
     padding: 0px;
     width: 100vw;
 } */
+
 .sidebar {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
@@ -70,15 +73,18 @@ h6 {
 h3 {
     font-family: MontserratExtraBold;
 }
-#div-sidebar{
+
+#div-sidebar {
     padding: 0px;
     margin: 0px;
 }
-#div-mid{
+
+#div-mid {
     padding: 0px;
     margin: 0px;
 }
-#div-right{
+
+#div-right {
     padding: 0px;
     margin: 0px;
 }
