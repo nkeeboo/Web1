@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "appService.defaultWebAppToDeploy": "/subscriptions/0625107d-cbe0-4d7a-b03b-484be66782f5/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/coude",
+    "appService.deploySubpath": "."
 }
