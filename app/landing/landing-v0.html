@@ -17,6 +17,9 @@
         @import url(/main-style.css);
         @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&family=Work+Sans:wght@500&display=swap');
     </style>
+    <script>
+        w3.includeHTML();
+    </script>
 </head>
 <header class="header__container">
     <img class="header__logo" src="/assets/logo.png" alt="Loading...">
@@ -36,14 +39,14 @@
         </button>
     </div>
     <div class="header__button-container">
-        <button class="btn--r" id="login" onclick="window.location.href='../Login/login.html'">
+        <button id="login" onclick="window.location.href='../Login/login.html'">
             Login
         </button>
     </div>
 </header>
 
 <body>
-    <div class="frame frame__top frame__clr--dark">
+    <div class="frame frame__top">
         <!-- Main content of part 1 -->
         <div class="sub-container flex--row">
             <div class="rec-frame__shape">
@@ -76,7 +79,7 @@
     </div>
 
     <!-- part 2 -->
-    <div class="frame frame__mid frame__clr--dark">
+    <div class="frame frame__mid">
         <div class="sub-container flex--row">
             <div class="course-container flex--row">
                 <div class="course__left-col">
@@ -131,8 +134,8 @@
                 <a class="link-catalog" href="/app/Catalog/Catalog.html">Go to our catalog →</a>
             </div>
         </div>
-        <div class="flex--row" style="justify-content:center">
-            <ul class="flex--row field-container" >FIELDS TO DIG IN
+        <div class="flex--row">
+            <ul class="flex--row field-container">FIELDS TO DIG IN
                 <li><a href="">Data Sciene</a></li>
                 <li><a href="">Machine Learning</a></li>
                 <li><a href="">Other</a></li>
@@ -141,8 +144,8 @@
     </div>
 
     <!-- part 3 -->
-    <div class="frame frame__mid frame__font--black">
-        <div class="flex--row row--align-bottom" style="justify-content:space-evenly">
+    <div class="frame frame__mid frame__font--black" style=" padding-bottom: 10%;">
+        <div class="flex--row row--align-bottom sub-container">
             <div class="people">
                 <div class="title">
                     <h1>People & Coudé</h1>
@@ -204,15 +207,14 @@
     </div>
 
     <!-- part 4 code editor -->
-    <div class="frame frame__font--black code-frame">
+    <div class="frame frame__font--black code-frame" style=" margin-top: 15%">
         <h1>Let's create your own project!</h1>
         <iframe src="/app/online-code-editor/online-code-editor.html" scrolling="no" frameborder="0">
+
     </div>
-    <script>
-        w3.includeHTML();
-    </script>
+    
 </body>
 
-<footer w3-include="../footer/footer-mini.html"></footer>
+<footer w3-include="../footer/footer.html"></footer>
 </html> 
 

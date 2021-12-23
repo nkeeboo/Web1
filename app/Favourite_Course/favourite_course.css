@@ -18,15 +18,14 @@
     src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
 }
 
-a {
-    font-family: RobotoRegular;
-    color: white !important;
-    text-decoration: none !important; 
-    margin: 10px;
+.flex__item--col {
+    display: flex;
+    flex-direction: column;
 }
 
-input[type=button]:hover {
-    color: black;
+.flex__item--row {
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
@@ -34,20 +33,17 @@ h1 {
     color: #199B80;
 }
 
-i {
-    margin-bottom: 10px;
-    color: #FF0F0F;
-    justify-content: right;
-}
-
-.instructor-text {
-    font-family: RobotoLight;
-    margin-top: 0px;
+fieldset{
+    margin-bottom: 20px;
 }
 
 legend {
     font-family: RobotoMedium;
     font-size: 22px;
+}
+
+input[type=button]:hover {
+    color: black;
 }
 
 input[type=button] {
@@ -59,10 +55,19 @@ input[type=button] {
     font-size: 15px;
     padding: 10px;
 }
-fieldset{
-    margin-bottom: 20px;
+
+#button i {
+    margin-bottom: 10px;
+    color: #FF0F0F;
+    justify-content: right;
 }
-#menu {
+
+.instructor-text {
+    font-family: RobotoLight;
+    margin-top: 0px;
+}
+
+#myTopnav {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
     width: 20%;
@@ -93,36 +98,83 @@ fieldset{
     margin-left: 25px;
 }
 
-.flex__item--col {
+.topnav {
+    overflow: hidden;
+}
+  
+.topnav a {
+    display: block;
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: RobotoRegular;
+}
+  
+.topnav .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 768px) {
+    #container{
     display: flex;
     flex-direction: column;
-}
-
-.flex__item--row {
+    }
+    #myTopnav{
+        width: 100%;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav a{
+        display: block;
+        float: left;
+    }
+    #container--class{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    }
+    #class{
+        width: 100%;
+    }
+    input[type=button]{
+        width: fit-content;
+    }
+    #content{
+        width: 100%;
+    }
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    
-  }
   
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-  }
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+} 
   
-  /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-  } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
-  }
+@media only screen and (max-width: 992px) {
+    #container--class{
+        display: flex;
+        flex-direction: column;
+        }
+    #class{
+        width: 100%;
+    }
+    #button{
+        width: 40%;
+    }
+    #content{
+        width: 100%;
+    }
+}

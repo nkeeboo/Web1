@@ -14,7 +14,9 @@ body{
     top: 55px;
     margin: 0;
 }
-
+.btn--r{
+    border-radius: 5px; 
+}
 .btn--s {
     border-radius: 5px;
     padding: 5px 15px;
