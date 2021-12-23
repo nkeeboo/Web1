@@ -19,7 +19,7 @@
 .sidebar {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
-    height: 100%;
+    height: calc(100vh - 160px);
 }
 
 .sidebar a {
@@ -44,7 +44,8 @@
 
 #btnnext {
     font-family: MontserratExtraBold;
-    padding: 5px 10px;
+    padding: 10px 25px;
+  
 }
 
 input {

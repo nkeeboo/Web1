@@ -40,3 +40,15 @@
 .form-group label {
     font-family: RobotoRegular;
 }
+#div-sidebar{
+    margin: 0px;
+    padding: 0px;
+}
+#div-main{
+    margin-right: 0px;
+    /* margin-left: 5px; */
+    padding: 0px;
+}
+#nd-row{
+    padding: 0px;
+}

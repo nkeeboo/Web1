@@ -17,18 +17,9 @@
     box-sizing: border-box;
 }
 
-
-/* .wrapper {
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-     height: 100%; 
-}*/
-
 .sidebar {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
-    /* height: 100vh; */
     height: calc(100vh - 160px);
 }
 
@@ -39,6 +30,7 @@
     text-decoration: none;
     margin: 10px;
 }
+
 
 .main-content {
     margin-right: 15px;
@@ -82,3 +74,28 @@ h3 {
     padding: 10px 15px;
     font-family: MontserratExtraBold;
 }
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+   
+    #myTopnav{
+        width: 100%;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 

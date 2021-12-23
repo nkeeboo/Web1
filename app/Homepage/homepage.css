@@ -7,7 +7,7 @@
 .container{
     display: flex;
     justify-content: space-between;
-    margin: auto 80px;
+    margin: auto 5%;
     font-family: 'Gothic A1', sans-serif;
 }
 /* Mỗi mục sẽ là một item */
@@ -25,14 +25,14 @@
 }
 .container__left-col{
     width: 80%;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .container__right-col{
     width: 25%;
 }
 /* element bao xung quanh các khóa học nằm trong một mục chung */
 .course-container{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .course__item{
     border: 2px solid black;
@@ -40,7 +40,7 @@
     font-family: Roboto;
     font-size: 14px;
     margin: 5px;
-    /* width: 25%; */
+    width: 25%;
     min-width: max-content;
 }
 .course__item:hover{
@@ -53,17 +53,19 @@
     text-align: center;
 }
 .course__content{
-    text-align: start;
+    /* text-align: center; */
     margin: auto 20px;
 }
 .course__coude{
     float: right;
     font-size: 10px;
 }
-ul{
+.course__content ul{
     list-style-position: inside;
     padding: 0;
     font-weight: bold;
+    width: fit-content;
+    margin: auto;
 }
 ul li{
     font-weight: normal;
@@ -96,31 +98,74 @@ img.advertise{
 .course__item:hover{
     cursor: pointer;
 }
+
+.popup-content{
+    padding-left: 10%; 
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+}
+.popup-header{
+    justify-content: flex-start;
+}
+.popup-header--title{
+    font-weight: 800;
+}
+.goal-input{
+    margin-bottom: 10px;
+}
+.goal-input label{
+    min-width: 80px;
+}
+.goal-input input, .goal-input select{
+    width: 30%;
+    border-radius: 5px;
+    border: 0.5px solid #000000;
+    height: 30px;
+    padding-left: 5px;
+}
+#number{
+    margin-right: 10%;
+}
+
 @media only screen and (max-width: 1200px){
+    .container__left-col{
+        width: 100%;
+    }
     .container__right-col{
         display: flex;
         flex-direction: row;
         width: auto;
         flex: 1;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .container{
         display: flex;
         flex-direction: column-reverse;
     }
     .advertise{
-        height: 40%;
-        width: auto;
-    }
-    .course__item{
-        margin: 5px;
-        width: max-content;
+        /* height: 40%;
+        width: auto; */
+        display: none;
     }
 }
 /* responsive test  */
 @media only screen and (max-width: 768px) {
-    .container{
+    /* .container{
         margin:auto 5px;
         width: 100vw;
+    } */
+    .course-container{
+        flex-wrap: wrap;
+    }
+    .course__item{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .advertise{
+        display:none;
+    }
+    .course__item{
+        width: 100%;
     }
 }

@@ -118,11 +118,11 @@ input[type=button] {
 }
   
 @media screen and (max-width: 768px) {
-    .topnav a.icon:not(:first-child) {display: none;}
+    .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
-        float: right;
-        display: block;
-      }
+    float: right;
+    display: block;
+    }
     #container{
     display: flex;
     flex-direction: column;
@@ -130,7 +130,6 @@ input[type=button] {
     #myTopnav{
         width: 100%;
     }
-    .topnav a:not(:first-child) {display: none;}
     #container--class{
     display: flex;
     flex-direction: column;
@@ -147,17 +146,17 @@ input[type=button] {
 }
   
 @media screen and (max-width: 768px) {
-    .topnav.responsive {
-        position: relative;}
+    .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
-      position: absolute;
-      top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     }
     .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+    float: none;
+    display: block;
+    text-align: left;
+  }
 } 
   
 @media screen and (max-width: 992px) {
