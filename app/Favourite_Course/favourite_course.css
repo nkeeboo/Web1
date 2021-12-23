@@ -18,13 +18,42 @@
     src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
 }
 
-input[type=button]:hover {
-    color: black;
+.flex__item--col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex__item--row {
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
     font-family: MontserratExtraBold;
     color: #199B80;
+}
+
+fieldset{
+    margin-bottom: 20px;
+}
+
+legend {
+    font-family: RobotoMedium;
+    font-size: 22px;
+}
+
+input[type=button]:hover {
+    color: black;
+}
+
+input[type=button] {
+    background: #2EA44F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: RobotoMedium;
+    font-size: 15px;
+    padding: 10px;
 }
 
 #button i {
@@ -38,24 +67,7 @@ h1 {
     margin-top: 0px;
 }
 
-legend {
-    font-family: RobotoMedium;
-    font-size: 22px;
-}
-
-input[type=button] {
-    background: #2EA44F;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-family: RobotoMedium;
-    font-size: 15px;
-    padding: 10px;
-}
-fieldset{
-    margin-bottom: 20px;
-}
-#menu {
+#myTopnav {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
     width: 20%;
@@ -86,21 +98,13 @@ fieldset{
     margin-left: 25px;
 }
 
-.flex__item--col {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex__item--row {
-    display: flex;
-    flex-direction: row;
-}
 .topnav {
     overflow: hidden;
 }
   
 .topnav a {
     display: block;
+    float: left;
     color: #f2f2f2;
     padding: 14px 16px;
     text-decoration: none;
@@ -117,7 +121,7 @@ fieldset{
     display: flex;
     flex-direction: column;
     }
-    #menu{
+    #myTopnav{
         width: 100%;
     }
     .topnav a:not(:first-child) {display: none;}
@@ -141,7 +145,8 @@ fieldset{
 }
   
 @media screen and (max-width: 768px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        position: relative;}
     .topnav.responsive .icon {
       position: absolute;
       right: 0;

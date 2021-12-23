@@ -8,19 +8,26 @@
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <title>My Course</title>
     <link rel="stylesheet" href="my-course.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
-
+<header w3-include-html='../header/header.html'></header>
 <body>
     <div class="wrapper">
         <div class="header"></div>
         <div class="main">
             <div class="sidebar">
                 <a href="">General Information</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <a href="">Change Information</a>
                 <a href="">Payment</a>
                 <a href="">My Course</a>
                 <a href="">Favorite Course</a>
                 <a href="">Setting</a>
+                
             </div>
             <div id="content" class="flex__item">
 

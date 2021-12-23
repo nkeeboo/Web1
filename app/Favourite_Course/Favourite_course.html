@@ -18,16 +18,16 @@
 
 <body>
     <div id="container" class="flex__item--row">
-        <div id="menu" class="topnav flex__item--col">
-            <a href="">General Information</a>
-            <a href="">Change Information</a>
-            <a href="">Payment</a>
-            <a href="">My Course</a>
-            <a href="">Favourite Course</a>
-            <a href="">Setting</a>
+        <div id="myTopnav" class="topnav flex__item--col">
+            <a href="../General-information/general-information.html">General Information</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
+            <a href="../Change-information/changinfor.html">Change Information</a>
+            <a href="../Payment/payment.html">Payment</a>
+            <a href="../My-course/my-couse.html">My Course</a>
+            <a href="../Favourite_Course/Favourite_course.html">Favourite Course</a>
+            <a href="">Setting</a>  
         </div>
         <div id="content" class="flex__item">
             <h1>My Favourite Courses</h1>
@@ -77,7 +77,7 @@
     </div>
     <script>
     function myFunction() {
-    var x = document.getElementById("menu");
+    var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
     x.className += " responsive";
     } else {
