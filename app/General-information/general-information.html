@@ -18,15 +18,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        @import url(../header/header.css);
+        @import url(../footer/footer.css);
+    </style>
 </head>
+<header w3-include-html='../header/header.html'></header>
 
 <body>
     <div class="wrapper">
-        <div class="header"></div>
+        
         <div class="main-body">
-            <div class="container-fluid">
+            <!-- <div class="container-fluid"> -->
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" id="div-sidebar">
                         <div class="sidebar">
                             <a href="">General Information</a>
                             <a href="">Change Information</a>
@@ -36,13 +42,13 @@
                             <a href="">Setting</a>
                         </div>
                     </div>
-                    <div class="col-9 main-content">
-                        <div class="container">
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9" id="div-main">
+                        <!-- <div class="container"> -->
                             <div class="row">
                                 <div class="ava-img"></div>
                             </div>
-                            <div class="row">
-                                <div class="col-5">
+                            <div class="row" id="nd-row">
+                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
                                     <form>
                                         <fieldset disabled>
                                             <div class="form-group">
@@ -68,8 +74,8 @@
                                         </fieldset>
                                     </form>
                                 </div>
-                                <div class="col-2"></div>
-                                <div class="col-5">
+                                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
                                     <form>
                                         <fieldset disabled>
                                             <div class="form-group">
@@ -98,13 +104,16 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
-        <div class="footer"></div>
+        
     </div>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
-
+<footer w3-include-html='../footer/footer.html'></footer>
 </html>

@@ -71,7 +71,7 @@
                                         <button class="btn btn-light btn-next" id="btnforgot" name="forgot" data-toggle="modal" data-target="#myModal1">Forgot password?</button>
                                     </div>
                                     <div class="btn-login">
-                                        <button class="btn btn-success btn-login" id="btnlogin" name="login">Log in</button>
+                                        <button class="btn btn-success btn-login" onclick="window.location.href='../Homepage/homepage.html'" id="btnlogin" name="login">Log in</button>
                                     </div>
                                 </div>
                             </div>
@@ -116,11 +116,11 @@
                             <p>Choose to receive OTP code via:</p>
                             <div class="content-main">
                                 <div class="choose-element">
-                                    <input type="radio" name="phone_number" id="phone">
+                                    <input type="radio" name="input-element" id="phone">
                                     <label for="phone">Phone number</label>
                                 </div>
                                 <div class="choose-element">
-                                    <input type="radio" name="email" id="email">
+                                    <input type="radio" name="input-element" id="email">
                                     <label for="email">Email</label>
                                 </div>
                             </div>
@@ -180,17 +180,30 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default btn-next">Confirm</button>
+                            <button type="button" class="btn btn-default btn-next" onclick="on()">Confirm</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Overlay note login again -->
+        <div id="overlay" onclick="off()">
+            <div id="text">Log in again</div>
+          </div>
         <div class="footer"></div>
     </div>
     <script src="./login.js"></script>
-
+    <script>
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+        
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+        </script>
 </body>
 
 </html>

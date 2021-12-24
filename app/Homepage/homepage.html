@@ -13,42 +13,20 @@
         @import url(../header/header.css);
         @import url(../footer/footer.css);
     </style>
+    <script src="./homepage.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script>
-        // Get the popup
-        var popup = document.getElementById("myPopup");
 
-        // Get the button that opens the popup
-        var btn = document.getElementById("myCreateTopicBtn");
 
-        // Get the <span> element that closes the popup
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the popup
-        btn.onclick = function() {
-            popup.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the popup
-        span.onclick = function() {
-            popup.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the popup, close it
-        window.onclick = function(event) {
-            if (event.target == popup) {
-                popup.style.display = "none";
-            }
-        }
-        
     </script>
 </head>
 <header w3-include-html='../header/header.html'></header>
-<body>
+
+<body onload="checkin()">
     <div class="container">
         <div class="container__left-col">
             <div class="container__item">
-                <h2>My Learning <a href="../My-course/my-couse.html">See all</a></h2>
+                <h2>My Learning <a href="../My-course/my-course.html">See all</a></h2>
                 <p>You haven't enrolled any course.</p>
             </div>
             <div class="container__item">
@@ -58,8 +36,8 @@
                         <div class="course__tag">Pro</div>
                         <div class="course__content">
                             <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
                             </ul>
                         </div>
                         <div class="course__coude">Coudé</div>
@@ -68,8 +46,8 @@
                         <div class="course__tag">Pro</div>
                         <div class="course__content">
                             <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
                             </ul>
                         </div>
                         <div class="course__coude">Coudé</div>
@@ -78,8 +56,8 @@
                         <div class="course__tag">Pro</div>
                         <div class="course__content">
                             <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
                             </ul>
                         </div>
                         <div class="course__coude">Coudé</div>
@@ -88,8 +66,8 @@
                         <div class="course__tag">Pro</div>
                         <div class="course__content">
                             <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
                             </ul>
                         </div>
                         <div class="course__coude">Coudé</div>
@@ -105,8 +83,8 @@
                         <div class="course__tag">Pro</div>
                         <div class="course__content">
                             <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
                             </ul>
                         </div>
                         <div class="course__coude">Coudé</div>
@@ -115,8 +93,8 @@
                         <div class="course__tag">Pro</div>
                         <div class="course__content">
                             <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
                             </ul>
                         </div>
                         <div class="course__coude">Coudé</div>
@@ -125,8 +103,8 @@
                         <div class="course__tag">Pro</div>
                         <div class="course__content">
                             <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
                             </ul>
                         </div>
                         <div class="course__coude">Coudé</div>
@@ -135,8 +113,8 @@
                         <div class="course__tag">Pro</div>
                         <div class="course__content">
                             <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
+                                <li>Beginner friendly</li>
+                                <li>35 lessons</li>
                             </ul>
                         </div>
                         <div class="course__coude">Coudé</div>
@@ -154,31 +132,32 @@
                         <p><b>DAILY LOGIN</b></p>
                         <div class="daily-login__container flex--row">
                             <div class="daily-login__item">
-                                <div class="daily-login__item--cirle" style="background-color: var(--button-color);"></div>
+                                <div id="loginMon" class="daily-login__item--cirle"
+                                    style="background-color: var(--button-color);"></div>
                                 <div>MON</div>
                             </div>
                             <div class="daily-login__item">
-                                <div class="daily-login__item--cirle"></div>
+                                <div id="loginTue" class="daily-login__item--cirle"></div>
                                 <div>TUE</div>
                             </div>
                             <div class="daily-login__item">
-                                <div class="daily-login__item--cirle"></div>
+                                <div id="loginWed" class="daily-login__item--cirle"></div>
                                 <div>WED</div>
                             </div>
                             <div class="daily-login__item">
-                                <div class="daily-login__item--cirle"></div>
+                                <div id="loginThu" class="daily-login__item--cirle"></div>
                                 <div>THU</div>
                             </div>
                             <div class="daily-login__item">
-                                <div class="daily-login__item--cirle"></div>
+                                <div id="loginFri" class="daily-login__item--cirle"></div>
                                 <div>FRI</div>
                             </div>
                             <div class="daily-login__item">
-                                <div class="daily-login__item--cirle"></div>
+                                <div id="loginSat" class="daily-login__item--cirle"></div>
                                 <div>SAT</div>
                             </div>
                             <div class="daily-login__item">
-                                <div class="daily-login__item--cirle"></div>
+                                <div id="loginSun" class="daily-login__item--cirle"></div>
                                 <div>SUN</div>
                             </div>
                         </div>
@@ -191,7 +170,52 @@
             </div>
         </div>
     </div>
-    <script>w3.includeHTML();</script>
+
+    <!-- popup -->
+    <div id="popup" class="popup-container">
+        <!-- Popup content -->
+        <div class="popup-content">
+            <div class="popup-header flex--row">
+                <div>
+                    <h3 class="popup-header--title">Goals</h3>
+                    <p>I will finish <span id="goal"></span> in a <span id="goalTime"></span></p>
+                </div>
+                <h3>
+                    <button class="btn--transparent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                </h3>
+            </div>
+            <hr>
+            <div class="popup-body">
+                <div class="flex--row goal-input">
+                    <label for="time">Time</label>
+                    <input type="text" id="time" value="week" required>
+                </div>
+                <div class="flex--row goal-input">
+                    <label for="type">Type</label>
+                    <select id="type" name="type">
+                        <option value="exercise" selected>exercise</option>
+                        <option value="video">video</option>
+                        <option value="assignment">assignment</option>
+                    </select>
+                </div>
+                <div class="flex--row goal-input">
+                    <label for="number">Number</label>
+                    <input type="text" id="number" value="3" require>
+                    <button id="btn-confirm" class="btn--s btn--green" onclick="setGoal()">Confirm
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+        <script>w3.includeHTML();</script>
 </body>
 <footer w3-include-html='../footer/footer.html'></footer>
+
 </html>

@@ -51,7 +51,9 @@ p {
     text-align: right;
     margin: 5px;
     font-size: 10px;
-    align-self: flex-end;
+    position: absolute;
+    top: 75px;
+    right: 5px;
 }
 
 #line-top {
@@ -84,6 +86,7 @@ p {
     border: 1px solid black;
     margin-right: 10px;
     width: 18%;
+    position: relative;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
