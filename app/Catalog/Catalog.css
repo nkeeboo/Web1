@@ -158,6 +158,7 @@ h3 {
 
 .txtcourse:hover {
     background-color: #e2e4e3;
+    background-color: rgb(238, 235, 235);
     box-shadow: 5px 5px;
 }
 
