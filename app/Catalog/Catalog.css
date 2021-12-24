@@ -164,11 +164,13 @@ h3 {
 }
 
 .txtcourse {
-    height: 180px;
-    width: 220px;
     border: 2px solid black;
     border-radius: 3px;
-    box-shadow: 3px 3px;
+}
+
+.txtcourse:hover {
+    background-color: rgb(238, 235, 235);
+    box-shadow: 5px 5px;
 }
 
 .tag {
@@ -236,14 +238,6 @@ ul {
     font-size: 20px;
     font-weight: bold;
     color: cyan;
-}
-
-.banner2 {
-    background-image: url(/assets/images/catalog/banner2.PNG);
-    width: 800px;
-    height: 100px;
-    background-repeat: no-repeat;
-    margin-left: 80px;
 }
 
 .blog {
