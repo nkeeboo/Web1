@@ -12,6 +12,7 @@
     <style>
         @import url(../header/header.css);
         @import url(../footer/footer.css);
+        @import url(./text-editor.css);
     </style>
 </head>
 <header w3-include-html='../header/header.html'></header>
@@ -38,18 +39,18 @@
                 <button type="button" class="nav__btn">My questions</button>
             </div>
             <div class="dropdown">
-                <button class="drop-btn nav__btn">TAGS <i class="bi bi-chevron-down"></i> </button>
-
-                <div class="dropdown-content">
-                    <a href="#">C#</a>
-                    <a href="#">C++</a>
-                    <a href="#">Python</a>
-                    <a href="#">Java</a>
-                    <a href="#">SQL</a>
-                    <a href="#">Kotlin</a>
-                    <a href="#">HTML & CSS</a>
-                    <a href="#">Javascript</a>
-                </div>
+                <select>
+                        <option value="">TAGS</option>
+                        <option value="">C#</option>
+                        <option value="">C++</option>
+                        <option value="">Python</option>
+                        <option value="">Java</option>
+                        <option value="">SQL</option>
+                        <option value="">Kotlin</option>
+                        <option value="">HTML</option>
+                        <option value="">CSS</option>
+                        <option value="">Javascript</option>
+                </select>
             </div>
             <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 
                     <i class="bi bi-plus"></i>
@@ -65,11 +66,11 @@
                 </div>
                 <div class="popup-body">
                     <input type="text" name="" id="title" placeholder="Type your title here..." class="input-title">
-                    <div class="choosetag"></div>
-                    <textarea name="topic" class="input-content" id="topic" cols="30" rows="10"></textarea>
+                    <div class="input-content" w3-include-html='./text-editor.html'>
+                    </div>
                 </div>
                 <div class="popup-footer">
-                    <p>Cancel</p>
+                    <button class="cancel__btn">Cancel</button>
                     <div class="create-topic">
                         <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 
                             <i class="bi bi-plus"></i>
@@ -144,37 +145,11 @@
         </div>
     </div>
     <div class="footer"></div>
-    <script>
-        // Get the popup
-        var popup = document.getElementById("myPopup");
-
-        // Get the button that opens the popup
-        var btn = document.getElementById("myCreateTopicBtn");
-
-        // Get the <span> element that closes the popup
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the popup
-        btn.onclick = function() {
-            popup.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the popup
-        span.onclick = function() {
-            popup.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the popup, close it
-        window.onclick = function(event) {
-            if (event.target == popup) {
-                popup.style.display = "none";
-            }
-        }
-    </script>
+    <script src="./popup.js"></script>
     <script>
         w3.includeHTML();
     </script>
 </body>
-<header w3-include-html='../footer/footer.html'></header>
+<footer w3-include-html='../footer/footer-mini.html'></footer>
 
 </html>
