@@ -11,8 +11,12 @@ li, ul{
     margin: 10px 0px;
 }
 a{
-    color: white;
+    display: block;
+    text-align: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
     font-family: RobotoRegular;
 } 
 iframe{
@@ -33,6 +37,7 @@ button{
     display: flex;
     flex-direction: row;
 }
+
 .flex__item--col{
     display: flex;
     flex-direction: column;
@@ -41,14 +46,15 @@ button{
     display: flex;
     flex-direction: row;
 }
-#menu{
-    width: 20%;
+#myTopnav{
+    width: 30%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
 }
 #content{
     margin: 0px 50px;
     padding-left: 30px;
+    padding-top: 40px;
     font-family: RobotoMedium;
 }
 #button{
@@ -68,4 +74,48 @@ button{
     background-color: #C4C4C4;
     justify-content: space-between;
     padding: 0px 10px;
+}
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+  
+.topnav .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a {
+        float: left;
+    }
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+    #container{
+    display: flex;
+    flex-direction: column;
+    }
+    #myTopnav{
+        width: 100%;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
+  
+@media screen and (max-width: 992px) {
+    
 }
