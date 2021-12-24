@@ -7,11 +7,15 @@
     <title>Study</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <link rel="stylesheet" href="./Study.css">
-    <link rel="stylesheet" href="/main-style.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 </head>
+<header w3-include-html='../header/header.html'></header>
 <body>
     <div class="container">
-        <div id="menu">
+        <div class="topnav" id="myTopnav">
             <ul>
                 <li><a href="">Options</a>
                     <ul>
@@ -35,6 +39,9 @@
                 <li><a href="">Notes</a></li>
                 <li><a href="">Exercises</a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-caret-square-down"></i>
+            </a>
         </div>
         <div id="content">
             <div id="script">
@@ -65,6 +72,18 @@
         function tryCode(){
             window.location.href = '../online-code-editor/online-code-editor.html';
         }
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+        }
+    </script>
+    <script>
+        w3.includeHTML();
     </script>
 </body>
+<footer w3-include-html='../footer/footer.html'></footer>
 </html>
