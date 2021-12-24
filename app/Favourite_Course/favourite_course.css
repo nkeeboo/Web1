@@ -105,7 +105,7 @@ input[type=button] {
   
 .topnav a {
     display: block;
-    float: left;
+    text-align: left;
     color: #f2f2f2;
     padding: 14px 16px;
     text-decoration: none;
@@ -119,6 +119,9 @@ input[type=button] {
   
 @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {display: none;}
+    .topnav a {
+        float: left;
+    }
     .topnav a.icon {
     float: right;
     display: block;

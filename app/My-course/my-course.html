@@ -5,82 +5,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
-    <title>My Course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="my-course.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <style>
-        @import url(../header/header.css);
-        @import url(../footer/footer.css);
-    </style>
 </head>
 <header w3-include-html='../header/header.html'></header>
-<body>
-    <div class="wrapper">
-       
-        <div class="main">
-            <div id="myTopnav" class="topnav sidebar">
-                <a href="../General-information/general-information.html">General Information</a>
-                <a href="../Change-information/changinfor.html">Change Information</a>
-                <a href="../Payment/payment.html">Payment</a>
-                <a href="../My-course/my-course.html">My Course</a>
-                <a href="../Favourite_Course/Favourite_course.html">Favorite Course</a>
-                <a href="">Setting</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <div id="content" class="flex__item">
 
-                <form>
-                    <fieldset>
-                        <legend>Back-End Engineer</legend>
-                        <p class="instructor-text">Instructor : Nguyen Hoang Tuyet Nhi</p>
-                        <div class="flex__item--row">
-                            <div id="class">
-                                <div class="flex__item--row">
-                                    <p id="class-label">Lesson1</p>
-                                    <p>Web Design with HTML and CSS Digital Classroom.</p>
-                                </div>
+<body>
+    <div id="container" class="flex__item--row">
+        <div class="topnav" id="myTopnav">
+            <a href="../General-information/general-information.html">General Information</a>
+            <a href="../Change-information/changinfor.html">Change Information</a>
+            <a href="../Payment/payment.html">Payment</a>
+            <a href="../My-course/my-course.html">My Course</a>
+            <a href="../Favourite_Course/Favourite_course.html">Favourite Course</a>
+            <a href="">Setting</a>  
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        <div id="content" class="flex__item">
+            <h1>My Courses</h1>
+            <form>
+                <fieldset>
+                    <legend>Back-End Engineer</legend>
+                    <p class="instructor-text">Instructor : Nguyen Hoang Tuyet Nhi</p>
+                    <div id="container--class" class="flex__item--row">
+                        <div id="class">
+                            <div class="flex__item--row">
+                                <p id="class-label">Lesson1</p>
+                                <p>Web Design with HTML and CSS Digital Classroom.</p>
                             </div>
-                            <div id="button" class="flex__item--col">
-                                <input type="button" value="Go to guide project">
+                            <div class="flex__item--row">
+                                <p id="class-label">Lesson1</p>
+                                <p>Web Design with HTML and CSS Digital Classroom.</p>
                             </div>
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Back-End Engineer</legend>
-                        <p class="instructor-text">Instructor : Nguyen Hoang Tuyet Nhi</p>
-                        <div class="flex__item--row">
-                            <div id="class">
-                                <div class="flex__item--row">
-                                    <p id="class-label">Lesson1</p>
-                                    <p>Web Design with HTML and CSS Digital Classroom.</p>
-                                </div>
+                        <div id="button">
+                            <input type="button" value="Go to guide project">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Back-End Engineer</legend>
+                    <p class="instructor-text">Instructor : Nguyen Hoang Tuyet Nhi</p>
+                    <div id="container--class" class="flex__item--row">
+                        <div id="class">
+                            <div class="flex__item--row">
+                                <p id="class-label">Lesson1</p>
+                                <p>Web Design with HTML and CSS Digital Classroom.</p>
                             </div>
-                            <div id="button" class="flex__item--col">
-                                <input type="button" value="Go to guide project">
+                            <div class="flex__item--row">
+                                <p id="class-label">Lesson1</p>
+                                <p>Web Design with HTML and CSS Digital Classroom.</p>
                             </div>
                         </div>
-                    </fieldset>
-                </form>
-            </div>
+                        <div id="button" class="flex__item--col">
+                            <input type="button" value="Go to guide project">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
         </div>
-        <script>
-            function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-            x.className += " responsive";
-            } else {
-            x.className = "topnav";
-            }
-            }
-            </script>
-        <script>
-            w3.includeHTML();
-        </script>
+    </div>
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+    x.className += " responsive";
+    } else {
+    x.className = "topnav";
+    }
+    }
+    </script>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 <footer w3-include-html='../footer/footer.html'></footer>
 </html>
