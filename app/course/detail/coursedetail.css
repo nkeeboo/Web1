@@ -44,22 +44,11 @@
     margin-right: 30px;
 }
 
-#class-label {
-    font-family: RobotoMedium;
-    margin-right: 20px;
-}
-
 #class div {
     background-color: #C4C4C4;
     margin: 30px;
     padding: 0px 15px;
     font-family: RobotoLight;
-}
-
-#button {
-    margin-left: 25px;
-    justify-content: right;
-    justify-items: self-end;
 }
 
 .topnav {
@@ -107,9 +96,6 @@
     #class {
         width: 100%;
     }
-    input[type=button] {
-        width: fit-content;
-    }
     #content {
         width: 100%;
     }
@@ -129,6 +115,12 @@
         display: block;
         text-align: left;
     }
+    .container {
+        max-width: 300px;
+        max-height: 230px;
+        display: flex;
+        overflow-x: auto;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -147,9 +139,15 @@
     }
 }
 
+ul {
+    margin-left: 18px;
+    font-family: 'Roboto-Light';
+}
+
 .inforbox {
     display: flex;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .txtcourse {
@@ -169,8 +167,8 @@
 }
 
 .box--course {
-    min-width: 250px;
-    max-height: 180px;
+    min-width: 300px;
+    max-height: 280px;
     border: 2px solid black;
     margin: 10px;
 }
@@ -202,6 +200,7 @@
 }
 
 .container--doc {
+    margin-top: 10px;
     max-width: 800px;
     max-height: 200px;
     overflow-y: scroll;

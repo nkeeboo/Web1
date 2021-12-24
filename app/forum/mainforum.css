@@ -347,7 +347,7 @@
     @media only screen and (min-width: 992px) {
         a,
         .topic-title {
-            width: 80% !important;
+            width: 80%;
         }
         .popup-content {
             width: 60%;
@@ -355,4 +355,9 @@
     }
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     
-    @media only screen and (min-width: 1200px) {}
+    @media only screen and (min-width: 1200px) {
+        a,
+        .topic-title {
+            width: 70%;
+        }
+    }

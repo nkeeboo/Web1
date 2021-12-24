@@ -17,21 +17,28 @@
     box-sizing: border-box;
 }
 
-.sidenav {
+#myTopnav {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
     height: calc(100vh - 160px);
 }
 
-.sidenav a {
-    display: block;
-    font-family: RobotoRegular;
-    color: white;
-    text-decoration: none;
-    margin: 10px;
+.topnav {
+    overflow: hidden;
+    position: relative;
 }
 
-.sidenav .icon {
+.topnav a {
+    display: block;
+    text-align: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: RobotoRegular;
+}
+
+.topnav .icon {
     display: none;
 }
 
@@ -79,32 +86,32 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-    .sidenav a:not(:first-child) {
+    .topnav a:not(:first-child) {
         display: none;
     }
-    .sidenav a {
+    .topnav a {
         float: right;
         display: block;
     }
-    .sidenav a.icon {
+    .topnav a.icon {
         float: right;
         display: block;
     }
-    #mySidenav {
+    #myTopnav {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .sidenav.responsive {
+    .topnav.responsive {
         position: relative;
     }
-    .sidenav.responsive .icon {
+    .topnav.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-    .sidenav.responsive a {
+    .topnav.responsive a {
         float: none;
         display: block;
         text-align: left;

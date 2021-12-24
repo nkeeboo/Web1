@@ -18,7 +18,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../header/header-res.js"></script>
     <style>
         @import url(../header/header.css);
         @import url(../footer/footer.css);
@@ -28,92 +31,106 @@
 
 <body>
     <div class="wrapper">
-        
+
         <div class="main-body">
             <!-- <div class="container-fluid"> -->
-                <div class="row">
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" id="div-sidebar">
-                        <div class="sidebar">
-                            <a href="">General Information</a>
-                            <a href="">Change Information</a>
-                            <a href="">Payment</a>
-                            <a href="">My Course</a>
-                            <a href="">Favorite Course</a>
-                            <a href="">Setting</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9" id="div-main">
-                        <!-- <div class="container"> -->
-                            <div class="row">
-                                <div class="ava-img"></div>
-                            </div>
-                            <div class="row" id="nd-row">
-                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                                    <form>
-                                        <fieldset disabled>
-                                            <div class="form-group">
-                                                <label for="disabledTextInput">First name</label> <span class="form-group__required">(*)</span>
-                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="First name">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="disabledTextInput">Account name</label> <span class="form-group__required">(*)</span>
-                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Account name">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="disabledTextInput">Date of birth</label>
-                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Date of birth">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="disabledTextInput">Password</label> <span class="form-group__required">(*)</span>
-                                                <input type="password" id="disabledTextInput" class="form-control" placeholder="Password">
-                                            </div>
-
-                                        </fieldset>
-                                    </form>
-                                </div>
-                                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
-                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                                    <form>
-                                        <fieldset disabled>
-                                            <div class="form-group">
-                                                <label for="disabledTextInput">Last name</label> <span class="form-group__required">(*)</span>
-                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Last name">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="disabledTextInput">Email</label> <span class="form-group__required">(*)</span>
-                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Email">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="disabledTextInput">Phone number</label> <span class="form-group__required">(*)</span>
-                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Phone number">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="disabledTextInput">Payment</label> <span class="form-group__required">(*)</span>
-                                                <div class="payment-img">
-                                                    <img src="/assets/images/billing/paypal.png" alt="Error" width="50">
-                                                    <img src="/assets/images/billing/mastercard.png" width="50" alt="Error"> <img src="/assets/images/billing/visa.png" width="50" alt="Error">
-                                                </div>
-                                            </div>
-
-                                        </fieldset>
-                                    </form>
-                                </div>
-                            </div>
-                        <!-- </div> -->
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" id="div-sidebar">
+                    <div class="topnav" id="myTopnav">
+                        <a href="../General-information/general-information.html">General Information</a>
+                        <a href="../Change-information/changinfor.html">Change Information</a>
+                        <a href="../Payment/payment.html">Payment</a>
+                        <a href="../My-course/my-course.html">My Course</a>
+                        <a href="../Favourite_Course/Favourite_course.html">Favourite Course</a>
+                        <a href="">Setting</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fas fa-caret-square-down"></i>
+                        </a>
                     </div>
                 </div>
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9" id="div-main">
+                    <!-- <div class="container"> -->
+                    <div class="row">
+                        <div class="ava-img"></div>
+                    </div>
+                    <div class="row" id="nd-row">
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                            <form>
+                                <fieldset disabled>
+                                    <div class="form-group">
+                                        <label for="disabledTextInput">First name</label> <span class="form-group__required">(*)</span>
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="First name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="disabledTextInput">Account name</label> <span class="form-group__required">(*)</span>
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Account name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="disabledTextInput">Date of birth</label>
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Date of birth">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="disabledTextInput">Password</label> <span class="form-group__required">(*)</span>
+                                        <input type="password" id="disabledTextInput" class="form-control" placeholder="Password">
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                            <form>
+                                <fieldset disabled>
+                                    <div class="form-group">
+                                        <label for="disabledTextInput">Last name</label> <span class="form-group__required">(*)</span>
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Last name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="disabledTextInput">Email</label> <span class="form-group__required">(*)</span>
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Email">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="disabledTextInput">Phone number</label> <span class="form-group__required">(*)</span>
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Phone number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="disabledTextInput">Payment</label> <span class="form-group__required">(*)</span>
+                                        <div class="payment-img">
+                                            <img src="/assets/images/billing/paypal.png" alt="Error" width="50">
+                                            <img src="/assets/images/billing/mastercard.png" width="50" alt="Error"> <img src="/assets/images/billing/visa.png" width="50" alt="Error">
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
             <!-- </div> -->
         </div>
-        
+
     </div>
     <script>
         w3.includeHTML();
     </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 <footer w3-include-html='../footer/footer.html'></footer>
+
 </html>

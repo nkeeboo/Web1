@@ -14,10 +14,24 @@
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var app = angular.module("angularApp", [])
+        app.controller("CoursesController", function($scope, $http) {
+            $http({
+                method: "GET",
+                url: "/assets/data/courses/courses.json"
+            }).then(function mySucces(respone) {
+                $scope.courses = respone.data
+            }, function myError(respone) {
+                $scope.dataError = respone.statusText
+            })
+        })
+    </script>
 </head>
 <header w3-include-html='../header/header.html'></header>
 
-<body>
+<body ng-app="angularApp" ng-controller="CoursesController">
     <div id="container" class="flex__item--row">
         <div class="topnav" id="myTopnav">
             <a href="" style="font-size: 20px; margin-left: 5px;">Language</a>
@@ -52,377 +66,44 @@
             <div class="row">
                 <h3 class="header">Most Popular</h3>
             </div>
-            <!-- courses -->
+            <!-- courses popular-->
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='popular') | limitTo: 9">
                     <div class="txtcourse">
                         <div class="tag">
-                            <p class="txttag">Pro</p>
+                            <p class="txttag">{{co.tag}}</p>
                         </div>
                         <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
+                            <p class="box--course_header">{{co.title}}</p>
                             <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
+                                <li>{{co.description[0].txtlevel}}</li>
+                                <li>{{co.description[0].number_lesson}}</li>
                             </ul>
                         </div>
-                        <p class="coude">Coudé</p>
+                        <p class="coude">{{co.logo}}</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-            </div>
-            <!-- banner 2 -->
-            <div class="row">
-                <div class="banner2"></div>
+
             </div>
             <!-- header 2-->
             <div class="row">
                 <h3 class="header">New</h3>
             </div>
-            <!-- courses -->
+            <!-- courses new -->
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-sm-6 col-md-4" ng-repeat="c in courses | filter : (c.time ='new') | limitTo : 9">
                     <div class="txtcourse">
                         <div class="tag">
-                            <p class="txttag">Pro</p>
+                            <p class="txttag">{{c.tag}}</p>
                         </div>
                         <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
+                            <p class="box--course_header">{{c.title}}</p>
                             <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
+                                <li>{{c.description[0].txtlevel}}</li>
+                                <li>{{c.description[0].number_lesson}}</li>
                             </ul>
                         </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
+                        <p class="coude">{{c.logo}}</p>
                     </div>
                 </div>
             </div>

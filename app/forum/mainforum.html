@@ -14,10 +14,29 @@
         @import url(../footer/footer.css);
         @import url(./text-editor.css);
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var app = angular.module("angularApp", [])
+        app.controller("TopicController", function($scope, $http) {
+            $http({
+                method: "GET",
+                url: "/assets/data/forum/forum.json"
+            }).then(function mySucces(respone) {
+                $scope.forum = respone.data
+            }, function myError(respone) {
+                $scope.dataError = respone.statusText
+            })
+        })
+
+        function calculateDiff(topic) {
+            var today = new Date();
+            console.log(today)
+        }
+    </script>
 </head>
 <header w3-include-html='../header/header.html'></header>
 
-<body>
+<body ng-app="angularApp" ng-controller="TopicController">
     <div class="content">
         <div class="forum__intro">
             <div class="coude__intro">
@@ -39,17 +58,16 @@
                 <button type="button" class="nav__btn">My questions</button>
             </div>
             <div class="dropdown">
-                <select>
-                        <option value="">TAGS</option>
-                        <option value="">C#</option>
-                        <option value="">C++</option>
-                        <option value="">Python</option>
-                        <option value="">Java</option>
-                        <option value="">SQL</option>
-                        <option value="">Kotlin</option>
-                        <option value="">HTML</option>
-                        <option value="">CSS</option>
-                        <option value="">Javascript</option>
+                <select ng-model="selectedTag">
+                        <option value="c#">C#</option>                       
+                        <option value="c++">C++</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="sql">SQL</option>
+                        <option value="kotlin">Kotlin</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">Javascript</option>
                 </select>
             </div>
             <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 
@@ -86,62 +104,19 @@
                 <div class="topic__views">Views</div>
                 <div class="topic__times">Time</div>
             </div>
-            <a href="./topic.html">
+            <a href="./topic.html" ng-repeat="topic in forum | filter: {tag: selectedTag}">
                 <div class="topic-child">
                     <div class="topic__col">
-                        <div class="topic__name">[FIXED] Error in Python 3 loop quiz?</div>
-                        <div class="topic__tags">Python</div>
+                        <div class="topic__name">{{topic.title}}</div>
+                        <div class="topic__tags">{{topic.tag}}</div>
                     </div>
-                    <div class="topic__replies">14</div>
-                    <div class="topic__views">429</div>
-                    <div class="topic__times">1w</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="topic-child">
-                    <div class="topic__col">
-                        <div class="topic__name">How do I convert this HTML button to Javascript?</div>
-                        <div class="topic__tags">Javascript</div>
-                    </div>
-                    <div class="topic__replies">34</div>
-                    <div class="topic__views">100</div>
-                    <div class="topic__times">23m</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="topic-child">
-                    <div class="topic__col">
-                        <div class="topic__name">How do I convert this HTML button to Javascript?</div>
-                        <div class="topic__tags">Javascript</div>
-                    </div>
-                    <div class="topic__replies">34</div>
-                    <div class="topic__views">100</div>
-                    <div class="topic__times">23m</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="topic-child">
-                    <div class="topic__col">
-                        <div class="topic__name">How do I convert this HTML button to Javascript?</div>
-                        <div class="topic__tags">Javascript</div>
-                    </div>
-                    <div class="topic__replies">34</div>
-                    <div class="topic__views">100</div>
-                    <div class="topic__times">23m</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="topic-child">
-                    <div class="topic__col">
-                        <div class="topic__name">How do I convert this HTML button to Javascript?</div>
-                        <div class="topic__tags">Javascript</div>
-                    </div>
-                    <div class="topic__replies">34</div>
-                    <div class="topic__views">100</div>
-                    <div class="topic__times">23m</div>
-                </div>
-            </a>
+                    <div class="topic__replies">{{topic.replies}}</div>
+                    <div class="topic__views">{{topic.views}}</div>
+                    <!-- <div class="topic__times">{{topic.date}}</div> -->
+                    <div class="topic__times">{{calculateDiff(topic)}}</div>
 
+                </div>
+            </a>
         </div>
     </div>
     <div class="footer"></div>

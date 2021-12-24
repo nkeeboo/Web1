@@ -9,7 +9,7 @@
 
     <style>
         /* @import url(/node_modules/bootstrap/scss/_dropdown.scss); */
-
+        
         @import url(/main-style.css);
         @import url(./header.css);
         @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&family=Work+Sans:wght@500&display=swap');
@@ -18,9 +18,11 @@
 </head>
 
 <body>
-    <div class="header__container flex--row" id="navbar">
-        <img src="/assets/logo.png" alt="Logo">
+    <div class="header__container" id="navbar">
+        <a href="javascript:void(0)" class="icon" onclick="collapseHeader()">☰</a>
 
+        <img src="/assets/logo.png" alt="Logo">
+        <!-- <div> -->
         <div class="navbar__link-container">
             <a href="/app/Homepage/homepage.html">Home</a>
             <a href="/app/Catalog/Catalog.html">Catalog</a>
@@ -30,13 +32,12 @@
 
         <div class="search-box flex-row">
             <input type="text" name="search" id="searchBox" placeholder="Search here">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0  0 16 16">
                 <path
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg>
         </div>
-        <div class="header__button-container">
+        <div class="header__button-container flex--row">
             <button id="signup" class="btn--s" onclick="window.location.href='../Signup/sign-up.html'">
                 Sign up
             </button>
@@ -44,11 +45,7 @@
                 Login
             </button>
         </div>
-        <a href="javascript:void(0)" class="icon" onclick="collapseHeader()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </a>
+        <!-- </div> -->
     </div>
 
     <!-- <div style="color: black;">
