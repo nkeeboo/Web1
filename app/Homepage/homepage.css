@@ -9,6 +9,7 @@
     justify-content: space-between;
     margin: auto 5%;
     font-family: 'Gothic A1', sans-serif;
+    /* position: relative; */
 }
 /* Mỗi mục sẽ là một item */
 .container__item{
@@ -98,23 +99,46 @@ img.advertise{
 .course__item:hover{
     cursor: pointer;
 }
-
+.popup-container{
+    display: none;
+    position: fixed;
+    top: 55px;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: auto; */
+    background-color: rgba(0, 0, 0, 0.4);
+}
 .popup-content{
-    padding-left: 10%; 
+    padding-left: 5%; 
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
+    top: 15%;
+    /* left: auto;
+    right: auto; */
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    width: 50%;
+    min-height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
 }
 .popup-header{
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .popup-header--title{
     font-weight: 800;
 }
 .goal-input{
     margin-bottom: 10px;
+    align-items: center;
 }
 .goal-input label{
-    min-width: 80px;
+    min-width: 75px;
 }
 .goal-input input, .goal-input select{
     width: 30%;

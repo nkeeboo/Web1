@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coudé</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <title>Code Editor</title>
     <style>
         @import url(/app/header/header.css);
         @import url(/main-style.css);
         @import url(./online-code-editor.css);
     </style>
+    <script src="./online-code-editor.js"></script>
 </head>
 <header class="header__container flex--row">
-    <img class="header__logo" src="/assets/logo.png" alt="">
+    <img class="header__logo" src="/assets/logo.png" alt="Logo">
     <button class="btn--s">Run</button>
     <button class="btn--s">Save</button>
     <button class="btn--s"
              onclick="window.location.href='../homepage/homepage.html'">Exit</button>
 </header>
 <body>
-    <div class="menu">
+    <div class="menu" id="sidebar">
         <div class="menu__item">
-            <p>Custome</p>
-            <p>Column</p>
-            <p>Row</p>
-            <p>Color</p>
-            <p>Font</p>
+            <ul>
+            <li><a href="#">Custome</a></li>
+            <li><a href="#">Column</a></li>
+            <li><a href="#">Row</a></li>
+            <li><a href="#">Color</a></li>
+            <li><a href="#">Font</a></li>
+            </ul>
         </div>
         <div class="menu__item">
-            <p>Link</p>
+            <a href="#">Link</a>
         </div>
-        <div class="menu__item">
-            <p>File</p>
+        <div class="menu__item ">
+            <a href="#">File</a>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="collapseSidebar()">☰</a>
     </div>
     <!-- Phần nhập code -->
     <div class="code">
