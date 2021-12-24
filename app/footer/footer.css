@@ -86,7 +86,8 @@
 /* hình payment */
 
 #payment {
-    width: 70%;
+    width: 60%;
+    max-width: auto;
     height: auto;
 }
 

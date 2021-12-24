@@ -1,29 +1,38 @@
-// Get the popup
-var popup = document.getElementById("myPopup");
+function popUp() {
+    // Get the popup
+    var popup = document.getElementById("popup");
+    var btnClose = document.getElementsByClassName("close")[0];
 
-// Get the button that opens the popup
-var btn = document.getElementById("myCreateTopicBtn");
+    // When the user clicks the button, open the popup
+        popup.style.display = "block";
 
-// Get the <span> element that closes the popup
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the popup
-btn.onclick = function () {
-    popup.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the popup
-span.onclick = function () {
-    popup.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the popup, close it
-window.onclick = function (event) {
-    if (event.target == popup) {
+        btnClose.onclick = function () {
         popup.style.display = "none";
     }
-}
 
+    // When the user clicks anywhere outside of the popup, close it
+        window.onclick = function (event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+    console.log(popup);
+}
+function changeNumber(){
+    var num = document.getElementById('number').value.trim();
+    if (num == "") {
+        document.getElementById("goalNumber").innerText = 0;
+    }
+    else
+        document.getElementById("goalNumber").innerText = num;
+}
+function changeType(){
+    var list = document.getElementsByName("type");
+    var num = document.getElementById('number').value.trim();
+    if (num)
+    document.getElementById("goalType").innerText = " " + (num > 1 ? list[0].value + "s" : list[0].value);
+    console.log(list[0]);
+}
 // Điểm danh khi đăng nhập account
 function checkin() {
     let today = new Date();
