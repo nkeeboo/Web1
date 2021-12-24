@@ -13,6 +13,7 @@
         @import url(../header/header.css);
         @import url(../footer/footer.css);
     </style>
+    <script src="../header/header-res.js"></script>
     <script src="./homepage.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script>
@@ -124,7 +125,7 @@
         </div>
         <div class="container__right-col">
             <div class="container__item">
-                <h2>My Goals <a href="">Edit</a></h2>
+                <h2>My Goals <a onclick="popUp()">Edit</a></h2>
                 <div class="goal-container">
                     <div>
                         <p><b>THIS WEEK</b></p>
@@ -169,6 +170,7 @@
                 <img class="advertise" src="/assets/images/homepage/advertise.png" alt="Advertise">
             </div>
         </div>
+ 
     </div>
 
     <!-- popup -->
@@ -178,10 +180,10 @@
             <div class="popup-header flex--row">
                 <div>
                     <h3 class="popup-header--title">Goals</h3>
-                    <p>I will finish <span id="goal"></span> in a <span id="goalTime"></span></p>
+                    <p>I will finish <span id="goalNumber">3</span><span id="goalType"> exercises</span> in a <span>week</span></p>
                 </div>
                 <h3>
-                    <button class="btn--transparent">
+                    <button class="btn--transparent close">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-x-circle" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -195,25 +197,25 @@
             <div class="popup-body">
                 <div class="flex--row goal-input">
                     <label for="time">Time</label>
-                    <input type="text" id="time" value="week" required>
+                    <input type="text" id="time" value="week" disabled>
                 </div>
                 <div class="flex--row goal-input">
                     <label for="type">Type</label>
-                    <select id="type" name="type">
+                    <select id="type" name="type" onclick="changeType()">
                         <option value="exercise" selected>exercise</option>
-                        <option value="video">video</option>
+                        <option value="video"  onclick="">video</option>
                         <option value="assignment">assignment</option>
                     </select>
                 </div>
                 <div class="flex--row goal-input">
                     <label for="number">Number</label>
-                    <input type="text" id="number" value="3" require>
+                    <input type="text" id="number" value="3" onkeyup="changeNumber()" require>
                     <button id="btn-confirm" class="btn--s btn--green" onclick="setGoal()">Confirm
                     </button>
                 </div>
             </div>
         </div>
-        <div>
+    </div>
         <script>w3.includeHTML();</script>
 </body>
 <footer w3-include-html='../footer/footer.html'></footer>

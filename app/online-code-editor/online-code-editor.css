@@ -38,10 +38,23 @@ button:hover{
 .menu__item{
     margin-bottom: 30px;
 }
-.menu div p:nth-child(n){
-    margin: 10px auto;
+.menu__item ul{
+    list-style-type: none;
+    padding-left: 0;
 }
-.menu div p:first-child, .code select, .execution p{
+.menu__item li:not(:first-child){
+    margin: 10px auto;
+
+}
+.menu__item>ul li:not(:first-child) a{
+    font-size: 16px;
+    font-weight: normal;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+.menu__item a:first-child, .code select, .execution p{
     margin-top: 0;
     font-weight: bold;
     font-size: 20px;
@@ -69,8 +82,61 @@ option:hover{
 select:hover{
     cursor: pointer;
 }
-@media only screen and (max-width: 600px) {
+.icon{
+    font-size: 20px;
+    display: none;
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {
     .menu{
         width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        height: fit-content;
+        padding: 1%;
     }
+    .menu__item{
+        display: none;
+    }
+    body{
+        flex-direction: column;
+    }
+  .menu a:not(:first-child) {display: none;}
+  .menu a.icon {
+    /* float: right; */
+    display: block;
+    /* margin-right: 10px; */
   }
+  .code, .execution{
+      height: 50vh;
+      width: 100%;
+      border: 1.5px solid white;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .menu.responsive, .menu{
+        transition: 0.5s;
+    }
+  .menu.responsive {
+      position: relative;
+      justify-content: space-evenly;
+      background-color: grey;
+      color: black;
+      padding: 5%
+    }
+  .menu.responsive .icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .menu.responsive .menu__item {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+  
