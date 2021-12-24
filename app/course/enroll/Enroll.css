@@ -22,13 +22,6 @@ body {
     margin: auto;
 }
 
-.intro--top {
-    width: 100px;
-    height: 30px;
-    padding: 5px;
-    color: black;
-}
-
 .intro--bot {
     display: flex;
 }
