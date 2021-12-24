@@ -127,9 +127,74 @@ button{
         text-align: center;
         margin-bottom: 10px;
     }
+}
+@media only screen and (min-width: 600px) {
+    #line-left{
+        left: 100px;
+    }
+    #line-right{
+        right: 100px;
+        top: 130px;
+    }
+    #text-left{
+        left: 150px;
+        top: 10px;
+    }
+    #text-right{
+        right: 150px;
+        top: 60px;
+    }
 } 
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media screen and (min-width: 768px) {
-    
-  } 
+
+@media screen and (min-width: 768px) {
+    #line-left{
+        left: 100px;
+    }
+    #line-right{
+        right: 100px;
+        top: 130px;
+    }
+    #text-left{
+        left: 250px;
+        top: 10px;
+    }
+    #text-right{
+        right: 250px;
+        top: 60px;
+    }
+} 
+@media only screen and (min-width: 992px) {
+    #line-left{
+        left: 100px;
+    }
+    #line-right{
+        right: 100px;
+        top: 130px;
+    }
+    #text-left{
+        left: 350px;
+        top: 10px;
+    }
+    #text-right{
+        right: 350px;
+        top: 60px;
+    }
+}  
+@media only screen and (min-width: 1200px) {
+    #line-left{
+        left: 100px;
+    }
+    #line-right{
+        right: 100px;
+        top: 130px;
+    }
+    #text-left{
+        left: 450px;
+        top: 10px;
+    }
+    #text-right{
+        right: 450px;
+        top: 60px;
+    }
+}
   
