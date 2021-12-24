@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./text-editor.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="edit">
+            <button class="edit__btn" type="button" data-cmd="justifyLeft">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="justifyCenter">
+                <i class="fa fa-align-center" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="justifyFull">
+                <i class="fa fa-align-justify" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="justifyRight">
+                <i class="fa fa-align-right" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="bold">
+                <i class="fa fa-bold" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="italic">
+                <i class="fa fa-italic" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="underline">
+                <i class="fa fa-underline" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="insertOrderedList">
+                <i class="fa fa-list-ol" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="insertUnorderedList">
+                <i class="fa fa-list-ul" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="insertImage">
+                <i class="fa fa-file-image-o" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="crateLink">
+                <i class="fa fa-link" aria-hidden="true"></i>
+            </button>
+            <button class="edit__btn" type="button" data-cmd="showCode" name="active">
+                <i class="fa fa-code" aria-hidden="true"></i>
+            </button>
+        </div>
+    </form>
+    <iframe id="output" name="textField"></iframe>
+
+    <script>
+        const buttons = document.querySelectorAll('button');
+        textField.document.designMode = "On";
+        let show = false;
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', () => {
+                let cmd = buttons[i].getAttribute('data-cmd');
+                if (buttons[i].name === "active") {
+                    buttons[i].classList.toggle('active');
+                }
+                if (cmd === "insertImage" || cmd === "createLink") {
+                    let url = prompt("Enter link here: ", "");
+                    textField.document.execCommand(cmd, false, url);
+                    if (cmd === "insertImage") {
+                        const imgs = textField.document.querySelectorAll('img');
+                        imgs.forEach(item => {
+                            item.style.maxWitdh = "500px";
+                        })
+                    } else {
+                        const links = textField.document.querySelectorAll('a');
+                        links.forEach(item => {
+                            item.target = "_blank";
+                            item.addEventListener('mouseover', () => {
+                                textField.document.designMode = "Off";
+                            });
+                            item.addEventListener('mouseout', () => {
+                                textField.document.designMode = "On";
+                            });
+
+                        })
+                    }
+                } else {
+                    textField.document.execCommand(cmd, false, null);
+                }
+                if (cmd === "showCode") {
+                    const textBody = textField.document.querySelectorAll('body');
+                    if (show) {
+                        textBody.innerHTML = textBody.textContent;
+                        show = false;
+                    } else {
+                        textBody.textContent = textBody.innerHTML;
+                        show = true;
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
