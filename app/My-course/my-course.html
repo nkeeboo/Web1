@@ -21,17 +21,16 @@
     <div class="wrapper">
        
         <div class="main">
-            <div class="sidebar">
-                <a href="">General Information</a>
+            <div id="myTopnav" class="topnav sidebar">
+                <a href="../General-information/general-information.html">General Information</a>
+                <a href="../Change-information/changinfor.html">Change Information</a>
+                <a href="../Payment/payment.html">Payment</a>
+                <a href="../My-course/my-course.html">My Course</a>
+                <a href="../Favourite_Course/Favourite_course.html">Favorite Course</a>
+                <a href="">Setting</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
-                <a href="">Change Information</a>
-                <a href="">Payment</a>
-                <a href="">My Course</a>
-                <a href="">Favorite Course</a>
-                <a href="">Setting</a>
-                
             </div>
             <div id="content" class="flex__item">
 
@@ -69,6 +68,16 @@
                 </form>
             </div>
         </div>
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+            x.className = "topnav";
+            }
+            }
+            </script>
         <script>
             w3.includeHTML();
         </script>
