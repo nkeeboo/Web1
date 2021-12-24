@@ -31,9 +31,9 @@
     <div class="wrapper">
 
         <div class="main-body">
-            <div class="container-fluid">
+            <!-- <div class="container-fluid"> -->
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                         <div class="sidebar">
                             <a href="">General Information</a>
                             <a href="">Change Information</a>
@@ -43,20 +43,20 @@
                             <a href="">Setting</a>
                         </div>
                     </div>
-                    <div class="col-9 main-content">
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
                         <div class="row">
-                            <div class="col-3"></div>
-                            <div class="col-6">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                 <div class="row justify-content-center">
                                     <h2>Select a payment method</h2>
                                 </div>
                                 <div class="payment-method">
                                     <div class="row">
-                                        <div class="col-10">
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
                                             <div class="radio-payment">
                                                 <input type="radio" name="card" id="card"> Paypal </div>
                                         </div>
-                                        <div class="col-2">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                                             <div class="img-payment">
                                                 <img src="/assets/images/billing/paypal.png" alt="Error" width="50">
                                             </div>
@@ -64,11 +64,11 @@
                                     </div>
                                     <hr>
                                     <div class="row">
-                                        <div class="col-9">
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
                                             <div class="radio-payment">
                                                 <input type="radio" name="card" id="card"> Credit Card </div>
                                         </div>
-                                        <div class="col-3">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                                             <div class="img-payment">
                                                 <img src="/assets/images/billing/mastercard.png" width="50" alt="Error"> <img src="/assets/images/billing/visa.png" width="50" alt="Error"></div>
                                         </div>
@@ -79,11 +79,11 @@
                                 </div>
                                 <div class="button-bot">
                                     <div class="row">
-                                        <div class="col-5"></div>
-                                        <div class="col-2 button-next">
+                                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5"></div>
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
                                             <button class="btn btn-success btn-next" id="btnnext" name="next" data-toggle="modal" data-target="#myModal1">Next</button>
                                         </div>
-                                        <div class="col-5"></div>
+                                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5"></div>
                                     </div>
                                 </div>
                             </div>
@@ -92,28 +92,63 @@
                         <div class="col-3"></div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
             <!-- Modal -->
             <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3>Choose OTP code</h3>
+                            <h3>VIA VISA/MASTERCARD</h3>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <div class="modal-body">
-                            <p>Choose to receive OTP code via:</p>
-                            <div class="content-main">
-                                <div class="choose-element">
-                                    <input type="radio" name="payment-input" id="phone">
-                                    <label for="phone">Phone number</label>
-                                </div>
-                                <div class="choose-element">
-                                    <input type="radio" name="payment-input" id="email">
-                                    <label for="email">Email</label>
-                                </div>
+                            <div class="card-info">
+                                <label for="number">Card's Number:</label>
+                                <input type="text" id="number" name="number">
+                            </div>
+                            <div class="card-info">
+                                <label for="number">Card's Name:</label>
+                                <input type="text" id="number" name="number">
+                            </div>
+                            <div class="card-info">
+                                <label for="number">Expiration date:</label>
+                                <input type="text" id="number" name="number">
+                            </div>
+                            <div class="card-info">
+                                <label for="number">Security code:</label>
+                                <input type="text" id="number" name="number">
+                                <p>Enter the 3-digit code on the back of the card (Amex card: 4 digits on the front).</p>
                             </div>
                         </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-next">Next</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Choose OTP code</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="choose-element">
+                                <input type="radio" name="choose-input" id="phone">
+                                <label for="phone">Phone number</label>
+                            </div>
+                            <div class="choose-element">
+                                <input type="radio" name="choose-input" id="email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default btn-next">Next</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -141,45 +176,7 @@
 
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default btn-prev">Resend code</button>
-                            <button type="button" class="btn btn-default btn-next">Confirm</button>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3>VIA VISA/MASTERCARD</h3>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-
-                        <div class="modal-body">
-                            <div class="card-info">
-                                <label for="number">Card's Number:</label>
-                                <input type="text" id="number" name="number">
-                            </div>
-                            <div class="card-info">
-                                <label for="number">Card's Name:</label>
-                                <input type="text" id="number" name="number">
-                            </div>
-                            <div class="card-info">
-                                <label for="number">Expiration date:</label>
-                                <input type="text" id="number" name="number">
-                            </div>
-                            <div class="card-info">
-                                <label for="number">Security code:</label>
-                                <input type="text" id="number" name="number">
-                                <p>Enter the 3-digit code on the back of the card (Amex card: 4 digits on the front).</p>
-                            </div>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default btn-next">Confirm</button>
+                            <button type="button" class="btn btn-default btn-next" onclick="window.location.href='../General-information/general-information.html'">Confirm</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -194,6 +191,6 @@
         w3.includeHTML();
     </script>
 </body>
-<footer w3-include-html='../footer/footer.html'></footer>
+<footer w3-include-html='../footer/footer-mini.html'></footer>
 
 </html>

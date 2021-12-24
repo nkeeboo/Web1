@@ -12,6 +12,7 @@
     <style>
         @import url(../header/header.css);
         @import url(../footer/footer.css);
+        @import url(./mainforum.css);
     </style>
 </head>
 <header w3-include-html='../header/header.html'></header>
@@ -57,11 +58,12 @@
                 </div>
             </div>
             <div class="topic__content ">
-                None of the answers is the correct one, the quotes (") are not printed together with the elements. <br> The expected output would be coffee tea water juice soda (in reality one line per element).
-                <br> Some other quizes space them like above instead of showing them on newlines. Regardless this quiz answer is wrong. The expected output would be coffee tea water juice soda (in reality one line per element).
+                <p>None of the answers is the correct one, the quotes (") are not printed together with the elements.</p>
                 <img class="topic__image" src="./bug1.png" alt="">
-                <br> Some other quizes space them like above instead of showing them on newlines.
-                <br> Regardless this quiz answer is wrong.
+                <p>The expected output would be coffee tea water juice soda (in reality one line per element).</p>
+                <p>Some other quizes space them like above instead of showing them on newlines. Regardless this quiz answer is wrong. The expected output would be coffee tea water juice soda (in reality one line per element).</p>
+                <p>Some other quizes space them like above instead of showing them on newlines.
+                    <br> Regardless this quiz answer is wrong.</p>
                 <img class="topic__image" src="./bug2.png" alt="">
             </div>
         </div>
@@ -78,11 +80,17 @@
                 <div class="data-number" id="likes">45</div>
                 <div>likes</div>
             </div>
-            <div class="interacts">
-                <i class="bi bi-heart"></i>
-                <i class="bi bi-bookmark"></i>
-                <i class="bi bi-reply"></i>
-                <a href="">Reply</a>
+            <div class="reply__operation">
+                <div class="interacts">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg>
+                    <i class="bi bi-bookmark"></i>
+                </div>
+                <button class="reply__btn" type="button">
+                    <i class="bi bi-reply"></i>
+                    <span>Reply</span>    
+                </button>
             </div>
         </div>
         <div class="div-background">
@@ -96,24 +104,47 @@
                 <div class="topic__infor-history"></div>
             </div>
             <div class="topic__content">
-                You can force quotes to be displayed in the output by formatting drink variable with f-string:
+                <p>You can force quotes to be displayed in the output by formatting drink variable with f-string:</p>
                 <img class="topic__image" src="./bug1.png" alt="">
             </div>
             <div class="reply__operation">
-                <div class="reply__function">Reply</div>
-                <div class="reply__interacts">
+                <div class="interacts">
+                    <span>10</span>
                     <i class="bi bi-heart"></i>
                     <i class="bi bi-bookmark"></i>
-                    <i class="bi bi-reply"></i>
+                    <i class="bi bi-reply" onclick="replyFunction()"></i>
+                </div>
+
+            </div>
+        </div>
+        <!-- Popup -->
+        <div id="myPopup" class="popup-div">
+            <!-- Popup content -->
+            <div class="popup-content">
+                <div class="popup-header">
+                    <i class="bi bi-x-circle close"></i>
+                    <div class="popup-header--title">Create a new topic</div>
+                </div>
+                <div class="popup-body">
+                    <div class="input-content" w3-include-html='./text-editor.html'>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <button class="cancel__btn">Cancel</button>
+                    <div class="create-topic">
+                        <button class="reply__btn" type="button">
+                            <i class="bi bi-reply"></i>
+                            <span>Reply</span>    
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer"></div>
-    <script>
-        w3.includeHTML();
-    </script>
+        <script src="./popup.js"></script>
+        <script>
+            w3.includeHTML();
+        </script>
 </body>
-<footer w3-include-html='../footer/footer.html'></footer>
+<footer w3-include-html='../footer/footer-mini.html'></footer>
 
 </html>

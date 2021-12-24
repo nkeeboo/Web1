@@ -18,17 +18,17 @@
 
 <body>
     <div id="container" class="flex__item--row">
-        <div id="myTopnav" class="topnav flex__item--col">
+        <div class="topnav" id="myTopnav">
             <a href="../General-information/general-information.html">General Information</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
             <a href="../Change-information/changinfor.html">Change Information</a>
             <a href="../Payment/payment.html">Payment</a>
-            <a href="../My-course/my-couse.html">My Course</a>
+            <a href="../My-course/my-course.html">My Course</a>
             <a href="../Favourite_Course/Favourite_course.html">Favourite Course</a>
             <a href="">Setting</a>  
-        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-caret-square-down"></i>
+            </a>
+          </div>
         <div id="content" class="flex__item">
             <h1>My Favourite Courses</h1>
             <form>
@@ -83,7 +83,7 @@
     } else {
     x.className = "topnav";
     }
-}
+    }
     </script>
     <script>
         w3.includeHTML();

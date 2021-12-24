@@ -30,15 +30,21 @@ h1 {
 
 i {
     font-size: 64px;
+    color: rgb(18, 23, 46);
 }
 
 hr {
     width: 35%;
-    border: 5px solid black;
+    border: 2px solid black;
 }
 
 br {
     margin: 0%;
+}
+
+button{
+    background: transparent;
+    border: none;
 }
 
 .text-green {
@@ -62,23 +68,133 @@ br {
 #community div p {
     font-family: RobotoRegular;
 }
-
+#help-text{
+    padding: 100px;
+}
 #help-text p {
     font-family: RobotoRegular;
     color: black;
 }
+.slogan--container{
+    display: block;
+    position: relative;
+} 
+#line-left{
+    position: absolute;
+    left: 100px;
+}
+#line-right{
+    position: absolute;
+    right: 100px;
+    top: 130px;
+}
+#text-left{
+    position: absolute;
+    left: 450px;
+    top: 10px;
+}
+#text-right{
+    position: absolute;
+    right: 450px;
+    top: 60px;
+}
 
 @media screen and (max-width: 600px) {
-    .container {
-        padding: 0px 10px;
-    }
     #community {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        margin: auto;
     }
     .flex-item {
         width: 70%;
+        margin-left: 80px;
+    }
+    #help-text{
+        padding: 20px;
+    }
+    #slogan--container{
+        display: flex;
+        flex-direction: column;
+    }
+    br{
+        display: none;
+    }
+    hr{
+        width: 80%;
+    }
+    #line-left, #line-right, #text-left, #text-right{
+        display: block;
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
+@media only screen and (min-width: 600px) {
+    #line-left{
+        left: 100px;
+    }
+    #line-right{
+        right: 100px;
+        top: 130px;
+    }
+    #text-left{
+        left: 150px;
+        top: 10px;
+    }
+    #text-right{
+        right: 150px;
+        top: 60px;
+    }
+} 
+
+@media screen and (min-width: 768px) {
+    #line-left{
+        left: 100px;
+    }
+    #line-right{
+        right: 100px;
+        top: 130px;
+    }
+    #text-left{
+        left: 250px;
+        top: 10px;
+    }
+    #text-right{
+        right: 250px;
+        top: 60px;
+    }
+} 
+@media only screen and (min-width: 992px) {
+    #line-left{
+        left: 100px;
+    }
+    #line-right{
+        right: 100px;
+        top: 130px;
+    }
+    #text-left{
+        left: 350px;
+        top: 10px;
+    }
+    #text-right{
+        right: 350px;
+        top: 60px;
+    }
+}  
+@media only screen and (min-width: 1200px) {
+    #line-left{
+        left: 100px;
+    }
+    #line-right{
+        right: 100px;
+        top: 130px;
+    }
+    #text-left{
+        left: 450px;
+        top: 10px;
+    }
+    #text-right{
+        right: 450px;
+        top: 60px;
+    }
+}
+  
