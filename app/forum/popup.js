@@ -3,7 +3,6 @@ var popup = document.getElementById("myPopup");
 
 // Get the button that opens the popup
 var btn = document.getElementById("myCreateTopicBtn");
-var btn = document.getElementsByClassName("reply__btn");
 
 // Get the <span> element that closes the popup
 var span = document.getElementsByClassName("close")[0];
