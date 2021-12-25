@@ -14,11 +14,36 @@
     <link rel="stylesheet" href="../../footer/footer.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="../header/header-res.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        let urlparams = new URLSearchParams(location.search);
+        var name = urlparams.get('enrollName');
+    </script>
+    <script>
+        let app = angular.module("angularApp", []);
+        app.controller("EnrollController", function($scope, $http) {
+            $http({
+                method: "GET",
+                url: "/assets/data/courses/courses.json"
+            }).then(
+                function success(response) {
+                    $scope.selectedEnroll = null;
+                    for (let i = 0; i < response.data.length; i++) {
+                        if (response.data[i].name == name) {
+                            $scope.selectedEnroll = response.data[i];
+                            break;
+                        }
+                    }
+                },
+                function error(response) {
+                    $scope.error = response.statusText;
+                })
+        })
+    </script>
 </head>
 <header w3-include-html='../../header/header.html'></header>
 
-<body>
-
+<body ng-app="angularApp" ng-controller="EnrollController">
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -31,7 +56,7 @@
                         <div class="col-12 col-lg-6" style="height: 100%;">
                             <div class="intro--left">
                                 <p class="intro--header">
-                                    BackEnd - Enginner
+                                    {{selectedEnroll.title}}
                                 </p>
                                 <div class="stars">
                                     <div class="rate">
