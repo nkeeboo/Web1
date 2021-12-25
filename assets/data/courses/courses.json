@@ -604,8 +604,8 @@
         "tag": "pro",
         "logo": "Coudé",
         "resource": [{
-            "type": "",
-            "res_name": ""
+            "type": "project",
+            "res_name": "World Populations"
         }]
     },
     {

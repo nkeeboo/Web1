@@ -7,40 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <style>
         @import url(/main-style.css);
         @import url(/app/schedule/schedule.css);
+        @import url(../header/header.css);
+        @import url(../footer/footer.css);
     </style>
     <script src="../header/header-res.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
+<header w3-include-html='../header/header.html'></header>
 
 <body>
     <div class="container">
-        <div class="menu">
-            <div class="menu__item">
-                Overview
-                <ul>
-                    <li><a href="">Week 1</a></li>
-                    <li><a href="">Week 2</a></li>
-                    <li><a href="">Week 3</a></li>
-                    <li><a href="">Week 4</a></li>
-                    <li><a href="">Week 5</a></li>
-                </ul>
-            </div>
-            <div class="menu__item">
-                Assignment
-                <ul>
-                    <li><a href="">Week 1</a></li>
-                    <li><a href="">Week 2</a></li>
-                    <li><a href="">Week 3</a></li>
-                    <li><a href="">Week 4</a></li>
-                    <li><a href="">Week 5</a></li>
-                </ul>
-            </div>
-            <div class="menu__item">Document</div>
-            <div class="menu__item">Note</div>
-            <div class="menu__item">Forum</div>
-            <div class="menu__item">Message</div>
+        <div class="topnav" id="myTopnav">
+            <a id="title" href="">Overview</a>
+            <a href="">Week 1</a>
+            <a href="">Week 2</a>
+            <a href="">Week 3</a>
+            <a href="">Week 4</a>
+            <a href="">Week 5</a>
+            <a id="title" href="">Assignements</a>
+            <a href="">Lesson 1</a>
+            <a href="">Lesson 2</a>
+            <a href="">Lesson 3</a>
+            <a href="">Lesson 4</a>
+            <a href="">Lesson 5</a>
+            <a id="title" href="">Documents</a>
+            <a id="title" href="">Notes</a>
+            <a id="title" href="">Forum</a>
+            <a id="title" href="">Message</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-caret-square-down"></i>
+            </a>
         </div>
         <div class="main-content">
             <div class="overview">
@@ -50,7 +50,7 @@
                     </legend>
                     <p>Instructor: Nguyen Hoang Tuyet Nhi</p>
                     <div class="timeline" style="position: relative;">
-                        
+
                         <div class="timeline-container flex--row" style="z-index: 2;  position: absolute">
                             <div class="timeline__item">
                                 <div class="week-circle" style="background-color: var(--button-color);">
@@ -149,6 +149,20 @@
             </div>
         </div>
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
+<footer w3-include-html='../footer/footer.html'></footer>
 
 </html>

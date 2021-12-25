@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,35 +11,29 @@
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <script src="../header/header-res.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 <header w3-include-html='../header/header.html'></header>
+
 <body>
-    <div class="flex__item--row">
+    <div id="study--content" class="flex__item--row">
         <div class="topnav" id="myTopnav">
-            <ul>
-                <li><a href="">Options</a>
-                    <ul>
-                        <li><a href="">Lesson 1</a></li>
-                        <li><a href="">Lesson 2</a></li>
-                        <li><a href="">Lesson 3</a></li>
-                        <li><a href="">Lesson 4</a></li>
-                        <li><a href="">Lesson 5</a></li> 
-                    </ul>
-                </li>
-                <li><a href="">Assignements</a>
-                    <ul>
-                        <li><a href="">Lesson 1</a></li>
-                        <li><a href="">Lesson 2</a></li>
-                        <li><a href="">Lesson 3</a></li>
-                        <li><a href="">Lesson 4</a></li>
-                        <li><a href="">Lesson 5</a></li> 
-                    </ul>
-                </li>
-                <li><a href="">Documents</a></li>
-                <li><a href="">Notes</a></li>
-                <li><a href="">Exercises</a></li>
-            </ul>
+            <a id="title" href="">Options</a>
+            <a href="">Lesson 1</a>
+            <a href="">Lesson 2</a>
+            <a href="">Lesson 3</a>
+            <a href="">Lesson 4</a>
+            <a href="">Lesson 5</a>
+            <a id="title" href="">Assignements</a>
+            <a href="">Lesson 1</a>
+            <a href="">Lesson 2</a>
+            <a href="">Lesson 3</a>
+            <a href="">Lesson 4</a>
+            <a href="">Lesson 5</a>
+            <a id="title" href="">Documents</a>
+            <a id="title" href="">Notes</a></li>
+            <a id="title" href="">Exercises</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fas fa-caret-square-down"></i>
             </a>
@@ -46,8 +41,8 @@
         <div id="content">
             <div id="script">
                 <p>Script Lesson 1:</p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum, laborum hic est harum molestias maiores, rerum quaerat autem eum dolore perferendis voluptatum quis eius delectus earum libero eaque dolorem!<br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora illo illum quae commodi exercitationem repellat? Voluptatibus, nihil consequuntur harum quam eligendi sint facere, rerum enim rem exercitationem dolore? Ad, iure.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum, laborum hic est harum molestias maiores, rerum quaerat autem eum dolore perferendis voluptatum quis eius delectus earum libero eaque dolorem!<br> Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Tempora illo illum quae commodi exercitationem repellat? Voluptatibus, nihil consequuntur harum quam eligendi sint facere, rerum enim rem exercitationem dolore? Ad, iure.
             </div>
             <div id="button" class="flex__item--row">
                 <button>Previous</button>
@@ -69,16 +64,17 @@
         </div>
     </div>
     <script>
-        function tryCode(){
+        function tryCode() {
             window.location.href = '../online-code-editor/online-code-editor.html';
         }
+
         function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-        x.className += " responsive";
-        } else {
-        x.className = "topnav";
-        }
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     </script>
     <script>
@@ -86,4 +82,5 @@
     </script>
 </body>
 <footer w3-include-html='../footer/footer.html'></footer>
+
 </html>

@@ -18,6 +18,11 @@
     src: url(/assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
 }
 
+@font-face {
+    font-family: RobotoBlack;
+    src: url(/assets/fonts/roboto/Roboto-Black.ttf);
+}
+
 .flex__item--col {
     display: flex;
     flex-direction: column;
@@ -37,6 +42,18 @@ fieldset {
     padding: 20px;
     width: 20%;
 }
+
+#title {
+    color: white;
+    font-family: 'RobotoBlack';
+    font-size: 17px;
+}
+.text-bold {
+    color: white !important;
+    font-family: 'RobotoBlack' !important;
+    font-size: 17px !important;
+}
+
 
 #content {
     width: 80%;

@@ -14,15 +14,20 @@
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../header/header-res.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script>
         var app = angular.module("angularApp", [])
         app.controller("CoursesController", function($scope, $http) {
+            $scope.makeUrl = function(lang){
+                let fullUrl = window.location.origin + "/app/course/coursedetail.html";
+                return fullUrl + "?lang=" + encodeURIComponent(lang);
+            }
             $http({
                 method: "GET",
                 url: "/assets/data/courses/courses.json"
             }).then(function mySucces(respone) {
-                $scope.courses = respone.data
+                $scope.courses = respone.data;
             }, function myError(respone) {
                 $scope.dataError = respone.statusText
             })
@@ -34,25 +39,25 @@
 <body ng-app="angularApp" ng-controller="CoursesController">
     <div id="container" class="flex__item--row">
         <div class="topnav" id="myTopnav">
-            <a href="" style="font-size: 20px; margin-left: 5px;">Language</a>
-            <a href="">HTML&CSS</a>
-            <a href="">Python</a>
-            <a href="">JavaScript</a>
-            <a href="">Java</a>
-            <a href="">SQL</a>
-            <a href="">C++</a>
-            <a href="">C#</a>
-            <a href="">R</a>
-            <a href="">Kotlin</a>
-            <a href="" style="font-size: 20px; margin-left: 5px;">Subjects</a>
+            <a class="text-bold" href="javascript:void(0)">Language</a>
+            <a href="{{makeUrl('html')}}">HTML&CSS</a>
+            <a href="{{makeUrl('python')}}">Python</a>
+            <a href="{{makeUrl('jvscrpt')}}">JavaScript</a>
+            <a href="{{makeUrl('java')}}">Java</a>
+            <a href="{{makeUrl('sql')}}">SQL</a>
+            <a href="{{makeUrl('c++')}}">C++</a>
+            <a href="{{makeUrl('c#')}}">C#</a>
+            <a href="{{makeUrl('r')}}">R</a>
+            <a href="{{makeUrl('kotlin')}}">Kotlin</a>
+            <a class="text-bold" href="javascript:void(0)">Subjects</a>
             <a href="">Web Design</a>
             <a href="">Data Science</a>
             <a href="">Computer Science</a>
             <a href="">For Business</a>
             <a href="">Mobile Development</a>
-            <a href="" style="font-size: 20px; margin-left: 5px;">Where do I begin?</a>
+            <a class="text-bold" href="javascript:void(0)">Where do I begin?</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+                <i class="fas fa-caret-square-down"></i>
             </a>
         </div>
         <div id="content" class="flex__item">
@@ -68,7 +73,7 @@
             </div>
             <!-- courses popular-->
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='popular') | limitTo: 8">
+                <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='popular') | limitTo: 9">
                     <div class="txtcourse">
                         <div class="tag">
                             <p class="txttag">{{co.tag}}</p>
@@ -83,116 +88,70 @@
                         <p class="coude">{{co.logo}}</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
+
+            </div>
+
+            <div class="row">
+                <h3 class="header">Courses With Language</h3>
+            </div>
+            <div class="row">
+                <div class="col-4" ng-repeat="course in coursesLang">
+                    <span>{{course.title}}</span>
                 </div>
             </div>
+
             <!-- header 2-->
             <div class="row">
                 <h3 class="header">New</h3>
             </div>
+
             <!-- courses new -->
             <div class="row">
+
                 <div class="col-12 col-sm-6 col-md-4" ng-repeat="c in courses | filter : (c.time ='new') | limitTo : 9">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">{{c.tag}}</p>
+                        <div class="txtcourse">
+                            <div class="tag">
+                                <p class="txttag">{{c.tag}}</p>
+                            </div>
+                            <div class="information">
+                                <p class="box--course_header">{{c.title}}</p>
+                                <ul>
+                                    <li>{{c.description[0].txtlevel}}</li>
+                                    <li>{{c.description[0].number_lesson}}</li>
+                                </ul>
+                            </div>
+                            <p class="coude">{{c.logo}}</p>
                         </div>
-                        <div class="information">
-                            <p class="box--course_header">{{c.title}}</p>
-                            <ul>
-                                <li>{{c.description[0].txtlevel}}</li>
-                                <li>{{c.description[0].number_lesson}}</li>
-                            </ul>
-                        </div>
-                        <p class="coude">{{c.logo}}</p>
-                    </div>
                 </div>
             </div>
+
             <!-- header 3 -->
             <div class="row">
                 <h3 class="header">Blog</h3>
             </div>
             <!-- blog line 1 -->
-            <div class="row">
-                <div class="col-lg-4 text-center">
+            <div class="row" >
+                <div class="col-lg-4 text-center" ng-repeat="bl in courses| filter : (bl.resource[0].type ='blog') | limitTo: 1" >
                     <img src="/assets/images/catalog/blog1.PNG" class="blog_img--up">
-                    <p>How to stay motivated when learning code</p>
+                    <p>{{bl.resource[0].res_name}}</p>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center" ng-repeat="bl in courses| filter : (bl.resource[0].type ='doc') | limitTo: 1">
                     <img src="/assets/images/catalog/blog2.PNG" class="blog_img--up">
-                    <p>How to stay motivated when learning code</p>
+                    <p>{{bl.resource[0].res_name}}</p>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center" ng-repeat="bl in courses| filter : (bl.resource[0].type ='project') | limitTo: 1">
                     <img src="/assets/images/catalog/blog3.PNG" class="blog_img--up">
-                    <p>How to stay motivated when learning code</p>
+                    <p>{{bl.resource[0].res_name}}</p>
                 </div>
 
             </div>
             <!-- blogline 2 -->
-            <div class="row">
+            <div class="row" ng-repeat="bl2 in courses |filter : (bl.resource[0].type ='video') |limitTo: 1">
                 <div class="col-lg-6">
                     <img class="blog_img" src="/assets/images/catalog/blog4.PNG">
                 </div>
                 <div class="col-lg-6">
-                    <p class="txtblog">The story of the coder was born in 1996 and the truth is that IT is the king of all professional</p>
+                    <p class="txtblog">{{bl2.resource[0].res_name}}</p>
                 </div>
             </div>
         </div>

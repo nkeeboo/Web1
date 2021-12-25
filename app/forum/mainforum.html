@@ -15,6 +15,7 @@
         @import url(./text-editor.css);
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="../header/header-res.js"></script>
     <script>
         var app = angular.module("angularApp", [])
         app.controller("TopicController", function($scope, $http) {
@@ -26,8 +27,8 @@
             }, function myError(respone) {
                 $scope.dataError = respone.statusText;
             });
-            $scope.selectProduct = function(val) {
-                $scope.productDetails = val;
+            $scope.selectTopic = function(val) {
+                $scope.topicDetails = val;
             }
         })
 
@@ -63,15 +64,16 @@
             </div>
             <div class="dropdown">
                 <select ng-model="selectedTag">
-                        <option value="c#">C#</option>                       
-                        <option value="c++">C++</option>
-                        <option value="python">Python</option>
-                        <option value="java">Java</option>
-                        <option value="sql">SQL</option>
-                        <option value="kotlin">Kotlin</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="javascript">Javascript</option>
+                    <option value="">TAGS</option>
+                    <option value="c#">C#</option>                       
+                    <option value="c++">C++</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="sql">SQL</option>
+                    <option value="kotlin">Kotlin</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">Javascript</option>
                 </select>
             </div>
             <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 

@@ -258,6 +258,13 @@
         margin: auto;
     }
     
+    .list-topic .topic-child:hover {
+        color: #2C14BC;
+        border: 2px solid #2C14BC;
+        font-weight: bolder;
+        background-color: #E9EAF2;
+    }
+    
     .topic__name-smallsize {
         font-size: 13px;
         flex: 6;
@@ -278,6 +285,7 @@
     
     .topic__name {
         font-size: 16px;
+        /* text-overflow: ellipsis; */
     }
     
     .topic__col {

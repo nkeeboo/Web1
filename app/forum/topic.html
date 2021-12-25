@@ -9,12 +9,18 @@
     <link rel="stylesheet" href="./topic.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../header/header-res.js"></script>
+    <script src="./popup.js"></script>
     <style>
         @import url(../header/header.css);
         @import url(../footer/footer.css);
         @import url(./mainforum.css);
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        let urlparams = new URLSearchParams(location.search);
+        var id = urlparams.get('topicId');
+    </script>
     <script>
         let app = angular.module("angularApp", []);
         app.controller("TopicDetailsController", function($scope, $http) {
@@ -26,7 +32,7 @@
                     $scope.selectedTopic = null;
                     for (let i = 0; i < response.data.length; i++) {
                         if (response.data[i].id == id) {
-                            $scope.selectedProduct = response.data[i];
+                            $scope.selectedTopic = response.data[i];
                             break;
                         }
                     }
@@ -126,7 +132,7 @@
                     <span>10</span>
                     <i class="bi bi-heart"></i>
                     <i class="bi bi-bookmark"></i>
-                    <i class="bi bi-reply" onclick="replyFunction()"></i>
+                    <i class="bi bi-reply"></i>
                 </div>
 
             </div>
@@ -155,36 +161,6 @@
             </div>
         </div>
     </div>
-    <script>
-        // Get the popup
-        var popup = document.getElementById("myPopup");
-
-        // Get the button that opens the popup
-        var btn = document.getElementById("myCreateTopicBtn");
-
-        // Get the <span> element that closes the popup
-        var span = document.getElementsByClassName("close")[0];
-        var cancel = document.getElementsByClassName("cancel__btn")[0];
-
-        // When the user clicks the button, open the popup
-        btn.onclick = function() {
-            popup.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the popup
-        span.onclick = function() {
-            popup.style.display = "none";
-        }
-        cancel.onclick = function() {
-            popup.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the popup, close it
-        window.onclick = function(event) {
-            if (event.target == popup) {
-                popup.style.display = "none";
-            }
-        }
     </script>
     <script>
         w3.includeHTML();

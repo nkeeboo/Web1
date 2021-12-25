@@ -39,6 +39,18 @@
     width: 20%;
 }
 
+#title {
+    color: white;
+    font-family: 'RobotoBlack';
+    font-size: 17px;
+}
+
+.text-bold {
+    color: white !important;
+    font-family: 'RobotoBlack' !important;
+    font-size: 17px !important;
+}
+
 #content {
     width: 80%;
     padding: 0px 100px;
