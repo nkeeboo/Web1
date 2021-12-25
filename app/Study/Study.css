@@ -33,15 +33,7 @@ button{
     padding: 5px 15px;
     min-width: 100px;
 }
-.container{
-    display: flex;
-    flex-direction: row;
-}
 
-.flex__item--col{
-    display: flex;
-    flex-direction: column;
-}
 .flex__item--row{
     display: flex;
     flex-direction: row;
