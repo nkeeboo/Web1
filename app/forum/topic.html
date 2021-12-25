@@ -23,9 +23,16 @@
                 url: "/assets/data/forum/forum.json"
             }).then(
                 function success(response) {
-                    $scope.selectedTopic = response.data.find(function(value) {
-                        return value.Id == id;
-                    })
+                    $scope.selectedTopic = null;
+                    for (let i = 0; i < response.data.length; i++) {
+                        if (response.data[i].id == id) {
+                            $scope.selectedProduct = response.data[i];
+                            break;
+                        }
+                    }
+                    // $scope.selectedTopic = response.data.find(function(value) {
+                    //     return value.Id == id;
+                    // })
                 },
                 function error(response) {
                     $scope.error = response.statusText;
