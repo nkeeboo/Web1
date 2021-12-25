@@ -19,6 +19,13 @@ body {
     background-color: rgba(196, 196, 196, 0.5);
 }
 
+img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 5px;
+}
+
 .intro--left {
     text-align: left;
     margin-left: 50px;
@@ -47,10 +54,8 @@ button {
 
 .intro--right {
     height: 300px;
-}
-
-.txtintroright {
-    margin-top: 20px;
+    display: flex;
+    margin-top: 100px;
 }
 
 .intro--right {

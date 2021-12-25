@@ -118,12 +118,18 @@ input[type=button] {
     display: none;
 }
 
+@media only screen and (max-width: 600px) {
+    #content {
+        padding-left: 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {
         display: none;
     }
     .topnav a {
-        float: right;
+        float: left;
         display: block;
     }
     .topnav a.icon {

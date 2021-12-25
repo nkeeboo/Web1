@@ -7,69 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <title>Sign up</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="Billing.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header"></div>
-        <div class="body">
-            <div class="main-body">
-                <div class="logo">
-                    <img src="/assets/logo.png" alt="Error">
-                </div>
-
-                <div class="content-top" id="top">Please fill this form to create an account</div>
-                <div class="line"></div>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col">
+        <div class="row">
+            <div class="header" style="height: 50px;"></div>
+        </div>
+        <div class="row" id="main-content">
+            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
+            <div class="col-xs-4 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="background-color: #9999992b">
+                <div class="container">
+                    <div class="row justify-content-center ">
+                        <img src="/assets/logo.png " width="40%" alt="Error ">
+                    </div>
+                    <div class="content-heading ">
+                        Please fill in this form to create an account.
+                    </div>
+                    <hr>
+                    <div class="form-group ">
+                        <div class="form-row ">
                             <label>Account name</label>
-                            <input type="text" class="form-control" placeholder="Account name" required name="">
+                            <input type="text" class="form-control " placeholder="Account name" autofocus required name=" ">
                         </div>
-                        <div class="col">
+                        <div class="form-row ">
                             <label>Email</label>
-                            <input type="text" class="form-control" placeholder="Email" required name="">
+                            <input type="text " class="form-control " placeholder="Email " required name=" ">
                         </div>
-                        <div class="col">
+                        <div class="form-row ">
                             <label>Phone number</label>
-                            <input type="text" class="form-control" placeholder="Phone number" required name="">
+                            <input type="text " class="form-control " placeholder="Phone number " required name=" ">
                         </div>
-                        <div class="col">
+                        <div class="form-row ">
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Password" required name="">
+                            <input type="password " class="form-control " placeholder="Password " required name=" ">
                         </div>
-                        <div class="col">
+                        <div class="form-row ">
                             <label>Repeat password</label>
-                            <input type="password" class="form-control" placeholder="Repeat password" required name="">
+                            <input type="password " class="form-control " placeholder="Repeat password " required name=" ">
                         </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <input type="checkbox" required name="">
+                        <label>Agree to our Terms & Privacy</label>
+                    </div>
 
-
-
-                <div class="form-group">
-                    <input type="checkbox" required name="">
-                    <label>Agree to our Terms & Privacy</label>
-                </div>
-
-                <div class="form-group signup-button">
-                    <button class="btn btn-success signup-btn" type="submit" onclick="window.location.href='../Homepage/homepage.html'">Sign up</button>
+                    <div class="row justify-content-center signup-button">
+                        <button class="btn btn-success" id="signup-btn" type="submit" onclick="window.location.href='../Homepage/homepage.html'">Sign up</button>
+                    </div>
                 </div>
             </div>
+            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 "></div>
         </div>
-        <div class="footer"></div>
     </div>
-    <script src="./login.js"></script>
+
 
 </body>
 

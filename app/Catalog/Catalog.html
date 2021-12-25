@@ -69,7 +69,7 @@
             </div>
             <!-- courses popular-->
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='popular') | limitTo: 9">
+                <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='new') | limitTo: 9">
                     <a class="linkenroll" href="/app/course/enroll/Enroll.html?enrollName={{co.title}}" target="blank">
                         <div class="txtcourse">
                             <div class="tag">
@@ -88,16 +88,6 @@
                 </div>
 
             </div>
-
-            <div class="row">
-                <h3 class="header">Courses With Language</h3>
-            </div>
-            <div class="row">
-                <div class="col-4" ng-repeat="course in coursesLang">
-                    <span>{{course.title}}</span>
-                </div>
-            </div>
-
             <!-- header 2-->
             <div class="row">
                 <h3 class="header">New</h3>
@@ -106,7 +96,7 @@
             <!-- courses new -->
             <div class="row">
 
-                <div class="col-12 col-sm-6 col-md-4" ng-repeat="c in courses | filter : (c.time ='new') | limitTo : 9">
+                <div class="col-12 col-sm-6 col-md-4" ng-repeat="c in courses | filter : (c.time ='popular') | limitTo : 9">
                     <div class="txtcourse">
                         <div class="tag">
                             <p class="txttag">{{c.tag}}</p>

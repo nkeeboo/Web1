@@ -7,7 +7,7 @@ body {
     font-family: Roboto;
 }
 
-.container {
+#container {
     display: flex;
 }
 
@@ -21,9 +21,13 @@ body {
 }
 
 #myTopnav {
-    width: 30%;
-    padding-left: 25px;
+    width: 20%;
+    padding-left: 30px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+}
+
+.topnav #sub-tit {
+    padding-left: 40px;
 }
 
 .topnav {
@@ -146,6 +150,26 @@ i {
     margin: 0 20px;
 }
 
+#video--content {
+    width: 60%;
+}
+
+#overview-responsive {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #remind--content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    #video--content {
+        width: 80%;
+        margin-left: 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {
         display: none;
@@ -160,14 +184,17 @@ i {
     #myTopnav {
         width: 100%;
     }
-    #study--content {
-        display: flex;
-        flex-direction: column;
-    }
     #script {
         width: 90%;
         margin: 0px;
         padding: 10px;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    #overview {
+        display: none;
     }
 }
 
@@ -201,9 +228,21 @@ i {
     #myTopnav {
         width: 100%;
     }
-    #study--content {
+    #container {
         display: flex;
         flex-direction: column;
+    }
+    #overview {
+        display: none;
+    }
+    .main-content {
+        display: block;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    #overview-responsive {
+        display: block;
+        margin: auto;
     }
 }
 
