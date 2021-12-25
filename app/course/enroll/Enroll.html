@@ -38,9 +38,10 @@
                 function error(response) {
                     $scope.error = response.statusText;
                 })
-                $scope.selectedInfor = function(val) {
-                    $scope.courseInfor = val;
-                }
+
+            $scope.selectedInfor = function(val) {
+                $scope.courseInfor = val;
+            }
         })
     </script>
 </head>
@@ -80,7 +81,7 @@
                                 </div>
                                 <p class="txtintro">Instructor: {{selectedEnroll.instructor}}</p>
                                 <p class="txtintro">Offered by Coudé</p>
-                                <button class="btnenroll" type="button">Enroll for Free <p class="txtbutton">Starts Nov 7</p></button>
+                                <button class="btn btn-block" type="button">Enroll for Free <p class="txtbutton">Starts Nov 7</p></button>
                                 <br>
                                 <p class="txtintro">{{selectedEnroll.enroll_num}} already enrolled</p>
                             </div>
@@ -94,92 +95,88 @@
 
                         </div>
                     </div>
-                </div>
-                <!-- infor -->
-                <div class="row" style="height: 100%;">
-                    <div class="container-fluid">
-                        <div class="row" style="height: 30px;"></div>
-                        <div class="row" style="height: 80px;border: 1px solid black;">
-                            <div class="header--a">
-                                <a ng-click ="selectedInfor" href=" " class="infor--link">
+                    <!-- infor -->
+                    <div class="row infor" style="height: 100%;">
+                        <div class="container-fluid">
+                            <div class="row" style="height: 30px;"></div>
+                            <div class="row justify-content-center" style="border: 1px solid black;">
+                                <a ng-click="selectedInfor" href=" " class="infor--link">
                                                 About the course
                                             </a>
-                                <a ng-click ="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor" href=" " class="infor--link">
                                                 How it works
                                             </a>
-                                <a ng-click ="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor" href=" " class="infor--link">
                                                 Language
                                             </a>
-                                <a ng-click ="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor" href=" " class="infor--link">
                                             Tution Fee
                                             </a>
-                                <a ng-click ="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor" href=" " class="infor--link">
                                                 Instructor
                                             </a>
-                                <a ng-click ="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor" href=" " class="infor--link">
                                                 Degree/Certificate
                                             </a>
-                            </div>
-                        </div>
-                        <div class="row" style="border: 1px solid black;">
-                            <div class=" col-12 col-lg-8" style="height: 100%; border-right: 1px solid black;" ng-if="courseInfor">
 
-                                {{courseInfor.atc}}
-                                <!-- <p class="headertxt">
-                                    WHAT YOU WILL LEARN
-                                </p>
-                                <p>
-                                    WHAT YOU WILL LEARN
-                                    Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean
-                                    data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report WHAT
-                                    YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries
-                                    used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and
-                                    tools to complete a project and publish a report
-                                </p>
-                                <br>
-                                <p class="txtinfor">
+                            </div>
+                            <div class="row" style="border: 1px solid black;">
+                                <div class=" col-12 col-lg-8" style="height: 100%; border-right: 1px solid black;">
+                                    <!-- {{courseInfor.atc}} -->
                                     <p class="headertxt">
-                                        SKILLS YOU WILL GAIN
+                                        WHAT YOU WILL LEARN
                                     </p>
-                                    <ul>
-                                        <li><a>Data Science</a></li>
-                                        <li><a>Deep Learning</a></li>
-                                        <li><a>Machine Learning</a></li>
-                                        <li><a>Big Data</a></li>
-                                        <li><a>Data Mining</a></li>
-                                        <li><a>Github</a></li>
-                                        <li><a>Python Programming</a></li>
-                                        <li><a>Jupyter notebooks</a></li>
-                                        <li><a>Rstudio</a></li>
-                                        <li><a>Methodology</a></li>
-                                        <li><a>Data Analysis</a></li>
-                                        <li><a>Pandas</a></li>
-                                    </ul>
-                                </p> -->
+                                    <p>
+                                        WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists
+                                        Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and
+                                        publish a report WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools,
+                                        languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data
+                                        science skills, techniques, and tools to complete a project and publish a report
+                                    </p>
+                                    <br>
+                                    <p class="txtinfor">
+                                        <p class="headertxt">
+                                            SKILLS YOU WILL GAIN
+                                        </p>
+                                        <ul>
+                                            <li><a>Data Science</a></li>
+                                            <li><a>Deep Learning</a></li>
+                                            <li><a>Machine Learning</a></li>
+                                            <li><a>Big Data</a></li>
+                                            <li><a>Data Mining</a></li>
+                                            <li><a>Github</a></li>
+                                            <li><a>Python Programming</a></li>
+                                            <li><a>Jupyter notebooks</a></li>
+                                            <li><a>Rstudio</a></li>
+                                            <li><a>Methodology</a></li>
+                                            <li><a>Data Analysis</a></li>
+                                            <li><a>Pandas</a></li>
+                                        </ul>
+                                    </p>
 
-                            </div>
-                            <div class="col-12 col-lg-4" style="height: 100%;">
-                                <div class="txtinforrg">
-                                    <i class="glyphicon glyphicon-time"></i> Shareable Certificate
                                 </div>
-                                <div class="txtinforrg">
-                                    <i class="glyphicon glyphicon-star"></i> Beginner Level
-                                </div>
-                                <div class="txtinforrg">
-                                    <i class="glyphicon glyphicon-list-alt"></i> Flexible Schedule
-                                </div>
-                                <div class="txtinforrg">
-                                    <i class="glyphicon glyphicon-book"></i> Approximately 4 months complete
-                                </div>
-                                <div class="txtinforrg">
-                                    <i class="glyphicon glyphicon-edit"></i> Shareable Certificate
-                                </div>
-                                <div class="txtinforrg">
-                                    <i class="glyphicon glyphicon-ok-circle"></i> English
-                                </div>
-
-                                <div class="txtinforrg">
-                                    <i class="glyphicon glyphicon-education"></i> 100% online course
+                                <div class="col-12 col-lg-4" style="height: 100%;">
+                                    <div class="txtinforrg">
+                                        <i class="glyphicon glyphicon-time"></i> Shareable Certificate
+                                    </div>
+                                    <div class="txtinforrg">
+                                        <i class="glyphicon glyphicon-star"></i> Beginner Level
+                                    </div>
+                                    <div class="txtinforrg">
+                                        <i class="glyphicon glyphicon-list-alt"></i> Flexible Schedule
+                                    </div>
+                                    <div class="txtinforrg">
+                                        <i class="glyphicon glyphicon-book"></i> Approximately 4 months complete
+                                    </div>
+                                    <div class="txtinforrg">
+                                        <i class="glyphicon glyphicon-edit"></i> Shareable Certificate
+                                    </div>
+                                    <div class="txtinforrg">
+                                        <i class="glyphicon glyphicon-ok-circle"></i> English
+                                    </div>
+                                    <div class="txtinforrg">
+                                        <i class="glyphicon glyphicon-education"></i> 100% online course
+                                    </div>
                                 </div>
                             </div>
                         </div>
