@@ -30,6 +30,24 @@
             $scope.selectTopic = function(val) {
                 $scope.topicDetails = val;
             }
+            $scope.orderByMe = function(topic) {
+                    $scope.myOrderBy = topic;
+                }
+                // function create pagination
+                // $scope.currentPage = 0;
+                // $scope.pageSize = 15;
+                // $scope.numberOfPages = function() {
+                //     return Math.ceil($scope.forum.length / $scope.pageSize);
+                // }
+
+            // //We already have a limitTo filter built-in to angular,
+            // //let's make a startFrom filter
+            // app.filter('startFrom', function() {
+            //     return function(input, start) {
+            //         start = +start; //parse to int
+            //         return input.slice(start);
+            //     }
+            // })
         })
 
         // function calculateDiff(topic) {
@@ -57,28 +75,30 @@
         </div>
         <div class="navigation">
             <div class="navbar">
-                <button type="button" class="nav__btn">Popular</button>
-                <button type="button" class="nav__btn">Lastest</button>
+                <button type="button" class="nav__btn" ng-click="orderByMe('views')">Popular</button>
+                <button type="button" class="nav__btn" ng-click="orderByMe('date')">Lastest</button>
                 <button type="button" class="nav__btn">Marked</button>
                 <button type="button" class="nav__btn">My questions</button>
             </div>
-            <div class="dropdown">
-                <select ng-model="selectedTag">
-                    <option value="">TAGS</option>
-                    <option value="c#">C#</option>                       
-                    <option value="c++">C++</option>
-                    <option value="python">Python</option>
-                    <option value="java">Java</option>
-                    <option value="sql">SQL</option>
-                    <option value="kotlin">Kotlin</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="javascript">Javascript</option>
-                </select>
+            <div class=" navbutton flex--row">
+                <div class="dropdown">
+                    <select ng-model="selectedTag">
+                        <option value="">TAGS</option>
+                        <option value="c#">C#</option>                       
+                        <option value="c++">C++</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="sql">SQL</option>
+                        <option value="kotlin">Kotlin</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">Javascript</option>
+                    </select>
+                </div>
+                <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 
+                        <i class="bi bi-plus"></i>
+                </button>
             </div>
-            <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 
-                    <i class="bi bi-plus"></i>
-            </button>
         </div>
         <!-- Popup -->
         <div id="myPopup" class="popup-div">
@@ -109,8 +129,7 @@
             <div class="topic__views">Views</div>
             <div class="topic__times">Time</div>
         </div>
-        <div class="list-topic" ng-repeat="topic in forum | filter: {tag: selectedTag}">
-
+        <div class="list-topic" ng-repeat="topic in forum | filter: {tag: selectedTag} | orderBy: myOrderBy">
             <a href="topic.html?topicId={{topic.id}}" target="_blank">
                 <div class="topic-child">
                     <div class="topic__col">
@@ -119,13 +138,20 @@
                     </div>
                     <div class="topic__replies">{{topic.replies}}</div>
                     <div class="topic__views">{{topic.views}}</div>
-                    <!-- <div class="topic__times">{{topic.date}}</div> -->
-                    <div class="topic__times">{{calculateDiff(topic)}}</div>
+                    <div class="topic__times">{{topic.date}}</div>
+                    <!-- <div class="topic__times">{{calculateDiff(topic)}}</div> -->
                 </div>
             </a>
         </div>
+
     </div>
-    <div class="footer"></div>
+    <!-- Hiển thị tính năng Panigation -->
+    <!-- <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Previous
+    </button> {{currentPage+1}}/{{numberOfPages()}}
+    <button ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Next
+    </button> -->
     <script>
         // Get the popup
         var popup = document.getElementById("myPopup");
@@ -160,6 +186,7 @@
     <script>
         w3.includeHTML();
     </script>
+
 </body>
 <footer w3-include-html='../footer/footer-mini.html'></footer>
 
