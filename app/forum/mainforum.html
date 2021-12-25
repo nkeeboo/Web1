@@ -14,10 +14,52 @@
         @import url(../footer/footer.css);
         @import url(./text-editor.css);
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="../header/header-res.js"></script>
+    <script>
+        var app = angular.module("angularApp", [])
+        app.controller("TopicController", function($scope, $http) {
+            $http({
+                method: "GET",
+                url: "/assets/data/forum/forum.json"
+            }).then(function mySuccess(respone) {
+                $scope.forum = respone.data
+            }, function myError(respone) {
+                $scope.dataError = respone.statusText;
+            });
+            $scope.selectTopic = function(val) {
+                $scope.topicDetails = val;
+            }
+            $scope.orderByMe = function(topic) {
+                    $scope.myOrderBy = topic;
+                }
+                // function create pagination
+                // $scope.currentPage = 0;
+                // $scope.pageSize = 15;
+                // $scope.numberOfPages = function() {
+                //     return Math.ceil($scope.forum.length / $scope.pageSize);
+                // }
+
+            // //We already have a limitTo filter built-in to angular,
+            // //let's make a startFrom filter
+            // app.filter('startFrom', function() {
+            //     return function(input, start) {
+            //         start = +start; //parse to int
+            //         return input.slice(start);
+            //     }
+            // })
+        })
+
+        // function calculateDiff(topic) {
+        //     var today = new Date();
+        //     console.log(today)
+        // }
+    </script>
 </head>
 <header w3-include-html='../header/header.html'></header>
 
-<body>
+<body ng-app="angularApp" ng-controller="TopicController">
+
     <div class="content">
         <div class="forum__intro">
             <div class="coude__intro">
@@ -33,28 +75,30 @@
         </div>
         <div class="navigation">
             <div class="navbar">
-                <button type="button" class="nav__btn">Popular</button>
-                <button type="button" class="nav__btn">Lastest</button>
+                <button type="button" class="nav__btn" ng-click="orderByMe('views')">Popular</button>
+                <button type="button" class="nav__btn" ng-click="orderByMe('date')">Lastest</button>
                 <button type="button" class="nav__btn">Marked</button>
                 <button type="button" class="nav__btn">My questions</button>
             </div>
-            <div class="dropdown">
-                <select>
+            <div class=" navbutton flex--row">
+                <div class="dropdown">
+                    <select ng-model="selectedTag">
                         <option value="">TAGS</option>
-                        <option value="">C#</option>
-                        <option value="">C++</option>
-                        <option value="">Python</option>
-                        <option value="">Java</option>
-                        <option value="">SQL</option>
-                        <option value="">Kotlin</option>
-                        <option value="">HTML</option>
-                        <option value="">CSS</option>
-                        <option value="">Javascript</option>
-                </select>
+                        <option value="c#">C#</option>                       
+                        <option value="c++">C++</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="sql">SQL</option>
+                        <option value="kotlin">Kotlin</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">Javascript</option>
+                    </select>
+                </div>
+                <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 
+                        <i class="bi bi-plus"></i>
+                </button>
             </div>
-            <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 
-                    <i class="bi bi-plus"></i>
-            </button>
         </div>
         <!-- Popup -->
         <div id="myPopup" class="popup-div">
@@ -79,76 +123,70 @@
                 </div>
             </div>
         </div>
-        <div class="list-topic">
-            <div class="topic-title">
-                <div class="topic__name-smallsize">Topic</div>
-                <div class="topic__replies">Replies</div>
-                <div class="topic__views">Views</div>
-                <div class="topic__times">Time</div>
-            </div>
-            <a href="./topic.html">
-                <div class="topic-child">
-                    <div class="topic__col">
-                        <div class="topic__name">[FIXED] Error in Python 3 loop quiz?</div>
-                        <div class="topic__tags">Python</div>
-                    </div>
-                    <div class="topic__replies">14</div>
-                    <div class="topic__views">429</div>
-                    <div class="topic__times">1w</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="topic-child">
-                    <div class="topic__col">
-                        <div class="topic__name">How do I convert this HTML button to Javascript?</div>
-                        <div class="topic__tags">Javascript</div>
-                    </div>
-                    <div class="topic__replies">34</div>
-                    <div class="topic__views">100</div>
-                    <div class="topic__times">23m</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="topic-child">
-                    <div class="topic__col">
-                        <div class="topic__name">How do I convert this HTML button to Javascript?</div>
-                        <div class="topic__tags">Javascript</div>
-                    </div>
-                    <div class="topic__replies">34</div>
-                    <div class="topic__views">100</div>
-                    <div class="topic__times">23m</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="topic-child">
-                    <div class="topic__col">
-                        <div class="topic__name">How do I convert this HTML button to Javascript?</div>
-                        <div class="topic__tags">Javascript</div>
-                    </div>
-                    <div class="topic__replies">34</div>
-                    <div class="topic__views">100</div>
-                    <div class="topic__times">23m</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="topic-child">
-                    <div class="topic__col">
-                        <div class="topic__name">How do I convert this HTML button to Javascript?</div>
-                        <div class="topic__tags">Javascript</div>
-                    </div>
-                    <div class="topic__replies">34</div>
-                    <div class="topic__views">100</div>
-                    <div class="topic__times">23m</div>
-                </div>
-            </a>
-
+        <div class="topic-title">
+            <div class="topic__name-smallsize">Topic</div>
+            <div class="topic__replies">Replies</div>
+            <div class="topic__views">Views</div>
+            <div class="topic__times">Time</div>
         </div>
+        <div class="list-topic" ng-repeat="topic in forum | filter: {tag: selectedTag} | orderBy: myOrderBy">
+            <a href="topic.html?topicId={{topic.id}}" target="_blank">
+                <div class="topic-child">
+                    <div class="topic__col">
+                        <div class="topic__name">{{topic.title}}</div>
+                        <div class="topic__tags">{{topic.tag}}</div>
+                    </div>
+                    <div class="topic__replies">{{topic.replies}}</div>
+                    <div class="topic__views">{{topic.views}}</div>
+                    <div class="topic__times">{{topic.date}}</div>
+                    <!-- <div class="topic__times">{{calculateDiff(topic)}}</div> -->
+                </div>
+            </a>
+        </div>
+
     </div>
-    <div class="footer"></div>
-    <script src="./popup.js"></script>
+    <!-- Hiển thị tính năng Panigation -->
+    <!-- <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Previous
+    </button> {{currentPage+1}}/{{numberOfPages()}}
+    <button ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Next
+    </button> -->
+    <script>
+        // Get the popup
+        var popup = document.getElementById("myPopup");
+
+        // Get the button that opens the popup
+        var btn = document.getElementById("myCreateTopicBtn");
+
+        // Get the <span> element that closes the popup
+        var span = document.getElementsByClassName("close")[0];
+        var cancel = document.getElementsByClassName("cancel__btn")[0];
+
+        // When the user clicks the button, open the popup
+        btn.onclick = function() {
+            popup.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the popup
+        span.onclick = function() {
+            popup.style.display = "none";
+        }
+        cancel.onclick = function() {
+            popup.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the popup, close it
+        window.onclick = function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
+    </script>
     <script>
         w3.includeHTML();
     </script>
+
 </body>
 <footer w3-include-html='../footer/footer-mini.html'></footer>
 

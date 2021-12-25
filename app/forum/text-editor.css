@@ -27,6 +27,7 @@ form {
 #output {
     width: 100%;
     border: 1px solid #303342;
+    padding-left: 10px;
 }
 
 .active {

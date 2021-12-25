@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,34 @@
     <title>Study</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <link rel="stylesheet" href="./Study.css">
+    <link rel="stylesheet" href="../forum/text-editor.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <script src="../header/header-res.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 <header w3-include-html='../header/header.html'></header>
+
 <body>
-    <div class="container">
+    <div id="study--content" class="flex__item--row">
         <div class="topnav" id="myTopnav">
-            <ul>
-                <li><a href="">Options</a>
-                    <ul>
-                        <li><a href="">Lesson 1</a></li>
-                        <li><a href="">Lesson 2</a></li>
-                        <li><a href="">Lesson 3</a></li>
-                        <li><a href="">Lesson 4</a></li>
-                        <li><a href="">Lesson 5</a></li> 
-                    </ul>
-                </li>
-                <li><a href="">Assignements</a>
-                    <ul>
-                        <li><a href="">Lesson 1</a></li>
-                        <li><a href="">Lesson 2</a></li>
-                        <li><a href="">Lesson 3</a></li>
-                        <li><a href="">Lesson 4</a></li>
-                        <li><a href="">Lesson 5</a></li> 
-                    </ul>
-                </li>
-                <li><a href="">Documents</a></li>
-                <li><a href="">Notes</a></li>
-                <li><a href="">Exercises</a></li>
-            </ul>
+            <a id="title" href="">Options</a>
+            <a href="">Lesson 1</a>
+            <a href="">Lesson 2</a>
+            <a href="">Lesson 3</a>
+            <a href="">Lesson 4</a>
+            <a href="">Lesson 5</a>
+            <a id="title" href="">Assignements</a>
+            <a href="">Lesson 1</a>
+            <a href="">Lesson 2</a>
+            <a href="">Lesson 3</a>
+            <a href="">Lesson 4</a>
+            <a href="">Lesson 5</a>
+            <a id="title" href="">Documents</a>
+            <a id="title" href="">Notes</a></li>
+            <a id="title" href="">Exercises</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fas fa-caret-square-down"></i>
             </a>
@@ -46,8 +43,8 @@
         <div id="content">
             <div id="script">
                 <p>Script Lesson 1:</p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum, laborum hic est harum molestias maiores, rerum quaerat autem eum dolore perferendis voluptatum quis eius delectus earum libero eaque dolorem!<br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora illo illum quae commodi exercitationem repellat? Voluptatibus, nihil consequuntur harum quam eligendi sint facere, rerum enim rem exercitationem dolore? Ad, iure.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum, laborum hic est harum molestias maiores, rerum quaerat autem eum dolore perferendis voluptatum quis eius delectus earum libero eaque dolorem!<br> Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Tempora illo illum quae commodi exercitationem repellat? Voluptatibus, nihil consequuntur harum quam eligendi sint facere, rerum enim rem exercitationem dolore? Ad, iure.
             </div>
             <div id="button" class="flex__item--row">
                 <button>Previous</button>
@@ -56,7 +53,7 @@
             <div id="lesson">
                 <div id="lesson-title" class="flex__item--row">
                     <p>Week 1 Leson 1</p>
-                    <p>Lesson1 : Introduction about IT</p>
+                    <p id="lesson-name">Lesson1 : Introduction about IT</p>
                 </div>
                 <iframe src="https://www.youtube.com/embed/xwNjNYd3L3Y" title="Lesson 1" allowfullscreen></iframe>
             </div>
@@ -64,21 +61,72 @@
             <div id="button" class="flex__item--row">
                 <button>Save like favourite</button>
                 <button onclick="tryCode()">Try it</button>
-                <button>Take Notes</button>
+                <button type="button" class="createTopic__btn" id="takeNoteBtn">Take Notes</button>
+            </div>
+        </div>
+        <div id="myPopup" class="popup-div">
+            <!-- Popup content -->
+            <div class="popup-content">
+                <div class="popup-header">
+                    <i class="bi bi-x-circle close"></i>
+                    <div class="popup-header--title">Take note</div>
+                </div>
+                <div class="popup-body">
+                    <input type="text" name="" id="title" placeholder="Type your title here..." class="input-title">
+                    <div class="input-content" w3-include-html='../forum/text-editor.html'>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <button type="button" class="cancel__btn">Cancel</button>
+                    <div class="create-topic">
+                        <button type="button">Save 
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script>
-        function tryCode(){
+        function tryCode() {
             window.location.href = '../online-code-editor/online-code-editor.html';
         }
+
         function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-        x.className += " responsive";
-        } else {
-        x.className = "topnav";
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
+        var popup = document.getElementById("myPopup");
+
+        // Get the button that opens the popup
+        var btn = document.getElementById("takeNoteBtn");
+
+        // Get the <span> element that closes the popup
+        var span = document.getElementsByClassName("close")[0];
+        var cancel = document.getElementsByClassName("cancel__btn")[0];
+
+        // When the user clicks the button, open the popup
+        btn.onclick = function() {
+            popup.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the popup
+        span.onclick = function() {
+            popup.style.display = "none";
+        }
+        cancel.onclick = function() {
+            popup.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the popup, close it
+        window.onclick = function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
         }
     </script>
     <script>
@@ -86,4 +134,5 @@
     </script>
 </body>
 <footer w3-include-html='../footer/footer.html'></footer>
+
 </html>

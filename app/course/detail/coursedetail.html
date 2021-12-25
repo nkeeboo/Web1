@@ -13,312 +13,118 @@
     <link rel="stylesheet" href="../../header/header.css">
     <link rel="stylesheet" href="../../footer/footer.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../header/header-res.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var app = angular.module("angularApp", [])
+        app.controller("CoursesDetailController", function($scope, $http) {
+            $scope.coursesLang = [];
+
+            $scope.makeUrl = function(lang) {
+                let fullUrl = window.location.origin + window.location.pathname;
+                return fullUrl + "?lang=" + encodeURIComponent(lang)
+            }
+            $http({
+                method: "GET",
+                url: "/assets/data/courses/courses.json"
+            }).then(function mySucces(respone) {
+                $scope.courses = respone.data;
+                const lang = (new URLSearchParams(window.location.search)).get("lang");
+                if (lang == null) {
+                    return true;
+                }
+                $scope.coursesLang = $scope.courses.filter(function(course) {
+                    return course.unit == lang;
+                });
+            }, function myError(respone) {
+                $scope.dataError = respone.statusText
+            })
+        })
+    </script>
 </head>
 <header w3-include-html='../../header/header.html'></header>
 
-<body>
+<body ng-app="angularApp" ng-controller="CoursesDetailController">
     <div id="container" class="flex__item--row">
         <div class="topnav" id="myTopnav">
-            <a href="" style="font-size: 20px; margin-left: 5px;">Language</a>
-            <a href="">HTML&CSS</a>
-            <a href="">Python</a>
-            <a href="">JavaScript</a>
-            <a href="">Java</a>
-            <a href="">SQL</a>
-            <a href="">C++</a>
-            <a href="">C#</a>
-            <a href="">R</a>
-            <a href="">Kotlin</a>
-            <a href="" style="font-size: 20px; margin-left: 5px;">Subjects</a>
-            <a href="">Web Design</a>
-            <a href="">Data Science</a>
-            <a href="">Computer Science</a>
-            <a href="">For Business</a>
-            <a href="">Mobile Development</a>
-            <a href="" style="font-size: 20px; margin-left: 5px;">Where do I begin?</a>
+            <a class="text-bold" href="javascript:void(0)">Language</a>
+            <a href="{{makeUrl('HTML&CSS')}}">HTML&CSS</a>
+            <a href="{{makeUrl('Python')}}">Python</a>
+            <a href="{{makeUrl('JavaScript')}}">JavaScript</a>
+            <a href="{{makeUrl('Java')}}">Java</a>
+            <a href="{{makeUrl('SQL')}}">SQL</a>
+            <a href="{{makeUrl('C++')}}">C++</a>
+            <a href="{{makeUrl('C#')}}">C#</a>
+            <a href="{{makeUrl('R')}}">R</a>
+            <a href="{{makeUrl('Kotlin')}}">Kotlin</a>
+            <a class="text-bold" href="javascript:void(0)">Subjects</a>
+            <a href="{{makeUrl('Web Design')}}">Web Design</a>
+            <a href="{{makeUrl('Data Science')}}">Data Science</a>
+            <a href="{{makeUrl('Computer Science')}}">Computer Science</a>
+            <a href="{{('makeUrlFor Business')}}">For Business</a>
+            <a href="{{makeUrl('Mobile Development')}}">Mobile Development</a>
+            <a class="text-bold" href="javascript:void(0)">Where do I begin?</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+                <i class="fas fa-caret-square-down"></i>
             </a>
         </div>
         <div id="content" class="flex__item">
             <fieldset class="inforbox">
-                <legend class="txtcourse">HTML & CSS</legend>
-                <div class="container">
+                <legend class="txtcourse" ng-repeat="rs in coursesLang |limitTo: 1">{{rs.unit}}</legend>
+                <div class="container" ng-repeat="rs in coursesLang |limitTo: 1">
                     <p class="para--infor">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita accusantium quae eligendi officia sit non a porro. Exercitationem, ipsum explicabo assumenda eius quaerat doloribus vitae quos porro dicta voluptate maiores! Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Minus deserunt culpa fugiat aut consequatur ex eum harum cumque vel. Quaerat laborum sunt ut eligendi dolore distinctio porro! Ipsam, nisi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                    </p>
-                    <p class="para--infor">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita accusantium quae eligendi officia sit non a porro. Exercitationem, ipsum explicabo assumenda eius quaerat doloribus vitae quos porro dicta voluptate maiores! Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Minus deserunt culpa fugiat aut consequatur ex eum harum cumque vel. Quaerat laborum sunt ut eligendi dolore distinctio porro! Ipsam, nisi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
+                        {{rs.unit_descript}}
                     </p>
                 </div>
+
             </fieldset>
             <fieldset class="detailbox">
                 <legend class="headercourse">FOR BEGINNER</legend>
                 <div class="container">
-                    <div class="box--course">
+                    <div class="box--course" ng-repeat="rs in coursesLang| filter : (rs.level ='Beginner')  |limitTo: 5">
                         <div class="tag">
-                            <p class="txttag">Pro</p>
+                            <p class="txttag">{{rs.tag}}</p>
                         </div>
                         <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
+                            <p class="box--course_header">{{rs.title}}</p>
                             <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
+                                <li>{{rs.description[0].txtlevel}}</li>
+                                <li>{{rs.description[0].number_lesson}}</li>
                             </ul>
                         </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
                     </div>
                 </div>
             </fieldset>
             <fieldset class="detailbox">
                 <legend class="headercourse">FOR INTERMEDIATE</legend>
                 <div class="container">
-                    <div class="box--course">
+                    <div class="box--course" ng-repeat="rs in coursesLang| filter : (rs.level ='Intermediate')  |limitTo: 5">
                         <div class="tag">
-                            <p class="txttag">Pro</p>
+                            <p class="txttag">{{rs.tag}}</p>
                         </div>
                         <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
+                            <p class="box--course_header">{{rs.title}}</p>
                             <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
+                                <li>{{rs.description[0].txtlevel}}</li>
+                                <li>{{rs.description[0].number_lesson}}</li>
                             </ul>
                         </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
-                    </div>
-                    <div class="box--course">
-                        <div class="tag">
-                            <p class="txttag">Pro</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">Back-End Beginner</p>
-                            <ul>
-                                <li>Beginner Friendly</li>
-                                <li>35 Lessons</li>
-                            </ul>
-                        </div>
-                        <p class="coude">Coudé</p>
                     </div>
                 </div>
             </fieldset>
             <fieldset class="docbox">
                 <legend class="headercourse">RESOURCE</legend>
                 <div class="container--doc">
-                    <div class="box--resource">
+                    <div class="box--resource" ng-repeat="rs in coursesLang">
                         <div class="type">
-                            <p class="txttype">Document</p>
+                            <p class="txttype">{{rs.resource[0].type}}</p>
                         </div>
                         <div class="type--detail">
                             <p class="txtdoc">
-                                Web Design with HTML and CSS Digital Classroom
+                                {{rs.resource[0].res_name}}
                             </p>
                         </div>
                     </div>
-                    <div class="box--resource">
-                        <div class="type">
-                            <p class="txttype">Document</p>
-                        </div>
-                        <div class="type--detail">
-                            <p class="txtdoc">
-                                Web Design with HTML and CSS Digital Classroom
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box--resource">
-                        <div class="type">
-                            <p class="txttype">Document</p>
-                        </div>
-                        <div class="type--detail">
-                            <p class="txtdoc">
-                                Web Design with HTML and CSS Digital Classroom
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box--resource">
-                        <div class="type">
-                            <p class="txttype">Document</p>
-                        </div>
-                        <div class="type--detail">
-                            <p class="txtdoc">
-                                Web Design with HTML and CSS Digital Classroom
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box--resource">
-                        <div class="type">
-                            <p class="txttype">Document</p>
-                        </div>
-                        <div class="type--detail">
-                            <p class="txtdoc">
-                                Web Design with HTML and CSS Digital Classroom
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box--resource">
-                        <div class="type">
-                            <p class="txttype">Document</p>
-                        </div>
-                        <div class="type--detail">
-                            <p class="txtdoc">
-                                Web Design with HTML and CSS Digital Classroom
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box--resource">
-                        <div class="type">
-                            <p class="txttype">Document</p>
-                        </div>
-                        <div class="type--detail">
-                            <p class="txtdoc">
-                                Web Design with HTML and CSS Digital Classroom
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box--resource">
-                        <div class="type">
-                            <p class="txttype">Document</p>
-                        </div>
-                        <div class="type--detail">
-                            <p class="txtdoc">
-                                Web Design with HTML and CSS Digital Classroom
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
             </fieldset>
         </div>

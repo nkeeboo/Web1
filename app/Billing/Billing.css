@@ -17,6 +17,31 @@
     box-sizing: border-box;
 }
 
+#myTopnav {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+    padding: 20px;
+    height: calc(100vh - 160px);
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav a {
+    display: block;
+    text-align: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: RobotoRegular;
+}
+
+.topnav .icon {
+    display: none;
+}
+
 .main-content {
     margin-right: 15px;
 }

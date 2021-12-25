@@ -1,0 +1,1262 @@
+[{
+        "id": "1",
+        "tag": "c#",
+        "user_id": "c_1",
+        "user_name": "Ben Camden",
+        "user_avt": "blue_man.png",
+        "replies": "24",
+        "views": "1956",
+        "likes": "254",
+        "date": "12/02/2021",
+        "title": "Get int value from enum in C#",
+        "content": "I have a class called Questions (plural). In this class there is an enum called Question (singular) which looks like this. In the Questions class I have a get(int foo) function that returns a Questions object for that foo. Is there an easy way to get the integer value off the enum so I can do something like this Questions.Get(Question.Role)?",
+        "reply": [{
+            "reply_content": "The above will work for the vast majority of enums you see in the wild, as the default underlying type for an enum is int. However, as cecilphillip points out, enums can have different underlying types",
+            "user_name": "Clementia"
+        }]
+    },
+    {
+        "id": "2",
+        "tag": "c#",
+        "user_id": "c_2",
+        "user_name": "Aeneas",
+        "user_avt": "bulldog.png",
+        "replies": "62",
+        "views": "2132",
+        "likes": "354",
+        "date": "23/12/2020",
+        "title": "How to enumerate an enum",
+        "content": "How can you enumerate an enum in C#? And it gives the following compile-time error: 'Suit' is a 'type' but is used like a 'variable'. It fails on the Suit keyword, the second one.",
+        "reply": [{
+            "reply_content": "It looks to me like you really want to print out the names of each enum, rather than the values. In which case Enum.GetNames() seems to be the right approach.",
+            "user_name": "Consus"
+        }]
+    },
+    {
+        "id": "3",
+        "tag": "c#",
+        "user_id": "c_3",
+        "user_name": "Aurora",
+        "user_avt": "glass_woman.png",
+        "replies": "12",
+        "views": "179",
+        "likes": "18",
+        "date": "02/03/2021",
+        "title": "How can I cast int to enum?",
+        "content": "How can an int be cast to an enum in C#?",
+        "reply": [{
+            "reply_content": "I think to get a complete answer, people have to know how enums work internally in .NET. How stuff works. An enum in .NET is a structure that maps a set of values (fields) to a basic type (the default is int). However, you can actually choose the integral type that your enum maps to: public enum Foo : short. In this case the enum is mapped to the short data type, which means it will be stored in memory as a short and will behave as a short when you cast and use it.",
+            "user_name": "Diana"
+        }]
+    },
+    {
+        "id": "4",
+        "tag": "c#",
+        "user_id": "c_4",
+        "user_name": "Abel",
+        "user_avt": "no_face.png",
+        "replies": "26",
+        "views": "246",
+        "likes": "124",
+        "date": "07/04/2021",
+        "title": "Case insensitive 'Contains(string)'",
+        "content": "There doesn't seem to be an overload that allows me to set the case sensitivity.. Currently I UPPERCASE them both, but that's just silly (by which I am referring to the i18n issues that come with up- and down casing). This question is ancient and since then I have realized I asked for a simple answer for a really vast and difficult topic if you care to investigate it fully. For most cases, in mono-lingual, English code bases this answer will suffice. I'm suspecting because most people coming here fall in this category this is the most popular answer. This answer however brings up the inherent problem that we can't compare text case insensitive until we know both texts are the same culture and we know what that culture is. This is maybe a less popular answer, but I think it is more correct and that's why I marked it as such.",
+        "reply": [{
+            "reply_content": "This solution is transparent about the definition of case-insensitivity, which is language dependent. For example, the English language uses the characters I and i for the upper and lower case versions of the ninth letter, whereas the Turkish language uses these characters for the eleventh and twelfth letters of its 29 letter-long alphabet. The Turkish upper case version of 'i' is the unfamiliar character 'İ'.",
+            "user_name": "Abram"
+        }]
+    },
+    {
+        "id": "5",
+        "tag": "c#",
+        "user_id": "c_5",
+        "user_name": "Adam",
+        "user_avt": "blue_man.png",
+        "replies": "5",
+        "views": "195",
+        "likes": "56",
+        "date": "23/04/2021",
+        "title": "How to iterate over a dictionary?",
+        "content": "I've seen a few different ways to iterate over a dictionary in C#. Is there a standard way?",
+        "reply": [{
+            "reply_content": "Generally, asking for 'the best way' without a specific context is like asking what is the best color? One the one hand, there are many colors and there's no best color. It depends on the need and often on taste, too. On the other hand, there are many ways to iterate over a Dictionary in C# and there's no best way. It depends on the need and often on taste, too.",
+            "user_name": "Adele"
+        }]
+    },
+    {
+        "id": "6",
+        "tag": "c#",
+        "user_id": "c_6",
+        "user_name": "Allison",
+        "user_avt": "panda.png",
+        "replies": "5",
+        "views": "321",
+        "likes": "255",
+        "date": "27/03/2021",
+        "title": "Catch multiple exceptions at once?",
+        "content": "It is discouraged to simply catch System.Exception. Instead, only the 'known' exceptions should be caught. I wonder: Is there a way to catch both exceptions and only call the WebId = Guid.Empty call once? The given example is rather simple, as it's only a GUID. But imagine code where you modify an object multiple times, and if one of the manipulations fails expectedly, you want to 'reset' the object. However, if there is an unexpected exception, I still want to throw that higher.",
+        "reply": [{
+            "reply_content": "The accepted answer seems acceptable, except that CodeAnalysis/FxCop will complain about the fact that it's catching a general exception type. Also, it seems the 'is' operator might degrade performance slightly.",
+            "user_name": "Alysha"
+        }]
+    },
+    {
+        "id": "7",
+        "tag": "c#",
+        "user_id": "c_7",
+        "user_name": "Beatrice",
+        "user_avt": "bulldog.png",
+        "replies": "16",
+        "views": "167",
+        "likes": "29",
+        "date": "19/04/2021",
+        "title": "How do I get a consistent byte representation of strings in C# without manually specifying an encoding?",
+        "content": "How do I convert a string to a byte[] in .NET (C#) without manually specifying a specific encoding? I'm going to encrypt the string. I can encrypt it without converting, but I'd still like to know why encoding comes to play here. Also, why should encoding even be taken into consideration? Can't I simply get what bytes the string has been stored in? Why is there a dependency on character encodings?",
+        "reply": [{
+            "reply_content": "Contrary to the answers here, you DON'T need to worry about encoding if the bytes don't need to be interpreted! Like you mentioned, your goal is, simply, to 'get what bytes the string has been stored in'. (And, of course, to be able to re-construct the string from the bytes.) For those goals, I honestly do not understand why people keep telling you that you need the encodings. You certainly do NOT need to worry about encodings for this.",
+            "user_name": "Candis"
+        }]
+    },
+    {
+        "id": "8",
+        "tag": "c#",
+        "user_id": "c_8",
+        "user_name": "Caren",
+        "user_avt": "glass_woman.png",
+        "replies": "17",
+        "views": "183",
+        "likes": "25",
+        "date": "12/04/2021",
+        "title": "Should 'using' directives be inside or outside the namespace?",
+        "content": "I have been running StyleCop over some C# code, and it keeps reporting that my using directives should be inside the namespace. Is there a technical reason for putting the using directives inside instead of outside the namespace?",
+        "reply": [{
+            "reply_content": "The compiler searches Outer before looking at those using directives outside the namespace, so it finds Outer.Math instead of System.Math. Unfortunately (or perhaps fortunately?), Outer.Math has no PI member, so File1 is now broken.",
+            "user_name": "Daisy"
+        }]
+    },
+    {
+        "id": "9",
+        "tag": "c#",
+        "user_id": "c_9",
+        "user_name": "Danica",
+        "user_avt": "blue_man.png",
+        "replies": "4",
+        "views": "604",
+        "likes": "354",
+        "date": "23/07/2021",
+        "title": "What is the best way to give a C# auto-property an initial value?",
+        "content": "How do you give a C# auto-property an initial value? I either use the constructor, or revert to the old syntax.",
+        "reply": [{
+            "reply_content": "With C# 6 you can initialize auto-properties directly (finally!), there are now other answers that describe that. C# 5 and below: Though the intended use of the attribute is not to actually set the values of the properties, you can use reflection to always set them anyway...",
+            "user_name": "Becca"
+        }]
+    },
+    {
+        "id": "10",
+        "tag": "c#",
+        "user_id": "c_10",
+        "user_name": "Beckham",
+        "user_avt": "blue_man.png",
+        "replies": "30",
+        "views": "352",
+        "likes": "154",
+        "date": "05/05/2021",
+        "title": "How do I calculate someone's age based on a DateTime type birthday?",
+        "content": "Given a DateTime representing a person's birthday, how do I calculate their age in years?",
+        "reply": [{
+            "reply_content": "An easy to understand and simple solution: var today = DateTime.Today;",
+            "user_name": "Darla"
+        }]
+    },
+    {
+        "id": "11",
+        "tag": "c++",
+        "user_id": "c_11",
+        "user_name": "Carlene",
+        "user_avt": "panda.png",
+        "replies": "4",
+        "views": "492",
+        "likes": "54",
+        "date": "03/09/2021",
+        "title": "Why is processing a sorted array faster than processing an unsorted array?",
+        "content": "My first thought was that sorting brings the data into the cache, but then I thought how silly that was because the array was just generated. What is going on? Why is processing a sorted array faster than processing an unsorted array? The code is summing up some independent terms, so the order should not matter.",
+        "reply": [{
+            "reply_content": "You are the operator of a junction and you hear a train coming. You have no idea which way it is supposed to go. You stop the train to ask the driver which direction they want. And then you set the switch appropriately. Trains are heavy and have a lot of inertia, so they take forever to start up and slow down. Is there a better way? You guess which direction the train will go! If you guessed right, it continues on. If you guessed wrong, the captain will stop, back up, and yell at you to flip the switch. Then it can restart down the other path. If you guess right every time, the train will never have to stop. If you guess wrong too often, the train will spend a lot of time stopping, backing up, and restarting.",
+            "user_name": "Austin"
+        }]
+    },
+    {
+        "id": "12",
+        "tag": "c++",
+        "user_id": "c_12",
+        "user_name": "Bekki",
+        "user_avt": "no_face.png",
+        "replies": "67",
+        "views": "54",
+        "likes": "4",
+        "date": "20/11/2021",
+        "title": "What is the '-->' operator in C/C++?",
+        "content": "After reading Hidden Features and Dark Corners of C++/STL on comp.lang.c++.moderated, I was completely surprised that the following snippet compiled and worked in both Visual Studio 2008 and G++ 4.4.",
+        "reply": [{
+            "reply_content": "--> is not an operator. It is in fact two separate operators, -- and >. The conditional's code decrements x, while returning x's original (not decremented) value, and then compares the original value with 0 using the > operator.",
+            "user_name": "Carissa"
+        }]
+    },
+    {
+        "id": "13",
+        "tag": "c++",
+        "user_id": "c_13",
+        "user_name": "Elihu",
+        "user_avt": "glass_woman.png",
+        "replies": "7",
+        "views": "573",
+        "likes": "225",
+        "date": "12/12/2021",
+        "title": "What are the differences between a pointer variable and a reference variable in C++?",
+        "content": "I know references are syntactic sugar, so code is easier to read and write. But what is the difference between a pointer variable and a reference variable?",
+        "reply": [{
+            "reply_content": "A pointer variable has its own identity: a distinct, visible memory address that can be taken with the unary & operator and a certain amount of space that can be measured with the sizeof operator. Using those operators on a reference returns a value corresponding to whatever the reference is bound to; the reference’s own address and size are invisible. Since the reference assumes the identity of the original variable in this way, it is convenient to think of a reference as another name for the same variable.",
+            "user_name": "Gerald"
+        }]
+    },
+    {
+        "id": "14",
+        "tag": "c++",
+        "user_id": "c_14",
+        "user_name": "Janelle",
+        "user_avt": "bulldog.png",
+        "replies": "15",
+        "views": "1598",
+        "likes": "354",
+        "date": "15/05/2021",
+        "title": "What does the explicit keyword mean?",
+        "content": "What does the explicit keyword mean in C++?",
+        "reply": [{
+            "reply_content": "The compiler is allowed to make one implicit conversion to resolve the parameters to a function. What this means is that the compiler can use constructors callable with a single parameter to convert from one type to another in order to get the right type for a parameter",
+            "user_name": "Carley"
+        }]
+    },
+    {
+        "id": "15",
+        "tag": "c++",
+        "user_id": "c_15",
+        "user_name": "Elfrieda",
+        "user_avt": "hacker.png",
+        "replies": "32",
+        "views": "567",
+        "likes": "254",
+        "date": "18/09/2021",
+        "title": "How do I iterate over the words of a string?",
+        "content": "I'm trying to iterate over the words of a string. The string can be assumed to be composed of words separated by whitespace. Note that I'm not interested in C string functions or that kind of character manipulation/access. Also, please give precedence to elegance over efficiency in your answer.",
+        "reply": [{
+            "reply_content": "This approach might be even faster than the stringstream approach. And since this is a generic template function it can be used to split other types of strings (wchar, etc. or UTF-8) using all kinds of delimiters.",
+            "user_name": "Aubree"
+        }]
+    },
+    {
+        "id": "16",
+        "tag": "c++",
+        "user_id": "c_16",
+        "user_name": "Georgiana",
+        "user_avt": "glass_woman.png",
+        "replies": "23",
+        "views": "651",
+        "likes": "254",
+        "date": "16/09/2021",
+        "title": "Why is 'using namespace std;' considered bad practice?",
+        "content": "I've been told by others that writing using namespace std; in code is wrong, and that I should use std::cout and std::cin directly instead. Why is using namespace std; considered a bad practice? Is it inefficient or does it risk declaring ambiguous variables (variables that share the same name as a function in std namespace)? Does it impact performance?",
+        "reply": [{
+            "reply_content": "The problem with putting using namespace in the header files of your classes is that it forces anyone who wants to use your classes (by including your header files) to also be 'using' (i.e. seeing everything in) those other namespaces. However, you may feel free to put a using statement in your (private) *.cpp files.",
+            "user_name": "Janie"
+        }]
+    },
+    {
+        "id": "17",
+        "tag": "c++",
+        "user_id": "c_17",
+        "user_name": "Augusta",
+        "user_avt": "panda.png",
+        "replies": "9",
+        "views": "871",
+        "likes": "254",
+        "date": "12/03/2021",
+        "title": "How do you set, clear, and toggle a single bit?",
+        "content": "How do you set, clear, and toggle a bit?",
+        "reply": [{
+            "reply_content": "If you're doing a lot of bit twiddling you might want to use masks which will make the whole thing quicker. The following functions are very fast and are still flexible (they allow bit twiddling in bit maps of any size).",
+            "user_name": "Elfreda"
+        }]
+    },
+    {
+        "id": "18",
+        "tag": "c++",
+        "user_id": "c_18",
+        "user_name": "Gerard",
+        "user_avt": "bulldog.png",
+        "replies": "42",
+        "views": "289",
+        "likes": "254",
+        "date": "14/05/2021",
+        "title": "When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?",
+        "content": "What are the proper uses of: static_cast, dynamic_cast, const_cast,reinterpret_cast, C-style cast (type)value, Function-style cast type(value). How does one decide which to use in which specific cases?",
+        "reply": [{
+            "reply_content": "Use dynamic_cast for converting pointers/references within an inheritance hierarchy. Use static_cast for ordinary type conversions. Use reinterpret_cast for low-level reinterpreting of bit patterns. Use with extreme caution. Use const_cast for casting away const/volatile. Avoid this unless you are stuck using a const-incorrect API.",
+            "user_name": "Jarod"
+        }]
+    },
+    {
+        "id": "19",
+        "tag": "c++",
+        "user_id": "c_19",
+        "user_name": "Carl",
+        "user_avt": "blue_man.png",
+        "replies": "17",
+        "views": "540",
+        "likes": "254",
+        "date": "05/04/2021",
+        "title": "What is the copy-and-swap idiom?",
+        "content": "What is this idiom and when should it be used? Which problems does it solve? Does the idiom change when C++11 is used? Although it's been mentioned in many places, we didn't have any singular 'what is it' question and answer, so here it is",
+        "reply": [{
+            "reply_content": "The purpose of both functions fs and fm is to give a the state that b had initially. However, there is a hidden question: What happens if a.get_allocator() != b.get_allocator()? The answer is: It depends. Let's write AT = std::allocator_traits<A>.",
+            "user_name": "Jannah"
+        }]
+    },
+    {
+        "id": "20",
+        "tag": "c++",
+        "user_id": "c_20",
+        "user_name": "Eleanore ",
+        "user_avt": "glass_woman.png",
+        "replies": "10",
+        "views": "275",
+        "likes": "54",
+        "date": "29/10/2021",
+        "title": "C++11 introduced a standardized memory model. What does it mean? And how is it going to affect C++ programming?",
+        "content": "C++11 introduced a standardized memory model, but what exactly does that mean? And how is it going to affect C++ programming?",
+        "reply": [{
+            "reply_content": "It means that the standard now defines multi-threading, and it defines what happens in the context of multiple threads. Of course, people used varying implementations, but that's like asking why we should have a std::string when we could all be using a home-rolled string class.",
+            "user_name": "Elisa"
+        }]
+    },
+    {
+        "id": "21",
+        "tag": "python",
+        "user_id": "c_21",
+        "user_name": "Elsdon",
+        "user_avt": "hacker.png",
+        "replies": "6",
+        "views": "478",
+        "likes": "254",
+        "date": "08/08/2021",
+        "title": "What does the 'yield' keyword do?",
+        "content": "What does the 'yield' keyword do? What happens when the method _get_child_candidates is called? Is a list returned? A single element? Is it called again? When will subsequent calls stop?",
+        "reply": [{
+            "reply_content": "yield is a keyword that is used like return, except the function will return a generator. To master yield, you must understand that when you call the function, the code you have written in the function body does not run. The function only returns the generator object, this is a bit tricky. Then, your code will continue from where it left off each time for uses the generator.",
+            "user_name": "Belinda"
+        }]
+    },
+    {
+        "id": "22",
+        "tag": "python",
+        "user_id": "c_22",
+        "user_name": "Edward",
+        "user_avt": "bulldog.png",
+        "replies": "17",
+        "views": "438",
+        "likes": "254",
+        "date": "02/08/2021",
+        "title": "What does if __name__ == 'main': do?",
+        "content": "What does if __name__ == 'main': do?",
+        "reply": [{
+            "reply_content": "It's boilerplate code that protects users from accidentally invoking the script when they didn't intend to. Here are some common problems when the guard is omitted from a script: If you import the guardless script in another script (e.g. import my_script_without_a_name_eq_main_guard), then the second script will trigger the first to run at import time and using the second script's command line arguments. This is almost always a mistake.If you have a custom class in the guardless script and save it to a pickle file, then unpickling it in another script will trigger an import of the guardless script, with the same problems outlined in the previous bullet.",
+            "user_name": "Beckett"
+        }]
+    },
+    {
+        "id": "23",
+        "tag": "python",
+        "user_id": "c_23",
+        "user_name": "Benton",
+        "user_avt": "blue_man.png",
+        "replies": "9",
+        "views": "752",
+        "likes": "254",
+        "date": "07/05/2021",
+        "title": "Does Python have a ternary conditional operator?",
+        "content": "If Python does not have a ternary conditional operator, is it possible to simulate one using other language constructs?",
+        "reply": [{
+            "reply_content": "First condition is evaluated, then exactly one of either a or b is evaluated and returned based on the Boolean value of condition. If condition evaluates to True, then a is evaluated and returned but b is ignored, or else when b is evaluated and returned but a is ignored. This allows short-circuiting because when condition is true only a is evaluated and b is not evaluated at all, but when condition is false only b is evaluated and a is not evaluated at all.",
+            "user_name": "Edith"
+        }]
+    },
+    {
+        "id": "24",
+        "tag": "python",
+        "user_id": "c_24",
+        "user_name": "Jaquelyn",
+        "user_avt": "dẫn link ảnh",
+        "replies": "27",
+        "views": "426",
+        "likes": "254",
+        "date": "29/11/2021",
+        "title": "What are metaclasses in Python?",
+        "content": "In Python, what are metaclasses and what do we use them for?",
+        "reply": [{
+            "reply_content": "Before understanding metaclasses, you need to master classes in Python. And Python has a very peculiar idea of what classes are, borrowed from the Smalltalk language. In most languages, classes are just pieces of code that describe how to produce an object. That's kinda true in Python too",
+            "user_name": "Edric"
+        }]
+    },
+
+    {
+        "id": "25",
+        "tag": "python",
+        "user_id": "c_25",
+        "user_name": "Bennie",
+        "user_avt": "hacker.png",
+        "replies": "8",
+        "views": "692",
+        "likes": "254",
+        "date": "06/06/2021",
+        "title": "How do I check whether a file exists without exceptions?",
+        "content": "How do I check whether a file exists or not, without using the try statement?",
+        "reply": [{
+            "reply_content": "If the reason you're checking is so you can do something like if file_exists: open_it(), it's safer to use a try around the attempt to open it. Checking and then opening risks the file being deleted or moved or something between when you check and when you try to open it. If you're not planning to open the file immediately, you can use os.path.isfile",
+            "user_name": "Georgina"
+        }]
+    },
+    {
+        "id": "26",
+        "tag": "python",
+        "user_id": "c_26",
+        "user_name": "Jase",
+        "user_avt": "blue_man.png",
+        "replies": "14",
+        "views": "548",
+        "likes": "254",
+        "date": "20/10/2021",
+        "title": "How to execute a program or call a system command?",
+        "content": "How do you call an external command (as if I'd typed it at the Unix shell or Windows command prompt) from within a Python script?",
+        "reply": [{
+            "reply_content": "os.popen will do the same thing as os.system except that it gives you a file-like object that you can use to access standard input/output for that process. There are 3 other variants of popen that all handle the i/o slightly differently. If you pass everything as a string, then your command is passed to the shell; if you pass them as a list then you don't need to worry about escaping anything.",
+            "user_name": "Edwin"
+        }]
+    },
+    {
+        "id": "27",
+        "tag": "python",
+        "user_id": "c_27",
+        "user_name": "Carlene",
+        "user_avt": "no_face.png",
+        "replies": "34",
+        "views": "1267",
+        "likes": "254",
+        "date": "12/06/2021",
+        "title": "Accessing the index in 'for' loops?",
+        "content": "How do I access the index in a for loop like the following?",
+        "reply": [{
+            "reply_content": "Using an additional state variable, such as an index variable (which you would normally use in languages such as C or PHP), is considered non-pythonic. The better option is to use the built-in function enumerate(), available in both Python 2 and 3",
+            "user_name": "Elmo"
+        }]
+    },
+    {
+        "id": "28",
+        "tag": "python",
+        "user_id": "c_28",
+        "user_name": "Gideon",
+        "user_avt": "blue_man.png",
+        "replies": "32",
+        "views": "534",
+        "likes": "254",
+        "date": "25/04/2021",
+        "title": "How to make a flat list out of a list of lists",
+        "content": "Is there a shortcut to make a simple list out of a list of lists in Python? I can do it in a for loop, but is there some cool 'one-liner'? I tried it with functools.reduce()",
+        "reply": [{
+            "reply_content": "Consider installing the more_itertools package.> pip install more_itertools. It ships with an implementation for flatten (source, from the itertools recipes)",
+            "user_name": "Bert"
+        }]
+    },
+    {
+        "id": "29",
+        "tag": "python",
+        "user_id": "c_29",
+        "user_name": "Astor",
+        "user_avt": "no_face.png",
+        "replies": "14",
+        "views": "435",
+        "likes": "254",
+        "date": "04/03/2021",
+        "title": "Difference between staticmethod and classmethod",
+        "content": "What is the difference between a function decorated with @staticmethod and one decorated with @classmethod?",
+        "reply": [{
+            "reply_content": "A staticmethod is a method that knows nothing about the class or instance it was called on. It just gets the arguments that were passed, no implicit first argument. It is basically useless in Python -- you can just use a module function instead of a staticmethod.",
+            "user_name": "Carmen"
+        }]
+    },
+    {
+        "id": "30",
+        "tag": "python",
+        "user_id": "c_30",
+        "user_name": "Eleanora",
+        "user_avt": "glass_woman.png",
+        "replies": "32",
+        "views": "903",
+        "likes": "254",
+        "date": "23/04/2021",
+        "title": "Finding the index of an item in a list",
+        "content": "Given a list ['foo', 'bar', 'baz'] and an item in the list 'bar', how do I get its index (1) in Python?",
+        "reply": [{
+            "reply_content": "The majority of answers explain how to find a single index, but their methods do not return multiple indexes if the item is in the list multiple times. Use enumerate()",
+            "user_name": "Bev"
+        }]
+    },
+    {
+        "id": "31",
+        "tag": "python",
+        "user_id": "c_31",
+        "user_name": "Ginny",
+        "user_avt": "no_face.png",
+        "replies": "2",
+        "views": "482",
+        "likes": "254",
+        "date": "13/05/2021",
+        "title": "Does Python have a string 'contains' substring method?",
+        "content": "I'm looking for a string.contains or string.indexof method in Python",
+        "reply": [{
+            "reply_content": "If it's just a substring search you can use string.find('substring'). You do have to be a little careful with find, index, and in though, as they are substring searches",
+            "user_name": "Carter"
+        }]
+    },
+    {
+        "id": "32",
+        "tag": "sql",
+        "user_id": "c_32",
+        "user_name": "Aspen",
+        "user_avt": "hacker.png",
+        "replies": "5",
+        "views": "673",
+        "likes": "254",
+        "date": "09/05/2021",
+        "title": "Select first row in each GROUP BY group?",
+        "content": "As the title suggests, I'd like to select the first row of each set of rows grouped with a GROUP BY.",
+        "reply": [{
+            "reply_content": "DISTINCT ON uses the index effectively and typically performs best for few rows per group. And it performs decently even with many rows per group. For many rows per group, emulating an index skip scan with an rCTE performs best - second only to the query technique with a separate lookup table (if that's available). Using row_number() (technique of the currently accepted answer) never wins any performance test. Not then, not now. It never comes even close to DISTINCT ON, not even when the data distribution is unfavorable for the latter. The only good thing about row_number(): it does not scale terribly, just mediocre.",
+            "user_name": "Elsa"
+        }]
+    },
+    {
+        "id": "33",
+        "tag": "sql",
+        "user_id": "c_33",
+        "user_name": "Glenda",
+        "user_avt": "panda.png",
+        "replies": "29",
+        "views": "890",
+        "likes": "254",
+        "date": "08/09/2021",
+        "title": "Insert results of a stored procedure into a temporary table",
+        "content": "How do I do a SELECT * INTO [temp table] FROM [stored procedure]? Not FROM [Table] and without defining [temp table]?",
+        "reply": [{
+            "reply_content": "You can use OPENROWSET for this. Have a look. I've also included the sp_configure code to enable Ad Hoc Distributed Queries, in case it isn't already enabled.",
+            "user_name": "Casey"
+        }]
+    },
+    {
+        "id": "34",
+        "tag": "sql",
+        "user_id": "c_34",
+        "user_name": "Godfrey",
+        "user_avt": "no_face.png",
+        "replies": "56",
+        "views": "1243",
+        "likes": "254",
+        "date": "26/03/2021",
+        "title": "Inserting multiple rows in a single SQL query? [duplicate]",
+        "content": "I have multiple set of data to insert at once, say 4 rows. My table has three columns: Person, Id and Office. Can I insert all 4 rows in a single SQL statement?",
+        "reply": [{
+            "reply_content": "INSERT statements that use VALUES syntax can insert multiple rows. To do this, include multiple lists of column values, each enclosed within parentheses and separated by commas.",
+            "user_name": "Elvin"
+        }]
+    },
+    {
+        "id": "35",
+        "tag": "sql",
+        "user_id": "c_35",
+        "user_name": "Gord",
+        "user_avt": "blue_man.png",
+        "replies": "12",
+        "views": "745",
+        "likes": "254",
+        "date": "28/06/2021",
+        "title": "Finding duplicate values in a SQL table",
+        "content": "Finding duplicate values in a SQL table",
+        "reply": [{
+            "reply_content": "In contrast to other answers you can view the whole records containing all columns if there are any. In the PARTITION BY part of row_number function choose the desired unique/duplicit columns.",
+            "user_name": "Jayce"
+        }]
+    },
+    {
+        "id": "36",
+        "tag": "sql",
+        "user_id": "c_36",
+        "user_name": "Bertina",
+        "user_avt": "glass_woman.png",
+        "replies": "54",
+        "views": "290",
+        "likes": "154",
+        "date": "14/04/2021",
+        "title": "How do I import an SQL file using the command line in MySQL?",
+        "content": "I have a .sql file with an export from phpMyAdmin. I want to import it into a different server using the command line. I have a Windows Server 2008 R2 installation. I placed the .sql file on the C drive, and I tried this command",
+        "reply": [{
+            "reply_content": "Regarding the time taken for importing huge files: most importantly, it takes more time because the default setting of MySQL is autocommit = true. You must set that off before importing your file and then check how import works like a gem.",
+            "user_name": "Caris"
+        }]
+    },
+    {
+        "id": "37",
+        "tag": "sql",
+        "user_id": "c_37",
+        "user_name": "Elma",
+        "user_avt": "hacker.png",
+        "replies": "3",
+        "views": "302",
+        "likes": "24",
+        "date": "27/10/2021",
+        "title": "How can I prevent SQL injection in PHP?",
+        "content": "How can I prevent SQL injection in PHP?",
+        "reply": [{
+            "reply_content": "The correct way to avoid SQL injection attacks, no matter which database you use, is to separate the data from SQL, so that data stays data and will never be interpreted as commands by the SQL parser. It is possible to create SQL statement with correctly formatted data parts, but if you don't fully understand the details, you should always use prepared statements and parameterized queries. These are SQL statements that are sent to and parsed by the database server separately from any parameters. This way it is impossible for an attacker to inject malicious SQL.",
+            "user_name": "Edwin"
+        }]
+    },
+    {
+        "id": "38",
+        "tag": "sql",
+        "user_id": "c_38",
+        "user_name": "Elroy",
+        "user_avt": "blue_man.png",
+        "replies": "1",
+        "views": "72",
+        "likes": "0",
+        "date": "25/04/2021",
+        "title": "Add a column with a default value to an existing table in SQL Server",
+        "content": "How can I add a column with a default value to an existing table in SQL Server 2000 / SQL Server 2005?",
+        "reply": [{
+            "reply_content": "Beware when the column you are adding has a NOT NULL constraint, yet does not have a DEFAULT constraint (value). The ALTER TABLE statement will fail in that case if the table has any rows in it. The solution is to either remove the NOT NULL constraint from the new column, or provide a DEFAULT constraint for it.",
+            "user_name": "Gib"
+        }]
+    },
+    {
+        "id": "39",
+        "tag": "sql",
+        "user_id": "c_39",
+        "user_name": "Eloise",
+        "user_avt": "no_face.png",
+        "replies": "3",
+        "views": "300",
+        "likes": "0",
+        "date": "21/12/2021",
+        "title": "How do I UPDATE from a SELECT in SQL Server?",
+        "content": "How do I UPDATE from a SELECT in SQL Server?",
+        "reply": [{
+            "reply_content": "This has the benefit that it is easy to run the SELECT statement on its own first to sanity check the results, but it does requires you to alias the columns as above if they are named the same in source and target tables. This also has the same limitation as the proprietary UPDATE ... FROM syntax shown in four of the other answers. If the source table is on the many side of a one-to-many join then it is undeterministic which of the possible matching joined records will be used in the Update (an issue that MERGE avoids by raising an error if there is an attempt to update the same row more than once).",
+            "user_name": "Benji"
+        }]
+    },
+    {
+        "id": "40",
+        "tag": "sql",
+        "user_id": "c_40",
+        "user_name": "Jax",
+        "user_avt": "hacker.png",
+        "replies": "2",
+        "views": "204",
+        "likes": "2",
+        "date": "23/07/2021",
+        "title": "What is the difference between 'INNER JOIN' and 'OUTER JOIN'?",
+        "content": "Also how do LEFT JOIN, RIGHT JOIN and FULL JOIN fit in?",
+        "reply": [{
+            "reply_content": "Assuming you're joining on columns with no duplicates, which is a very common case: An inner join of A and B gives the result of A intersect B, i.e. the inner part of a Venn diagram intersection. An outer join of A and B gives the results of A union B, i.e. the outer parts of a Venn diagram union.",
+            "user_name": "Gilbert"
+        }]
+    },
+    {
+        "id": "41",
+        "tag": "sql",
+        "user_id": "c_41",
+        "user_name": "Edwena",
+        "user_avt": "bulldog.png",
+        "replies": "12",
+        "views": "372",
+        "likes": "254",
+        "date": "21/09/2021",
+        "title": "Insert into ... values ( SELECT ... FROM ... )",
+        "content": "I am trying to INSERT INTO a table using the input from another table. Although this is entirely feasible for many database engines, I always seem to struggle to remember the correct syntax for the SQL engine of the day (MySQL, Oracle, SQL Server, Informix, and DB2). Is there a silver-bullet syntax coming from an SQL standard (for example, SQL-92) that would allow me to insert the values without worrying about the underlying database?",
+        "reply": [{
+            "reply_content": "This is standard ANSI SQL and should work on any DBMS. It definitely works for: Oracle, MS SQL Server, MySQL, Postgres, SQLite v3, Teradata, DB2, Sybase, Vertica, HSQLDB, H2, AWS RedShift, SAP HANA, Google Spanner",
+            "user_name": "Ashton"
+        }]
+    },
+    {
+        "id": "42",
+        "tag": "java",
+        "user_id": "c_42",
+        "user_name": "Abram",
+        "user_avt": "glass_woman.png",
+        "replies": "12",
+        "views": "647",
+        "likes": "23",
+        "date": "02/04/2021",
+        "title": "How do I write a correct micro-benchmark in Java?",
+        "content": "How do you write (and run) a correct micro-benchmark in Java? I'm looking for some code samples and comments illustrating various things to think about. Example: Should the benchmark measure time / iteration or iterations / time, and why? Related : Is stopwatch benchmarking acceptable ?",
+        "reply": [{
+            "reply_content": "It depends on what you are trying to test. If you are interested in latency, use time/iteration and if you are interested in throughput, use iterations/time.",
+            "user_name": "Starla"
+        }]
+    },
+    {
+        "id": "43",
+        "tag": "java",
+        "user_id": "c_43",
+        "user_name": "Boro",
+        "user_avt": "glass_woman.png",
+        "replies": "2",
+        "views": "552",
+        "likes": "64",
+        "date": "04/05/2021",
+        "title": "How to add JTable in JPanel with null layout?",
+        "content": "I want to add JTable into JPanel whose layout is null. JPanel contains other components. I have to add JTable at proper position.",
+        "reply": [{
+            "reply_content": "If you are using null layout manager you always need to set the bounds of a component. That is the problem in your case. You should do what everyone suggest here and go and use some layout manager believe they save time. Go and check out the tutorial in @jzd's post. Enjoy, Boro.",
+            "user_name": "Stefani"
+        }]
+    },
+    {
+        "id": "44",
+        "tag": "java",
+        "user_id": "c_44",
+        "user_name": "Adella",
+        "user_avt": "glass_woman.png",
+        "replies": "23",
+        "views": "67",
+        "likes": "12",
+        "date": "02/09/2021",
+        "title": "How can I create an executable JAR with dependencies using Maven?",
+        "content": "I want to package my project in a single executable JAR for distribution. How can I make a Maven project package all dependency JARs into my output JAR?",
+        "reply": [{
+            "reply_content": "Use the maven-shade-plugin to package all dependencies into one uber-jar. It can also be used to build an executable jar by specifying the main class. After trying to use maven-assembly and maven-jar , I found that this plugin best suited my needs. I found this plugin particularly useful as it merges content of specific files instead of overwriting them. This is needed when there are resource files that are have the same name across the jars and the plugin tries to package all the resource files",
+            "user_name": "Stephanie"
+        }]
+    },
+    {
+        "id": "45",
+        "tag": "java",
+        "user_id": "c_45",
+        "user_name": "Alanna",
+        "user_avt": "glass_woman.png",
+        "replies": "56",
+        "views": "3678",
+        "likes": "233",
+        "date": "12/05/2021",
+        "title": "Java inner class and static nested class",
+        "content": "What is the main difference between an inner class and a static nested class in Java? Does design / implementation play a role in choosing one of these?",
+        "reply": [{
+            "reply_content": "The main difference between the two from a design standpoint is : nonstatic nested class can access instance of the container class, while static can't.",
+            "user_name": "Steve"
+        }]
+    },
+    {
+        "id": "46",
+        "tag": "kotlin",
+        "user_id": "c_46",
+        "user_name": "Alexander",
+        "user_avt": "glass_woman.png",
+        "replies": "24",
+        "views": "1323",
+        "likes": "351",
+        "date": "02/12/2021",
+        "title": "Unfortunately MyApp has stopped. How can I solve this?",
+        "content": "I am developing an application, and everytime I run it, I get the message: 'Unfortunately, MyApp has stopped.'What can I do to solve this?",
+        "reply": [{
+            "reply_content": "Check your Logcat message and see your Manifest file. There should be something missing like defining the Activity,User permission`, etc.",
+            "user_name": "Stewart"
+        }]
+    },
+    {
+        "id": "47",
+        "tag": "kotlin",
+        "user_id": "c_47",
+        "user_name": "Alice",
+        "user_avt": "glass_woman.png",
+        "replies": "5",
+        "views": "532",
+        "likes": "31",
+        "date": "24/05/2021",
+        "title": "So the main difference between the two from a design standpoint is : nonstatic nested class can access instance of the container class, while static can't.",
+        "content": "I want to launch an installed package from my Android application. I assume that it is possible using intents, but I didn't find a way of doing it. Is there a link, where to find the information?",
+        "reply": [{
+            "reply_content": "If you know the data and the action the installed package react on, you simply should add these information to your intent instance before starting it. If you have access to the AndroidManifest of the other app, you can see all needed information there.",
+            "user_name": "Suzan"
+        }]
+    },
+    {
+        "id": "48",
+        "tag": "kotlin",
+        "user_id": "c_48",
+        "user_name": "Allana",
+        "user_avt": "glass_woman.png",
+        "replies": "7",
+        "views": "863",
+        "likes": "432",
+        "date": "22/10/2021",
+        "title": "How to make an Android device vibrate? with different frequency?",
+        "content": "I wrote an Android application. Now, I want to make the device vibrate when a certain action occurs. How can I do this?",
+        "reply": [{
+            "reply_content": "If you want to simply vibrate the device once to provide a feedback on a user action. You can use performHapticFeedback() function of a View. This doesn't need the VIBRATE permission to be declared in the manifest. Use the following function as a top level function in some common class like Utils.kt of your project. And then use it anywhere in your Fragment or Activity as following: `vibrate(requireView())`. Simple as that!",
+            "user_name": "Sydnie"
+        }]
+    },
+    {
+        "id": "49",
+        "tag": "kotlin",
+        "user_id": "c_49",
+        "user_name": "Alphonso",
+        "user_avt": "blue_man.png",
+        "replies": "46",
+        "views": "2436",
+        "likes": "836",
+        "date": "29/03/2021",
+        "title": "How to convert a Kotlin source file to a Java source file",
+        "content": "I have a Kotlin source file, but I want to translate it to Java. How can I convert Kotlin to Java source?",
+        "reply": [{
+            "reply_content": "Java and Kotlin runs on Java Virtual Machine (JVM). Converting a Kotlin file to Java file involves two steps i.e. compiling the Kotlin code to the JVM bytecode and then decompile the bytecode to the Java code. Steps to convert your Kotlin source file to Java source file: 1.Open your Kotlin project in the Android Studio. 2.Then navigate to Tools -> Kotlin -> Show Kotlin Bytecode. 3.You will get the bytecode of your Kotin file. 4.Now click on the Decompile button to get your Java code from the bytecode",
+            "user_name": "Tabatha"
+        }]
+    },
+    {
+        "id": "50",
+        "tag": "kotlin",
+        "user_id": "c_50",
+        "user_name": "Amabel",
+        "user_avt": "blue_man.png",
+        "replies": "23",
+        "views": "4747",
+        "likes": "1024",
+        "date": "12/12/2021",
+        "title": "How to parse JSON in Kotlin?",
+        "content": "I'm receiving a quite deep JSON object string from a service which I must parse to a JSON object and then map it to classes. How can I transform a JSON string to object in Kotlin? After that the mapping to the respective classes, I was using StdDeserializer from Jackson. The problem arises at the moment the object had properties that also had to be deserialized into classes. I was not able to get the object mapper, at least I didn't know how, inside another deserializer. Preferably, natively, I'm trying to reduce the number of dependencies I need so if the answer is only for JSON manipulation and parsing it'd be enough.",
+        "reply": [{
+            "reply_content": "You can use this library https://github.com/cbeust/klaxon Klaxon is a lightweight library to parse JSON in Kotlin.",
+            "user_name": "Talbot"
+        }]
+    },
+    {
+        "id": "51",
+        "tag": "kotlin",
+        "user_id": "c_51",
+        "user_name": "Karolyn",
+        "user_avt": "blue_man.png",
+        "replies": "2",
+        "views": "546",
+        "likes": "231",
+        "date": "04/06/2021",
+        "title": "What is the equivalent of Java static methods in Kotlin?",
+        "content": "There is no static keyword in Kotlin. What is the best way to represent a static Java method in Kotlin?",
+        "reply": [{
+            "reply_content": "A lot of people mention companion objects, which is correct. But, just so you know, you can also use any sort of object (using the object keyword, not class) i.e., Use it just like any static method in java: `StringUtils.toUpper('foobar')`. That sort of pattern is kind of useless in Kotlin though, one of its strengths is that it gets rid of the need for classes filled with static methods. It is more appropriate to utilize global, extension and/or local functions instead, depending on your use case. Where I work we often define global extension functions in a separate, flat file with the naming convention: [className]Extensions.kt i.e., FooExtensions.kt. But more typically we write functions where they are needed inside their operating class or object.",
+            "user_name": "Tamela "
+        }]
+    },
+    {
+        "id": "52",
+        "tag": "html",
+        "user_id": "c_52",
+        "user_name": "Katelin",
+        "user_avt": "blue_man.png",
+        "replies": "10",
+        "views": "436",
+        "likes": "244",
+        "date": "29/06/2021",
+        "title": "How do you parse and process HTML/XML in PHP?",
+        "content": "How can one parse HTML/XML and extract information from it?",
+        "reply": [{
+            "reply_content": "Just use DOMDocument->loadHTML() and be done with it. libxml's HTML parsing algorithm is quite good and fast, and contrary to popular belief, does not choke on malformed HTML.",
+            "user_name": "Tamsyn"
+        }]
+    },
+    {
+        "id": "53",
+        "tag": "html",
+        "user_id": "c_53",
+        "user_name": "Katherine",
+        "user_avt": "blue_man.png",
+        "replies": "14",
+        "views": "875",
+        "likes": "343",
+        "date": "23/11/2021",
+        "title": "What are valid values for the id attribute in HTML?",
+        "content": "When creating the id attributes for HTML elements, what rules are there for the value?",
+        "reply": [{
+            "reply_content": "ID and NAME tokens must begin with a letter ([A-Za-z]) and may be followed by any number of letters, digits ([0-9]), hyphens ('-'), underscores ('_'), colons (':'), and periods ('.'). A common mistake is to use an ID that starts with a digit.",
+            "user_name": "Taylor"
+        }]
+    },
+    {
+        "id": "54",
+        "tag": "html",
+        "user_id": "c_54",
+        "user_name": "Kathleen",
+        "user_avt": "blue_man.png",
+        "replies": "7",
+        "views": "255",
+        "likes": "87",
+        "date": "24/02/2021",
+        "title": "What is a clearfix?",
+        "content": "Recently I was looking through some website's code, and saw that every <div> had a class clearfix. After a quick Google search, I learned that it is for IE6 sometimes, but what actually is a clearfix? Could you provide some examples of a layout with a clearfix, compared to a layout without a clearfix?",
+        "reply": [{
+            "reply_content": "The other answers are correct. But I want to add that it is a relic of the time when people were first learning CSS, and abused float to do all their layout. float is meant to do stuff like float images next to long runs of text, but lots of people used it as their primary layout mechanism. Since it wasn't really meant for that, you need hacks like 'clearfix' to make it work. These days display: inline-block is a solid alternative (except for IE6 and IE7), although more modern browsers are coming with even more useful layout mechanisms under names like flexbox, grid layout, etc.",
+            "user_name": ""
+        }]
+    },
+    {
+        "id": "55",
+        "tag": "html",
+        "user_id": "c_55",
+        "user_name": "Kaylani",
+        "user_avt": "blue_man.png",
+        "replies": "5",
+        "views": "334",
+        "likes": "50",
+        "date": "22/11/2021",
+        "title": "How can I tell if a DOM element is visible in the current viewport?",
+        "content": "Is there an efficient way to tell if a DOM element (in an HTML document) is currently visible (appears in the viewport)? (The question refers to Firefox.)",
+        "reply": [{
+            "reply_content": "In modern browsers, you might want to check out the Intersection Observer API which provides the following benefits: 1, Better performance than listening for scroll events. 2, Works in cross domain iframes. 3, Can tell if an element is obstructing/intersecting another",
+            "user_name": "Teal"
+        }]
+    },
+    {
+        "id": "56",
+        "tag": "html",
+        "user_id": "c_56",
+        "user_name": "Kenny",
+        "user_avt": "panda.png",
+        "replies": "3",
+        "views": "65",
+        "likes": "19",
+        "date": "04/10/2021",
+        "title": "How to apply CSS to iframe?",
+        "content": "I have a simple page that has some iframe sections (to display RSS links). How can I apply the same CSS format from the main page to the page displayed in the iframe?",
+        "reply": [{
+            "reply_content": "If the content of the iframe is not completely under your control or you want to access the content from different pages with different styles you could try manipulating it using JavaScript. Note that depending on what browser you use this might only work on pages served from the same domain.",
+            "user_name": "Terence"
+        }]
+    },
+    {
+        "id": "57",
+        "tag": "html",
+        "user_id": "c_57",
+        "user_name": "Kermit",
+        "user_avt": "panda.png",
+        "replies": "32",
+        "views": "964",
+        "likes": "252",
+        "date": "22/04/2021",
+        "title": "How do you disable browser autocomplete on web form field / input tags?",
+        "content": "How do you disable autocomplete in the major browsers for a specific input (or form field)?",
+        "reply": [{
+            "reply_content": "In addition to setting 'autocomplete=off', you could also have your form field names be randomized by the code that generates the page, perhaps by adding some session-specific string to the end of the names. When the form is submitted, you can strip that part off before processing them on the server-side. This would prevent the web browser from finding context for your field and also might help prevent XSRF attacks because an attacker wouldn't be able to guess the field names for a form submission.",
+            "user_name": "Terrell"
+        }]
+    },
+    {
+        "id": "58",
+        "tag": "html",
+        "user_id": "c_58",
+        "user_name": "Kevin",
+        "user_avt": "panda.png",
+        "replies": "4",
+        "views": "65",
+        "likes": "21",
+        "date": "08/04/2021",
+        "title": "Position absolute but relative to parent",
+        "content": "I have two divs inside another div, and I want to position one child div to the top right of the parent div, and the other child div to the bottom of the parent div using css. Ie, I want to use absolute positioning with the two child divs, but position them relative to the parent div rather than the page. How can I do this?",
+        "reply": [{
+            "reply_content": "This works because position: absolute means something like 'use top, right, bottom, left to position yourself in relation to the nearest ancestor who has position: absolute or position: relative.' So we make #father have position: relative, and the children have position: absolute, then use top and bottom to position the children.",
+            "user_name": "Terry"
+        }]
+    },
+    {
+        "id": "59",
+        "tag": "html",
+        "user_id": "c_59",
+        "user_name": "Kieran",
+        "user_avt": "panda.png",
+        "replies": "11",
+        "views": "625",
+        "likes": "123",
+        "date": "12/05/2021",
+        "title": "Strip HTML from Text JavaScript",
+        "content": "Is there an easy way to take a string of html in JavaScript and strip out the html?",
+        "reply": [{
+            "reply_content": "Simplest way: `jQuery(html).text();` That retrieves all the text from a string of html.",
+            "user_name": "Thelma"
+        }]
+    },
+    {
+        "id": "60",
+        "tag": "css",
+        "user_id": "c_60",
+        "user_name": "Kimball",
+        "user_avt": "panda.png",
+        "replies": "14",
+        "views": "643",
+        "likes": "232",
+        "date": "02/12/2021",
+        "title": "Why is this inline-block element pushed downward?",
+        "content": "Following is my code and I want to understand that why #firstDiv is being pushed downward by all browsers. I really want to understand the inner workings of the fact that why its being pushed downward rather than pulling it upward by one way or another. (and I know how to align their tops :)) And I know that its overflow:hidden which is causing it but not sure that why its pushing that div downward.",
+        "reply": [{
+            "reply_content": "The problem is because you have applied float:left on the second div. which makes the second div to come on the left side and your first div drops and comes after your second div. If you apply 'float:left' on the first div also, your problem will be gone. 'overflow:hidden' is causing no problem to your layout, 'overflow:hidden' affects only inner elements of a div, it has nothing to do with other elements which are outside.",
+            "user_name": "Tiffany"
+        }]
+    },
+    {
+        "id": "61",
+        "tag": "css",
+        "user_id": "c_61",
+        "user_name": "Kingsley",
+        "user_avt": "bulldog.png",
+        "replies": "9",
+        "views": "532",
+        "likes": "111",
+        "date": "05/03/2021",
+        "title": "What is the difference between visibility:hidden and display:none?",
+        "content": "The CSS rules 'visibility:hidden' and 'display:none' both result in the element not being visible. Are these synonyms?",
+        "reply": [{
+            "reply_content": "'display:none' removes the element from the normal flow of the page, allowing other elements to fill in. 'visibility:hidden' leaves the element in the normal flow of the page such that is still occupies space. Imagine you are in line for a ride at an amusement park and someone in the line gets so rowdy that security plucks them from the line. Everyone in line will then move forward one position to fill the now empty slot. This is like 'display:none'. Contrast this with the similar situation, but that someone in front of you puts on an invisibility cloak. While viewing the line, it will look like there is an empty space, but people can't really fill that empty looking space because someone is still there. This is like 'visibility:hidden'.",
+            "user_name": "Timmy"
+        }]
+    },
+    {
+        "id": "62",
+        "tag": "css",
+        "user_id": "c_62",
+        "user_name": "Kirsten",
+        "user_avt": "bulldog.png",
+        "replies": "7",
+        "views": "432",
+        "likes": "23",
+        "date": "19/05/2021",
+        "title": "What are the differences between flex-basis and width?",
+        "content": "It seems that a flex container set to inline-flex doesn't recognize flex-basis on a child when rendering a sibling with white-space: nowrap (although it could just be an item with undefined width). The container doesn't expand to accommodate the items. But when the width property is used instead of flex-basis, the container respects the sizing of its children and expands accordingly. This is not a problem in IE11 and Edge.",
+        "reply": [{
+            "reply_content": "'display:none' removes the element from the normal flow of the page, allowing other elements to fill in. 'visibility:hidden' leaves the element in the normal flow of the page such that is still occupies space. Imagine you are in line for a ride at an amusement park and someone in the line gets so rowdy that security plucks them from the line. Everyone in line will then move forward one position to fill the now empty slot. This is like 'display:none'. Contrast this with the similar situation, but that someone in front of you puts on an invisibility cloak. While viewing the line, it will look like there is an empty space, but people can't really fill that empty looking space because someone is still there. This is like 'visibility:hidden'.",
+            "user_name": "Tobias"
+        }]
+    },
+    {
+        "id": "63",
+        "tag": "css",
+        "user_id": "c_63",
+        "user_name": "Krystal",
+        "user_avt": "bulldog.png",
+        "replies": "11",
+        "views": "532",
+        "likes": "23",
+        "date": "18/08/2021",
+        "title": "Align child elements of different blocks",
+        "content": "There have been questions and articles about this, but nothing conclusive as far as I can tell. The best summary I could find is flex-basis allows you to specify the initial/starting size of the element, before anything else is computed. It can either be a percentage or an absolute value. Which in itself doesn't say much about the behavior of elements with flex-basis set. With my current knowledge of flexbox I don't see why that couldn't describe width also.",
+        "reply": [{
+            "reply_content": "The first thing that comes to mind when reading your question is that 'flex-basis' doesn't always apply to width. When 'flex-direction' is row, 'flex-basis' controls width. But when 'flex-direction' is column, 'flex-basis' controls height.",
+            "user_name": "Tory "
+        }]
+    },
+    {
+        "id": "64",
+        "tag": "css",
+        "user_id": "c_64",
+        "user_name": "Lachlan",
+        "user_avt": "no_face.png",
+        "replies": "2",
+        "views": "14",
+        "likes": "5",
+        "date": "21/08/2021",
+        "title": "Centering in CSS Grid",
+        "content": "I'm trying to create a simple page with CSS Grid. What I'm failing to do is center the text from the HTML to the respective grid cells. How do I do this?",
+        "reply": [{
+            "reply_content": "This answer has two main sections: 1, Understanding how alignment works in CSS Grid. 2, Six methods for centering in CSS Grid. If you're only interested in the solutions, skip the first section.",
+            "user_name": "Ulysses"
+        }]
+    },
+    {
+        "id": "65",
+        "tag": "css",
+        "user_id": "c_65",
+        "user_name": "Lamar",
+        "user_avt": "no_face.png",
+        "replies": "23",
+        "views": "932",
+        "likes": "225",
+        "date": "12/12/2021",
+        "title": "Can jQuery get all CSS styles associated with an element?",
+        "content": "Is there a way in jQuery to get all CSS from an existing element and apply it to another without listing them all? I know it would work if they were a style attribute with 'attr()', but all of my styles are in an external style sheet.",
+        "reply": [{
+            "reply_content": "Why not use .style of the DOM element? It's an object which contains members such as 'width' and 'backgroundColor'.",
+            "user_name": "Valary"
+        }]
+    },
+    {
+        "id": "66",
+        "tag": "javascript",
+        "user_id": "c_66",
+        "user_name": "Landon",
+        "user_avt": "no_face.png",
+        "replies": "12",
+        "views": "754",
+        "likes": "43",
+        "date": "01/07/2021",
+        "title": "How does the 'this' keyword work?",
+        "content": "I have noticed that there doesn't appear to be a clear explanation of what the 'this' keyword is and how it is correctly (and incorrectly) used in JavaScript on the Stack Overflow site. I have witnessed some very strange behaviour with it and have failed to understand why it has occurred. How does 'this' work and when should it be used?",
+        "reply": [{
+            "reply_content": "'this' is a keyword in JavaScript that is a property of an execution context. Its main use is in functions and constructors. The rules for this are quite simple (if you stick to best practices).",
+            "user_name": "Verna"
+        }]
+    },
+    {
+        "id": "67",
+        "tag": "javascript",
+        "user_id": "c_67",
+        "user_name": "Larissa",
+        "user_avt": "no_face.png",
+        "replies": "2",
+        "views": "564",
+        "likes": "221",
+        "date": "04/07/2021",
+        "title": "How do JavaScript closures work?",
+        "content": "How would you explain JavaScript closures to someone with a knowledge of the concepts they consist of (for example functions, variables and the like), but does not understand closures themselves? I have seen the Scheme example given on Wikipedia, but unfortunately it did not help.",
+        "reply": [{
+            "reply_content": "A closure is a pairing of: A function, and A reference to that function's outer scope (lexical environment) A lexical environment is part of every execution context (stack frame) and is a map between identifiers (ie. local variable names) and values. Every function in JavaScript maintains a reference to its outer lexical environment. This reference is used to configure the execution context created when a function is invoked. This reference enables code inside the function to 'see' variables declared outside the function, regardless of when and where the function is called.",
+            "user_name": "Viola"
+        }]
+    },
+    {
+        "id": "68",
+        "tag": "javascript",
+        "user_id": "c_68",
+        "user_name": "Lauren",
+        "user_avt": "no_face.png",
+        "replies": "2",
+        "views": "73",
+        "likes": "10",
+        "date": "20/04/2021",
+        "title": "How do I redirect to another webpage?",
+        "content": "How can I redirect the user from one page to another using jQuery or pure JavaScript?",
+        "reply": [{
+            "reply_content": "This works for every browser: 'window.location.href = 'your_url';' ",
+            "user_name": "Vivian"
+        }]
+    },
+    {
+        "id": "69",
+        "tag": "javascript",
+        "user_id": "c_69",
+        "user_name": "Lawson",
+        "user_avt": "santa.png",
+        "replies": "7",
+        "views": "165",
+        "likes": "54",
+        "date": "22/05/2021",
+        "title": "'Thinking in AngularJS' if I have a jQuery background?",
+        "content": "Suppose I'm familiar with developing client-side applications in jQuery, but now I'd like to start using AngularJS. Can you describe the paradigm shift that is necessary? Here are a few questions that might help you frame an answer: How do I architect and design client-side web applications differently? What is the biggest difference? What should I stop doing/using; What should I start doing/using instead? Are there any server-side considerations/restrictions? I'm not looking for a detailed comparison between jQuery and AngularJS.",
+        "reply": [{
+            "reply_content": "This works for every browser: 'window.location.href = 'your_url';' ",
+            "user_name": "Waldo"
+        }]
+    },
+    {
+        "id": "70",
+        "tag": "javascript",
+        "user_id": "c_c_70",
+        "user_name": "Lena",
+        "user_avt": "santa.png",
+        "replies": "14",
+        "views": "870",
+        "likes": "342",
+        "date": "21/03/2021",
+        "title": "Compare two dates with JavaScript",
+        "content": "Can someone suggest a way to compare the values of two dates greater than, less than, and not in the past using JavaScript? The values will be coming from text boxes.",
+        "reply": [{
+            "reply_content": "1. you have 2 string values you get from an input and you'd like to compare them <br> 2. They need to be Date Object to be compared as date values, so simply convert them to date, using new Date(), I just re-assign them for simplicity of explanation, but you can do it anyway you like <br> 3. Now simply compare them, using the > < >= <=",
+            "user_name": "Walter"
+        }]
+    },
+    {
+        "id": "71",
+        "tag": "javascript",
+        "user_id": "c_71",
+        "user_name": "Sonny",
+        "user_avt": "santa.png",
+        "replies": "24",
+        "views": "2339",
+        "likes": "214",
+        "date": "17/03/2021",
+        "title": "How can I remove a specific item from an array?",
+        "content": "I have an array of numbers and I'm using the .push() method to add elements to it. Is there a simple way to remove a specific element from an array? I'm looking for the equivalent of something like: 'array.remove(number);' I have to use core JavaScript. Frameworks are not allowed.",
+        "reply": [{
+            "reply_content": "This works for every browser: 'window.location.href = 'your_url';' ",
+            "user_name": "Warrick"
+        }]
+    },
+    {
+        "id": "72",
+        "tag": "javascript",
+        "user_id": "c_72",
+        "user_name": "Smith",
+        "user_avt": "santa.png",
+        "replies": "19",
+        "views": "1063",
+        "likes": "345",
+        "date": "03/08/2021",
+        "title": "Disable same origin policy in Chrome",
+        "content": "Is there any way to disable the Same-origin policy on Google's Chrome browser?",
+        "reply": [{
+            "reply_content": "I find the best way to do this is duplicate a Chrome or Chrome Canary shortcut on your windows desktop. Rename this shortcut to 'NO CORS' then edit the properties of that shortcut. in the target add --disable-web-security --user-data-dir='D:/Chrome' to the end of the target path. your target should look something like this: Update: New Flags added.",
+            "user_name": "Warren"
+        }]
+    },
+    {
+        "id": "73",
+        "tag": "javascript",
+        "user_id": "c_73",
+        "user_name": "Stacee",
+        "user_avt": "santa.png",
+        "replies": "6",
+        "views": "325",
+        "likes": "102",
+        "date": "20/12/2021",
+        "title": "What is DOM Event delegation?",
+        "content": "Can anyone please explain event delegation in JavaScript and how is it useful?",
+        "reply": [{
+            "reply_content": "dom event delegation is something different from the computer science definition. It refers to handling bubbling events from many elements, like table cells, from a parent object, like the table. It can keep the code simpler, especially when adding or removing elements, and saves some memory.",
+            "user_name": "Watson"
+        }]
+    },
+
+    {
+        "id": "74",
+        "tag": "java",
+        "user_id": "c_74",
+        "user_name": "Stella",
+        "user_avt": "santa.png",
+        "replies": "10",
+        "views": "304",
+        "likes": "103",
+        "date": "30/04/2021",
+        "title": "How should I use servlets and Ajax?",
+        "content": "Whenever I print something inside the servlet and call it by the webbrowser, it returns a new page containing that text. Is there a way to print the text in the current page using Ajax?",
+        "reply": [{
+            "reply_content": "Normally you can’t update a page from a servlet. The client (browser) has to request an update. Either the client loads a whole new page or it requests an update to a part of an existing page. This technique is called Ajax.",
+            "user_name": "Anna"
+        }]
+    }
+
+]

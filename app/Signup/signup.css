@@ -23,45 +23,11 @@
 }
 
 .header {
-    height: 70px;
-}
-
-.logo {
-    width: 200px;
-    height: 100px;
-    margin: auto;
-}
-
-.main-body {
-    width: 500px;
-    background-color: #9999992b;
-    margin: auto;
-    border-radius: 15px;
-    height: auto;
-    padding: 15px;
-}
-
-.main-body img {
-    width: 100%;
-}
-
-.content-top {
-    font-size: 18px;
-    color: black;
-    margin: 20px 10px;
-    font-family: RobotoRegular;
-}
-
-.content-bottom {
-    font-size: 15px;
-    color: black;
-    margin: 20px 10px;
-    font-family: RobotoRegular;
+    height: 50px;
 }
 
 .signup-button {
-    width: 50px;
-    margin: auto;
+    margin-bottom: 20px;
 }
 
 .line {
@@ -71,7 +37,15 @@
     margin: auto;
 }
 
-label {
-    margin-top: 10px;
+.content-heading {
     font-family: RobotoRegular;
+    font-size: 20px;
+}
+
+label {
+    font-family: RobotoRegular;
+}
+
+#signup-btn {
+    font-family: MontserratExtraBold;
 }
