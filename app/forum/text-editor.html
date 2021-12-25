@@ -43,7 +43,7 @@
             <button class="edit__btn" type="button" data-cmd="insertImage">
                 <i class="fa fa-file-image-o" aria-hidden="true"></i>
             </button>
-            <button class="edit__btn" type="button" data-cmd="crateLink">
+            <button class="edit__btn" type="button" data-cmd="createLink">
                 <i class="fa fa-link" aria-hidden="true"></i>
             </button>
             <button class="edit__btn" type="button" data-cmd="showCode" name="active">
@@ -51,12 +51,13 @@
             </button>
         </div>
     </form>
-    <iframe id="output" name="textField"></iframe>
+    <!-- <iframe id="output" name="textField"></iframe> -->
+    <textarea id="output" name="textField" cols="30" rows="10"></textarea>
 
     <script>
         const buttons = document.querySelectorAll('button');
-        textField.document.designMode = "On";
-        let show = false;
+        // textField.document.designMode = "On";
+        // let show = false;
         for (let i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener('click', () => {
                 let cmd = buttons[i].getAttribute('data-cmd');

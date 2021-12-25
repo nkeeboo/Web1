@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="../header/header-res.js"></script>
-    <script src="./popup.js"></script>
     <style>
         @import url(../header/header.css);
         @import url(../footer/footer.css);
@@ -108,7 +107,7 @@
                       </svg>
                     <i class="bi bi-bookmark"></i>
                 </div>
-                <button class="reply__btn" type="button">
+                <button class="reply__btn" id="myCreateTopicBtn" type="button">
                     <i class="bi bi-reply"></i>
                     <span>Reply</span>    
                 </button>
@@ -143,7 +142,7 @@
             <div class="popup-content">
                 <div class="popup-header">
                     <i class="bi bi-x-circle close"></i>
-                    <div class="popup-header--title">Create a new topic</div>
+                    <div class="popup-header--title">[Reply to] {{selectedTopic.title}}</div>
                 </div>
                 <div class="popup-body">
                     <div class="input-content" w3-include-html='./text-editor.html'>
@@ -161,6 +160,37 @@
             </div>
         </div>
     </div>
+    </script>
+    <script>
+        // Get the popup
+        var popup = document.getElementById("myPopup");
+
+        // Get the button that opens the popup
+        var btn = document.getElementById("myCreateTopicBtn");
+
+        // Get the <span> element that closes the popup
+        var span = document.getElementsByClassName("close")[0];
+        var cancel = document.getElementsByClassName("cancel__btn")[0];
+
+        // When the user clicks the button, open the popup
+        btn.onclick = function() {
+            popup.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the popup
+        span.onclick = function() {
+            popup.style.display = "none";
+        }
+        cancel.onclick = function() {
+            popup.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the popup, close it
+        window.onclick = function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
     </script>
     <script>
         w3.includeHTML();
