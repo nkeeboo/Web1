@@ -21,22 +21,26 @@
             $http({
                 method: "GET",
                 url: "/assets/data/forum/forum.json"
-            }).then(function mySucces(respone) {
+            }).then(function mySuccess(respone) {
                 $scope.forum = respone.data
             }, function myError(respone) {
-                $scope.dataError = respone.statusText
-            })
+                $scope.dataError = respone.statusText;
+            });
+            $scope.selectProduct = function(val) {
+                $scope.productDetails = val;
+            }
         })
 
-        function calculateDiff(topic) {
-            var today = new Date();
-            console.log(today)
-        }
+        // function calculateDiff(topic) {
+        //     var today = new Date();
+        //     console.log(today)
+        // }
     </script>
 </head>
 <header w3-include-html='../header/header.html'></header>
 
 <body ng-app="angularApp" ng-controller="TopicController">
+
     <div class="content">
         <div class="forum__intro">
             <div class="coude__intro">
@@ -97,14 +101,15 @@
                 </div>
             </div>
         </div>
-        <div class="list-topic">
-            <div class="topic-title">
-                <div class="topic__name-smallsize">Topic</div>
-                <div class="topic__replies">Replies</div>
-                <div class="topic__views">Views</div>
-                <div class="topic__times">Time</div>
-            </div>
-            <a href="./topic.html" ng-repeat="topic in forum | filter: {tag: selectedTag}">
+        <div class="topic-title">
+            <div class="topic__name-smallsize">Topic</div>
+            <div class="topic__replies">Replies</div>
+            <div class="topic__views">Views</div>
+            <div class="topic__times">Time</div>
+        </div>
+        <div class="list-topic" ng-repeat="topic in forum | filter: {tag: selectedTag}">
+
+            <a href="topic.html?topicId={{topic.id}}" target="_blank">
                 <div class="topic-child">
                     <div class="topic__col">
                         <div class="topic__name">{{topic.title}}</div>
@@ -114,13 +119,42 @@
                     <div class="topic__views">{{topic.views}}</div>
                     <!-- <div class="topic__times">{{topic.date}}</div> -->
                     <div class="topic__times">{{calculateDiff(topic)}}</div>
-
                 </div>
             </a>
         </div>
     </div>
     <div class="footer"></div>
-    <script src="./popup.js"></script>
+    <script>
+        // Get the popup
+        var popup = document.getElementById("myPopup");
+
+        // Get the button that opens the popup
+        var btn = document.getElementById("myCreateTopicBtn");
+
+        // Get the <span> element that closes the popup
+        var span = document.getElementsByClassName("close")[0];
+        var cancel = document.getElementsByClassName("cancel__btn")[0];
+
+        // When the user clicks the button, open the popup
+        btn.onclick = function() {
+            popup.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the popup
+        span.onclick = function() {
+            popup.style.display = "none";
+        }
+        cancel.onclick = function() {
+            popup.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the popup, close it
+        window.onclick = function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
+    </script>
     <script>
         w3.includeHTML();
     </script>

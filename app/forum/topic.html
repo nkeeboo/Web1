@@ -14,11 +14,35 @@
         @import url(../footer/footer.css);
         @import url(./mainforum.css);
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        let app = angular.module("angularApp", []);
+        app.controller("TopicDetailsController", function($scope, $http) {
+            $http({
+                method: "GET",
+                url: "/assets/data/forum/forum.json"
+            }).then(
+                function success(response) {
+                    $scope.selectedTopic = null;
+                    for (let i = 0; i < response.data.length; i++) {
+                        if (response.data[i].id == id) {
+                            $scope.selectedProduct = response.data[i];
+                            break;
+                        }
+                    }
+                    // $scope.selectedTopic = response.data.find(function(value) {
+                    //     return value.Id == id;
+                    // })
+                },
+                function error(response) {
+                    $scope.error = response.statusText;
+                })
+        })
+    </script>
 </head>
 <header w3-include-html='../header/header.html'></header>
 
-<body>
-    <div class="header"></div>
+<body ng-app="angularApp" ng-controller="TopicDetailsController">
     <div class="forum__intro">
         <div class="coude__intro">
             <h2>Coudé Forum</h2>
@@ -33,51 +57,42 @@
     </div>
     <div class="content">
         <!-- topic's title -->
-        <div class="div-background topic__title d-flex">
+        <div class="div-background topic__title">
             <div>
                 <span><i class="bi bi-three-dots-vertical"></i></span>
                 <div>
-                    <div class="name " id="title ">[FIXED] Error in Python 3 loop quiz?</div>
-                    <div class="tags " id="tag ">Python</div>
+                    <div class="name " id="title ">{{selectedTopic.title}}</div>
+                    <div class="tags " id="tag ">{{selectedTopic.tag}}</div>
                 </div>
             </div>
         </div>
         <!-- topic's content -->
         <div class="div-background">
-            <!-- display infor: user name & avatar; last day editting -->
             <div class="topic__infor ">
                 <div class="topic__infor-user ">
-                    <div class="user-avt ">
-                        <i class="bi bi-person-circle "></i>
-                    </div>
-                    <div class="user-name ">User 123</div>
+                    <img class="user-avt" src="/assets/images/avatar/{{selectedTopic.user_avt}}" alt="">
+                    <div class="user-name ">{{selectedTopic.user_name}}</div>
                 </div>
                 <div class="topic__infor-history  ">
                     <span><i class="bi bi-pencil-fill"></i></span>
-                    <span id="history" class="history-txt">May 26</span>
+                    <span id="history" class="history-txt">{{selectedTopic.date}}</span>
                 </div>
             </div>
             <div class="topic__content ">
-                <p>None of the answers is the correct one, the quotes (") are not printed together with the elements.</p>
-                <img class="topic__image" src="./bug1.png" alt="">
-                <p>The expected output would be coffee tea water juice soda (in reality one line per element).</p>
-                <p>Some other quizes space them like above instead of showing them on newlines. Regardless this quiz answer is wrong. The expected output would be coffee tea water juice soda (in reality one line per element).</p>
-                <p>Some other quizes space them like above instead of showing them on newlines.
-                    <br> Regardless this quiz answer is wrong.</p>
-                <img class="topic__image" src="./bug2.png" alt="">
+                <p>{{selectedTopic.content}}</p>
             </div>
         </div>
         <div class="topic__interacts">
             <div class="topic__interacts--data">
-                <div class="data-number" id="replies">14</div>
+                <div class="data-number" id="replies">{{selectedTopic.replies}}</div>
                 <div>replies</div>
             </div>
             <div class="topic__interacts--data">
-                <div class="data-number" id="views">429</div>
+                <div class="data-number" id="views">{{selectedTopic.views}}</div>
                 <div>views</div>
             </div>
             <div class="topic__interacts--data">
-                <div class="data-number" id="likes">45</div>
+                <div class="data-number" id="likes">{{selectedTopic.likes}}</div>
                 <div>likes</div>
             </div>
             <div class="reply__operation">
@@ -99,13 +114,12 @@
                     <div class="user-avt">
                         <i class="bi bi-person-circle"></i>
                     </div>
-                    <div class="user-name">User 123</div>
+                    <div class="user-name">{{selectedTopic.reply[0].user_name}}</div>
                 </div>
                 <div class="topic__infor-history"></div>
             </div>
             <div class="topic__content">
-                <p>You can force quotes to be displayed in the output by formatting drink variable with f-string:</p>
-                <img class="topic__image" src="./bug1.png" alt="">
+                <p>{{selectedTopic.reply[0].reply_content}}</p>
             </div>
             <div class="reply__operation">
                 <div class="interacts">
@@ -132,18 +146,49 @@
                 <div class="popup-footer">
                     <button class="cancel__btn">Cancel</button>
                     <div class="create-topic">
-                        <button class="reply__btn" type="button">
+                        <button class="createTopic__btn" id="myCreateTopicBtn" type="button">
+                            <span>Reply</span>  
                             <i class="bi bi-reply"></i>
-                            <span>Reply</span>    
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="./popup.js"></script>
-        <script>
-            w3.includeHTML();
-        </script>
+    </div>
+    <script>
+        // Get the popup
+        var popup = document.getElementById("myPopup");
+
+        // Get the button that opens the popup
+        var btn = document.getElementById("myCreateTopicBtn");
+
+        // Get the <span> element that closes the popup
+        var span = document.getElementsByClassName("close")[0];
+        var cancel = document.getElementsByClassName("cancel__btn")[0];
+
+        // When the user clicks the button, open the popup
+        btn.onclick = function() {
+            popup.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the popup
+        span.onclick = function() {
+            popup.style.display = "none";
+        }
+        cancel.onclick = function() {
+            popup.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the popup, close it
+        window.onclick = function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 <footer w3-include-html='../footer/footer-mini.html'></footer>
 

@@ -333,7 +333,6 @@
     /* Medium devices (landscape tablets, 768px and up) */
     
     @media only screen and (min-width: 768px) {
-        /* từ bản tablet trở đi cần css lại thanh navigation */
         a,
         .topic-title {
             width: 90%;
@@ -341,6 +340,7 @@
         .popup-content {
             width: 80%;
         }
+        /* từ bản tablet trở đi cần css lại thanh navigation */
     }
     /* Large devices (laptops/desktops, 992px and up) */
     
