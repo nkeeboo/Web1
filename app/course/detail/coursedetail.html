@@ -16,31 +16,24 @@
     <script src="../header/header-res.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script>
-        let urlparams = new URLSearchParams(location.search);
-        var id = urlparams.get('coursesUnit');
-    </script>
-    <script>
         var app = angular.module("angularApp", [])
         app.controller("CoursesDetailController", function($scope, $http) {
             $scope.coursesLang = [];
 
-            $scope.makeUrl = function(lang){
+            $scope.makeUrl = function(lang) {
                 let fullUrl = window.location.origin + window.location.pathname;
                 return fullUrl + "?lang=" + encodeURIComponent(lang)
             }
-
             $http({
                 method: "GET",
                 url: "/assets/data/courses/courses.json"
             }).then(function mySucces(respone) {
                 $scope.courses = respone.data;
-
-                //set scope courses data
                 const lang = (new URLSearchParams(window.location.search)).get("lang");
-                if(lang == null) {
+                if (lang == null) {
                     return true;
                 }
-                $scope.coursesLang = $scope.courses.filter(function(course){
+                $scope.coursesLang = $scope.courses.filter(function(course) {
                     return course.unit == lang;
                 });
             }, function myError(respone) {
@@ -54,50 +47,49 @@
 <body ng-app="angularApp" ng-controller="CoursesDetailController">
     <div id="container" class="flex__item--row">
         <div class="topnav" id="myTopnav">
-            <a id="title" href="">Language</a>
-            <a href="{{makeUrl('html')}}">HTML&CSS</a>
-            <a href="{{makeUrl('python')}}">Python</a>
-            <a href="{{makeUrl('jvscrpt')}}">JavaScript</a>
-            <a href="{{makeUrl('java')}}">Java</a>
-            <a href="{{makeUrl('sql')}}">SQL</a>
-            <a href="{{makeUrl('c++')}}">C++</a>
-            <a href="{{makeUrl('c#')}}">C#</a>
-            <a href="{{makeUrl('r')}}">R</a>
-            <a href="{{makeUrl('kotlin')}}">Kotlin</a>
-
-            <a id="title" href="">Subjects</a>
-            <a href="">Web Design</a>
-            <a href="">Data Science</a>
-            <a href="">Computer Science</a>
-            <a href="">For Business</a>
-            <a href="">Mobile Development</a>
-            <a id="title" href="">Where do I begin?</a>
+            <a class="text-bold" href="javascript:void(0)">Language</a>
+            <a href="{{makeUrl('HTML&CSS')}}">HTML&CSS</a>
+            <a href="{{makeUrl('Python')}}">Python</a>
+            <a href="{{makeUrl('JavaScript')}}">JavaScript</a>
+            <a href="{{makeUrl('Java')}}">Java</a>
+            <a href="{{makeUrl('SQL')}}">SQL</a>
+            <a href="{{makeUrl('C++')}}">C++</a>
+            <a href="{{makeUrl('C#')}}">C#</a>
+            <a href="{{makeUrl('R')}}">R</a>
+            <a href="{{makeUrl('Kotlin')}}">Kotlin</a>
+            <a class="text-bold" href="javascript:void(0)">Subjects</a>
+            <a href="{{makeUrl('Web Design')}}">Web Design</a>
+            <a href="{{makeUrl('Data Science')}}">Data Science</a>
+            <a href="{{makeUrl('Computer Science')}}">Computer Science</a>
+            <a href="{{('makeUrlFor Business')}}">For Business</a>
+            <a href="{{makeUrl('Mobile Development')}}">Mobile Development</a>
+            <a class="text-bold" href="javascript:void(0)">Where do I begin?</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fas fa-caret-square-down"></i>
             </a>
         </div>
         <div id="content" class="flex__item">
             <fieldset class="inforbox">
-                <legend class="txtcourse">{{selectedUnit.unit}}</legend>
+                <legend class="txtcourse" ng-repeat="rs in coursesLang |limitTo: 1">{{rs.unit}}</legend>
                 <div class="container" ng-repeat="rs in coursesLang |limitTo: 1">
                     <p class="para--infor">
                         {{rs.unit_descript}}
                     </p>
                 </div>
-            
+
             </fieldset>
             <fieldset class="detailbox">
                 <legend class="headercourse">FOR BEGINNER</legend>
                 <div class="container">
-                    <div class="box--course">
+                    <div class="box--course" ng-repeat="rs in coursesLang| filter : (rs.level ='Beginner')  |limitTo: 5">
                         <div class="tag">
-                            <p class="txttag">{{selectedUnit.tag}}</p>
+                            <p class="txttag">{{rs.tag}}</p>
                         </div>
                         <div class="information">
-                            <p class="box--course_header">{{selectedUnit.title}}</p>
+                            <p class="box--course_header">{{rs.title}}</p>
                             <ul>
-                                <li>{{selectedUnit.description[0].txtlevel}}</li>
-                                <li>{{selectedUnit.description[0].number_lesson}}</li>
+                                <li>{{rs.description[0].txtlevel}}</li>
+                                <li>{{rs.description[0].number_lesson}}</li>
                             </ul>
                         </div>
                     </div>
@@ -106,15 +98,15 @@
             <fieldset class="detailbox">
                 <legend class="headercourse">FOR INTERMEDIATE</legend>
                 <div class="container">
-                    <div class="box--course">
+                    <div class="box--course" ng-repeat="rs in coursesLang| filter : (rs.level ='Intermediate')  |limitTo: 5">
                         <div class="tag">
-                            <p class="txttag">{{selectedUnit.tag}}</p>
+                            <p class="txttag">{{rs.tag}}</p>
                         </div>
                         <div class="information">
-                            <p class="box--course_header">{{selectedUnit.title}}</p>
+                            <p class="box--course_header">{{rs.title}}</p>
                             <ul>
-                                <li>{{selectedUnit.description[0].txtlevel}}</li>
-                                <li>{{selectedUnit.description[0].number_lesson}}</li>
+                                <li>{{rs.description[0].txtlevel}}</li>
+                                <li>{{rs.description[0].number_lesson}}</li>
                             </ul>
                         </div>
                     </div>
@@ -123,13 +115,13 @@
             <fieldset class="docbox">
                 <legend class="headercourse">RESOURCE</legend>
                 <div class="container--doc">
-                    <div class="box--resource">
+                    <div class="box--resource" ng-repeat="rs in coursesLang |limitTo: 5">
                         <div class="type">
-                            <p class="txttype">{{selectedUnit.resource[0].type}}</p>
+                            <p class="txttype">{{rs.resource[0].type}}</p>
                         </div>
                         <div class="type--detail">
                             <p class="txtdoc">
-                                {{selectedUnit.resource[0].res_name}}
+                                {{rs.resource[0].res_name}}
                             </p>
                         </div>
                     </div>

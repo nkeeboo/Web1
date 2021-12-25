@@ -48,12 +48,12 @@ fieldset {
     font-family: 'RobotoBlack';
     font-size: 17px;
 }
+
 .text-bold {
     color: white !important;
     font-family: 'RobotoBlack' !important;
     font-size: 17px !important;
 }
-
 
 #content {
     width: 80%;
@@ -177,9 +177,15 @@ ul {
     margin-top: 50px;
 }
 
+.text-bold {
+    color: white !important;
+    font-family: 'RobotoBlack' !important;
+    font-size: 17px !important;
+}
+
 .txtcourse {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .detailbox {

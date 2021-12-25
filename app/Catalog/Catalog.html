@@ -19,10 +19,6 @@
     <script>
         var app = angular.module("angularApp", [])
         app.controller("CoursesController", function($scope, $http) {
-            $scope.makeUrl = function(lang){
-                let fullUrl = window.location.origin + "/app/course/coursedetail.html";
-                return fullUrl + "?lang=" + encodeURIComponent(lang);
-            }
             $http({
                 method: "GET",
                 url: "/assets/data/courses/courses.json"
@@ -40,15 +36,15 @@
     <div id="container" class="flex__item--row">
         <div class="topnav" id="myTopnav">
             <a class="text-bold" href="javascript:void(0)">Language</a>
-            <a href="{{makeUrl('html')}}">HTML&CSS</a>
-            <a href="{{makeUrl('python')}}">Python</a>
-            <a href="{{makeUrl('jvscrpt')}}">JavaScript</a>
-            <a href="{{makeUrl('java')}}">Java</a>
-            <a href="{{makeUrl('sql')}}">SQL</a>
-            <a href="{{makeUrl('c++')}}">C++</a>
-            <a href="{{makeUrl('c#')}}">C#</a>
-            <a href="{{makeUrl('r')}}">R</a>
-            <a href="{{makeUrl('kotlin')}}">Kotlin</a>
+            <a href="/app/course/detail/coursedetail.html">HTML&CSS</a>
+            <a href="">Python</a>
+            <a href="">JavaScript</a>
+            <a href="">Java</a>
+            <a href="">SQL</a>
+            <a href="">C++</a>
+            <a href="">C#</a>
+            <a href="">R</a>
+            <a href="">Kotlin</a>
             <a class="text-bold" href="javascript:void(0)">Subjects</a>
             <a href="">Web Design</a>
             <a href="">Data Science</a>
@@ -74,19 +70,21 @@
             <!-- courses popular-->
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='popular') | limitTo: 9">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">{{co.tag}}</p>
+                    <a class="linkenroll" href="/app/course/enroll/Enroll.html?enrollName={{co.title}}" target="blank">
+                        <div class="txtcourse">
+                            <div class="tag">
+                                <p class="txttag">{{co.tag}}</p>
+                            </div>
+                            <div class="information">
+                                <p class="box--course_header">{{co.title}}</p>
+                                <ul>
+                                    <li>{{co.description[0].txtlevel}}</li>
+                                    <li>{{co.description[0].number_lesson}}</li>
+                                </ul>
+                            </div>
+                            <p class="coude">{{co.logo}}</p>
                         </div>
-                        <div class="information">
-                            <p class="box--course_header">{{co.title}}</p>
-                            <ul>
-                                <li>{{co.description[0].txtlevel}}</li>
-                                <li>{{co.description[0].number_lesson}}</li>
-                            </ul>
-                        </div>
-                        <p class="coude">{{co.logo}}</p>
-                    </div>
+                    </a>
                 </div>
 
             </div>
@@ -109,19 +107,19 @@
             <div class="row">
 
                 <div class="col-12 col-sm-6 col-md-4" ng-repeat="c in courses | filter : (c.time ='new') | limitTo : 9">
-                        <div class="txtcourse">
-                            <div class="tag">
-                                <p class="txttag">{{c.tag}}</p>
-                            </div>
-                            <div class="information">
-                                <p class="box--course_header">{{c.title}}</p>
-                                <ul>
-                                    <li>{{c.description[0].txtlevel}}</li>
-                                    <li>{{c.description[0].number_lesson}}</li>
-                                </ul>
-                            </div>
-                            <p class="coude">{{c.logo}}</p>
+                    <div class="txtcourse">
+                        <div class="tag">
+                            <p class="txttag">{{c.tag}}</p>
                         </div>
+                        <div class="information">
+                            <p class="box--course_header">{{c.title}}</p>
+                            <ul>
+                                <li>{{c.description[0].txtlevel}}</li>
+                                <li>{{c.description[0].number_lesson}}</li>
+                            </ul>
+                        </div>
+                        <p class="coude">{{c.logo}}</p>
+                    </div>
                 </div>
             </div>
 
@@ -130,12 +128,12 @@
                 <h3 class="header">Blog</h3>
             </div>
             <!-- blog line 1 -->
-            <div class="row" >
-                <div class="col-lg-4 text-center" ng-repeat="bl in courses| filter : (bl.resource[0].type ='blog') | limitTo: 1" >
+            <div class="row">
+                <div class="col-lg-4 text-center" ng-repeat="bl in courses| filter : (bl.resource[0].type ='blog') | limitTo: 1">
                     <img src="/assets/images/catalog/blog1.PNG" class="blog_img--up">
                     <p>{{bl.resource[0].res_name}}</p>
                 </div>
-                <div class="col-lg-4 text-center" ng-repeat="bl in courses| filter : (bl.resource[0].type ='doc') | limitTo: 1">
+                <div class="col-lg-4 text-center" ng-repeat="bl in courses| filter : (bl.resource[0].type ='Doc') | limitTo: 1">
                     <img src="/assets/images/catalog/blog2.PNG" class="blog_img--up">
                     <p>{{bl.resource[0].res_name}}</p>
                 </div>

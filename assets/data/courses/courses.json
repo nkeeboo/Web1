@@ -1,5 +1,5 @@
 [{
-        "unit": "html",
+        "unit": "HTML&CSS",
         "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
         "time": "new",
         "level": "beginner",
@@ -17,7 +17,7 @@
         }]
     },
     {
-        "unit": "html",
+        "unit": "HTML&CSS",
         "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
         "time": "popular",
         "level": "beginner",
@@ -36,7 +36,7 @@
 
     },
     {
-        "unit": "html",
+        "unit": "HTML&CSS",
         "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
         "time": "new",
         "level": "beginner",
@@ -56,7 +56,7 @@
     },
 
     {
-        "unit": "html",
+        "unit": "HTML&CSS",
         "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
         "time": "popular",
         "level": "beginner",
@@ -77,7 +77,7 @@
     },
 
     {
-        "unit": "html",
+        "unit": "HTML&CSS",
         "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
         "time": "new",
         "level": "intermediate",
@@ -97,7 +97,7 @@
 
     },
     {
-        "unit": "html",
+        "unit": "HTML&CSS",
         "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
         "time": "popular",
         "level": "intermediate",
@@ -117,7 +117,7 @@
 
     },
     {
-        "unit": "html",
+        "unit": "HTML&CSS",
         "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
         "time": "new",
         "level": "intermediate",
@@ -137,7 +137,7 @@
 
     },
     {
-        "unit": "html",
+        "unit": "HTML&CSS",
         "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
         "time": "popular",
         "level": "intermediate",
@@ -157,7 +157,7 @@
 
     },
     {
-        "unit": "python",
+        "unit": "Python",
         "unit_descript": "Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web development to machine learning to data science, Python is the language for you.",
         "time": "new",
         "level": "beginner",
@@ -177,7 +177,7 @@
 
     },
     {
-        "unit": "python",
+        "unit": "Python",
         "unit_descript": "Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web development to machine learning to data science, Python is the language for you.",
         "time": "new",
         "level": "intermediate",
@@ -195,7 +195,7 @@
         }]
     },
     {
-        "unit": "python",
+        "unit": "Python",
         "unit_descript": "Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web development to machine learning to data science, Python is the language for you.",
         "time": "new",
         "level": "beginner",
@@ -213,7 +213,7 @@
         }]
     },
     {
-        "unit": "python",
+        "unit": "Python",
         "unit_descript": "Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web development to machine learning to data science, Python is the language for you.",
         "time": "new",
         "level": "intermediate",
@@ -231,7 +231,7 @@
         }]
     },
     {
-        "unit": "python",
+        "unit": "Python",
         "unit_descript": "Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web development to machine learning to data science, Python is the language for you.",
         "time": "popular",
         "level": "beginner",
@@ -249,7 +249,7 @@
         }]
     },
     {
-        "unit": "python",
+        "unit": "Python",
         "unit_descript": "Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web development to machine learning to data science, Python is the language for you.",
         "time": "popular",
         "level": "intermediate",
@@ -267,7 +267,7 @@
         }]
     },
     {
-        "unit": "python",
+        "unit": "Python",
         "unit_descript": "Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web development to machine learning to data science, Python is the language for you.",
         "time": "popular",
         "level": "beginner",
@@ -285,7 +285,7 @@
         }]
     },
     {
-        "unit": "python",
+        "unit": "Python",
         "unit_descript": "Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web development to machine learning to data science, Python is the language for you.",
         "time": "popular",
         "level": "intermediate",
@@ -303,7 +303,7 @@
         }]
     },
     {
-        "unit": "jvscrpt",
+        "unit": "JavaScript",
         "unit_descript": "JavaScript is a fun and flexible programming language. It’s one of the core technologies of web development and can be used on both the front-end and the back-end.",
         "time": "popular",
         "level": "intermediate",
@@ -321,7 +321,7 @@
         }]
     },
     {
-        "unit": "jvscrpt",
+        "unit": "JavaScript",
         "unit_descript": "JavaScript is a fun and flexible programming language. It’s one of the core technologies of web development and can be used on both the front-end and the back-end.",
         "time": "popular",
         "level": "intermediate",
@@ -339,7 +339,7 @@
         }]
     },
     {
-        "unit": "jvscrpt",
+        "unit": "JavaScript",
         "unit_descript": "JavaScript is a fun and flexible programming language. It’s one of the core technologies of web development and can be used on both the front-end and the back-end.",
         "time": "popular",
         "level": "intermediate",
@@ -357,7 +357,7 @@
         }]
     },
     {
-        "unit": "jvscrpt",
+        "unit": "JavaScript",
         "unit_descript": "JavaScript is a fun and flexible programming language. It’s one of the core technologies of web development and can be used on both the front-end and the back-end.",
         "time": "popular",
         "level": "intermediate",
@@ -375,7 +375,7 @@
         }]
     },
     {
-        "unit": "jvscrpt",
+        "unit": "JavaScript",
         "unit_descript": "JavaScript is a fun and flexible programming language. It’s one of the core technologies of web development and can be used on both the front-end and the back-end.",
         "time": "new",
         "level": "beginner",
@@ -393,7 +393,7 @@
         }]
     },
     {
-        "unit": "jvscrpt",
+        "unit": "JavaScript",
         "unit_descript": "JavaScript is a fun and flexible programming language. It’s one of the core technologies of web development and can be used on both the front-end and the back-end.",
         "time": "new",
         "level": "beginner",
@@ -411,7 +411,7 @@
         }]
     },
     {
-        "unit": "jvscrpt",
+        "unit": "JavaScript",
         "unit_descript": "JavaScript is a fun and flexible programming language. It’s one of the core technologies of web development and can be used on both the front-end and the back-end.",
         "time": "new",
         "level": "beginner",
@@ -429,7 +429,7 @@
         }]
     },
     {
-        "unit": "jvscrpt",
+        "unit": "JavaScript",
         "unit_descript": "JavaScript is a fun and flexible programming language. It’s one of the core technologies of web development and can be used on both the front-end and the back-end.",
         "time": "new",
         "level": "beginner",
@@ -447,7 +447,7 @@
         }]
     },
     {
-        "unit": "java",
+        "unit": "Java",
         "unit_descript": "Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.",
         "time": "new",
         "level": "beginner",
@@ -465,7 +465,7 @@
         }]
     },
     {
-        "unit": "java",
+        "unit": "Java",
         "unit_descript": "Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.",
         "time": "new",
         "level": "beginner",
@@ -483,7 +483,7 @@
         }]
     },
     {
-        "unit": "java",
+        "unit": "Java",
         "unit_descript": "Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.",
         "time": "new",
         "level": "beginner",
@@ -501,7 +501,7 @@
         }]
     },
     {
-        "unit": "java",
+        "unit": "Java",
         "unit_descript": "Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.",
         "time": "new",
         "level": "beginner",
@@ -519,7 +519,7 @@
         }]
     },
     {
-        "unit": "java",
+        "unit": "Java",
         "unit_descript": "Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.",
         "time": "popular",
         "level": "intermediate",
@@ -537,7 +537,7 @@
         }]
     },
     {
-        "unit": "java",
+        "unit": "Java",
         "unit_descript": "Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.",
         "time": "popular",
         "level": "intermediate",
@@ -555,7 +555,7 @@
         }]
     },
     {
-        "unit": "java",
+        "unit": "Java",
         "unit_descript": "Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.",
         "time": "popular",
         "level": "intermediate",
@@ -573,7 +573,7 @@
         }]
     },
     {
-        "unit": "java",
+        "unit": "Java",
         "unit_descript": "Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.",
         "time": "popular",
         "level": "intermediate",
@@ -591,7 +591,7 @@
         }]
     },
     {
-        "unit": "sql",
+        "unit": "SQL",
         "unit_descript": "SQL is the standard relational data management language. We live in a data-driven world, and there are many businesses that store their information inside large, relational databases. This makes SQL a great skill not only for data scientists and engineers, but for anyone wanting to be data-literate.",
         "time": "popular",
         "level": "beginner",
@@ -604,12 +604,12 @@
         "tag": "pro",
         "logo": "Coudé",
         "resource": [{
-            "type": "project",
+            "type": "Project",
             "res_name": "World Populations"
         }]
     },
     {
-        "unit": "sql",
+        "unit": "SQL",
         "unit_descript": "SQL is the standard relational data management language. We live in a data-driven world, and there are many businesses that store their information inside large, relational databases. This makes SQL a great skill not only for data scientists and engineers, but for anyone wanting to be data-literate.",
         "time": "popular",
         "level": "beginner",
@@ -627,7 +627,7 @@
         }]
     },
     {
-        "unit": "sql",
+        "unit": "SQL",
         "unit_descript": "SQL is the standard relational data management language. We live in a data-driven world, and there are many businesses that store their information inside large, relational databases. This makes SQL a great skill not only for data scientists and engineers, but for anyone wanting to be data-literate.",
         "time": "popular",
         "level": "beginner",
@@ -645,7 +645,7 @@
         }]
     },
     {
-        "unit": "sql",
+        "unit": "SQL",
         "unit_descript": "SQL is the standard relational data management language. We live in a data-driven world, and there are many businesses that store their information inside large, relational databases. This makes SQL a great skill not only for data scientists and engineers, but for anyone wanting to be data-literate.",
         "time": "popular",
         "level": "beginner",
@@ -663,7 +663,7 @@
         }]
     },
     {
-        "unit": "sql",
+        "unit": "SQL",
         "unit_descript": "SQL is the standard relational data management language. We live in a data-driven world, and there are many businesses that store their information inside large, relational databases. This makes SQL a great skill not only for data scientists and engineers, but for anyone wanting to be data-literate.",
         "time": "new",
         "level": "intermediate",
@@ -681,7 +681,7 @@
         }]
     },
     {
-        "unit": "sql",
+        "unit": "SQL",
         "unit_descript": "SQL is the standard relational data management language. We live in a data-driven world, and there are many businesses that store their information inside large, relational databases. This makes SQL a great skill not only for data scientists and engineers, but for anyone wanting to be data-literate.",
         "time": "new",
         "level": "intermediate",
@@ -699,7 +699,7 @@
         }]
     },
     {
-        "unit": "sql",
+        "unit": "SQL",
         "unit_descript": "SQL is the standard relational data management language. We live in a data-driven world, and there are many businesses that store their information inside large, relational databases. This makes SQL a great skill not only for data scientists and engineers, but for anyone wanting to be data-literate.",
         "time": "new",
         "level": "intermediate",
@@ -717,7 +717,7 @@
         }]
     },
     {
-        "unit": "sql",
+        "unit": "SQL",
         "unit_descript": "SQL is the standard relational data management language. We live in a data-driven world, and there are many businesses that store their information inside large, relational databases. This makes SQL a great skill not only for data scientists and engineers, but for anyone wanting to be data-literate.",
         "time": "new",
         "level": "intermediate",
@@ -735,7 +735,7 @@
         }]
     },
     {
-        "unit": "c++",
+        "unit": "C++",
         "unit_descript": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
         "time": "new",
         "level": "intermediate",
@@ -753,7 +753,7 @@
         }]
     },
     {
-        "unit": "c++",
+        "unit": "C++",
         "unit_descript": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
         "time": "new",
         "level": "intermediate",
@@ -771,7 +771,7 @@
         }]
     },
     {
-        "unit": "c++",
+        "unit": "C++",
         "unit_descript": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
         "time": "new",
         "level": "intermediate",
@@ -789,7 +789,7 @@
         }]
     },
     {
-        "unit": "c++",
+        "unit": "C++",
         "unit_descript": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
         "time": "new",
         "level": "intermediate",
@@ -807,7 +807,7 @@
         }]
     },
     {
-        "unit": "c++",
+        "unit": "C++",
         "unit_descript": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
         "time": "popular",
         "level": "beginner",
@@ -825,7 +825,7 @@
         }]
     },
     {
-        "unit": "c++",
+        "unit": "C++",
         "unit_descript": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
         "time": "popular",
         "level": "beginner",
@@ -843,7 +843,7 @@
         }]
     },
     {
-        "unit": "c++",
+        "unit": "C++",
         "unit_descript": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
         "time": "popular",
         "level": "beginner",
@@ -861,7 +861,7 @@
         }]
     },
     {
-        "unit": "c++",
+        "unit": "C++",
         "unit_descript": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
         "time": "popular",
         "level": "beginner",
@@ -879,7 +879,7 @@
         }]
     },
     {
-        "unit": "c#",
+        "unit": "C#",
         "unit_descript": "C# is one of the most popular programming languages. It can be used for a variety of things, including mobile applications, game development, and enterprise software. Knowing C# opens a great deal of doors for you as a developer.",
         "time": "popular",
         "level": "beginner",
@@ -897,7 +897,7 @@
         }]
     },
     {
-        "unit": "c#",
+        "unit": "C#",
         "unit_descript": "C# is one of the most popular programming languages. It can be used for a variety of things, including mobile applications, game development, and enterprise software. Knowing C# opens a great deal of doors for you as a developer.",
         "time": "popular",
         "level": "beginner",
@@ -915,7 +915,7 @@
         }]
     },
     {
-        "unit": "c#",
+        "unit": "C#",
         "unit_descript": "C# is one of the most popular programming languages. It can be used for a variety of things, including mobile applications, game development, and enterprise software. Knowing C# opens a great deal of doors for you as a developer.",
         "time": "popular",
         "level": "beginner",
@@ -933,7 +933,7 @@
         }]
     },
     {
-        "unit": "c#",
+        "unit": "C#",
         "unit_descript": "C# is one of the most popular programming languages. It can be used for a variety of things, including mobile applications, game development, and enterprise software. Knowing C# opens a great deal of doors for you as a developer.",
         "time": "popular",
         "level": "beginner",
@@ -951,7 +951,7 @@
         }]
     },
     {
-        "unit": "c#",
+        "unit": "C#",
         "unit_descript": "C# is one of the most popular programming languages. It can be used for a variety of things, including mobile applications, game development, and enterprise software. Knowing C# opens a great deal of doors for you as a developer.",
         "time": "new",
         "level": "intermediate",
@@ -969,7 +969,7 @@
         }]
     },
     {
-        "unit": "c#",
+        "unit": "C#",
         "unit_descript": "C# is one of the most popular programming languages. It can be used for a variety of things, including mobile applications, game development, and enterprise software. Knowing C# opens a great deal of doors for you as a developer.",
         "time": "new",
         "level": "intermediate",
@@ -988,7 +988,7 @@
     },
 
     {
-        "unit": "c#",
+        "unit": "C#",
         "unit_descript": "C# is one of the most popular programming languages. It can be used for a variety of things, including mobile applications, game development, and enterprise software. Knowing C# opens a great deal of doors for you as a developer.",
         "time": "new",
         "level": "intermediate",
@@ -1006,7 +1006,7 @@
         }]
     },
     {
-        "unit": "c#",
+        "unit": "C#",
         "unit_descript": "C# is one of the most popular programming languages. It can be used for a variety of things, including mobile applications, game development, and enterprise software. Knowing C# opens a great deal of doors for you as a developer.",
         "time": "new",
         "level": "intermediate",
@@ -1024,7 +1024,7 @@
         }]
     },
     {
-        "unit": "r",
+        "unit": "R",
         "unit_descript": "R is a widely used statistical programming language that’s beloved by people in academia and the tech industry. But that makes it sound more intimidating than it actually is. R is a great first language for anyone interested in answering questions with data analysis, data visualization, and data science.",
         "time": "new",
         "level": "intermediate",
@@ -1042,7 +1042,7 @@
         }]
     },
     {
-        "unit": "r",
+        "unit": "R",
         "unit_descript": "R is a widely used statistical programming language that’s beloved by people in academia and the tech industry. But that makes it sound more intimidating than it actually is. R is a great first language for anyone interested in answering questions with data analysis, data visualization, and data science.",
         "time": "new",
         "level": "intermediate",
@@ -1060,7 +1060,7 @@
         }]
     },
     {
-        "unit": "r",
+        "unit": "R",
         "unit_descript": "R is a widely used statistical programming language that’s beloved by people in academia and the tech industry. But that makes it sound more intimidating than it actually is. R is a great first language for anyone interested in answering questions with data analysis, data visualization, and data science.",
         "time": "new",
         "level": "intermediate",
@@ -1078,7 +1078,7 @@
         }]
     },
     {
-        "unit": "r",
+        "unit": "R",
         "unit_descript": "R is a widely used statistical programming language that’s beloved by people in academia and the tech industry. But that makes it sound more intimidating than it actually is. R is a great first language for anyone interested in answering questions with data analysis, data visualization, and data science.",
         "time": "new",
         "level": "intermediate",
@@ -1096,7 +1096,7 @@
         }]
     },
     {
-        "unit": "r",
+        "unit": "R",
         "unit_descript": "R is a widely used statistical programming language that’s beloved by people in academia and the tech industry. But that makes it sound more intimidating than it actually is. R is a great first language for anyone interested in answering questions with data analysis, data visualization, and data science.",
         "time": "popular",
         "level": "beginner",
@@ -1114,7 +1114,7 @@
         }]
     },
     {
-        "unit": "r",
+        "unit": "R",
         "unit_descript": "R is a widely used statistical programming language that’s beloved by people in academia and the tech industry. But that makes it sound more intimidating than it actually is. R is a great first language for anyone interested in answering questions with data analysis, data visualization, and data science.",
         "time": "popular",
         "level": "beginner",
@@ -1132,7 +1132,7 @@
         }]
     },
     {
-        "unit": "r",
+        "unit": "R",
         "unit_descript": "R is a widely used statistical programming language that’s beloved by people in academia and the tech industry. But that makes it sound more intimidating than it actually is. R is a great first language for anyone interested in answering questions with data analysis, data visualization, and data science.",
         "time": "popular",
         "level": "beginner",
@@ -1150,7 +1150,7 @@
         }]
     },
     {
-        "unit": "kotlin",
+        "unit": "Kotlin",
         "unit_descript": "Kotlin is a modern, general-purpose programming language developed by JetBrains. Its full compatibility with Java and concise syntax makes it an appealing language for web development, Android development, and more.",
         "time": "popular",
         "level": "beginner",
@@ -1168,7 +1168,7 @@
         }]
     },
     {
-        "unit": "kotlin",
+        "unit": "Kotlin",
         "unit_descript": "Kotlin is a modern, general-purpose programming language developed by JetBrains. Its full compatibility with Java and concise syntax makes it an appealing language for web development, Android development, and more.",
         "time": "popular",
         "level": "beginner",
@@ -1186,7 +1186,7 @@
         }]
     },
     {
-        "unit": "kotlin",
+        "unit": "Kotlin",
         "unit_descript": "Kotlin is a modern, general-purpose programming language developed by JetBrains. Its full compatibility with Java and concise syntax makes it an appealing language for web development, Android development, and more.",
         "time": "popular",
         "level": "beginner",
@@ -1204,7 +1204,7 @@
         }]
     },
     {
-        "unit": "kotlin",
+        "unit": "Kotlin",
         "unit_descript": "Kotlin is a modern, general-purpose programming language developed by JetBrains. Its full compatibility with Java and concise syntax makes it an appealing language for web development, Android development, and more.",
         "time": "popular",
         "level": "beginner",
@@ -1222,7 +1222,7 @@
         }]
     },
     {
-        "unit": "kotlin",
+        "unit": "Kotlin",
         "unit_descript": "Kotlin is a modern, general-purpose programming language developed by JetBrains. Its full compatibility with Java and concise syntax makes it an appealing language for web development, Android development, and more.",
         "time": "new",
         "level": "intermediate",
@@ -1240,7 +1240,7 @@
         }]
     },
     {
-        "unit": "kotlin",
+        "unit": "Kotlin",
         "unit_descript": "Kotlin is a modern, general-purpose programming language developed by JetBrains. Its full compatibility with Java and concise syntax makes it an appealing language for web development, Android development, and more.",
         "time": "new",
         "level": "intermediate",
@@ -1258,7 +1258,7 @@
         }]
     },
     {
-        "unit": "kotlin",
+        "unit": "Kotlin",
         "unit_descript": "Kotlin is a modern, general-purpose programming language developed by JetBrains. Its full compatibility with Java and concise syntax makes it an appealing language for web development, Android development, and more.",
         "time": "new",
         "level": "intermediate",
@@ -1276,7 +1276,7 @@
         }]
     },
     {
-        "unit": "kotlin",
+        "unit": "Kotlin",
         "unit_descript": "Kotlin is a modern, general-purpose programming language developed by JetBrains. Its full compatibility with Java and concise syntax makes it an appealing language for web development, Android development, and more.",
         "time": "new",
         "level": "intermediate",
@@ -1294,7 +1294,7 @@
         }]
     },
     {
-        "unit": "web design ",
+        "unit": "Web Design ",
         "unit_descript": "Web Design is essential to bringing a website to life and creating the experience that you want for your end users. The courses here will help you polish your HTML and CSS skills while learning about color design, navigation design, and more.",
         "time": "10 weeks",
         "title": "Learn how to build websites",
@@ -1313,7 +1313,7 @@
     },
 
     {
-        "unit": "web design",
+        "unit": "Web Design",
         "unit_descript": "Web Design is essential to bringing a website to life and creating the experience that you want for your end users. The courses here will help you polish your HTML and CSS skills while learning about color design, navigation design, and more.",
         "time": "new",
         "title": "How to Make a Website with NameCheap",
@@ -1332,7 +1332,7 @@
 
     },
     {
-        "unit": "web design",
+        "unit": "Web Design",
         "unit_descript": "Web Design is essential to bringing a website to life and creating the experience that you want for your end users. The courses here will help you polish your HTML and CSS skills while learning about color design, navigation design, and more.",
         "time": "popular",
         "level": "beginner",
@@ -1351,7 +1351,7 @@
     },
 
     {
-        "unit": "web design",
+        "unit": "Web Design",
         "unit_descript": "Web Design is essential to bringing a website to life and creating the experience that you want for your end users. The courses here will help you polish your HTML and CSS skills while learning about color design, navigation design, and more.",
         "time": "popular",
         "level": "beginner",
@@ -1371,7 +1371,7 @@
 
     },
     {
-        "unit": "web design",
+        "unit": "Web Design",
         "unit_descript": "Web Design is essential to bringing a website to life and creating the experience that you want for your end users. The courses here will help you polish your HTML and CSS skills while learning about color design, navigation design, and more.",
         "time": "new",
         "title": "Learn Intermediate CSS",
@@ -1391,7 +1391,7 @@
     },
 
     {
-        "unit": "web design",
+        "unit": "Web Design",
         "unit_descript": "Web Design is essential to bringing a website to life and creating the experience that you want for your end users. The courses here will help you polish your HTML and CSS skills while learning about color design, navigation design, and more.",
         "time": "new",
         "title": "Learn Bootstrap",
@@ -1410,7 +1410,7 @@
 
     },
     {
-        "unit": "web design",
+        "unit": "Web Design",
         "unit_descript": "Web Design is essential to bringing a website to life and creating the experience that you want for your end users. The courses here will help you polish your HTML and CSS skills while learning about color design, navigation design, and more.",
         "time": "popular",
         "title": "Learn Sass",
@@ -1428,7 +1428,7 @@
         }]
     },
     {
-        "unit": "web design",
+        "unit": "Web Design",
         "unit_descript": "Web Design is essential to bringing a website to life and creating the experience that you want for your end users. The courses here will help you polish your HTML and CSS skills while learning about color design, navigation design, and more.",
         "time": "popular",
         "title": "Learn Responsive Design",
@@ -1446,7 +1446,7 @@
         }]
     },
     {
-        "unit": "data science",
+        "unit": "Data Science",
         "unit_descript": "Data Scientists try to make sense of the data that’s all around us. Learning Data Science can help you make informed decisions, create beautiful visualizations, and even try to predict future events through Machine Learning. If you’re curious about what you can learn about the world using the data produced every day, then Data Science might be for you!",
         "time": "new",
         "title": "Data Scientist",
@@ -1464,7 +1464,7 @@
         }]
     },
     {
-        "unit": "data science",
+        "unit": "Data Science",
         "unit_descript": "Data Scientists try to make sense of the data that’s all around us. Learning Data Science can help you make informed decisions, create beautiful visualizations, and even try to predict future events through Machine Learning. If you’re curious about what you can learn about the world using the data produced every day, then Data Science might be for you!",
         "time": "new",
         "title": "Data Analysist",
@@ -1482,7 +1482,7 @@
         }]
     },
     {
-        "unit": "data science",
+        "unit": "Data Science",
         "unit_descript": "Data Scientists try to make sense of the data that’s all around us. Learning Data Science can help you make informed decisions, create beautiful visualizations, and even try to predict future events through Machine Learning. If you’re curious about what you can learn about the world using the data produced every day, then Data Science might be for you!",
         "time": "popular",
         "title": "Visualize Data with Python",
@@ -1500,7 +1500,7 @@
         }]
     },
     {
-        "unit": "data science",
+        "unit": "Data Science",
         "unit_descript": "Data Scientists try to make sense of the data that’s all around us. Learning Data Science can help you make informed decisions, create beautiful visualizations, and even try to predict future events through Machine Learning. If you’re curious about what you can learn about the world using the data produced every day, then Data Science might be for you!",
         "time": "popular",
         "title": "Analyze Data with SQL",
@@ -1518,7 +1518,7 @@
         }]
     },
     {
-        "unit": "data science",
+        "unit": "Data Science",
         "unit_descript": "Data Scientists try to make sense of the data that’s all around us. Learning Data Science can help you make informed decisions, create beautiful visualizations, and even try to predict future events through Machine Learning. If you’re curious about what you can learn about the world using the data produced every day, then Data Science might be for you!",
         "time": "new",
         "title": "Build a Machine Learning Model with Python",
@@ -1536,7 +1536,7 @@
         }]
     },
     {
-        "unit": "data science",
+        "unit": "Data Science",
         "unit_descript": "Data Scientists try to make sense of the data that’s all around us. Learning Data Science can help you make informed decisions, create beautiful visualizations, and even try to predict future events through Machine Learning. If you’re curious about what you can learn about the world using the data produced every day, then Data Science might be for you!",
         "time": "new",
         "title": "Build Deep Learning Models with TensorFlow",
@@ -1554,7 +1554,7 @@
         }]
     },
     {
-        "unit": "data science",
+        "unit": "Data Science",
         "unit_descript": "Data Scientists try to make sense of the data that’s all around us. Learning Data Science can help you make informed decisions, create beautiful visualizations, and even try to predict future events through Machine Learning. If you’re curious about what you can learn about the world using the data produced every day, then Data Science might be for you!",
         "time": "popular",
         "title": "Master Statistics with Python",
@@ -1572,7 +1572,7 @@
         }]
     },
     {
-        "unit": "data science",
+        "unit": "Data Science",
         "unit_descript": "Data Scientists try to make sense of the data that’s all around us. Learning Data Science can help you make informed decisions, create beautiful visualizations, and even try to predict future events through Machine Learning. If you’re curious about what you can learn about the world using the data produced every day, then Data Science might be for you!",
         "time": "popular",
         "title": "Data Analyst Interview Preparation",
@@ -1590,7 +1590,7 @@
         }]
     },
     {
-        "unit": "computer science",
+        "unit": "Computer Science",
         "unit_descript": "Computer Science, often referred to as “CS,” is a broad term that covers many sub-disciplines, including the worlds of software and hardware. It can be found in every piece of technology you use, from a smartphone or gaming console to a car or ATM. With so many applications for Computer Science, there’s a space for everyone!",
         "time": "new",
         "title": "Computer Science",
@@ -1608,7 +1608,7 @@
         }]
     },
     {
-        "unit": "computer science",
+        "unit": "Computer Science",
         "unit_descript": "Computer Science, often referred to as “CS,” is a broad term that covers many sub-disciplines, including the worlds of software and hardware. It can be found in every piece of technology you use, from a smartphone or gaming console to a car or ATM. With so many applications for Computer Science, there’s a space for everyone!",
         "time": "new",
         "title": "Learn Python 3",
@@ -1626,7 +1626,7 @@
         }]
     },
     {
-        "unit": "computer science",
+        "unit": "Computer Science",
         "unit_descript": "Computer Science, often referred to as “CS,” is a broad term that covers many sub-disciplines, including the worlds of software and hardware. It can be found in every piece of technology you use, from a smartphone or gaming console to a car or ATM. With so many applications for Computer Science, there’s a space for everyone!",
         "time": "popular",
         "title": "Learn Java",
@@ -1644,7 +1644,7 @@
         }]
     },
     {
-        "unit": "computer science",
+        "unit": "Computer Science",
         "unit_descript": "Computer Science, often referred to as “CS,” is a broad term that covers many sub-disciplines, including the worlds of software and hardware. It can be found in every piece of technology you use, from a smartphone or gaming console to a car or ATM. With so many applications for Computer Science, there’s a space for everyone!",
         "time": "popular",
         "title": "Learn Python 2",
@@ -1662,7 +1662,7 @@
         }]
     },
     {
-        "unit": "computer science",
+        "unit": "Computer Science",
         "unit_descript": "Computer Science, often referred to as “CS,” is a broad term that covers many sub-disciplines, including the worlds of software and hardware. It can be found in every piece of technology you use, from a smartphone or gaming console to a car or ATM. With so many applications for Computer Science, there’s a space for everyone!",
         "time": "new",
         "title": "Pass the Technical Interview with JavaScript",
@@ -1680,7 +1680,7 @@
         }]
     },
     {
-        "unit": "computer science",
+        "unit": "Computer Science",
         "unit_descript": "Computer Science, often referred to as “CS,” is a broad term that covers many sub-disciplines, including the worlds of software and hardware. It can be found in every piece of technology you use, from a smartphone or gaming console to a car or ATM. With so many applications for Computer Science, there’s a space for everyone!",
         "time": "new",
         "title": "Pass the Technical Interview with Java",
@@ -1698,7 +1698,7 @@
         }]
     },
     {
-        "unit": "computer science",
+        "unit": "Computer Science",
         "unit_descript": "Computer Science, often referred to as “CS,” is a broad term that covers many sub-disciplines, including the worlds of software and hardware. It can be found in every piece of technology you use, from a smartphone or gaming console to a car or ATM. With so many applications for Computer Science, there’s a space for everyone!",
         "time": "popular",
         "title": "Discrete Math",
@@ -1716,7 +1716,7 @@
         }]
     },
     {
-        "unit": "computer science",
+        "unit": "Computer Science",
         "unit_descript": "Computer Science, often referred to as “CS,” is a broad term that covers many sub-disciplines, including the worlds of software and hardware. It can be found in every piece of technology you use, from a smartphone or gaming console to a car or ATM. With so many applications for Computer Science, there’s a space for everyone!",
         "time": "popular",
         "title": "Computer Architecture",
@@ -1734,7 +1734,7 @@
         }]
     },
     {
-        "unit": "for business",
+        "unit": "For Business",
         "unit_descript": "From software development to data analysis—give your team the latest technical skills to tackle any business problem.",
         "time": "new",
         "title": "Learn Data Analysis for your Business",
@@ -1752,7 +1752,7 @@
         }]
     },
     {
-        "unit": "for business",
+        "unit": "For Business",
         "unit_descript": "From software development to data analysis—give your team the latest technical skills to tackle any business problem.",
         "time": "new",
         "title": "Learn Full-stack Engineering for you Business",
@@ -1770,7 +1770,7 @@
         }]
     },
     {
-        "unit": "for business",
+        "unit": "For Business",
         "unit_descript": "From software development to data analysis—give your team the latest technical skills to tackle any business problem.",
         "time": "popular",
         "title": "Build Websites for your Business",
@@ -1788,7 +1788,7 @@
         }]
     },
     {
-        "unit": "for business",
+        "unit": "For Business",
         "unit_descript": "From software development to data analysis—give your team the latest technical skills to tackle any business problem.",
         "time": "popular",
         "title": "Visualize Data with Python",
@@ -1806,7 +1806,7 @@
         }]
     },
     {
-        "unit": "for business",
+        "unit": "For Business",
         "unit_descript": "From software development to data analysis—give your team the latest technical skills to tackle any business problem.",
         "time": "new",
         "title": "Analyze Data with Python",
@@ -1824,7 +1824,7 @@
         }]
     },
     {
-        "unit": "for business",
+        "unit": "For Business",
         "unit_descript": "From software development to data analysis—give your team the latest technical skills to tackle any business problem.",
         "time": "new",
         "title": "Build Python Web Apps with Flask",
@@ -1842,7 +1842,7 @@
         }]
     },
     {
-        "unit": "for business",
+        "unit": "For Business",
         "unit_descript": "From software development to data analysis—give your team the latest technical skills to tackle any business problem.",
         "time": "popular",
         "title": "Learn CSS",
@@ -1860,7 +1860,7 @@
         }]
     },
     {
-        "unit": "for business",
+        "unit": "For Business",
         "unit_descript": "From software development to data analysis—give your team the latest technical skills to tackle any business problem.",
         "time": "popular",
         "title": "Learn TypeScript",
@@ -1878,7 +1878,7 @@
         }]
     },
     {
-        "unit": "mobile development",
+        "unit": "Mobile Development",
         "unit_descript": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
         "time": "new",
         "title": "Build Basic Android Apps with Java",
@@ -1896,7 +1896,7 @@
         }]
     },
     {
-        "unit": "mobile development",
+        "unit": "Mobile Development",
         "unit_descript": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
         "time": "new",
         "title": "Build iOS Apps with SwiftUI",
@@ -1914,7 +1914,7 @@
         }]
     },
     {
-        "unit": "mobile development",
+        "unit": "Mobile Development",
         "unit_descript": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
         "time": "popular",
         "title": "Learn Swift",
@@ -1932,7 +1932,7 @@
         }]
     },
     {
-        "unit": "mobile development",
+        "unit": "Mobile Development",
         "unit_descript": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
         "time": "popular",
         "title": "Learn Kotlin",
@@ -1950,7 +1950,7 @@
         }]
     },
     {
-        "unit": "mobile development",
+        "unit": "Mobile Development",
         "unit_descript": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
         "time": "popular",
         "title": "Learn Kotlin",
@@ -1968,7 +1968,7 @@
         }]
     },
     {
-        "unit": "mobile development",
+        "unit": "Mobile Development",
         "unit_descript": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
         "time": "new",
         "title": "Build an Intermediate iOS App with SwiftUI",
@@ -1986,7 +1986,7 @@
         }]
     },
     {
-        "unit": "mobile development",
+        "unit": "Mobile Development",
         "unit_descript": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
         "time": "new",
         "title": "Learn React Native",
@@ -2004,7 +2004,7 @@
         }]
     },
     {
-        "unit": "mobile development",
+        "unit": "Mobile Development",
         "unit_descript": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
         "time": "popular",
         "title": "Learn Intermediate Swift",
@@ -2022,7 +2022,7 @@
         }]
     },
     {
-        "unit": "mobile development",
+        "unit": "Mobile Development",
         "unit_descript": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
         "time": "popular",
         "title": "Learn the Basics of Android",
