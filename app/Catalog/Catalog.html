@@ -68,7 +68,7 @@
             </div>
             <!-- courses popular-->
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='popular') | limitTo: 9">
+                <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='popular') | limitTo: 8">
                     <div class="txtcourse">
                         <div class="tag">
                             <p class="txttag">{{co.tag}}</p>
@@ -83,7 +83,7 @@
                         <p class="coude">{{co.logo}}</p>
                     </div>
                 </div>
-                <<<<<<< HEAD=======< div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-sm-6 col-md-4">
                     <div class="txtcourse">
                         <div class="tag">
                             <p class="txttag">Pro</p>
@@ -97,106 +97,105 @@
                         </div>
                         <p class="coude">Coudé</p>
                     </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="txtcourse">
-                    <div class="tag">
-                        <p class="txttag">Pro</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="txtcourse">
+                        <div class="tag">
+                            <p class="txttag">Pro</p>
+                        </div>
+                        <div class="information">
+                            <p class="box--course_header">Back-End Beginner</p>
+                            <ul>
+                                <li>Beginner Friendly</li>
+                                <li>35 Lessons</li>
+                            </ul>
+                        </div>
+                        <p class="coude">Coudé</p>
                     </div>
-                    <div class="information">
-                        <p class="box--course_header">Back-End Beginner</p>
-                        <ul>
-                            <li>Beginner Friendly</li>
-                            <li>35 Lessons</li>
-                        </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="txtcourse">
+                        <div class="tag">
+                            <p class="txttag">Pro</p>
+                        </div>
+                        <div class="information">
+                            <p class="box--course_header">Back-End Beginner</p>
+                            <ul>
+                                <li>Beginner Friendly</li>
+                                <li>35 Lessons</li>
+                            </ul>
+                        </div>
+                        <p class="coude">Coudé</p>
                     </div>
-                    <p class="coude">Coudé</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="txtcourse">
+                        <div class="tag">
+                            <p class="txttag">Pro</p>
+                        </div>
+                        <div class="information">
+                            <p class="box--course_header">Back-End Beginner</p>
+                            <ul>
+                                <li>Beginner Friendly</li>
+                                <li>35 Lessons</li>
+                            </ul>
+                        </div>
+                        <p class="coude">Coudé</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="txtcourse">
-                    <div class="tag">
-                        <p class="txttag">Pro</p>
+            <!-- header 2-->
+            <div class="row">
+                <h3 class="header">New</h3>
+            </div>
+            <!-- courses new -->
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4" ng-repeat="c in courses | filter : (c.time ='new') | limitTo : 9">
+                    <div class="txtcourse">
+                        <div class="tag">
+                            <p class="txttag">{{c.tag}}</p>
+                        </div>
+                        <div class="information">
+                            <p class="box--course_header">{{c.title}}</p>
+                            <ul>
+                                <li>{{c.description[0].txtlevel}}</li>
+                                <li>{{c.description[0].number_lesson}}</li>
+                            </ul>
+                        </div>
+                        <p class="coude">{{c.logo}}</p>
                     </div>
-                    <div class="information">
-                        <p class="box--course_header">Back-End Beginner</p>
-                        <ul>
-                            <li>Beginner Friendly</li>
-                            <li>35 Lessons</li>
-                        </ul>
-                    </div>
-                    <p class="coude">Coudé</p>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="txtcourse">
-                    <div class="tag">
-                        <p class="txttag">Pro</p>
-                    </div>
-                    <div class="information">
-                        <p class="box--course_header">Back-End Beginner</p>
-                        <ul>
-                            <li>Beginner Friendly</li>
-                            <li>35 Lessons</li>
-                        </ul>
-                    </div>
-                    <p class="coude">Coudé</p>
+            <!-- header 3 -->
+            <div class="row">
+                <h3 class="header">Blog</h3>
+            </div>
+            <!-- blog line 1 -->
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img src="/assets/images/catalog/blog1.PNG" class="blog_img--up">
+                    <p>How to stay motivated when learning code</p>
                 </div>
-            </div>
-            >>>>>>> 7399de070fa14dc230a0b1eab7c74ae1fc5d470d
-        </div>
-        <!-- header 2-->
-        <div class="row">
-            <h3 class="header">New</h3>
-        </div>
-        <!-- courses new -->
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4" ng-repeat="c in courses | filter : (c.time ='new') | limitTo : 9">
-                <div class="txtcourse">
-                    <div class="tag">
-                        <p class="txttag">{{c.tag}}</p>
-                    </div>
-                    <div class="information">
-                        <p class="box--course_header">{{c.title}}</p>
-                        <ul>
-                            <li>{{c.description[0].txtlevel}}</li>
-                            <li>{{c.description[0].number_lesson}}</li>
-                        </ul>
-                    </div>
-                    <p class="coude">{{c.logo}}</p>
+                <div class="col-lg-4 text-center">
+                    <img src="/assets/images/catalog/blog2.PNG" class="blog_img--up">
+                    <p>How to stay motivated when learning code</p>
                 </div>
-            </div>
-        </div>
-        <!-- header 3 -->
-        <div class="row">
-            <h3 class="header">Blog</h3>
-        </div>
-        <!-- blog line 1 -->
-        <div class="row">
-            <div class="col-lg-4 text-center">
-                <img src="/assets/images/catalog/blog1.PNG" class="blog_img--up">
-                <p>How to stay motivated when learning code</p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <img src="/assets/images/catalog/blog2.PNG" class="blog_img--up">
-                <p>How to stay motivated when learning code</p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <img src="/assets/images/catalog/blog3.PNG" class="blog_img--up">
-                <p>How to stay motivated when learning code</p>
-            </div>
+                <div class="col-lg-4 text-center">
+                    <img src="/assets/images/catalog/blog3.PNG" class="blog_img--up">
+                    <p>How to stay motivated when learning code</p>
+                </div>
 
-        </div>
-        <!-- blogline 2 -->
-        <div class="row">
-            <div class="col-lg-6">
-                <img class="blog_img" src="/assets/images/catalog/blog4.PNG">
             </div>
-            <div class="col-lg-6">
-                <p class="txtblog">The story of the coder was born in 1996 and the truth is that IT is the king of all professional</p>
+            <!-- blogline 2 -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="blog_img" src="/assets/images/catalog/blog4.PNG">
+                </div>
+                <div class="col-lg-6">
+                    <p class="txtblog">The story of the coder was born in 1996 and the truth is that IT is the king of all professional</p>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
