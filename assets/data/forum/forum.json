@@ -8,6 +8,7 @@
         "views": "1956",
         "likes": "254",
         "date": "12/02/2021",
+        "marked": "true",
         "title": "Get int value from enum in C#",
         "content": "I have a class called Questions (plural). In this class there is an enum called Question (singular) which looks like this. In the Questions class I have a get(int foo) function that returns a Questions object for that foo. Is there an easy way to get the integer value off the enum so I can do something like this Questions.Get(Question.Role)?",
         "reply": [{
@@ -25,6 +26,7 @@
         "views": "2132",
         "likes": "354",
         "date": "23/12/2020",
+        "marked": "true",
         "title": "How to enumerate an enum",
         "content": "How can you enumerate an enum in C#? And it gives the following compile-time error: 'Suit' is a 'type' but is used like a 'variable'. It fails on the Suit keyword, the second one.",
         "reply": [{
@@ -42,6 +44,7 @@
         "views": "179",
         "likes": "18",
         "date": "02/03/2021",
+        "marked": "false",
         "title": "How can I cast int to enum?",
         "content": "How can an int be cast to an enum in C#?",
         "reply": [{
@@ -59,6 +62,7 @@
         "views": "246",
         "likes": "124",
         "date": "07/04/2021",
+        "marked": "false",
         "title": "Case insensitive 'Contains(string)'",
         "content": "There doesn't seem to be an overload that allows me to set the case sensitivity.. Currently I UPPERCASE them both, but that's just silly (by which I am referring to the i18n issues that come with up- and down casing). This question is ancient and since then I have realized I asked for a simple answer for a really vast and difficult topic if you care to investigate it fully. For most cases, in mono-lingual, English code bases this answer will suffice. I'm suspecting because most people coming here fall in this category this is the most popular answer. This answer however brings up the inherent problem that we can't compare text case insensitive until we know both texts are the same culture and we know what that culture is. This is maybe a less popular answer, but I think it is more correct and that's why I marked it as such.",
         "reply": [{
@@ -76,6 +80,7 @@
         "views": "195",
         "likes": "56",
         "date": "23/04/2021",
+        "marked": "false",
         "title": "How to iterate over a dictionary?",
         "content": "I've seen a few different ways to iterate over a dictionary in C#. Is there a standard way?",
         "reply": [{
@@ -93,6 +98,7 @@
         "views": "321",
         "likes": "255",
         "date": "27/03/2021",
+        "marked": "true",
         "title": "Catch multiple exceptions at once?",
         "content": "It is discouraged to simply catch System.Exception. Instead, only the 'known' exceptions should be caught. I wonder: Is there a way to catch both exceptions and only call the WebId = Guid.Empty call once? The given example is rather simple, as it's only a GUID. But imagine code where you modify an object multiple times, and if one of the manipulations fails expectedly, you want to 'reset' the object. However, if there is an unexpected exception, I still want to throw that higher.",
         "reply": [{
@@ -110,6 +116,7 @@
         "views": "167",
         "likes": "29",
         "date": "19/04/2021",
+        "marked": "true",
         "title": "How do I get a consistent byte representation of strings in C# without manually specifying an encoding?",
         "content": "How do I convert a string to a byte[] in .NET (C#) without manually specifying a specific encoding? I'm going to encrypt the string. I can encrypt it without converting, but I'd still like to know why encoding comes to play here. Also, why should encoding even be taken into consideration? Can't I simply get what bytes the string has been stored in? Why is there a dependency on character encodings?",
         "reply": [{
@@ -127,6 +134,7 @@
         "views": "183",
         "likes": "25",
         "date": "12/04/2021",
+        "marked": "false",
         "title": "Should 'using' directives be inside or outside the namespace?",
         "content": "I have been running StyleCop over some C# code, and it keeps reporting that my using directives should be inside the namespace. Is there a technical reason for putting the using directives inside instead of outside the namespace?",
         "reply": [{
@@ -144,6 +152,7 @@
         "views": "604",
         "likes": "354",
         "date": "23/07/2021",
+        "marked": "false",
         "title": "What is the best way to give a C# auto-property an initial value?",
         "content": "How do you give a C# auto-property an initial value? I either use the constructor, or revert to the old syntax.",
         "reply": [{
@@ -161,6 +170,7 @@
         "views": "352",
         "likes": "154",
         "date": "05/05/2021",
+        "marked": "false",
         "title": "How do I calculate someone's age based on a DateTime type birthday?",
         "content": "Given a DateTime representing a person's birthday, how do I calculate their age in years?",
         "reply": [{
@@ -178,6 +188,7 @@
         "views": "492",
         "likes": "54",
         "date": "03/09/2021",
+        "marked": "false",
         "title": "Why is processing a sorted array faster than processing an unsorted array?",
         "content": "My first thought was that sorting brings the data into the cache, but then I thought how silly that was because the array was just generated. What is going on? Why is processing a sorted array faster than processing an unsorted array? The code is summing up some independent terms, so the order should not matter.",
         "reply": [{
@@ -195,6 +206,7 @@
         "views": "54",
         "likes": "4",
         "date": "20/11/2021",
+        "marked": "false",
         "title": "What is the '-->' operator in C/C++?",
         "content": "After reading Hidden Features and Dark Corners of C++/STL on comp.lang.c++.moderated, I was completely surprised that the following snippet compiled and worked in both Visual Studio 2008 and G++ 4.4.",
         "reply": [{
@@ -212,6 +224,7 @@
         "views": "573",
         "likes": "225",
         "date": "12/12/2021",
+        "marked": "false",
         "title": "What are the differences between a pointer variable and a reference variable in C++?",
         "content": "I know references are syntactic sugar, so code is easier to read and write. But what is the difference between a pointer variable and a reference variable?",
         "reply": [{
@@ -229,6 +242,7 @@
         "views": "1598",
         "likes": "354",
         "date": "15/05/2021",
+        "marked": "false",
         "title": "What does the explicit keyword mean?",
         "content": "What does the explicit keyword mean in C++?",
         "reply": [{
@@ -246,6 +260,7 @@
         "views": "567",
         "likes": "254",
         "date": "18/09/2021",
+        "marked": "false",
         "title": "How do I iterate over the words of a string?",
         "content": "I'm trying to iterate over the words of a string. The string can be assumed to be composed of words separated by whitespace. Note that I'm not interested in C string functions or that kind of character manipulation/access. Also, please give precedence to elegance over efficiency in your answer.",
         "reply": [{
@@ -263,6 +278,7 @@
         "views": "651",
         "likes": "254",
         "date": "16/09/2021",
+        "marked": "false",
         "title": "Why is 'using namespace std;' considered bad practice?",
         "content": "I've been told by others that writing using namespace std; in code is wrong, and that I should use std::cout and std::cin directly instead. Why is using namespace std; considered a bad practice? Is it inefficient or does it risk declaring ambiguous variables (variables that share the same name as a function in std namespace)? Does it impact performance?",
         "reply": [{
@@ -280,6 +296,7 @@
         "views": "871",
         "likes": "254",
         "date": "12/03/2021",
+        "marked": "false",
         "title": "How do you set, clear, and toggle a single bit?",
         "content": "How do you set, clear, and toggle a bit?",
         "reply": [{
@@ -297,6 +314,7 @@
         "views": "289",
         "likes": "254",
         "date": "14/05/2021",
+        "marked": "false",
         "title": "When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?",
         "content": "What are the proper uses of: static_cast, dynamic_cast, const_cast,reinterpret_cast, C-style cast (type)value, Function-style cast type(value). How does one decide which to use in which specific cases?",
         "reply": [{
@@ -314,6 +332,7 @@
         "views": "540",
         "likes": "254",
         "date": "05/04/2021",
+        "marked": "false",
         "title": "What is the copy-and-swap idiom?",
         "content": "What is this idiom and when should it be used? Which problems does it solve? Does the idiom change when C++11 is used? Although it's been mentioned in many places, we didn't have any singular 'what is it' question and answer, so here it is",
         "reply": [{
@@ -331,6 +350,7 @@
         "views": "275",
         "likes": "54",
         "date": "29/10/2021",
+        "marked": "false",
         "title": "C++11 introduced a standardized memory model. What does it mean? And how is it going to affect C++ programming?",
         "content": "C++11 introduced a standardized memory model, but what exactly does that mean? And how is it going to affect C++ programming?",
         "reply": [{
@@ -348,6 +368,7 @@
         "views": "478",
         "likes": "254",
         "date": "08/08/2021",
+        "marked": "false",
         "title": "What does the 'yield' keyword do?",
         "content": "What does the 'yield' keyword do? What happens when the method _get_child_candidates is called? Is a list returned? A single element? Is it called again? When will subsequent calls stop?",
         "reply": [{
@@ -365,6 +386,7 @@
         "views": "438",
         "likes": "254",
         "date": "02/08/2021",
+        "marked": "false",
         "title": "What does if __name__ == 'main': do?",
         "content": "What does if __name__ == 'main': do?",
         "reply": [{
@@ -382,6 +404,7 @@
         "views": "752",
         "likes": "254",
         "date": "07/05/2021",
+        "marked": "false",
         "title": "Does Python have a ternary conditional operator?",
         "content": "If Python does not have a ternary conditional operator, is it possible to simulate one using other language constructs?",
         "reply": [{
@@ -399,6 +422,7 @@
         "views": "426",
         "likes": "254",
         "date": "29/11/2021",
+        "marked": "false",
         "title": "What are metaclasses in Python?",
         "content": "In Python, what are metaclasses and what do we use them for?",
         "reply": [{
@@ -417,6 +441,7 @@
         "views": "692",
         "likes": "254",
         "date": "06/06/2021",
+        "marked": "false",
         "title": "How do I check whether a file exists without exceptions?",
         "content": "How do I check whether a file exists or not, without using the try statement?",
         "reply": [{
@@ -434,6 +459,7 @@
         "views": "548",
         "likes": "254",
         "date": "20/10/2021",
+        "marked": "true",
         "title": "How to execute a program or call a system command?",
         "content": "How do you call an external command (as if I'd typed it at the Unix shell or Windows command prompt) from within a Python script?",
         "reply": [{
@@ -451,6 +477,7 @@
         "views": "1267",
         "likes": "254",
         "date": "12/06/2021",
+        "marked": "false",
         "title": "Accessing the index in 'for' loops?",
         "content": "How do I access the index in a for loop like the following?",
         "reply": [{
@@ -468,6 +495,7 @@
         "views": "534",
         "likes": "254",
         "date": "25/04/2021",
+        "marked": "false",
         "title": "How to make a flat list out of a list of lists",
         "content": "Is there a shortcut to make a simple list out of a list of lists in Python? I can do it in a for loop, but is there some cool 'one-liner'? I tried it with functools.reduce()",
         "reply": [{
@@ -485,6 +513,7 @@
         "views": "435",
         "likes": "254",
         "date": "04/03/2021",
+        "marked": "false",
         "title": "Difference between staticmethod and classmethod",
         "content": "What is the difference between a function decorated with @staticmethod and one decorated with @classmethod?",
         "reply": [{
@@ -502,6 +531,7 @@
         "views": "903",
         "likes": "254",
         "date": "23/04/2021",
+        "marked": "false",
         "title": "Finding the index of an item in a list",
         "content": "Given a list ['foo', 'bar', 'baz'] and an item in the list 'bar', how do I get its index (1) in Python?",
         "reply": [{
@@ -519,6 +549,7 @@
         "views": "482",
         "likes": "254",
         "date": "13/05/2021",
+        "marked": "false",
         "title": "Does Python have a string 'contains' substring method?",
         "content": "I'm looking for a string.contains or string.indexof method in Python",
         "reply": [{
@@ -536,6 +567,7 @@
         "views": "673",
         "likes": "254",
         "date": "09/05/2021",
+        "marked": "false",
         "title": "Select first row in each GROUP BY group?",
         "content": "As the title suggests, I'd like to select the first row of each set of rows grouped with a GROUP BY.",
         "reply": [{
@@ -553,6 +585,7 @@
         "views": "890",
         "likes": "254",
         "date": "08/09/2021",
+        "marked": "false",
         "title": "Insert results of a stored procedure into a temporary table",
         "content": "How do I do a SELECT * INTO [temp table] FROM [stored procedure]? Not FROM [Table] and without defining [temp table]?",
         "reply": [{
@@ -570,6 +603,7 @@
         "views": "1243",
         "likes": "254",
         "date": "26/03/2021",
+        "marked": "false",
         "title": "Inserting multiple rows in a single SQL query? [duplicate]",
         "content": "I have multiple set of data to insert at once, say 4 rows. My table has three columns: Person, Id and Office. Can I insert all 4 rows in a single SQL statement?",
         "reply": [{
@@ -587,6 +621,7 @@
         "views": "745",
         "likes": "254",
         "date": "28/06/2021",
+        "marked": "false",
         "title": "Finding duplicate values in a SQL table",
         "content": "Finding duplicate values in a SQL table",
         "reply": [{
@@ -604,6 +639,7 @@
         "views": "290",
         "likes": "154",
         "date": "14/04/2021",
+        "marked": "false",
         "title": "How do I import an SQL file using the command line in MySQL?",
         "content": "I have a .sql file with an export from phpMyAdmin. I want to import it into a different server using the command line. I have a Windows Server 2008 R2 installation. I placed the .sql file on the C drive, and I tried this command",
         "reply": [{
@@ -621,6 +657,7 @@
         "views": "302",
         "likes": "24",
         "date": "27/10/2021",
+        "marked": "false",
         "title": "How can I prevent SQL injection in PHP?",
         "content": "How can I prevent SQL injection in PHP?",
         "reply": [{
@@ -638,6 +675,7 @@
         "views": "72",
         "likes": "0",
         "date": "25/04/2021",
+        "marked": "false",
         "title": "Add a column with a default value to an existing table in SQL Server",
         "content": "How can I add a column with a default value to an existing table in SQL Server 2000 / SQL Server 2005?",
         "reply": [{
@@ -655,6 +693,7 @@
         "views": "300",
         "likes": "0",
         "date": "21/12/2021",
+        "marked": "false",
         "title": "How do I UPDATE from a SELECT in SQL Server?",
         "content": "How do I UPDATE from a SELECT in SQL Server?",
         "reply": [{
@@ -672,6 +711,7 @@
         "views": "204",
         "likes": "2",
         "date": "23/07/2021",
+        "marked": "false",
         "title": "What is the difference between 'INNER JOIN' and 'OUTER JOIN'?",
         "content": "Also how do LEFT JOIN, RIGHT JOIN and FULL JOIN fit in?",
         "reply": [{
@@ -689,6 +729,7 @@
         "views": "372",
         "likes": "254",
         "date": "21/09/2021",
+        "marked": "false",
         "title": "Insert into ... values ( SELECT ... FROM ... )",
         "content": "I am trying to INSERT INTO a table using the input from another table. Although this is entirely feasible for many database engines, I always seem to struggle to remember the correct syntax for the SQL engine of the day (MySQL, Oracle, SQL Server, Informix, and DB2). Is there a silver-bullet syntax coming from an SQL standard (for example, SQL-92) that would allow me to insert the values without worrying about the underlying database?",
         "reply": [{
@@ -706,6 +747,7 @@
         "views": "647",
         "likes": "23",
         "date": "02/04/2021",
+        "marked": "false",
         "title": "How do I write a correct micro-benchmark in Java?",
         "content": "How do you write (and run) a correct micro-benchmark in Java? I'm looking for some code samples and comments illustrating various things to think about. Example: Should the benchmark measure time / iteration or iterations / time, and why? Related : Is stopwatch benchmarking acceptable ?",
         "reply": [{
@@ -723,6 +765,7 @@
         "views": "552",
         "likes": "64",
         "date": "04/05/2021",
+        "marked": "false",
         "title": "How to add JTable in JPanel with null layout?",
         "content": "I want to add JTable into JPanel whose layout is null. JPanel contains other components. I have to add JTable at proper position.",
         "reply": [{
@@ -740,6 +783,7 @@
         "views": "67",
         "likes": "12",
         "date": "02/09/2021",
+        "marked": "false",
         "title": "How can I create an executable JAR with dependencies using Maven?",
         "content": "I want to package my project in a single executable JAR for distribution. How can I make a Maven project package all dependency JARs into my output JAR?",
         "reply": [{
@@ -757,6 +801,7 @@
         "views": "3678",
         "likes": "233",
         "date": "12/05/2021",
+        "marked": "false",
         "title": "Java inner class and static nested class",
         "content": "What is the main difference between an inner class and a static nested class in Java? Does design / implementation play a role in choosing one of these?",
         "reply": [{
@@ -774,6 +819,7 @@
         "views": "1323",
         "likes": "351",
         "date": "02/12/2021",
+        "marked": "false",
         "title": "Unfortunately MyApp has stopped. How can I solve this?",
         "content": "I am developing an application, and everytime I run it, I get the message: 'Unfortunately, MyApp has stopped.'What can I do to solve this?",
         "reply": [{
@@ -791,6 +837,7 @@
         "views": "532",
         "likes": "31",
         "date": "24/05/2021",
+        "marked": "false",
         "title": "So the main difference between the two from a design standpoint is : nonstatic nested class can access instance of the container class, while static can't.",
         "content": "I want to launch an installed package from my Android application. I assume that it is possible using intents, but I didn't find a way of doing it. Is there a link, where to find the information?",
         "reply": [{
@@ -808,6 +855,7 @@
         "views": "863",
         "likes": "432",
         "date": "22/10/2021",
+        "marked": "false",
         "title": "How to make an Android device vibrate? with different frequency?",
         "content": "I wrote an Android application. Now, I want to make the device vibrate when a certain action occurs. How can I do this?",
         "reply": [{
@@ -825,6 +873,7 @@
         "views": "2436",
         "likes": "836",
         "date": "29/03/2021",
+        "marked": "false",
         "title": "How to convert a Kotlin source file to a Java source file",
         "content": "I have a Kotlin source file, but I want to translate it to Java. How can I convert Kotlin to Java source?",
         "reply": [{
@@ -842,6 +891,7 @@
         "views": "4747",
         "likes": "1024",
         "date": "12/12/2021",
+        "marked": "false",
         "title": "How to parse JSON in Kotlin?",
         "content": "I'm receiving a quite deep JSON object string from a service which I must parse to a JSON object and then map it to classes. How can I transform a JSON string to object in Kotlin? After that the mapping to the respective classes, I was using StdDeserializer from Jackson. The problem arises at the moment the object had properties that also had to be deserialized into classes. I was not able to get the object mapper, at least I didn't know how, inside another deserializer. Preferably, natively, I'm trying to reduce the number of dependencies I need so if the answer is only for JSON manipulation and parsing it'd be enough.",
         "reply": [{
@@ -859,6 +909,7 @@
         "views": "546",
         "likes": "231",
         "date": "04/06/2021",
+        "marked": "false",
         "title": "What is the equivalent of Java static methods in Kotlin?",
         "content": "There is no static keyword in Kotlin. What is the best way to represent a static Java method in Kotlin?",
         "reply": [{
@@ -876,6 +927,7 @@
         "views": "436",
         "likes": "244",
         "date": "29/06/2021",
+        "marked": "false",
         "title": "How do you parse and process HTML/XML in PHP?",
         "content": "How can one parse HTML/XML and extract information from it?",
         "reply": [{
@@ -893,6 +945,7 @@
         "views": "875",
         "likes": "343",
         "date": "23/11/2021",
+        "marked": "false",
         "title": "What are valid values for the id attribute in HTML?",
         "content": "When creating the id attributes for HTML elements, what rules are there for the value?",
         "reply": [{
@@ -910,6 +963,7 @@
         "views": "255",
         "likes": "87",
         "date": "24/02/2021",
+        "marked": "false",
         "title": "What is a clearfix?",
         "content": "Recently I was looking through some website's code, and saw that every <div> had a class clearfix. After a quick Google search, I learned that it is for IE6 sometimes, but what actually is a clearfix? Could you provide some examples of a layout with a clearfix, compared to a layout without a clearfix?",
         "reply": [{
@@ -927,6 +981,7 @@
         "views": "334",
         "likes": "50",
         "date": "22/11/2021",
+        "marked": "false",
         "title": "How can I tell if a DOM element is visible in the current viewport?",
         "content": "Is there an efficient way to tell if a DOM element (in an HTML document) is currently visible (appears in the viewport)? (The question refers to Firefox.)",
         "reply": [{
@@ -944,6 +999,7 @@
         "views": "65",
         "likes": "19",
         "date": "04/10/2021",
+        "marked": "false",
         "title": "How to apply CSS to iframe?",
         "content": "I have a simple page that has some iframe sections (to display RSS links). How can I apply the same CSS format from the main page to the page displayed in the iframe?",
         "reply": [{
@@ -961,6 +1017,7 @@
         "views": "964",
         "likes": "252",
         "date": "22/04/2021",
+        "marked": "false",
         "title": "How do you disable browser autocomplete on web form field / input tags?",
         "content": "How do you disable autocomplete in the major browsers for a specific input (or form field)?",
         "reply": [{
@@ -978,6 +1035,7 @@
         "views": "65",
         "likes": "21",
         "date": "08/04/2021",
+        "marked": "false",
         "title": "Position absolute but relative to parent",
         "content": "I have two divs inside another div, and I want to position one child div to the top right of the parent div, and the other child div to the bottom of the parent div using css. Ie, I want to use absolute positioning with the two child divs, but position them relative to the parent div rather than the page. How can I do this?",
         "reply": [{
@@ -995,6 +1053,7 @@
         "views": "625",
         "likes": "123",
         "date": "12/05/2021",
+        "marked": "false",
         "title": "Strip HTML from Text JavaScript",
         "content": "Is there an easy way to take a string of html in JavaScript and strip out the html?",
         "reply": [{
@@ -1012,6 +1071,7 @@
         "views": "643",
         "likes": "232",
         "date": "02/12/2021",
+        "marked": "false",
         "title": "Why is this inline-block element pushed downward?",
         "content": "Following is my code and I want to understand that why #firstDiv is being pushed downward by all browsers. I really want to understand the inner workings of the fact that why its being pushed downward rather than pulling it upward by one way or another. (and I know how to align their tops :)) And I know that its overflow:hidden which is causing it but not sure that why its pushing that div downward.",
         "reply": [{
@@ -1029,6 +1089,7 @@
         "views": "532",
         "likes": "111",
         "date": "05/03/2021",
+        "marked": "false",
         "title": "What is the difference between visibility:hidden and display:none?",
         "content": "The CSS rules 'visibility:hidden' and 'display:none' both result in the element not being visible. Are these synonyms?",
         "reply": [{
@@ -1046,6 +1107,7 @@
         "views": "432",
         "likes": "23",
         "date": "19/05/2021",
+        "marked": "false",
         "title": "What are the differences between flex-basis and width?",
         "content": "It seems that a flex container set to inline-flex doesn't recognize flex-basis on a child when rendering a sibling with white-space: nowrap (although it could just be an item with undefined width). The container doesn't expand to accommodate the items. But when the width property is used instead of flex-basis, the container respects the sizing of its children and expands accordingly. This is not a problem in IE11 and Edge.",
         "reply": [{
@@ -1063,6 +1125,7 @@
         "views": "532",
         "likes": "23",
         "date": "18/08/2021",
+        "marked": "false",
         "title": "Align child elements of different blocks",
         "content": "There have been questions and articles about this, but nothing conclusive as far as I can tell. The best summary I could find is flex-basis allows you to specify the initial/starting size of the element, before anything else is computed. It can either be a percentage or an absolute value. Which in itself doesn't say much about the behavior of elements with flex-basis set. With my current knowledge of flexbox I don't see why that couldn't describe width also.",
         "reply": [{
@@ -1080,6 +1143,7 @@
         "views": "14",
         "likes": "5",
         "date": "21/08/2021",
+        "marked": "false",
         "title": "Centering in CSS Grid",
         "content": "I'm trying to create a simple page with CSS Grid. What I'm failing to do is center the text from the HTML to the respective grid cells. How do I do this?",
         "reply": [{
@@ -1097,6 +1161,7 @@
         "views": "932",
         "likes": "225",
         "date": "12/12/2021",
+        "marked": "false",
         "title": "Can jQuery get all CSS styles associated with an element?",
         "content": "Is there a way in jQuery to get all CSS from an existing element and apply it to another without listing them all? I know it would work if they were a style attribute with 'attr()', but all of my styles are in an external style sheet.",
         "reply": [{
@@ -1114,6 +1179,7 @@
         "views": "754",
         "likes": "43",
         "date": "01/07/2021",
+        "marked": "false",
         "title": "How does the 'this' keyword work?",
         "content": "I have noticed that there doesn't appear to be a clear explanation of what the 'this' keyword is and how it is correctly (and incorrectly) used in JavaScript on the Stack Overflow site. I have witnessed some very strange behaviour with it and have failed to understand why it has occurred. How does 'this' work and when should it be used?",
         "reply": [{
@@ -1131,6 +1197,7 @@
         "views": "564",
         "likes": "221",
         "date": "04/07/2021",
+        "marked": "false",
         "title": "How do JavaScript closures work?",
         "content": "How would you explain JavaScript closures to someone with a knowledge of the concepts they consist of (for example functions, variables and the like), but does not understand closures themselves? I have seen the Scheme example given on Wikipedia, but unfortunately it did not help.",
         "reply": [{
@@ -1148,6 +1215,7 @@
         "views": "73",
         "likes": "10",
         "date": "20/04/2021",
+        "marked": "false",
         "title": "How do I redirect to another webpage?",
         "content": "How can I redirect the user from one page to another using jQuery or pure JavaScript?",
         "reply": [{
@@ -1165,6 +1233,7 @@
         "views": "165",
         "likes": "54",
         "date": "22/05/2021",
+        "marked": "false",
         "title": "'Thinking in AngularJS' if I have a jQuery background?",
         "content": "Suppose I'm familiar with developing client-side applications in jQuery, but now I'd like to start using AngularJS. Can you describe the paradigm shift that is necessary? Here are a few questions that might help you frame an answer: How do I architect and design client-side web applications differently? What is the biggest difference? What should I stop doing/using; What should I start doing/using instead? Are there any server-side considerations/restrictions? I'm not looking for a detailed comparison between jQuery and AngularJS.",
         "reply": [{
@@ -1182,6 +1251,7 @@
         "views": "870",
         "likes": "342",
         "date": "21/03/2021",
+        "marked": "false",
         "title": "Compare two dates with JavaScript",
         "content": "Can someone suggest a way to compare the values of two dates greater than, less than, and not in the past using JavaScript? The values will be coming from text boxes.",
         "reply": [{
@@ -1199,6 +1269,7 @@
         "views": "2339",
         "likes": "214",
         "date": "17/03/2021",
+        "marked": "false",
         "title": "How can I remove a specific item from an array?",
         "content": "I have an array of numbers and I'm using the .push() method to add elements to it. Is there a simple way to remove a specific element from an array? I'm looking for the equivalent of something like: 'array.remove(number);' I have to use core JavaScript. Frameworks are not allowed.",
         "reply": [{
@@ -1216,6 +1287,7 @@
         "views": "1063",
         "likes": "345",
         "date": "03/08/2021",
+        "marked": "false",
         "title": "Disable same origin policy in Chrome",
         "content": "Is there any way to disable the Same-origin policy on Google's Chrome browser?",
         "reply": [{
@@ -1233,6 +1305,7 @@
         "views": "325",
         "likes": "102",
         "date": "20/12/2021",
+        "marked": "false",
         "title": "What is DOM Event delegation?",
         "content": "Can anyone please explain event delegation in JavaScript and how is it useful?",
         "reply": [{
@@ -1251,6 +1324,7 @@
         "views": "304",
         "likes": "103",
         "date": "30/04/2021",
+        "marked": "true",
         "title": "How should I use servlets and Ajax?",
         "content": "Whenever I print something inside the servlet and call it by the webbrowser, it returns a new page containing that text. Is there a way to print the text in the current page using Ajax?",
         "reply": [{

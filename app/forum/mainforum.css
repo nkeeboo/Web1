@@ -18,6 +18,7 @@
     
     .forum__intro {
         text-align: center;
+        margin-top: 20px;
     }
     
     .topic__search-box {
@@ -59,7 +60,8 @@
         margin-right: 50px;
     }
     
-    button {
+    .navigation button,
+    .createTopic__btn {
         display: inline-block;
         background-color: #fff;
         border: 2px solid #303342;
@@ -87,10 +89,10 @@
     }
     
     .createTopic__btn {
-        border: 2px solid #2EA44F;
+        border: 2px solid #2EA44F !important;
         border-radius: 5px;
-        color: #2EA44F;
-        padding-left: 5px;
+        color: #2EA44F !important;
+        padding-left: 5px !important;
     }
     /* The Pop-up (background) */
     
@@ -210,6 +212,7 @@
         margin-right: 10px;
         margin-left: auto;
         text-align: right;
+        background-color: #fff;
     }
     /* Dropdown choose tag */
     
@@ -315,6 +318,24 @@
         width: fit-content;
         padding: 10px;
     }
+    
+    @media only screen and (max-width: 490px) {
+        .topic__replies,
+        .topic__views,
+        .topic__times {
+            display: none;
+        }
+        .topic__col {
+            max-width: 100%;
+        }
+        a,
+        .topic-title {
+            width: 100%;
+        }
+        .popup-content {
+            min-width: 95%;
+        }
+    }
     /* Extra small devices (phones, 600px and down) */
     
     @media only screen and (max-width: 600px) {
@@ -329,7 +350,7 @@
             font-size: smaller;
         }
         .popup-content {
-            width: 100%;
+            width: 95%;
         }
         .topic__replies {
             display: none;
@@ -340,6 +361,7 @@
         }
         .navbar {
             align-items: flex-end;
+            text-align: center;
             margin-right: 0px;
         }
         .navbutton {
@@ -397,7 +419,7 @@
             width: 80%;
         }
         .popup-content {
-            width: 60%;
+            width: 70%;
         }
     }
     /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -405,6 +427,9 @@
     @media only screen and (min-width: 1200px) {
         a,
         .topic-title {
+            width: 70%;
+        }
+        .popup-content {
             width: 70%;
         }
     }

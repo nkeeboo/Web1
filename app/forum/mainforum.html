@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coudé Forum</title>
+    <!-- icon logo coude -->
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <link rel="stylesheet" href="./mainforum.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
@@ -16,6 +18,7 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="../header/header-res.js"></script>
+    <script src="./text-editor.js"></script>
     <script>
         var app = angular.module("angularApp", [])
         app.controller("TopicController", function($scope, $http) {
@@ -30,8 +33,10 @@
             $scope.selectTopic = function(val) {
                 $scope.topicDetails = val;
             }
-            $scope.orderByMe = function(topic) {
-                    $scope.myOrderBy = topic;
+            $scope.reverse = false;
+            $scope.orderByMe = function(val) {
+                    $scope.reverse = ($scope.val === val) ? !$scope.reverse : true;
+                    $scope.val = val;
                 }
                 // function create pagination
                 // $scope.currentPage = 0;
@@ -49,11 +54,6 @@
             //     }
             // })
         })
-
-        // function calculateDiff(topic) {
-        //     var today = new Date();
-        //     console.log(today)
-        // }
     </script>
 </head>
 <header w3-include-html='../header/header.html'></header>
@@ -68,9 +68,7 @@
             </div>
             <div class="topic__search-box">
                 <input type="text" class="topic__search-input" id="" placeholder="Search the topic here">
-                <i class="topic__search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg></i>
+                <i class="bi bi-search topic__search-icon"></i>
             </div>
         </div>
         <div class="navigation">
@@ -129,8 +127,8 @@
             <div class="topic__views">Views</div>
             <div class="topic__times">Time</div>
         </div>
-        <div class="list-topic" ng-repeat="topic in forum | filter: {tag: selectedTag} | orderBy: myOrderBy">
-            <a href="topic.html?topicId={{topic.id}}" target="_blank">
+        <div class="list-topic" ng-repeat="topic in forum | filter: {tag: selectedTag} | orderBy: val:reverse">
+            <a href="topic.html?topicId={{topic.id}}">
                 <div class="topic-child">
                     <div class="topic__col">
                         <div class="topic__name">{{topic.title}}</div>
@@ -152,37 +150,8 @@
     <button ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1">
         Next
     </button> -->
-    <script>
-        // Get the popup
-        var popup = document.getElementById("myPopup");
+    <script src="./popup.js"></script>
 
-        // Get the button that opens the popup
-        var btn = document.getElementById("myCreateTopicBtn");
-
-        // Get the <span> element that closes the popup
-        var span = document.getElementsByClassName("close")[0];
-        var cancel = document.getElementsByClassName("cancel__btn")[0];
-
-        // When the user clicks the button, open the popup
-        btn.onclick = function() {
-            popup.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the popup
-        span.onclick = function() {
-            popup.style.display = "none";
-        }
-        cancel.onclick = function() {
-            popup.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the popup, close it
-        window.onclick = function(event) {
-            if (event.target == popup) {
-                popup.style.display = "none";
-            }
-        }
-    </script>
     <script>
         w3.includeHTML();
     </script>
