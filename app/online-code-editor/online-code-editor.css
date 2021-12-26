@@ -19,10 +19,13 @@ body>div{
 }
 /* import từ header.css và điều chỉnh header của online editor vì khác với các page khác */
 /* button trên header */
+.header__container{
+    justify-content: flex-start;
+}
 button{
     background-color: transparent;
     border: 2px solid var(--button-color) !important;
-    margin: auto 5px auto 35px;
+    margin: auto 0 auto 3%;
     color: white;
 }
 button:hover{
@@ -124,7 +127,7 @@ select:hover{
   .menu.responsive {
       position: relative;
       justify-content: space-evenly;
-      background-color: grey;
+      background-color: var(--button-color);
       color: black;
       padding: 5%
     }

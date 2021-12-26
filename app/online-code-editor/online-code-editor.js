@@ -6,6 +6,6 @@ function collapseSidebar() {
   else {
     x.className = "menu";
   }
-  console.log(x);
+  // console.log(x);
 }
 

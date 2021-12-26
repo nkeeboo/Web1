@@ -1,3 +1,6 @@
+/* html{
+    position: relative;
+} */
 .footer__container {
     background: linear-gradient(0deg, rgba(213, 209, 209, 0.3), rgba(213, 209, 209, 0.3)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.8);
     opacity: 0.9;
@@ -90,8 +93,9 @@
     max-width: auto;
     height: auto;
 }
-
-
+.footer__container.footer-mini{
+    justify-content: space-around;
+}
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media screen and (max-width: 992px) {
@@ -103,8 +107,9 @@
     .footer__subcontainer>div {
         margin-top: 25px;
     }
-    .footer__icon-container {
-        flex-wrap: wrap;
+    .footer__container.footer-mini{
+        flex-direction: column;
+        align-items: flex-start
     }
 }
 
