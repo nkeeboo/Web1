@@ -19,35 +19,7 @@ body {
 }
 
 .forum__intro {
-    text-align: center;
     margin-bottom: 20px;
-}
-
-.topic__search-box {
-    position: relative;
-    background: #ddd;
-    max-width: fit-content;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.topic__search-input {
-    height: fit-content;
-    padding: 3px;
-    border: 2px solid;
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 25px;
-}
-
-.topic__search-icon {
-    position: absolute;
-    top: 3px;
-    bottom: 0px;
-    right: 0px;
-    width: 25px;
-    height: 25px;
 }
 
 .div-background {
@@ -58,9 +30,12 @@ body {
     margin-bottom: 10px;
 }
 
+.topic__title {
+    padding-left: 30px;
+}
+
 .name {
     font-weight: bold;
-    margin-left: 70px;
     font-size: 18px;
 }
 
@@ -81,7 +56,6 @@ body {
     color: #2C14BC;
     background-color: #E9EAF2;
     margin-top: 5px;
-    margin-left: 70px;
 }
 
 .topic__infor .topic__content {
@@ -91,13 +65,18 @@ body {
 .topic__infor-history {
     vertical-align: middle;
     margin-left: auto;
-    font-size: 12px;
+    font-size: 10px;
     color: #303342;
+}
+
+.bi-pencil-fill {
+    font-size: 10px !important;
 }
 
 .topic__infor-user {
     display: flex;
     padding-left: 30px;
+    align-items: center;
 }
 
 .user-avt {
@@ -126,7 +105,6 @@ body {
     font-size: 13px;
     width: 70%;
     margin: auto;
-    line-height: 1.3;
 }
 
 
@@ -173,7 +151,13 @@ body {
     font-size: 18px !important;
     margin: 10px;
     vertical-align: middle;
+    cursor: pointer;
 }
+
+
+/* .bi-heart:focus {
+    color: #2C14BC;
+} */
 
 .reply__operation {
     display: flex;
@@ -193,7 +177,12 @@ body {
     border: none;
     background-color: #fff;
     margin-right: 10px;
+    margin-left: auto;
     padding: 0 !important;
+}
+
+.no-bg {
+    background-color: #F7F7F7;
 }
 
 .reply__btn span .reply__operation span {
@@ -214,31 +203,66 @@ body {
     .topic__interacts {
         width: 90%;
     }
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-    .content {
-        width: 90%;
-    }
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-    .content {
-        width: 80%;
+    .topic__infor-user {
+        padding-left: 10px;
     }
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1200px) {
     .content {
         width: 70%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 922px) {
+    .content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 490px) {
+    .content {
+        width: 95%;
+    }
+    .topic__infor-user {
+        padding-left: 0;
+    }
+    .topic__title {
+        padding-left: 10px;
+    }
+    .user-avt {
+        width: 25px;
+        height: 25px;
+    }
+    .bi-person-circle {
+        font-size: 25px !important;
+    }
+    .user-name {
+        font-size: smaller;
+    }
+    .topic__content {
+        width: 100%;
+    }
+    .reply__btn span {
+        display: none;
+    }
+    .topic__interacts {
+        min-width: fit-content;
+        max-width: 90%;
     }
 }

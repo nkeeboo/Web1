@@ -22,12 +22,13 @@ form {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    margin: 5px;
 }
 
 #output {
     width: 100%;
     border: 1px solid #303342;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .active {
