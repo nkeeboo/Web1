@@ -69,7 +69,7 @@
             </div>
             <!-- courses popular-->
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='new') | limitTo: 9">
+                <div class="col-12 col-sm-6 col-md-4" ng-repeat="co in courses | filter : (co.time ='popular') | limitTo: 9">
                     <a class="linkenroll" href="/app/course/enroll/Enroll.html?enrollName={{co.title}}" target="blank">
                         <div class="txtcourse">
                             <div class="tag">
@@ -96,20 +96,22 @@
             <!-- courses new -->
             <div class="row">
 
-                <div class="col-12 col-sm-6 col-md-4" ng-repeat="c in courses | filter : (c.time ='popular') | limitTo : 9">
-                    <div class="txtcourse">
-                        <div class="tag">
-                            <p class="txttag">{{c.tag}}</p>
+                <div class="col-12 col-sm-6 col-md-4" ng-repeat="c in courses | filter : (c.time ='new') | limitTo : 9">
+                    <a class="linkenroll" href="/app/course/enroll/Enroll.html?enrollName={{c.title}}" target="blank">
+                        <div class="txtcourse">
+                            <div class="tag">
+                                <p class="txttag">{{c.tag}}</p>
+                            </div>
+                            <div class="information">
+                                <p class="box--course_header">{{c.title}}</p>
+                                <ul>
+                                    <li>{{c.description[0].txtlevel}}</li>
+                                    <li>{{c.description[0].number_lesson}}</li>
+                                </ul>
+                            </div>
+                            <p class="coude">{{c.logo}}</p>
                         </div>
-                        <div class="information">
-                            <p class="box--course_header">{{c.title}}</p>
-                            <ul>
-                                <li>{{c.description[0].txtlevel}}</li>
-                                <li>{{c.description[0].number_lesson}}</li>
-                            </ul>
-                        </div>
-                        <p class="coude">{{c.logo}}</p>
-                    </div>
+                    </a>
                 </div>
             </div>
 
