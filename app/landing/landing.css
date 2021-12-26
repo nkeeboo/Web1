@@ -3,9 +3,6 @@
     font-family: Montserrat;
     src: url(/assets/fonts/montserrat/Montserrat-Medium.ttf);
 }
-*{
-    box-sizing: border-box;
-}
 body{
     position: relative;
     top: 60px;
@@ -26,7 +23,7 @@ header{
     display: block;
 }
 #login{
-    right: 60px; 
+    right: 5%;
     bottom: 30%;
     /* vertical-align: -webkit-baseline-middle; */
     position: absolute
@@ -153,7 +150,8 @@ svg{
 /* .course-container>div{
     width: 100%;
 } */
-.course-container__item>div:nth-child(2){/*Nội dung course*/
+.course-container__item>div:nth-child(2){
+    /*Nội dung course*/
     margin: auto 20px;
     text-align: center;
 }
@@ -161,6 +159,8 @@ svg{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 80%;
+    height: auto;
 }
 .course-container__item ul{
     list-style-position: inside;
@@ -191,10 +191,6 @@ svg{
 .field-container li {
     font-size: 20px;
     margin-left: 15px;
-    
-    /* margin-bottom: 8px; */
-    /* margin-left: 0px;
-    margin-right: 0; */
 }
 .field-container a{
     font-family: 'Courier New', Courier, monospace;
@@ -270,18 +266,21 @@ iframe{
     margin: 15px auto;
 }
 @media only screen and (max-width: 600px) {
-    .example {background: red;}
+    .code-frame>iframe{
+        display: none;
+    }
+    .logo-container>img{
+        width: 10% !important;
+        height: 10% !important;
+    }
   }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    .example {background: green;}
-  }
-  
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (max-width: 768px) {
     .flex--row{
         flex-wrap: wrap;
+    }
+    .flex--row.sub-container.course{
+        flex-wrap: wrap-reverse;
     }
     .rec-frame__shape{
         width: 70%;
@@ -289,6 +288,7 @@ iframe{
     .slogan, .btn-create-account{
         position: unset;
     }
+
     .cta-container{
         top: 20px;
     }
@@ -301,28 +301,22 @@ iframe{
     }
     .course-container__item{
         margin-bottom: 10px;
-        width: 90vw;
-        /* margin-left: auto;
-        margin-right: auto; */
+        width: 65vw;
+        min-width: fit-content;
     }
     .field-container{
         justify-content: flex-start;
+        flex-direction: column;
+        margin-left: 5%;
     }
     .people-container{
-        width: 80%;
+        width: 95%;
+    }
+    .flex--row.people-container__item{
+        flex-wrap: nowrap;
     }
     .row--align-bottom{
         justify-content: flex-start;
         margin-left: 2%
     }
   } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .example {background: orange;}
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
-  }

@@ -111,6 +111,7 @@ img.advertise{
 }
 .popup-content{
     padding-left: 5%; 
+    padding-bottom: 20px;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
     top: 15%;
@@ -119,13 +120,16 @@ img.advertise{
     position: relative;
     background-color: #fefefe;
     margin: auto;
-    width: 50%;
-    min-height: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
+    width: 50%;
+    min-height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#btn-confirm{
+    border: none;
 }
 .popup-header{
     justify-content: space-between;
@@ -141,7 +145,7 @@ img.advertise{
     min-width: 75px;
 }
 .goal-input input, .goal-input select{
-    width: 30%;
+    width: 45%;
     border-radius: 5px;
     border: 0.5px solid #000000;
     height: 30px;
@@ -180,9 +184,10 @@ img.advertise{
     } */
     .course-container{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .course__item{
-        width: 45%;
+        width: 40%;
     }
 }
 @media only screen and (max-width: 600px){
@@ -190,6 +195,15 @@ img.advertise{
         display:none;
     }
     .course__item{
-        width: 100%;
+        width: 55%;
+    }
+    .flex--row.goal-input{
+        flex-wrap: wrap;
+    }
+    #btn-confirm{
+        margin-top: 10px;
+    }
+    .goal-input input, .goal-input select{
+        width: 80%;
     }
 }
