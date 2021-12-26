@@ -47,5 +47,6 @@ label {
 }
 
 #signup-btn {
+    padding: 15px 20px;
     font-family: MontserratExtraBold;
 }

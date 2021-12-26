@@ -81,8 +81,36 @@ h3 {
 }
 
 #btnnext {
-    padding: 10px 15px;
+    padding: 15px 20px;
     font-family: MontserratExtraBold;
+}
+
+
+/* CSS sidebar */
+
+#myTopnav {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+    padding: 20px;
+    height: calc(100vh - 160px);
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav a {
+    display: block;
+    text-align: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: RobotoRegular;
+}
+
+.topnav .icon {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,6 +127,7 @@ h3 {
     }
     #myTopnav {
         width: 100%;
+        height: auto;
     }
 }
 
