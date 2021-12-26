@@ -19,7 +19,7 @@ body {
     background-color: rgba(196, 196, 196, 0.5);
 }
 
-img {
+.imgintro {
     width: 200px;
     height: 200px;
     float: left;
