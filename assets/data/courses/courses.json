@@ -31,35 +31,6 @@
         "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
         "time": "new",
         "level": "beginner",
-        "title": "Build a Website with HTML,CSS and Github Pages ",
-        "category": "",
-        "description": [{
-            "txtlevel": "Beginner friendly",
-            "number_lesson": "18 lessons"
-        }],
-        "tag": "pro",
-        "logo": "Coudé",
-        "resource": [{
-            "type": "Doc",
-            "res_name": "Elements"
-        }],
-        "instructor": "Aeneas Consus",
-        "user_avt": "glass_woman.png",
-        "instruc_descript": "Do you really listen when you are talking with someone? I have a friend who listens in an unforgiving way. She actually takes every word you say as being something important and when you have a friend that listens like that, words take on a whole new meaning.",
-        "rate": "5491",
-        "enroll_num": "5491",
-        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
-        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
-        "language": "This Professional Certificate has a strong emphasis on applied learning. Except for the first course, all other courses include a series of hands-on labs in the IBM Cloud that will give you practical skills with applicability to real jobs, including using ENGLISH, SPANISH, VIETNAMESE",
-        "fee": "$49 USD per month to continue learning after trial ends.Go as fast as you can - the faster you go, the more you save.",
-        "degree": "When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. Many Professional Certificates have hiring partners that recognize the Professional Certificate credential and others can help prepare you for a certification exam. You can find more information on individual Professional Certificate pages where it applies.The program consists of 9 online courses that will provide you with the latest job-ready tools and skills, including open source tools and libraries, Python, databases, SQL, data visualization, data analysis, statistical analysis, predictive modeling, and machine learning algorithms. You’ll learn data science through hands-on practice in the IBM Cloud using real data science tools and real-world data sets."
-
-    },
-    {
-        "unit": "HTML&CSS",
-        "unit_descript": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
-        "time": "new",
-        "level": "beginner",
         "title": "Learn HTML",
         "category": "",
         "description": [{
@@ -112,8 +83,6 @@
         "language": "This Professional Certificate has a strong emphasis on applied learning. Except for the first course, all other courses include a series of hands-on labs in the IBM Cloud that will give you practical skills with applicability to real jobs, including using ENGLISH, SPANISH, VIETNAMESE",
         "fee": "$49 USD per month to continue learning after trial ends.Go as fast as you can - the faster you go, the more you save.",
         "degree": "When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. Many Professional Certificates have hiring partners that recognize the Professional Certificate credential and others can help prepare you for a certification exam. You can find more information on individual Professional Certificate pages where it applies.The program consists of 9 online courses that will provide you with the latest job-ready tools and skills, including open source tools and libraries, Python, databases, SQL, data visualization, data analysis, statistical analysis, predictive modeling, and machine learning algorithms. You’ll learn data science through hands-on practice in the IBM Cloud using real data science tools and real-world data sets."
-
-
     },
 
     {
@@ -143,8 +112,6 @@
         "language": "This Professional Certificate has a strong emphasis on applied learning. Except for the first course, all other courses include a series of hands-on labs in the IBM Cloud that will give you practical skills with applicability to real jobs, including using ENGLISH, SPANISH, VIETNAMESE",
         "fee": "$49 USD per month to continue learning after trial ends.Go as fast as you can - the faster you go, the more you save.",
         "degree": "When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. Many Professional Certificates have hiring partners that recognize the Professional Certificate credential and others can help prepare you for a certification exam. You can find more information on individual Professional Certificate pages where it applies.The program consists of 9 online courses that will provide you with the latest job-ready tools and skills, including open source tools and libraries, Python, databases, SQL, data visualization, data analysis, statistical analysis, predictive modeling, and machine learning algorithms. You’ll learn data science through hands-on practice in the IBM Cloud using real data science tools and real-world data sets."
-
-
     },
     {
         "unit": "HTML&CSS",
@@ -173,8 +140,6 @@
         "language": "This Professional Certificate has a strong emphasis on applied learning. Except for the first course, all other courses include a series of hands-on labs in the IBM Cloud that will give you practical skills with applicability to real jobs, including using ENGLISH, SPANISH, VIETNAMESE",
         "fee": "$49 USD per month to continue learning after trial ends.Go as fast as you can - the faster you go, the more you save.",
         "degree": "When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. Many Professional Certificates have hiring partners that recognize the Professional Certificate credential and others can help prepare you for a certification exam. You can find more information on individual Professional Certificate pages where it applies.The program consists of 9 online courses that will provide you with the latest job-ready tools and skills, including open source tools and libraries, Python, databases, SQL, data visualization, data analysis, statistical analysis, predictive modeling, and machine learning algorithms. You’ll learn data science through hands-on practice in the IBM Cloud using real data science tools and real-world data sets."
-
-
     },
     {
         "unit": "HTML&CSS",
@@ -203,8 +168,6 @@
         "language": "This Professional Certificate has a strong emphasis on applied learning. Except for the first course, all other courses include a series of hands-on labs in the IBM Cloud that will give you practical skills with applicability to real jobs, including using ENGLISH, SPANISH, VIETNAMESE",
         "fee": "$49 USD per month to continue learning after trial ends.Go as fast as you can - the faster you go, the more you save.",
         "degree": "When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. Many Professional Certificates have hiring partners that recognize the Professional Certificate credential and others can help prepare you for a certification exam. You can find more information on individual Professional Certificate pages where it applies.The program consists of 9 online courses that will provide you with the latest job-ready tools and skills, including open source tools and libraries, Python, databases, SQL, data visualization, data analysis, statistical analysis, predictive modeling, and machine learning algorithms. You’ll learn data science through hands-on practice in the IBM Cloud using real data science tools and real-world data sets."
-
-
     },
     {
         "unit": "HTML&CSS",
@@ -233,7 +196,6 @@
         "language": "This Professional Certificate has a strong emphasis on applied learning. Except for the first course, all other courses include a series of hands-on labs in the IBM Cloud that will give you practical skills with applicability to real jobs, including using ENGLISH, SPANISH, VIETNAMESE",
         "fee": "$49 USD per month to continue learning after trial ends.Go as fast as you can - the faster you go, the more you save.",
         "degree": "When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. Many Professional Certificates have hiring partners that recognize the Professional Certificate credential and others can help prepare you for a certification exam. You can find more information on individual Professional Certificate pages where it applies.The program consists of 9 online courses that will provide you with the latest job-ready tools and skills, including open source tools and libraries, Python, databases, SQL, data visualization, data analysis, statistical analysis, predictive modeling, and machine learning algorithms. You’ll learn data science through hands-on practice in the IBM Cloud using real data science tools and real-world data sets."
-
     },
     {
         "unit": "Python",

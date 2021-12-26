@@ -226,7 +226,7 @@ ul {
     background-repeat: no-repeat;
     display: block;
     text-align: center;
-    margin-left: 50px;
+    margin: auto;
 }
 
 .txtbanner1 {
@@ -234,6 +234,10 @@ ul {
     font-size: 20px;
     font-weight: bold;
     display: inline-block;
+}
+
+.linkenroll {
+    color: black;
 }
 
 .linkbanner {

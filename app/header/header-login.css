@@ -94,10 +94,11 @@ body {
 }
 
 .div-account {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     background-color: white;
     border-radius: 50%;
+    border: none;
 }
 
 .dropdown-content a {
@@ -113,6 +114,10 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 @media screen and (max-width: 1100px) {
@@ -135,6 +140,11 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
 
 .dropdown-content a {
