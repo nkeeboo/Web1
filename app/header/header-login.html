@@ -6,14 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header login</title>
-    <link rel="stylesheet" href="header-login.css">
+    <link rel="stylesheet" href="./header-login.css">
+    <link rel="stylesheet" href="/main-style.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&family=Work+Sans:wght@500&display=swap'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./header-res.js"></script>
 
 </head>
 
 <body>
-    <div class="header__container flex--row" id="navbar">
+    <div class="header__container" id="navbar-login">
+        <a href="javascript:void(0)" class="icon" onclick="collapseHeader('navbar-login')">☰</a>
+
         <img src="/assets/logo.png" alt="Logo">
 
         <div class="navbar__link-container">
@@ -30,32 +35,26 @@
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg>
         </div>
-        <div class="header__noti-container">
-            <i class="fa fa-bell" style="font-size:20px; color: white;"></i>
-        </div>
-        <div class="header__account-container">
-            <button class="div-account"></button>
-
-        </div>
-        <div class="dropdown-content">
-            <a href="#">usernamw0111</a>
-            <a href="#">Personal Info/a>
-            <a href="#">My Learning</a>
-            <a href="#">My Purchase</a>
-            <a href="#">Setting</a>
-            <a href="#">Support</a>
+        <div class="flex--row user">
+            <div class="header__noti-container ">
+                <i class="fa fa-bell" style="font-size:20px; color: white;"></i>
+            </div>
+            <div class="header__account-container">
+                <button class="btn-user" onclick="dropdownClick()"></button>
+                <div class="dropdown-user" id="dropdownAccount">
+                    <a href="#">ndtlquynh07</a>
+                    <hr>
+                    <a href="/app/General-information/general-information.html">Personal Info</a>
+                    <a href="/app/My-course/my-course.html">My Learning</a>
+                    <a href="/app/Billing/Billing.html">My Purchase</a>
+                    <a href="#">Setting</a>
+                    <a href="/app/contact/contact.html">Support</a>
+                    <hr>
+                    <a href="/app/Login/Login.html">Sign out</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
     </script>
 </body>
 

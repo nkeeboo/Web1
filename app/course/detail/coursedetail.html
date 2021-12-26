@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coudé</title>
+    <title>Course Detail</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -82,16 +82,18 @@
                 <legend class="headercourse">FOR BEGINNER</legend>
                 <div class="container">
                     <div class="box--course" ng-repeat="rs in coursesLang| filter : (rs.level ='Beginner')  |limitTo: 5">
-                        <div class="tag">
-                            <p class="txttag">{{rs.tag}}</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">{{rs.title}}</p>
-                            <ul>
-                                <li>{{rs.description[0].txtlevel}}</li>
-                                <li>{{rs.description[0].number_lesson}}</li>
-                            </ul>
-                        </div>
+                        <a class="linkenroll" href="/app/course/enroll/Enroll.html?enrollName={{rs.title}}" target="blank">
+                            <div class="tag">
+                                <p class="txttag">{{rs.tag}}</p>
+                            </div>
+                            <div class="information">
+                                <p class="box--course_header">{{rs.title}}</p>
+                                <ul>
+                                    <li>{{rs.description[0].txtlevel}}</li>
+                                    <li>{{rs.description[0].number_lesson}}</li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </fieldset>
@@ -99,16 +101,18 @@
                 <legend class="headercourse">FOR INTERMEDIATE</legend>
                 <div class="container">
                     <div class="box--course" ng-repeat="rs in coursesLang| filter : (rs.level ='Intermediate')  |limitTo: 5">
-                        <div class="tag">
-                            <p class="txttag">{{rs.tag}}</p>
-                        </div>
-                        <div class="information">
-                            <p class="box--course_header">{{rs.title}}</p>
-                            <ul>
-                                <li>{{rs.description[0].txtlevel}}</li>
-                                <li>{{rs.description[0].number_lesson}}</li>
-                            </ul>
-                        </div>
+                        <a class="linkenroll" href="/app/course/enroll/Enroll.html?enrollName={{rs.title}}" target="blank">
+                            <div class="tag">
+                                <p class="txttag">{{rs.tag}}</p>
+                            </div>
+                            <div class="information">
+                                <p class="box--course_header">{{rs.title}}</p>
+                                <ul>
+                                    <li>{{rs.description[0].txtlevel}}</li>
+                                    <li>{{rs.description[0].number_lesson}}</li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </fieldset>

@@ -17,20 +17,8 @@ body {
     font-family: 'Gothic A1', sans-serif;
     align-items: center;
     justify-content: space-around;
-    overflow: hidden;
     display: flex;
 }
-
-
-/* .header__container a{
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: auto 10px;
-    text-decoration: none;
-    font-size: 17px;
-} */
 
 
 /* Logo */
@@ -49,7 +37,7 @@ body {
     font-size: 14px;
 }
 
-.header__container a:hover {
+.navbar__link-container a:hover {
     text-decoration: underline;
     color: white;
 }
@@ -70,8 +58,6 @@ body {
     width: 30%;
     min-width: 200px;
     height: 30px;
-    /* left: 670px;
-    top: 16px; */
     background: #E5E5E5;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -93,7 +79,7 @@ body {
     vertical-align: -webkit-baseline-middle;
 }
 
-.div-account {
+.btn-user {
     height: 30px;
     width: 30px;
     background-color: white;
@@ -101,89 +87,110 @@ body {
     border: none;
 }
 
-.dropdown-content a {
+.dropdown-user a {
     text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+    /* display: block; */
+    text-align: right;
+    width: 100%
+}
+
+.user {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dropdown-user a:not(:first-child):hover {
+    margin-left: 0.1px;
+    transition: 0.5s;
+    opacity: 0.8;
 }
 
 .header__account-container {
     font-size: 16px;
     border: none;
-    outline: none;
     color: white;
-    padding: 14px 16px;
-    background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    position: relative;
+    margin-left: 15px;
+    height: max-content;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-@media screen and (max-width: 1100px) {
-    .header__container>div {
-        display: none;
-    }
-    .header__container {
-        justify-content: space-between;
-    }
-    .header__container .icon {
-        /* float: right; */
-        display: block;
-    }
-}
-
-.dropdown-content {
+.dropdown-user {
     display: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 99;
+    border: 1px solid black;
+    border-radius: 5px;
+    right: 0;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
+.show {
     display: block;
 }
 
-@media screen and (max-width: 1100x) {
-    .header__container.responsive,
+@media screen and (max-width: 992px) {
+    .header__container>div:not(:last-child) {
+        display: none;
+    }
     .header__container {
         transition: 0.5s;
     }
+    .header__container,
     .header__container.responsive {
-        position: relative;
-        background-color: var(--header-color);
+        justify-content: space-between;
     }
-    .header__container.responsive .navbar__link-container {
+    .header__container .icon {
+        display: block;
+    }
+    a.icon:hover {
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header__container.responsive>div,
+    .header__container {
+        transition: 0.5s;
+    }
+    .header__container.responsive>div:not(:last-child) {
+        position: inherit;
+        top: 55px;
         width: 100%;
         height: fit-content;
+        width: 100vw;
+        /* transition: 0.5s; */
+        height: fit-content;
+        font-size: 20px;
+        /* padding: 10px 10%; */
+        /* color: black */
     }
-    /* .header__container.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    } */
+    .header__container.responsive .navbar__link-container {
+        color: black;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+    }
+    .header__container.responsive .navbar__link-container {
+        flex-direction: column;
+        top: 80px !important;
+    }
+    .header__container.responsive .navbar__link-container a {
+        padding: 10px 1%;
+    }
+    .header__container.responsive .search-box {
+        margin: 0;
+        top: 0;
+        height: 25px;
+    }
     .header__container.responsive>div {
-        display: block;
+        display: flex;
+        transition: 0.5s;
         text-align: left;
         /* flex-direction: column; */
     }

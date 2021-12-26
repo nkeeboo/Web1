@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <link rel="stylesheet" href="Catalog.css">
+    <link rel="stylesheet" href="../header/header-login.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../header/header-res.js"></script>
+    <script src="./cata-get-data.js"></script>
+</head>
+<header w3-include-html='../header/header-login.html'></header>
+
+
+<body w3-include-html="./Catalog.html" ng-app="angularApp" ng-controller="CoursesController">
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+<footer w3-include-html='../footer/footer.html'></footer>
+
+</html>

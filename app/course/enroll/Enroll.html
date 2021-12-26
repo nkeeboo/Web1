@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coudé</title>
+    <title>Enroll</title>
+    <!-- icon logo coude -->
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="Enroll.css">
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../header/header.css">
+    <link rel="stylesheet" href="../../header/header-login.css">
     <link rel="stylesheet" href="../../footer/footer.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="../header/header-res.js"></script>
@@ -45,7 +47,7 @@
         })
     </script>
 </head>
-<header w3-include-html='../../header/header.html'></header>
+<header w3-include-html='../../header/header-login.html'></header>
 
 <body ng-app="angularApp" ng-controller="EnrollController">
     <div class="wrapper">
@@ -100,62 +102,35 @@
                         <div class="container-fluid">
                             <div class="row" style="height: 30px;"></div>
                             <div class="row justify-content-center" style="border: 1px solid black;">
-                                <a ng-click="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor(selectedEnroll.atc)" href="javascript:void(0)" class="infor--link">
                                                 About the course
                                             </a>
-                                <a ng-click="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor(selectedEnroll.hiw)" href="javascript:void(0)" class="infor--link">
                                                 How it works
                                             </a>
-                                <a ng-click="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor(selectedEnroll.language)" href="javascript:void(0)" class="infor--link">
                                                 Language
                                             </a>
-                                <a ng-click="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor(selectedEnroll.fee)" href="javascript:void(0)" class="infor--link">
                                             Tution Fee
                                             </a>
-                                <a ng-click="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor(selectedEnroll.instruc_descript)" href="javascript:void(0)" class="infor--link">
                                                 Instructor
                                             </a>
-                                <a ng-click="selectedInfor" href=" " class="infor--link">
+                                <a ng-click="selectedInfor(selectedEnroll.degree)" href="javascript:void(0)" class="infor--link">
                                                 Degree/Certificate
                                             </a>
 
                             </div>
                             <div class="row" style="border: 1px solid black;">
-                                <div class=" col-12 col-lg-8" style="height: 100%; border-right: 1px solid black;">
-                                    <!-- {{courseInfor.atc}} -->
-                                    <p class="headertxt">
-                                        WHAT YOU WILL LEARN
-                                    </p>
-                                    <p>
-                                        WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists
-                                        Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and
-                                        publish a report WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools,
-                                        languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data
-                                        science skills, techniques, and tools to complete a project and publish a report
-                                    </p>
+                                <div class=" col-12 col-lg-8" style="height: 100%;" >
+                                    <div class="header_courseInfor">COUDÉ WILL HELP YOU WITH</div>
                                     <br>
-                                    <p class="txtinfor">
-                                        <p class="headertxt">
-                                            SKILLS YOU WILL GAIN
-                                        </p>
-                                        <ul>
-                                            <li><a>Data Science</a></li>
-                                            <li><a>Deep Learning</a></li>
-                                            <li><a>Machine Learning</a></li>
-                                            <li><a>Big Data</a></li>
-                                            <li><a>Data Mining</a></li>
-                                            <li><a>Github</a></li>
-                                            <li><a>Python Programming</a></li>
-                                            <li><a>Jupyter notebooks</a></li>
-                                            <li><a>Rstudio</a></li>
-                                            <li><a>Methodology</a></li>
-                                            <li><a>Data Analysis</a></li>
-                                            <li><a>Pandas</a></li>
-                                        </ul>
-                                    </p>
-
+                                    <div class="" ng-if="courseInfor">
+                                        {{courseInfor}}
+                                    </div>
                                 </div>
-                                <div class="col-12 col-lg-4" style="height: 100%;">
+                                <div class="col-12 col-lg-4" style="height: 100%; border-left: 1px solid black;">
                                     <div class="txtinforrg">
                                         <i class="glyphicon glyphicon-time"></i> Shareable Certificate
                                     </div>

@@ -256,7 +256,7 @@
         padding-right: 10px;
     }
     
-    a {
+    .content a {
         text-decoration: none !important;
         width: 60%;
         margin: auto;
@@ -377,7 +377,7 @@
     /* Small devices (portrait tablets and large phones, 600px and up) */
     
     @media only screen and (max-width: 768px) {
-        a,
+        .content a,
         .topic-title {
             width: 95%;
         }
@@ -402,7 +402,7 @@
     /* Medium devices (landscape tablets, 768px and up) */
     
     @media only screen and (max-width: 922px) {
-        a,
+        .content a,
         .topic-title {
             width: 90%;
         }
@@ -414,7 +414,7 @@
     /* Large devices (laptops/desktops, 992px and up) */
     
     @media only screen and (max-width: 1200px) {
-        a,
+        .content a,
         .topic-title {
             width: 80%;
         }
@@ -425,7 +425,7 @@
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     
     @media only screen and (min-width: 1200px) {
-        a,
+        .content a,
         .topic-title {
             width: 70%;
         }

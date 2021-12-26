@@ -3,39 +3,53 @@
     font-family: Roboto;
     src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
+
+
 /* style bao xung quanh các element trong homepage */
-.container{
+
+.container {
     display: flex;
     justify-content: space-between;
     margin: auto 5%;
     font-family: 'Gothic A1', sans-serif;
     /* position: relative; */
 }
+
+
 /* Mỗi mục sẽ là một item */
-.container__item{
+
+.container__item {
     margin-bottom: 40px;
 }
-.container__item>h2>a{
+
+.container__item>h2>a {
     font-size: 13px;
     color: blue;
     margin-left: 10px;
     text-decoration: none;
 }
-.container__item>h2>a:hover{
+
+.container__item>h2>a:hover {
     text-decoration: underline;
 }
-.container__left-col{
+
+.container__left-col {
     width: 80%;
     margin-right: 20px;
 }
-.container__right-col{
+
+.container__right-col {
     width: 25%;
 }
+
+
 /* element bao xung quanh các khóa học nằm trong một mục chung */
-.course-container{
+
+.course-container {
     justify-content: space-between;
 }
-.course__item{
+
+.course__item {
     border: 2px solid black;
     padding: 5px;
     font-family: Roboto;
@@ -44,62 +58,75 @@
     width: 25%;
     min-width: max-content;
 }
-.course__item:hover{
+
+.course__item:hover {
     background-color: rgb(197, 197, 197);
 }
-.course__tag{
+
+.course__tag {
     width: 30px;
     background-color: black;
     color: white;
     text-align: center;
 }
-.course__content{
+
+.course__content {
     /* text-align: center; */
     margin: auto 20px;
 }
-.course__coude{
+
+.course__coude {
     float: right;
     font-size: 10px;
 }
-.course__content ul{
+
+.course__content ul {
     list-style-position: inside;
     padding: 0;
     font-weight: bold;
     width: fit-content;
     margin: auto;
 }
-ul li{
+
+ul li {
     font-weight: normal;
 }
-.goal-container{
+
+.goal-container {
     /* height: fit-content; */
     min-height: max-content;
     padding: 10px 20px;
     background-color: #f8f9fc;
     border: 2px solid black;
 }
-.daily-login__container{
+
+.daily-login__container {
     font-size: 12px;
     justify-content: space-between;
 }
-.daily-login__item{
+
+.daily-login__item {
     text-align: center;
     vertical-align: bottom;
 }
-.daily-login__item--cirle{
+
+.daily-login__item--cirle {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     border: 2px solid #C4C4C4;
 }
-img.advertise{
+
+img.advertise {
     width: 100%;
-} 
+}
+
 .advertise:hover,
-.course__item:hover{
+.course__item:hover {
     cursor: pointer;
 }
-.popup-container{
+
+.popup-container {
     display: none;
     position: fixed;
     top: 55px;
@@ -109,8 +136,9 @@ img.advertise{
     /* overflow: auto; */
     background-color: rgba(0, 0, 0, 0.4);
 }
-.popup-content{
-    padding-left: 5%; 
+
+.popup-content {
+    padding-left: 5%;
     padding-bottom: 20px;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
@@ -128,82 +156,95 @@ img.advertise{
     min-height: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#btn-confirm{
+
+#btn-confirm {
     border: none;
 }
-.popup-header{
+
+.popup-header {
     justify-content: space-between;
 }
-.popup-header--title{
+
+.popup-header--title {
     font-weight: 800;
 }
-.goal-input{
+
+.goal-input {
     margin-bottom: 10px;
     align-items: center;
 }
-.goal-input label{
+
+.goal-input label {
     min-width: 75px;
 }
-.goal-input input, .goal-input select{
+
+.goal-input input,
+.goal-input select {
     width: 45%;
     border-radius: 5px;
     border: 0.5px solid #000000;
     height: 30px;
     padding-left: 5px;
 }
-#number{
+
+#number {
     margin-right: 10%;
 }
 
-@media only screen and (max-width: 1200px){
-    .container__left-col{
+@media only screen and (max-width: 1200px) {
+    .container__left-col {
         width: 100%;
     }
-    .container__right-col{
+    .container__right-col {
         display: flex;
         flex-direction: row;
         width: auto;
         flex: 1;
         justify-content: space-between;
     }
-    .container{
+    .container {
         display: flex;
         flex-direction: column-reverse;
     }
-    .advertise{
+    .advertise {
         /* height: 40%;
         width: auto; */
         display: none;
     }
 }
+
+
 /* responsive test  */
+
 @media only screen and (max-width: 768px) {
     /* .container{
         margin:auto 5px;
         width: 100vw;
     } */
-    .course-container{
+    .course-container {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .course__item{
+    .course__item {
         width: 40%;
     }
 }
-@media only screen and (max-width: 600px){
-    .advertise{
-        display:none;
+
+@media only screen and (max-width: 600px) {
+    .advertise {
+        display: none;
     }
-    .course__item{
+    .course__item {
         width: 55%;
     }
-    .flex--row.goal-input{
+    .flex--row.goal-input {
         flex-wrap: wrap;
     }
-    #btn-confirm{
+    #btn-confirm {
         margin-top: 10px;
     }
-    .goal-input input, .goal-input select{
+    .goal-input input,
+    .goal-input select {
         width: 80%;
     }
 }

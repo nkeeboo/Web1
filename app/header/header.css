@@ -34,6 +34,7 @@
 
 
 /* Logo coude tren header */
+
 .header__container>img {
     width: 138px;
     margin: 0;
@@ -116,7 +117,6 @@
     margin-right: 3%;
 }
 
-
 .header__button-container>.btn--s {
     padding: 0;
     height: 25px;
@@ -173,7 +173,7 @@
     .header__container.responsive .search-box {
         margin: 0;
         top: 0;
-        height: 20px;
+        height: 25px;
     }
     .header__container.responsive>div {
         display: flex;

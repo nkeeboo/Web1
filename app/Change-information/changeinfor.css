@@ -26,6 +26,10 @@
     height: 70px;
 }
 
+.main-body {
+    height: 100%;
+}
+
 .form-group__required {
     color: red;
 }
@@ -65,7 +69,7 @@ h6 {
 #myTopnav {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     padding: 20px;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 150px);
 }
 
 .topnav {
@@ -92,7 +96,7 @@ h6 {
         display: none;
     }
     .topnav a {
-        float: right;
+        float: left;
         display: block;
     }
     .topnav a.icon {

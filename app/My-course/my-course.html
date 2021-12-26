@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Courses</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="my-course.css">
-    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../header/header-login.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../header/header-res.js"></script>
 </head>
-<header w3-include-html='../header/header.html'></header>
+<header w3-include-html='../header/header-login.html'></header>
 
 <body>
     <div id="container" class="flex__item--row">
@@ -24,11 +25,11 @@
             <a href="../Payment/payment.html">Payment</a>
             <a href="../My-course/my-course.html">My Course</a>
             <a href="../Favourite_Course/Favourite_course.html">Favourite Course</a>
-            <a href="">Setting</a>  
+            <a href="">Setting</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fas fa-caret-square-down"></i>
             </a>
-          </div>
+        </div>
         <div id="content" class="flex__item">
             <h1>My Courses</h1>
             <form>
@@ -74,14 +75,14 @@
         </div>
     </div>
     <script>
-    function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-    x.className += " responsive";
-    } else {
-    x.className = "topnav";
-    }
-    }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script>
     <script>
         w3.includeHTML();

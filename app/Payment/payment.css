@@ -68,7 +68,7 @@ input {
         display: none;
     }
     .topnav a {
-        float: right;
+        float: left;
         display: block;
     }
     .topnav a.icon {
